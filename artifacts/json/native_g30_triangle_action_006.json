@@ -1,0 +1,526 @@
+{
+  "action_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "anatomy_source": "artifacts/json/native_g30_group_anatomy_002.json",
+  "audit_pass": true,
+  "boundary": {
+    "central_triangle_pairing_derived": true,
+    "physical_claim": false,
+    "triangle_action_classified": true,
+    "triangle_local_action_structure_derived": false,
+    "triangle_pairs_identified_with_g15_triangles": false,
+    "v4_triangle_orbit_exchange_derived": true
+  },
+  "central_triangle_pair_count": 10,
+  "central_triangle_pairs": [
+    [
+      [
+        0,
+        7,
+        14
+      ],
+      [
+        4,
+        8,
+        29
+      ]
+    ],
+    [
+      [
+        0,
+        9,
+        17
+      ],
+      [
+        1,
+        8,
+        22
+      ]
+    ],
+    [
+      [
+        1,
+        5,
+        13
+      ],
+      [
+        2,
+        9,
+        27
+      ]
+    ],
+    [
+      [
+        2,
+        6,
+        21
+      ],
+      [
+        3,
+        5,
+        10
+      ]
+    ],
+    [
+      [
+        3,
+        7,
+        26
+      ],
+      [
+        4,
+        6,
+        18
+      ]
+    ],
+    [
+      [
+        10,
+        15,
+        20
+      ],
+      [
+        11,
+        16,
+        21
+      ]
+    ],
+    [
+      [
+        11,
+        14,
+        28
+      ],
+      [
+        12,
+        15,
+        29
+      ]
+    ],
+    [
+      [
+        12,
+        24,
+        27
+      ],
+      [
+        13,
+        25,
+        28
+      ]
+    ],
+    [
+      [
+        16,
+        19,
+        22
+      ],
+      [
+        17,
+        20,
+        23
+      ]
+    ],
+    [
+      [
+        18,
+        23,
+        25
+      ],
+      [
+        19,
+        24,
+        26
+      ]
+    ]
+  ],
+  "certificate_id": "native_g30_triangle_action_006",
+  "checks": {
+    "all_central_triangle_orbits_have_size_2": true,
+    "c4_complement_is_triangle_transitive": true,
+    "c4_triangle_stabilizer_has_order_6": true,
+    "central_involution_exchanges_v4_triangle_orbits": true,
+    "central_involution_fixes_no_triangle": true,
+    "central_triangle_pair_count_is_10": true,
+    "every_vertex_lies_on_two_triangles": true,
+    "full_group_is_triangle_transitive": true,
+    "full_triangle_stabilizer_order_is_12": true,
+    "source_action_audit_pass": true,
+    "source_anatomy_audit_pass": true,
+    "source_complement_audit_pass": true,
+    "source_parity_audit_pass": true,
+    "triangle_count_is_20": true,
+    "v4_complement_has_two_triangle_orbits_of_10": true,
+    "v4_triangle_stabilizers_have_order_12": true
+  },
+  "complement_source": "artifacts/json/native_g30_s5_complement_classification_004.json",
+  "full_group_triangle_orbit_count": 1,
+  "full_group_triangle_orbit_sizes": [
+    20
+  ],
+  "full_group_triangle_stabilizer_order": 12,
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "interpretation": "The full automorphism group is transitive on the 20 triangles. The V4_mixed S5 complement splits them into two orbits of 10, exchanged by the central deck involution. The odd-generated C4 S5 complement is transitive on all 20 triangles. The central involution also pairs the triangles into 10 disjoint two-triangle fibers.",
+  "parity_source": "artifacts/json/native_g30_stabilizer_parity_classification_005.json",
+  "s5_complement_triangle_actions": [
+    {
+      "complement_index": 0,
+      "refined_stabilizer_type": "V4_mixed",
+      "triangle_orbit_count": 2,
+      "triangle_orbit_sizes": [
+        10,
+        10
+      ],
+      "triangle_orbits": [
+        {
+          "orbit_size": 10,
+          "representative": [
+            0,
+            7,
+            14
+          ],
+          "stabilizer_order": 12,
+          "triangles": [
+            [
+              0,
+              7,
+              14
+            ],
+            [
+              1,
+              8,
+              22
+            ],
+            [
+              2,
+              9,
+              27
+            ],
+            [
+              3,
+              5,
+              10
+            ],
+            [
+              4,
+              6,
+              18
+            ],
+            [
+              11,
+              16,
+              21
+            ],
+            [
+              12,
+              15,
+              29
+            ],
+            [
+              13,
+              25,
+              28
+            ],
+            [
+              17,
+              20,
+              23
+            ],
+            [
+              19,
+              24,
+              26
+            ]
+          ]
+        },
+        {
+          "orbit_size": 10,
+          "representative": [
+            0,
+            9,
+            17
+          ],
+          "stabilizer_order": 12,
+          "triangles": [
+            [
+              0,
+              9,
+              17
+            ],
+            [
+              1,
+              5,
+              13
+            ],
+            [
+              2,
+              6,
+              21
+            ],
+            [
+              3,
+              7,
+              26
+            ],
+            [
+              4,
+              8,
+              29
+            ],
+            [
+              10,
+              15,
+              20
+            ],
+            [
+              11,
+              14,
+              28
+            ],
+            [
+              12,
+              24,
+              27
+            ],
+            [
+              16,
+              19,
+              22
+            ],
+            [
+              18,
+              23,
+              25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "complement_index": 1,
+      "refined_stabilizer_type": "C4_odd_generated",
+      "triangle_orbit_count": 1,
+      "triangle_orbit_sizes": [
+        20
+      ],
+      "triangle_orbits": [
+        {
+          "orbit_size": 20,
+          "representative": [
+            0,
+            7,
+            14
+          ],
+          "stabilizer_order": 6,
+          "triangles": [
+            [
+              0,
+              7,
+              14
+            ],
+            [
+              0,
+              9,
+              17
+            ],
+            [
+              1,
+              5,
+              13
+            ],
+            [
+              1,
+              8,
+              22
+            ],
+            [
+              2,
+              6,
+              21
+            ],
+            [
+              2,
+              9,
+              27
+            ],
+            [
+              3,
+              5,
+              10
+            ],
+            [
+              3,
+              7,
+              26
+            ],
+            [
+              4,
+              6,
+              18
+            ],
+            [
+              4,
+              8,
+              29
+            ],
+            [
+              10,
+              15,
+              20
+            ],
+            [
+              11,
+              14,
+              28
+            ],
+            [
+              11,
+              16,
+              21
+            ],
+            [
+              12,
+              15,
+              29
+            ],
+            [
+              12,
+              24,
+              27
+            ],
+            [
+              13,
+              25,
+              28
+            ],
+            [
+              16,
+              19,
+              22
+            ],
+            [
+              17,
+              20,
+              23
+            ],
+            [
+              18,
+              23,
+              25
+            ],
+            [
+              19,
+              24,
+              26
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "triangle_count": 20,
+  "triangles": [
+    [
+      0,
+      7,
+      14
+    ],
+    [
+      0,
+      9,
+      17
+    ],
+    [
+      1,
+      5,
+      13
+    ],
+    [
+      1,
+      8,
+      22
+    ],
+    [
+      2,
+      6,
+      21
+    ],
+    [
+      2,
+      9,
+      27
+    ],
+    [
+      3,
+      5,
+      10
+    ],
+    [
+      3,
+      7,
+      26
+    ],
+    [
+      4,
+      6,
+      18
+    ],
+    [
+      4,
+      8,
+      29
+    ],
+    [
+      10,
+      15,
+      20
+    ],
+    [
+      11,
+      14,
+      28
+    ],
+    [
+      11,
+      16,
+      21
+    ],
+    [
+      12,
+      15,
+      29
+    ],
+    [
+      12,
+      24,
+      27
+    ],
+    [
+      13,
+      25,
+      28
+    ],
+    [
+      16,
+      19,
+      22
+    ],
+    [
+      17,
+      20,
+      23
+    ],
+    [
+      18,
+      23,
+      25
+    ],
+    [
+      19,
+      24,
+      26
+    ]
+  ],
+  "vertex_triangle_incidence_profile": {
+    "2": 30
+  }
+}
