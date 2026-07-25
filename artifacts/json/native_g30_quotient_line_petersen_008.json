@@ -1,0 +1,397 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "g30_triangle_fibers_bound_to_petersen_vertices": true,
+    "physical_claim": false,
+    "quotient_identified_as_line_petersen": true,
+    "quotient_triangles_bound_to_petersen_vertices": true,
+    "triangle_stabilizer_structure_not_yet_classified": true
+  },
+  "certificate_id": "native_g30_quotient_line_petersen_008",
+  "checks": {
+    "all_10_petersen_vertices_used_once": true,
+    "every_petersen_edge_meets_two_vertex_stars": true,
+    "every_quotient_triangle_is_petersen_vertex_star": true,
+    "every_quotient_vertex_lies_on_two_triangles": true,
+    "lift_source_audit_pass": true,
+    "line_petersen_edge_count_is_30": true,
+    "line_petersen_vertex_count_is_15": true,
+    "petersen_edge_count_is_15": true,
+    "petersen_vertex_count_is_10": true,
+    "quotient_edge_count_is_30": true,
+    "quotient_isomorphic_to_line_petersen": true,
+    "quotient_triangle_count_is_10": true,
+    "quotient_vertex_count_is_15": true
+  },
+  "identification_result": "The central G15 quotient is explicitly isomorphic to L(Petersen). Its 10 triangles are exactly the 10 three-edge stars centered at Petersen vertices.",
+  "isomorphism_count": 120,
+  "lift_source": "artifacts/json/native_g30_triangle_lifts_007.json",
+  "line_petersen_edge_count": 30,
+  "line_petersen_vertex_count": 15,
+  "petersen_edge_count": 15,
+  "petersen_vertex_count": 10,
+  "quotient_edge_count": 30,
+  "quotient_triangle_count": 10,
+  "quotient_triangle_to_petersen_vertex": [
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        0,
+        1,
+        2
+      ],
+      "mapped_petersen_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "petersen_vertex": 0,
+      "quotient_triangle": [
+        0,
+        1,
+        11
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        0,
+        3,
+        4
+      ],
+      "mapped_petersen_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "petersen_vertex": 1,
+      "quotient_triangle": [
+        0,
+        4,
+        9
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        1,
+        7,
+        9
+      ],
+      "mapped_petersen_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "petersen_vertex": 4,
+      "quotient_triangle": [
+        1,
+        2,
+        8
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        5,
+        7,
+        8
+      ],
+      "mapped_petersen_edges": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "petersen_vertex": 3,
+      "quotient_triangle": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        3,
+        5,
+        6
+      ],
+      "mapped_petersen_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "petersen_vertex": 2,
+      "quotient_triangle": [
+        3,
+        4,
+        12
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        8,
+        11,
+        12
+      ],
+      "mapped_petersen_edges": [
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "petersen_vertex": 8,
+      "quotient_triangle": [
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        4,
+        12,
+        13
+      ],
+      "mapped_petersen_edges": [
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "petersen_vertex": 6,
+      "quotient_triangle": [
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        9,
+        13,
+        14
+      ],
+      "mapped_petersen_edges": [
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "petersen_vertex": 9,
+      "quotient_triangle": [
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        2,
+        10,
+        11
+      ],
+      "mapped_petersen_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "petersen_vertex": 5,
+      "quotient_triangle": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "is_vertex_star": true,
+      "mapped_line_graph_vertices": [
+        6,
+        10,
+        14
+      ],
+      "mapped_petersen_edges": [
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "petersen_vertex": 7,
+      "quotient_triangle": [
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "quotient_vertex_count": 15,
+  "quotient_vertex_to_petersen_edge": {
+    "0": [
+      0,
+      1
+    ],
+    "1": [
+      0,
+      4
+    ],
+    "10": [
+      5,
+      8
+    ],
+    "11": [
+      0,
+      5
+    ],
+    "12": [
+      2,
+      7
+    ],
+    "13": [
+      5,
+      7
+    ],
+    "14": [
+      7,
+      9
+    ],
+    "2": [
+      3,
+      4
+    ],
+    "3": [
+      2,
+      3
+    ],
+    "4": [
+      1,
+      2
+    ],
+    "5": [
+      3,
+      8
+    ],
+    "6": [
+      6,
+      8
+    ],
+    "7": [
+      6,
+      9
+    ],
+    "8": [
+      4,
+      9
+    ],
+    "9": [
+      1,
+      6
+    ]
+  },
+  "selected_quotient_to_line_petersen_mapping": {
+    "0": 0,
+    "1": 1,
+    "10": 11,
+    "11": 2,
+    "12": 6,
+    "13": 10,
+    "14": 14,
+    "2": 7,
+    "3": 5,
+    "4": 3,
+    "5": 8,
+    "6": 12,
+    "7": 13,
+    "8": 9,
+    "9": 4
+  }
+}
