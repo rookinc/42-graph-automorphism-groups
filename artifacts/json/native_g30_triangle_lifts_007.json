@@ -1,0 +1,321 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "physical_claim": false,
+    "quotient_explicitly_identified_as_line_petersen": false,
+    "quotient_triangle_count_derived": true,
+    "triangle_lifting_law_derived": true,
+    "triangle_stabilizer_structure_not_yet_classified": true
+  },
+  "certificate_id": "native_g30_triangle_lifts_007",
+  "checks": {
+    "all_20_g30_triangles_accounted_for": true,
+    "central_involution_is_fixed_point_free": true,
+    "every_g30_triangle_projects_to_quotient_triangle": true,
+    "every_g30_triangle_projects_to_three_vertices": true,
+    "every_lift_pair_is_deck_related": true,
+    "every_lift_pair_is_vertex_disjoint": true,
+    "every_lift_pair_uses_six_vertices": true,
+    "every_quotient_triangle_has_two_lifts": true,
+    "g30_triangle_count_is_20": true,
+    "projection_multiplicity_is_uniformly_two": true,
+    "quotient_triangle_count_is_10": true,
+    "triangle_source_audit_pass": true
+  },
+  "deck_source": "artifacts/json/native_g30_central_deck_geometry_003.json",
+  "g30_to_quotient_triangle_multiplicity_profile": {
+    "2": 10
+  },
+  "g30_triangle_count": 20,
+  "g30_vertex_count": 30,
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "lifting_result": "Each of the 10 quotient triangles has exactly two vertex-disjoint G30 triangle lifts, exchanged by the central deck involution.",
+  "quotient_edge_count": 30,
+  "quotient_triangle_count": 10,
+  "quotient_triangles": [
+    [
+      0,
+      1,
+      11
+    ],
+    [
+      0,
+      4,
+      9
+    ],
+    [
+      1,
+      2,
+      8
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      3,
+      4,
+      12
+    ],
+    [
+      5,
+      6,
+      10
+    ],
+    [
+      6,
+      7,
+      9
+    ],
+    [
+      7,
+      8,
+      14
+    ],
+    [
+      10,
+      11,
+      13
+    ],
+    [
+      12,
+      13,
+      14
+    ]
+  ],
+  "quotient_vertex_count": 15,
+  "triangle_lifts": [
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          0,
+          9,
+          17
+        ],
+        [
+          1,
+          8,
+          22
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        0,
+        1,
+        11
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          0,
+          7,
+          14
+        ],
+        [
+          4,
+          8,
+          29
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        0,
+        4,
+        9
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          1,
+          5,
+          13
+        ],
+        [
+          2,
+          9,
+          27
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        1,
+        2,
+        8
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          2,
+          6,
+          21
+        ],
+        [
+          3,
+          5,
+          10
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          3,
+          7,
+          26
+        ],
+        [
+          4,
+          6,
+          18
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        3,
+        4,
+        12
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          10,
+          15,
+          20
+        ],
+        [
+          11,
+          16,
+          21
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          11,
+          14,
+          28
+        ],
+        [
+          12,
+          15,
+          29
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          12,
+          24,
+          27
+        ],
+        [
+          13,
+          25,
+          28
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          16,
+          19,
+          22
+        ],
+        [
+          17,
+          20,
+          23
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "deck_related": true,
+      "g30_triangle_lifts": [
+        [
+          18,
+          23,
+          25
+        ],
+        [
+          19,
+          24,
+          26
+        ]
+      ],
+      "lift_count": 2,
+      "lift_union_size": 6,
+      "lifts_are_vertex_disjoint": true,
+      "quotient_triangle": [
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "triangle_source": "artifacts/json/native_g30_triangle_action_006.json"
+}
