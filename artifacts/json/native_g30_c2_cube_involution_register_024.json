@@ -1,0 +1,530 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "canonical_geometric_names_for_d_u_open": true,
+    "established_names_preserved": true,
+    "physical_claim": false,
+    "provisional_d_u_names_introduced": true,
+    "seven_involution_register_complete": true
+  },
+  "certificate_id": "native_g30_c2_cube_involution_register_024",
+  "checks": {
+    "central_deck_coordinate_matches_023": true,
+    "comparison_source_audit_pass": true,
+    "d_is_fixed_plane_vertex_v4_element": true,
+    "deck_times_kernel_coordinate_matches_023": true,
+    "linear_source_audit_pass": true,
+    "local_source_audit_pass": true,
+    "plane_source_audit_pass": true,
+    "seven_nonidentity_rows_recorded": true,
+    "three_transvection_fixed_nonidentity_rows": true,
+    "triangle_kernel_coordinate_matches_023": true,
+    "two_transvection_swapped_pairs": true,
+    "u_and_kernel_are_transvection_pair": true,
+    "u_is_vertex_only_six_fixed_element": true,
+    "zu_and_zk_are_transvection_pair": true
+  },
+  "classification_result": "The seven nonidentity elements of E=C2^3 now have a single source-bound register. The fixed plane contains z, d, and zd. The two outside transvection pairs are u<->k and zu<->zk. Membership in the triangle-local and vertex-stabilizer Klein fours, together with fixed vertex, edge, and triangle anatomy, is recorded for every involution.",
+  "comparison_source": "artifacts/json/native_g30_klein_four_comparison_014.json",
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "group_order": 8,
+  "involution_rows": [
+    {
+      "coordinate": [
+        0,
+        0,
+        1
+      ],
+      "established_name": "central_deck",
+      "fixed_plane_member": true,
+      "fixed_vertex_count": 0,
+      "fixed_vertices": [],
+      "local_triangle_v4_member": true,
+      "name": "central_deck",
+      "permutation": [
+        8,
+        9,
+        5,
+        6,
+        7,
+        2,
+        3,
+        4,
+        0,
+        1,
+        21,
+        15,
+        28,
+        27,
+        29,
+        11,
+        20,
+        22,
+        26,
+        23,
+        16,
+        10,
+        17,
+        19,
+        25,
+        24,
+        18,
+        13,
+        12,
+        14
+      ],
+      "pointwise_fixed_edge_count": 0,
+      "pointwise_fixed_triangle_count": 0,
+      "setwise_fixed_edge_count": 0,
+      "setwise_fixed_triangle_count": 0,
+      "transvection_fixed": true,
+      "transvection_image_coordinate": [
+        0,
+        0,
+        1
+      ],
+      "transvection_partner_name": "central_deck",
+      "vertex_stabilizer_v4_member": false
+    },
+    {
+      "coordinate": [
+        0,
+        1,
+        0
+      ],
+      "established_name": null,
+      "fixed_plane_member": true,
+      "fixed_vertex_count": 2,
+      "fixed_vertices": [
+        0,
+        8
+      ],
+      "local_triangle_v4_member": false,
+      "name": "fixed_plane_vertex_involution_d",
+      "permutation": [
+        0,
+        22,
+        20,
+        11,
+        29,
+        16,
+        15,
+        14,
+        8,
+        17,
+        21,
+        3,
+        18,
+        19,
+        7,
+        6,
+        5,
+        9,
+        12,
+        13,
+        2,
+        10,
+        1,
+        27,
+        25,
+        24,
+        28,
+        23,
+        26,
+        4
+      ],
+      "pointwise_fixed_edge_count": 0,
+      "pointwise_fixed_triangle_count": 0,
+      "setwise_fixed_edge_count": 4,
+      "setwise_fixed_triangle_count": 4,
+      "transvection_fixed": true,
+      "transvection_image_coordinate": [
+        0,
+        1,
+        0
+      ],
+      "transvection_partner_name": "fixed_plane_vertex_involution_d",
+      "vertex_stabilizer_v4_member": true
+    },
+    {
+      "coordinate": [
+        0,
+        1,
+        1
+      ],
+      "established_name": null,
+      "fixed_plane_member": true,
+      "fixed_vertex_count": 4,
+      "fixed_vertices": [
+        10,
+        21,
+        24,
+        25
+      ],
+      "local_triangle_v4_member": false,
+      "name": "central_translate_zd",
+      "permutation": [
+        8,
+        17,
+        16,
+        15,
+        14,
+        20,
+        11,
+        29,
+        0,
+        22,
+        10,
+        6,
+        26,
+        23,
+        4,
+        3,
+        2,
+        1,
+        28,
+        27,
+        5,
+        21,
+        9,
+        13,
+        24,
+        25,
+        12,
+        19,
+        18,
+        7
+      ],
+      "pointwise_fixed_edge_count": 0,
+      "pointwise_fixed_triangle_count": 0,
+      "setwise_fixed_edge_count": 0,
+      "setwise_fixed_triangle_count": 0,
+      "transvection_fixed": true,
+      "transvection_image_coordinate": [
+        0,
+        1,
+        1
+      ],
+      "transvection_partner_name": "central_translate_zd",
+      "vertex_stabilizer_v4_member": false
+    },
+    {
+      "coordinate": [
+        1,
+        0,
+        0
+      ],
+      "established_name": null,
+      "fixed_plane_member": false,
+      "fixed_vertex_count": 6,
+      "fixed_vertices": [
+        0,
+        1,
+        8,
+        9,
+        17,
+        22
+      ],
+      "local_triangle_v4_member": false,
+      "name": "vertex_only_six_fixed_involution_u",
+      "permutation": [
+        0,
+        1,
+        27,
+        28,
+        29,
+        13,
+        12,
+        14,
+        8,
+        9,
+        25,
+        26,
+        6,
+        5,
+        7,
+        18,
+        19,
+        17,
+        15,
+        16,
+        23,
+        24,
+        22,
+        20,
+        21,
+        10,
+        11,
+        2,
+        3,
+        4
+      ],
+      "pointwise_fixed_edge_count": 6,
+      "pointwise_fixed_triangle_count": 2,
+      "setwise_fixed_edge_count": 12,
+      "setwise_fixed_triangle_count": 8,
+      "transvection_fixed": false,
+      "transvection_image_coordinate": [
+        1,
+        1,
+        0
+      ],
+      "transvection_partner_name": "triangle_kernel",
+      "vertex_stabilizer_v4_member": true
+    },
+    {
+      "coordinate": [
+        1,
+        0,
+        1
+      ],
+      "established_name": null,
+      "fixed_plane_member": false,
+      "fixed_vertex_count": 0,
+      "fixed_vertices": [],
+      "local_triangle_v4_member": false,
+      "name": "central_translate_zu",
+      "permutation": [
+        8,
+        9,
+        13,
+        12,
+        14,
+        27,
+        28,
+        29,
+        0,
+        1,
+        24,
+        18,
+        3,
+        2,
+        4,
+        26,
+        23,
+        22,
+        11,
+        20,
+        19,
+        25,
+        17,
+        16,
+        10,
+        21,
+        15,
+        5,
+        6,
+        7
+      ],
+      "pointwise_fixed_edge_count": 0,
+      "pointwise_fixed_triangle_count": 0,
+      "setwise_fixed_edge_count": 0,
+      "setwise_fixed_triangle_count": 0,
+      "transvection_fixed": false,
+      "transvection_image_coordinate": [
+        1,
+        1,
+        1
+      ],
+      "transvection_partner_name": "deck_times_kernel",
+      "vertex_stabilizer_v4_member": false
+    },
+    {
+      "coordinate": [
+        1,
+        1,
+        0
+      ],
+      "established_name": "triangle_kernel",
+      "fixed_plane_member": false,
+      "fixed_vertex_count": 6,
+      "fixed_vertices": [
+        0,
+        4,
+        7,
+        8,
+        14,
+        29
+      ],
+      "local_triangle_v4_member": true,
+      "name": "triangle_kernel",
+      "permutation": [
+        0,
+        22,
+        23,
+        26,
+        4,
+        19,
+        18,
+        7,
+        8,
+        17,
+        24,
+        28,
+        15,
+        16,
+        14,
+        12,
+        13,
+        9,
+        6,
+        5,
+        27,
+        25,
+        1,
+        2,
+        10,
+        21,
+        3,
+        20,
+        11,
+        29
+      ],
+      "pointwise_fixed_edge_count": 6,
+      "pointwise_fixed_triangle_count": 2,
+      "setwise_fixed_edge_count": 12,
+      "setwise_fixed_triangle_count": 8,
+      "transvection_fixed": false,
+      "transvection_image_coordinate": [
+        1,
+        0,
+        0
+      ],
+      "transvection_partner_name": "vertex_only_six_fixed_involution_u",
+      "vertex_stabilizer_v4_member": true
+    },
+    {
+      "coordinate": [
+        1,
+        1,
+        1
+      ],
+      "established_name": "deck_times_kernel",
+      "fixed_plane_member": false,
+      "fixed_vertex_count": 0,
+      "fixed_vertices": [],
+      "local_triangle_v4_member": true,
+      "name": "deck_times_kernel",
+      "permutation": [
+        8,
+        17,
+        19,
+        18,
+        7,
+        23,
+        26,
+        4,
+        0,
+        22,
+        25,
+        12,
+        11,
+        20,
+        29,
+        28,
+        27,
+        1,
+        3,
+        2,
+        13,
+        24,
+        9,
+        5,
+        21,
+        10,
+        6,
+        16,
+        15,
+        14
+      ],
+      "pointwise_fixed_edge_count": 0,
+      "pointwise_fixed_triangle_count": 0,
+      "setwise_fixed_edge_count": 0,
+      "setwise_fixed_triangle_count": 0,
+      "transvection_fixed": false,
+      "transvection_image_coordinate": [
+        1,
+        0,
+        1
+      ],
+      "transvection_partner_name": "central_translate_zu",
+      "vertex_stabilizer_v4_member": false
+    }
+  ],
+  "linear_source": "artifacts/json/native_g30_c2_cube_linear_action_022.json",
+  "local_v4_source": "artifacts/json/native_g30_local_klein_four_013.json",
+  "name_to_coordinate": {
+    "central_deck": [
+      0,
+      0,
+      1
+    ],
+    "central_translate_zd": [
+      0,
+      1,
+      1
+    ],
+    "central_translate_zu": [
+      1,
+      0,
+      1
+    ],
+    "deck_times_kernel": [
+      1,
+      1,
+      1
+    ],
+    "fixed_plane_vertex_involution_d": [
+      0,
+      1,
+      0
+    ],
+    "triangle_kernel": [
+      1,
+      1,
+      0
+    ],
+    "vertex_only_six_fixed_involution_u": [
+      1,
+      0,
+      0
+    ]
+  },
+  "nonidentity_element_count": 7,
+  "plane_source": "artifacts/json/native_g30_c2_cube_named_fixed_plane_023.json",
+  "transvection_fixed_names": [
+    "central_deck",
+    "fixed_plane_vertex_involution_d",
+    "central_translate_zd"
+  ],
+  "transvection_swapped_pairs": [
+    {
+      "left_coordinate": [
+        1,
+        0,
+        0
+      ],
+      "left_name": "vertex_only_six_fixed_involution_u",
+      "right_coordinate": [
+        1,
+        1,
+        0
+      ],
+      "right_name": "triangle_kernel"
+    },
+    {
+      "left_coordinate": [
+        1,
+        0,
+        1
+      ],
+      "left_name": "central_translate_zu",
+      "right_coordinate": [
+        1,
+        1,
+        1
+      ],
+      "right_name": "deck_times_kernel"
+    }
+  ]
+}
