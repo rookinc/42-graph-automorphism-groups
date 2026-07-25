@@ -1,0 +1,79 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "lift_to_g30_normalizer_action_open": true,
+    "physical_claim": false,
+    "simple_arm_swap_survival_decided": true,
+    "weighted_skeleton_automorphisms_classified": true
+  },
+  "certificate_id": "native_g30_weighted_orbit_skeleton_019",
+  "checks": {
+    "identity_present": true,
+    "quotient_source_audit_pass": true,
+    "simple_source_audit_pass": true,
+    "weighted_automorphism_group_nonempty": true,
+    "weighted_automorphisms_preserve_orbit_sizes": true,
+    "weighted_group_is_subgroup_of_simple_group": true
+  },
+  "classification_result": "The full weighted orbit skeleton automorphism group has been enumerated while preserving orbit sizes, loops, edge multiplicities, and normalized neighbor counts.",
+  "orbit_sizes": {
+    "0": 2,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 8,
+    "5": 8
+  },
+  "quotient_source": "artifacts/json/native_g30_c2_cube_orbit_quotient_017.json",
+  "simple_arm_swap_preserves_weighted_data": true,
+  "simple_nonidentity_automorphism": [
+    0,
+    2,
+    1,
+    3,
+    5,
+    4
+  ],
+  "simple_skeleton_automorphism_group_order": 2,
+  "simple_source": "artifacts/json/native_g30_c2_orbit_skeleton_018.json",
+  "vertex_count": 6,
+  "weighted_automorphism_element_order_profile": {
+    "1": 1,
+    "2": 1
+  },
+  "weighted_automorphism_group_order": 2,
+  "weighted_automorphism_vertex_orbits": [
+    [
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "weighted_automorphisms": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ]
+  ]
+}
