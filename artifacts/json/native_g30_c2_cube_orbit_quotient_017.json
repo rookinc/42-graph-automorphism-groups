@@ -1,0 +1,361 @@
+{
+  "action_source": "artifacts/json/native_g30_c2_cube_action_016.json",
+  "audit_pass": true,
+  "boundary": {
+    "canonical_cube_coordinate_assignment_open": true,
+    "orbit_degree_law_derived": true,
+    "physical_claim": false,
+    "quotient_graph_named_structure_open": true,
+    "weighted_orbit_quotient_derived": true
+  },
+  "certificate_id": "native_g30_c2_cube_orbit_quotient_017",
+  "checks": {
+    "all_30_vertices_assigned_once": true,
+    "all_60_edges_accounted_for": true,
+    "all_block_divisions_are_integral": true,
+    "every_orbit_has_degree_sum_4": true,
+    "orbit_count_is_6": true,
+    "simple_orbit_quotient_is_connected": true,
+    "source_action_audit_pass": true
+  },
+  "classification_result": "The six C2^3 vertex orbits form a connected weighted quotient. Every orbit receives exactly four neighbors per vertex after internal and cross-orbit edge contributions are normalized.",
+  "cross_orbit_edge_multiplicity_profile": {
+    "4": 2,
+    "8": 5
+  },
+  "edge_blocks": [
+    {
+      "edge_multiplicity": 4,
+      "internal_block": false,
+      "left_orbit": 0,
+      "left_size": 2,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 1,
+      "right_size": 4
+    },
+    {
+      "edge_multiplicity": 4,
+      "internal_block": false,
+      "left_orbit": 0,
+      "left_size": 2,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 2,
+      "right_size": 4
+    },
+    {
+      "edge_multiplicity": 2,
+      "internal_block": true,
+      "left_orbit": 1,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 1,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 1,
+      "right_size": 4
+    },
+    {
+      "edge_multiplicity": 8,
+      "internal_block": false,
+      "left_orbit": 1,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 4,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 2,
+      "internal_block": true,
+      "left_orbit": 2,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 1,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 2,
+      "right_size": 4
+    },
+    {
+      "edge_multiplicity": 8,
+      "internal_block": false,
+      "left_orbit": 2,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 5,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 8,
+      "internal_block": false,
+      "left_orbit": 3,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 4,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 8,
+      "internal_block": false,
+      "left_orbit": 3,
+      "left_size": 4,
+      "neighbors_per_left_vertex": 2,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 5,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 4,
+      "internal_block": true,
+      "left_orbit": 4,
+      "left_size": 8,
+      "neighbors_per_left_vertex": 1,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 4,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 8,
+      "internal_block": false,
+      "left_orbit": 4,
+      "left_size": 8,
+      "neighbors_per_left_vertex": 1,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 5,
+      "right_size": 8
+    },
+    {
+      "edge_multiplicity": 4,
+      "internal_block": true,
+      "left_orbit": 5,
+      "left_size": 8,
+      "neighbors_per_left_vertex": 1,
+      "neighbors_per_right_vertex": 1,
+      "right_orbit": 5,
+      "right_size": 8
+    }
+  ],
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "internal_edge_count_profile": {
+    "2": 2,
+    "4": 2
+  },
+  "orbit_count": 6,
+  "orbit_size_profile": {
+    "2": 1,
+    "4": 3,
+    "8": 2
+  },
+  "orbit_summaries": [
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 1,
+          "neighbors_per_vertex": 2
+        },
+        {
+          "neighbor_orbit": 2,
+          "neighbors_per_vertex": 2
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 0,
+      "orbit_index": 0,
+      "orbit_size": 2,
+      "vertices": [
+        0,
+        8
+      ]
+    },
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 0,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 1,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 4,
+          "neighbors_per_vertex": 2
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 2,
+      "orbit_index": 1,
+      "orbit_size": 4,
+      "vertices": [
+        1,
+        9,
+        17,
+        22
+      ]
+    },
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 0,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 2,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 5,
+          "neighbors_per_vertex": 2
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 2,
+      "orbit_index": 2,
+      "orbit_size": 4,
+      "vertices": [
+        4,
+        7,
+        14,
+        29
+      ]
+    },
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 4,
+          "neighbors_per_vertex": 2
+        },
+        {
+          "neighbor_orbit": 5,
+          "neighbors_per_vertex": 2
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 0,
+      "orbit_index": 3,
+      "orbit_size": 4,
+      "vertices": [
+        10,
+        21,
+        24,
+        25
+      ]
+    },
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 1,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 3,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 4,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 5,
+          "neighbors_per_vertex": 1
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 4,
+      "orbit_index": 4,
+      "orbit_size": 8,
+      "vertices": [
+        2,
+        5,
+        13,
+        16,
+        19,
+        20,
+        23,
+        27
+      ]
+    },
+    {
+      "degree_contributions": [
+        {
+          "neighbor_orbit": 2,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 3,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 4,
+          "neighbors_per_vertex": 1
+        },
+        {
+          "neighbor_orbit": 5,
+          "neighbors_per_vertex": 1
+        }
+      ],
+      "degree_sum": 4,
+      "induced_edge_count": 4,
+      "orbit_index": 5,
+      "orbit_size": 8,
+      "vertices": [
+        3,
+        6,
+        11,
+        12,
+        15,
+        18,
+        26,
+        28
+      ]
+    }
+  ],
+  "original_edge_count": 60,
+  "original_vertex_count": 30,
+  "quotient_edge_count_without_loops": 7,
+  "quotient_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "quotient_loop_count": 4,
+  "quotient_loop_orbits": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "quotient_vertex_count": 6,
+  "simple_quotient_component_sizes": [
+    6
+  ],
+  "simple_quotient_degree_profile": {
+    "2": 4,
+    "3": 2
+  }
+}
