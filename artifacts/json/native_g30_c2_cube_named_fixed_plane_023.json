@@ -1,0 +1,161 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "canonical_geometric_axis_names_open": true,
+    "central_deck_is_fixed_plane_intersection": true,
+    "local_triangle_klein_four_is_fixed_plane": false,
+    "named_fixed_plane_identified": true,
+    "outside_transvection_pairs_exported": true,
+    "physical_claim": false,
+    "shared_triangle_kernel_coordinate_bound": true
+  },
+  "certificate_id": "native_g30_c2_cube_named_fixed_plane_023",
+  "checks": {
+    "central_deck_coordinate_found": true,
+    "central_deck_lies_in_fixed_plane": true,
+    "comparison_source_audit_pass": true,
+    "deck_times_kernel_coordinate_found": true,
+    "deck_times_kernel_is_coordinate_sum": true,
+    "deck_times_kernel_lies_outside_fixed_plane": true,
+    "linear_source_audit_pass": true,
+    "local_source_audit_pass": true,
+    "outside_fixed_plane_has_four_vectors": true,
+    "outside_vectors_form_two_transvection_pairs": true,
+    "transvection_difference_is_unique_nonzero_vector": true,
+    "triangle_kernel_coordinate_found": true,
+    "triangle_kernel_is_shared_v4_involution": true,
+    "triangle_kernel_lies_outside_fixed_plane": true,
+    "vertex_only_element_count_is_2": true
+  },
+  "classification_result": "The transvection-fixed plane is not the triangle-local Klein four. It contains the central deck involution z and the vertex-stabilizer-only involution with coordinate [0,1,0] and two fixed vertices. The triangle-kernel involution k lies outside the fixed plane. The transvection adds the fixed direction [0,1,0], swapping the vertex-stabilizer-only six-fixed-point involution [1,0,0] with k=[1,1,0], and swapping its z-translate [1,0,1] with zk=[1,1,1].",
+  "comparison_source": "artifacts/json/native_g30_klein_four_comparison_014.json",
+  "fixed_nonzero_vectors": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "fixed_plane_equals_local_triangle_klein_four": false,
+  "fixed_plane_intersection_with_local_triangle_klein_four": [
+    "identity",
+    "central_deck"
+  ],
+  "fixed_plane_named_labels": [
+    "central_deck",
+    "triangle_kernel",
+    "deck_times_kernel"
+  ],
+  "linear_source": "artifacts/json/native_g30_c2_cube_linear_action_022.json",
+  "local_v4_source": "artifacts/json/native_g30_local_klein_four_013.json",
+  "named_coordinates": {
+    "central_deck": [
+      0,
+      0,
+      1
+    ],
+    "deck_times_kernel": [
+      1,
+      1,
+      1
+    ],
+    "triangle_kernel": [
+      1,
+      1,
+      0
+    ]
+  },
+  "outside_fixed_plane_vectors": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "outside_transvection_pairs": [
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  ],
+  "shared_vertex_local_involution": "triangle_kernel",
+  "transvection_difference_coordinate": [
+    0,
+    1,
+    0
+  ],
+  "transvection_difference_named_labels": [],
+  "vertex_stabilizer_only_rows": [
+    {
+      "coordinate": [
+        1,
+        0,
+        0
+      ],
+      "fixed_point_count": 6,
+      "transvection_image_coordinate": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "coordinate": [
+        0,
+        1,
+        0
+      ],
+      "fixed_point_count": 2,
+      "transvection_image_coordinate": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}
