@@ -1,0 +1,224 @@
+{
+  "anatomy_source": "artifacts/json/native_g30_group_anatomy_002.json",
+  "audit_pass": true,
+  "boundary": {
+    "kernel_cycle_structure_classified": true,
+    "kernel_fixed_subgraph_classified": true,
+    "kernel_geometric_name_open": true,
+    "kernel_triangle_action_classified": true,
+    "physical_claim": false
+  },
+  "certificate_id": "native_g30_triangle_kernel_involution_012",
+  "checks": {
+    "both_fiber_triangles_are_pointwise_fixed": true,
+    "cycle_lengths_account_for_30_vertices": true,
+    "cycle_lengths_are_only_1_or_2": true,
+    "fiber_kernel_order_is_2": true,
+    "kernel_commutes_with_central_deck": true,
+    "kernel_fixes_all_six_fiber_vertices": true,
+    "kernel_is_not_central_deck": true,
+    "kernel_nonidentity_order_is_2": true,
+    "kernel_times_central_has_order_2": true,
+    "pointwise_fixed_triangle_count_is_2": true,
+    "setwise_fixed_triangle_count_is_8": true,
+    "six_additional_triangles_are_setwise_fixed": true,
+    "source_conjugacy_audit_pass": true,
+    "source_stabilizer_audit_pass": true
+  },
+  "classification_result": "The hidden order-2 kernel fixes the entire six-vertex triangle fiber pointwise. Its fixed subgraph is exactly two disjoint triangles. It fixes two triangles pointwise and six additional triangles setwise, while exchanging the remaining 12 triangles in six pairs. It commutes with but is distinct from the central deck involution.",
+  "commutes_with_central_deck": true,
+  "conjugacy_source": "artifacts/json/native_g30_triangle_fiber_conjugacy_011.json",
+  "cycle_length_profile": {
+    "1": 6,
+    "2": 12
+  },
+  "fixed_edge_count": 6,
+  "fixed_edges": [
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      29
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      8,
+      29
+    ]
+  ],
+  "fixed_subgraph_component_sizes": [
+    3,
+    3
+  ],
+  "fixed_vertex_count": 6,
+  "fixed_vertices": [
+    0,
+    4,
+    7,
+    8,
+    14,
+    29
+  ],
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "kernel_involution": [
+    0,
+    22,
+    23,
+    26,
+    4,
+    19,
+    18,
+    7,
+    8,
+    17,
+    24,
+    28,
+    15,
+    16,
+    14,
+    12,
+    13,
+    9,
+    6,
+    5,
+    27,
+    25,
+    1,
+    2,
+    10,
+    21,
+    3,
+    20,
+    11,
+    29
+  ],
+  "kernel_involution_order": 2,
+  "kernel_times_central_order": 2,
+  "pointwise_fixed_triangle_count": 2,
+  "pointwise_fixed_triangles": [
+    [
+      0,
+      7,
+      14
+    ],
+    [
+      4,
+      8,
+      29
+    ]
+  ],
+  "setwise_fixed_edge_count": 12,
+  "setwise_fixed_triangle_count": 8,
+  "setwise_fixed_triangles": [
+    [
+      0,
+      7,
+      14
+    ],
+    [
+      0,
+      9,
+      17
+    ],
+    [
+      1,
+      8,
+      22
+    ],
+    [
+      3,
+      7,
+      26
+    ],
+    [
+      4,
+      6,
+      18
+    ],
+    [
+      4,
+      8,
+      29
+    ],
+    [
+      11,
+      14,
+      28
+    ],
+    [
+      12,
+      15,
+      29
+    ]
+  ],
+  "setwise_nonpointwise_fixed_triangle_count": 6,
+  "stabilizer_source": "artifacts/json/native_g30_triangle_stabilizers_009.json",
+  "transposition_count": 12,
+  "transpositions": [
+    [
+      1,
+      22
+    ],
+    [
+      2,
+      23
+    ],
+    [
+      3,
+      26
+    ],
+    [
+      5,
+      19
+    ],
+    [
+      6,
+      18
+    ],
+    [
+      9,
+      17
+    ],
+    [
+      10,
+      24
+    ],
+    [
+      11,
+      28
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      20,
+      27
+    ],
+    [
+      21,
+      25
+    ]
+  ],
+  "triangle_orbit_size_profile": {
+    "1": 8,
+    "2": 6
+  }
+}
