@@ -1,0 +1,282 @@
+{
+  "action_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "anatomy_source": "artifacts/json/native_g30_group_anatomy_002.json",
+  "audit_pass": false,
+  "boundary": {
+    "central_deck_action_derived": true,
+    "physical_claim": false,
+    "quotient_explicitly_identified_as_line_petersen": false,
+    "s5_complement_action_derived": true,
+    "triangle_action_analyzed": false,
+    "v4_mixed_label_proved": false,
+    "v4_stabilizer_derived_abstractly": true
+  },
+  "central_involution": [
+    8,
+    9,
+    5,
+    6,
+    7,
+    2,
+    3,
+    4,
+    0,
+    1,
+    21,
+    15,
+    28,
+    27,
+    29,
+    11,
+    20,
+    22,
+    26,
+    23,
+    16,
+    10,
+    17,
+    19,
+    25,
+    24,
+    18,
+    13,
+    12,
+    14
+  ],
+  "central_involution_fixed_point_count": 0,
+  "central_involution_order": 2,
+  "central_pair_orbit_count": 15,
+  "central_pair_orbits": [
+    [
+      0,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      10,
+      21
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      12,
+      28
+    ],
+    [
+      13,
+      27
+    ],
+    [
+      14,
+      29
+    ],
+    [
+      16,
+      20
+    ],
+    [
+      17,
+      22
+    ],
+    [
+      18,
+      26
+    ],
+    [
+      19,
+      23
+    ],
+    [
+      24,
+      25
+    ]
+  ],
+  "certificate_id": "native_g30_central_deck_geometry_003",
+  "checks": {
+    "all_central_orbits_have_size_2": true,
+    "center_order_is_2": true,
+    "central_involution_has_no_fixed_points": true,
+    "central_involution_maps_0_to_partner": true,
+    "central_involution_not_in_full_stabilizer": true,
+    "central_involution_swaps_all_15_pairs": true,
+    "central_nonidentity_order_is_2": true,
+    "central_orbit_count_is_15": true,
+    "complement_is_vertex_transitive": true,
+    "complement_order_is_120": true,
+    "complement_stabilizer_is_v4": false,
+    "complement_vertex_stabilizer_order_is_4": true,
+    "every_quotient_edge_has_multiplicity_2": true,
+    "full_vertex_stabilizer_order_is_8": true,
+    "no_quotient_loops": true,
+    "quotient_edge_count_is_30": true,
+    "quotient_is_connected": true,
+    "quotient_is_quartic": true,
+    "quotient_triangle_count_is_10": true,
+    "quotient_vertex_count_is_15": true,
+    "source_action_audit_pass": true,
+    "source_anatomy_audit_pass": true
+  },
+  "complement_order": 120,
+  "complement_vertex_orbit_0_size": 30,
+  "complement_vertex_stabilizer_order": 4,
+  "complement_vertex_stabilizer_profile": {
+    "1": 1,
+    "2": 1,
+    "4": 2
+  },
+  "deck_geometry_result": "central C2 is the fixed-point-free G30-to-G15 deck action",
+  "full_vertex_stabilizer_order": 8,
+  "graph_source": "sources/native_g30_graph_input_001.json",
+  "homogeneous_action_result": "30-point transitive S5 action with V4 stabilizer",
+  "quotient_component_sizes": [
+    15
+  ],
+  "quotient_degree_profile": [
+    4
+  ],
+  "quotient_edge_count": 30,
+  "quotient_edge_multiplicity_profile": {
+    "2": 30
+  },
+  "quotient_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      13,
+      14
+    ]
+  ],
+  "quotient_triangle_count": 10,
+  "quotient_vertex_count": 15
+}
