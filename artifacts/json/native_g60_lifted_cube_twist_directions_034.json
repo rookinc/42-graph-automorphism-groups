@@ -1,0 +1,5948 @@
+{
+  "alignment_source": "artifacts/json/native_g30_cube_to_g15_label_alignment_031.json",
+  "audit_pass": true,
+  "automorphism_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "boundary": {
+    "deck_square_law_verified": true,
+    "global_twist_geometry_not_yet_derived": true,
+    "order4_lift_pairs_identified": true,
+    "physical_claim": false,
+    "preferred_generating_pair_not_yet_selected": true,
+    "twisted_downstairs_directions_identified": true
+  },
+  "bridge_source": "sources/project42_g60_to_g30_a_quotient_certificate_035.json",
+  "certificate_id": "native_g60_lifted_cube_twist_directions_034",
+  "checks": {
+    "alignment_source_audit_pass": true,
+    "all_cubes_have_same_twisted_fixed_profile": true,
+    "all_cubes_have_same_twisted_incidence_profile": true,
+    "automorphism_source_audit_pass": true,
+    "bridge_source_audit_pass": true,
+    "cube_source_audit_pass": true,
+    "every_cube_has_exactly_five_untwisted_directions": true,
+    "every_cube_has_exactly_two_twisted_directions": true,
+    "every_cube_has_seven_nonidentity_directions": true,
+    "every_twisted_direction_has_two_order4_lifts": true,
+    "every_untwisted_direction_has_two_order2_lifts": true,
+    "fifteen_cubes_classified": true,
+    "lift_source_audit_pass": true,
+    "preimage_source_audit_pass": true
+  },
+  "classification_result": "Each of the fifteen downstairs affine cubes contains exactly two twisted nonidentity directions. Each twisted direction has two order-4 lifts whose square is the native deck involution a. The remaining five directions have two involutory lifts. These two twisted directions are the local support of the non-split D8 x C2 extension above each cube.",
+  "cube_count": 15,
+  "cube_rows": [
+    {
+      "cube_index": 0,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 67,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            13,
+            12,
+            14,
+            27,
+            28,
+            29,
+            0,
+            1,
+            24,
+            18,
+            3,
+            2,
+            4,
+            26,
+            23,
+            22,
+            11,
+            20,
+            19,
+            25,
+            17,
+            16,
+            10,
+            21,
+            15,
+            5,
+            6,
+            7
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 71,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            17,
+            19,
+            18,
+            7,
+            23,
+            26,
+            4,
+            0,
+            22,
+            25,
+            12,
+            11,
+            20,
+            29,
+            28,
+            27,
+            1,
+            3,
+            2,
+            13,
+            24,
+            9,
+            5,
+            21,
+            10,
+            6,
+            16,
+            15,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            0
+          ],
+          "g30_automorphism_index": 4,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            0,
+            22,
+            20,
+            11,
+            29,
+            16,
+            15,
+            14,
+            8,
+            17,
+            21,
+            3,
+            18,
+            19,
+            7,
+            6,
+            5,
+            9,
+            12,
+            13,
+            2,
+            10,
+            1,
+            27,
+            25,
+            24,
+            28,
+            23,
+            26,
+            4
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            0
+          ],
+          "g30_automorphism_index": 70,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            8,
+            17,
+            16,
+            15,
+            14,
+            20,
+            11,
+            29,
+            0,
+            22,
+            10,
+            6,
+            26,
+            23,
+            4,
+            3,
+            2,
+            1,
+            28,
+            27,
+            5,
+            21,
+            9,
+            13,
+            24,
+            25,
+            12,
+            19,
+            18,
+            7
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 1,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            1,
+            27,
+            28,
+            29,
+            13,
+            12,
+            14,
+            8,
+            9,
+            25,
+            26,
+            6,
+            5,
+            7,
+            18,
+            19,
+            17,
+            15,
+            16,
+            23,
+            24,
+            22,
+            20,
+            21,
+            10,
+            11,
+            2,
+            3,
+            4
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 5,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            22,
+            23,
+            26,
+            4,
+            19,
+            18,
+            7,
+            8,
+            17,
+            24,
+            28,
+            15,
+            16,
+            14,
+            12,
+            13,
+            9,
+            6,
+            5,
+            27,
+            25,
+            1,
+            2,
+            10,
+            21,
+            3,
+            20,
+            11,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 0,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        67,
+        71
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 1,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 9,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            1,
+            0,
+            29,
+            28,
+            27,
+            14,
+            12,
+            13,
+            9,
+            8,
+            11,
+            10,
+            6,
+            7,
+            5,
+            21,
+            20,
+            22,
+            24,
+            23,
+            16,
+            15,
+            17,
+            19,
+            18,
+            26,
+            25,
+            4,
+            3,
+            2
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 67,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            13,
+            12,
+            14,
+            27,
+            28,
+            29,
+            0,
+            1,
+            24,
+            18,
+            3,
+            2,
+            4,
+            26,
+            23,
+            22,
+            11,
+            20,
+            19,
+            25,
+            17,
+            16,
+            10,
+            21,
+            15,
+            5,
+            6,
+            7
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            1
+          ],
+          "g30_automorphism_index": 74,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0,
+            18,
+            24,
+            28,
+            29,
+            27,
+            25,
+            19,
+            17,
+            10,
+            16,
+            23,
+            26,
+            22,
+            20,
+            11,
+            15,
+            21,
+            14,
+            12,
+            13
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            1
+          ],
+          "g30_automorphism_index": 8,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            1,
+            0,
+            4,
+            3,
+            2,
+            7,
+            6,
+            5,
+            9,
+            8,
+            26,
+            25,
+            12,
+            14,
+            13,
+            24,
+            23,
+            22,
+            21,
+            20,
+            19,
+            18,
+            17,
+            16,
+            15,
+            11,
+            10,
+            29,
+            28,
+            27
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 1,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            1,
+            27,
+            28,
+            29,
+            13,
+            12,
+            14,
+            8,
+            9,
+            25,
+            26,
+            6,
+            5,
+            7,
+            18,
+            19,
+            17,
+            15,
+            16,
+            23,
+            24,
+            22,
+            20,
+            21,
+            10,
+            11,
+            2,
+            3,
+            4
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 75,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            9,
+            8,
+            14,
+            12,
+            13,
+            29,
+            28,
+            27,
+            1,
+            0,
+            15,
+            21,
+            3,
+            4,
+            2,
+            10,
+            16,
+            17,
+            25,
+            19,
+            20,
+            11,
+            22,
+            23,
+            26,
+            18,
+            24,
+            7,
+            6,
+            5
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 1,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        9,
+        67
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 2,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 67,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            13,
+            12,
+            14,
+            27,
+            28,
+            29,
+            0,
+            1,
+            24,
+            18,
+            3,
+            2,
+            4,
+            26,
+            23,
+            22,
+            11,
+            20,
+            19,
+            25,
+            17,
+            16,
+            10,
+            21,
+            15,
+            5,
+            6,
+            7
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 178,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            22,
+            9,
+            5,
+            21,
+            20,
+            2,
+            10,
+            16,
+            17,
+            1,
+            6,
+            26,
+            25,
+            27,
+            19,
+            18,
+            7,
+            8,
+            15,
+            14,
+            4,
+            3,
+            0,
+            29,
+            28,
+            12,
+            11,
+            13,
+            24,
+            23
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            2
+          ],
+          "g30_automorphism_index": 137,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            17,
+            1,
+            27,
+            25,
+            19,
+            13,
+            24,
+            23,
+            22,
+            9,
+            28,
+            15,
+            21,
+            5,
+            20,
+            11,
+            29,
+            0,
+            26,
+            4,
+            14,
+            12,
+            8,
+            7,
+            6,
+            3,
+            18,
+            2,
+            10,
+            16
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            2
+          ],
+          "g30_automorphism_index": 179,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            22,
+            9,
+            13,
+            24,
+            23,
+            27,
+            25,
+            19,
+            17,
+            1,
+            12,
+            11,
+            10,
+            2,
+            16,
+            15,
+            14,
+            8,
+            18,
+            7,
+            29,
+            28,
+            0,
+            4,
+            3,
+            6,
+            26,
+            5,
+            21,
+            20
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            1,
+            2
+          ],
+          "g30_automorphism_index": 1,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            1,
+            27,
+            28,
+            29,
+            13,
+            12,
+            14,
+            8,
+            9,
+            25,
+            26,
+            6,
+            5,
+            7,
+            18,
+            19,
+            17,
+            15,
+            16,
+            23,
+            24,
+            22,
+            20,
+            21,
+            10,
+            11,
+            2,
+            3,
+            4
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 136,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            17,
+            1,
+            2,
+            10,
+            16,
+            5,
+            21,
+            20,
+            22,
+            9,
+            3,
+            18,
+            24,
+            13,
+            23,
+            26,
+            4,
+            0,
+            11,
+            29,
+            7,
+            6,
+            8,
+            14,
+            12,
+            28,
+            15,
+            27,
+            25,
+            19
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 11,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        67,
+        178
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 3,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 194,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            24,
+            18,
+            3,
+            2,
+            13,
+            6,
+            5,
+            27,
+            25,
+            26,
+            21,
+            15,
+            14,
+            4,
+            12,
+            11,
+            20,
+            19,
+            1,
+            17,
+            16,
+            10,
+            23,
+            22,
+            0,
+            8,
+            9,
+            7,
+            29,
+            28
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 207,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            25,
+            27,
+            5,
+            6,
+            26,
+            2,
+            3,
+            18,
+            24,
+            13,
+            21,
+            20,
+            22,
+            9,
+            23,
+            16,
+            15,
+            28,
+            7,
+            29,
+            11,
+            10,
+            12,
+            14,
+            8,
+            0,
+            4,
+            1,
+            17,
+            19
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            3
+          ],
+          "g30_automorphism_index": 64,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            8,
+            7,
+            6,
+            5,
+            9,
+            3,
+            2,
+            1,
+            0,
+            4,
+            10,
+            16,
+            23,
+            26,
+            22,
+            20,
+            11,
+            29,
+            27,
+            28,
+            15,
+            21,
+            14,
+            12,
+            25,
+            24,
+            13,
+            18,
+            19,
+            17
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            3
+          ],
+          "g30_automorphism_index": 2,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            0,
+            4,
+            3,
+            2,
+            1,
+            6,
+            5,
+            9,
+            8,
+            7,
+            21,
+            20,
+            19,
+            18,
+            17,
+            16,
+            15,
+            14,
+            13,
+            12,
+            11,
+            10,
+            29,
+            28,
+            24,
+            25,
+            27,
+            26,
+            23,
+            22
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 192,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            24,
+            13,
+            2,
+            3,
+            18,
+            5,
+            6,
+            26,
+            25,
+            27,
+            10,
+            16,
+            17,
+            1,
+            19,
+            20,
+            11,
+            12,
+            4,
+            14,
+            15,
+            21,
+            28,
+            29,
+            0,
+            8,
+            7,
+            9,
+            22,
+            23
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 205,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            25,
+            26,
+            6,
+            5,
+            27,
+            3,
+            2,
+            13,
+            24,
+            18,
+            10,
+            11,
+            29,
+            7,
+            28,
+            15,
+            16,
+            23,
+            9,
+            22,
+            20,
+            21,
+            19,
+            17,
+            8,
+            0,
+            1,
+            4,
+            14,
+            12
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 5,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        194,
+        207
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 4,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 38,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            4,
+            26,
+            23,
+            22,
+            0,
+            19,
+            17,
+            8,
+            7,
+            18,
+            16,
+            15,
+            28,
+            24,
+            29,
+            11,
+            10,
+            6,
+            9,
+            5,
+            21,
+            20,
+            3,
+            2,
+            13,
+            27,
+            1,
+            25,
+            12,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 71,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            17,
+            19,
+            18,
+            7,
+            23,
+            26,
+            4,
+            0,
+            22,
+            25,
+            12,
+            11,
+            20,
+            29,
+            28,
+            27,
+            1,
+            3,
+            2,
+            13,
+            24,
+            9,
+            5,
+            21,
+            10,
+            6,
+            16,
+            15,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            4
+          ],
+          "g30_automorphism_index": 56,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            7,
+            6,
+            5,
+            9,
+            8,
+            2,
+            1,
+            0,
+            4,
+            3,
+            27,
+            28,
+            15,
+            21,
+            14,
+            12,
+            25,
+            26,
+            22,
+            23,
+            24,
+            13,
+            18,
+            19,
+            20,
+            16,
+            17,
+            10,
+            11,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            4
+          ],
+          "g30_automorphism_index": 34,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            4,
+            3,
+            2,
+            1,
+            0,
+            5,
+            9,
+            8,
+            7,
+            6,
+            13,
+            12,
+            11,
+            10,
+            29,
+            28,
+            24,
+            18,
+            17,
+            19,
+            25,
+            27,
+            26,
+            23,
+            16,
+            20,
+            22,
+            21,
+            15,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 5,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            22,
+            23,
+            26,
+            4,
+            19,
+            18,
+            7,
+            8,
+            17,
+            24,
+            28,
+            15,
+            16,
+            14,
+            12,
+            13,
+            9,
+            6,
+            5,
+            27,
+            25,
+            1,
+            2,
+            10,
+            21,
+            3,
+            20,
+            11,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 60,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            7,
+            18,
+            19,
+            17,
+            8,
+            23,
+            22,
+            0,
+            4,
+            26,
+            20,
+            11,
+            12,
+            25,
+            14,
+            15,
+            21,
+            3,
+            1,
+            2,
+            10,
+            16,
+            6,
+            5,
+            27,
+            13,
+            9,
+            24,
+            28,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 4,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        38,
+        71
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 5,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 71,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            17,
+            19,
+            18,
+            7,
+            23,
+            26,
+            4,
+            0,
+            22,
+            25,
+            12,
+            11,
+            20,
+            29,
+            28,
+            27,
+            1,
+            3,
+            2,
+            13,
+            24,
+            9,
+            5,
+            21,
+            10,
+            6,
+            16,
+            15,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 236,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            29,
+            11,
+            10,
+            6,
+            7,
+            21,
+            3,
+            4,
+            14,
+            15,
+            2,
+            1,
+            17,
+            16,
+            8,
+            9,
+            13,
+            12,
+            26,
+            25,
+            27,
+            5,
+            28,
+            24,
+            23,
+            19,
+            18,
+            20,
+            22,
+            0
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            5
+          ],
+          "g30_automorphism_index": 117,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            14,
+            12,
+            25,
+            26,
+            4,
+            24,
+            18,
+            7,
+            29,
+            28,
+            19,
+            17,
+            1,
+            27,
+            0,
+            22,
+            20,
+            11,
+            6,
+            10,
+            16,
+            23,
+            15,
+            21,
+            5,
+            2,
+            3,
+            13,
+            9,
+            8
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            5
+          ],
+          "g30_automorphism_index": 238,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            29,
+            28,
+            24,
+            18,
+            7,
+            25,
+            26,
+            4,
+            14,
+            12,
+            23,
+            22,
+            9,
+            13,
+            8,
+            17,
+            16,
+            15,
+            3,
+            21,
+            20,
+            19,
+            11,
+            10,
+            2,
+            5,
+            6,
+            27,
+            1,
+            0
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            0,
+            4,
+            5
+          ],
+          "g30_automorphism_index": 5,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            0,
+            22,
+            23,
+            26,
+            4,
+            19,
+            18,
+            7,
+            8,
+            17,
+            24,
+            28,
+            15,
+            16,
+            14,
+            12,
+            13,
+            9,
+            6,
+            5,
+            27,
+            25,
+            1,
+            2,
+            10,
+            21,
+            3,
+            20,
+            11,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 119,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            14,
+            15,
+            21,
+            3,
+            4,
+            10,
+            6,
+            7,
+            29,
+            11,
+            5,
+            9,
+            22,
+            20,
+            0,
+            1,
+            27,
+            28,
+            18,
+            24,
+            13,
+            2,
+            12,
+            25,
+            19,
+            23,
+            26,
+            16,
+            17,
+            8
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 9,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        71,
+        236
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 6,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 80,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            10,
+            2,
+            1,
+            17,
+            16,
+            9,
+            22,
+            20,
+            21,
+            5,
+            0,
+            29,
+            28,
+            27,
+            15,
+            14,
+            4,
+            3,
+            19,
+            18,
+            7,
+            8,
+            6,
+            26,
+            25,
+            24,
+            23,
+            13,
+            12,
+            11
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 172,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            21,
+            15,
+            14,
+            4,
+            3,
+            29,
+            7,
+            6,
+            10,
+            11,
+            8,
+            9,
+            13,
+            12,
+            2,
+            1,
+            17,
+            16,
+            26,
+            23,
+            22,
+            0,
+            20,
+            19,
+            25,
+            24,
+            18,
+            28,
+            27,
+            5
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            6
+          ],
+          "g30_automorphism_index": 69,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            8,
+            14,
+            15,
+            16,
+            17,
+            11,
+            20,
+            22,
+            0,
+            29,
+            21,
+            5,
+            27,
+            28,
+            1,
+            2,
+            3,
+            4,
+            23,
+            26,
+            6,
+            10,
+            7,
+            18,
+            24,
+            25,
+            19,
+            12,
+            13,
+            9
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            6
+          ],
+          "g30_automorphism_index": 6,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            0,
+            29,
+            11,
+            20,
+            22,
+            15,
+            16,
+            17,
+            8,
+            14,
+            10,
+            2,
+            13,
+            12,
+            9,
+            5,
+            6,
+            7,
+            19,
+            18,
+            3,
+            21,
+            4,
+            26,
+            25,
+            24,
+            23,
+            28,
+            27,
+            1
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 85,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            10,
+            11,
+            29,
+            7,
+            6,
+            14,
+            4,
+            3,
+            21,
+            15,
+            0,
+            1,
+            27,
+            28,
+            5,
+            9,
+            22,
+            20,
+            18,
+            19,
+            17,
+            8,
+            16,
+            23,
+            24,
+            25,
+            26,
+            12,
+            13,
+            2
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 170,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            21,
+            5,
+            9,
+            22,
+            20,
+            1,
+            17,
+            16,
+            10,
+            2,
+            8,
+            14,
+            12,
+            13,
+            11,
+            29,
+            7,
+            6,
+            23,
+            26,
+            4,
+            0,
+            3,
+            18,
+            24,
+            25,
+            19,
+            27,
+            28,
+            15
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 14,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        80,
+        172
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 7,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 9,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            1,
+            0,
+            29,
+            28,
+            27,
+            14,
+            12,
+            13,
+            9,
+            8,
+            11,
+            10,
+            6,
+            7,
+            5,
+            21,
+            20,
+            22,
+            24,
+            23,
+            16,
+            15,
+            17,
+            19,
+            18,
+            26,
+            25,
+            4,
+            3,
+            2
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 172,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            21,
+            15,
+            14,
+            4,
+            3,
+            29,
+            7,
+            6,
+            10,
+            11,
+            8,
+            9,
+            13,
+            12,
+            2,
+            1,
+            17,
+            16,
+            26,
+            23,
+            22,
+            0,
+            20,
+            19,
+            25,
+            24,
+            18,
+            28,
+            27,
+            5
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            7
+          ],
+          "g30_automorphism_index": 125,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            15,
+            21,
+            5,
+            27,
+            28,
+            2,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            29,
+            0,
+            22,
+            20,
+            25,
+            19,
+            17,
+            1,
+            16,
+            23,
+            26,
+            18,
+            24,
+            3,
+            4,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            7
+          ],
+          "g30_automorphism_index": 88,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            11,
+            10,
+            2,
+            13,
+            12,
+            5,
+            27,
+            28,
+            15,
+            21,
+            1,
+            0,
+            4,
+            3,
+            14,
+            8,
+            17,
+            16,
+            24,
+            23,
+            22,
+            9,
+            20,
+            19,
+            18,
+            26,
+            25,
+            6,
+            7,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 75,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            9,
+            8,
+            14,
+            12,
+            13,
+            29,
+            28,
+            27,
+            1,
+            0,
+            15,
+            21,
+            3,
+            4,
+            2,
+            10,
+            16,
+            17,
+            25,
+            19,
+            20,
+            11,
+            22,
+            23,
+            26,
+            18,
+            24,
+            7,
+            6,
+            5
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 85,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            10,
+            11,
+            29,
+            7,
+            6,
+            14,
+            4,
+            3,
+            21,
+            15,
+            0,
+            1,
+            27,
+            28,
+            5,
+            9,
+            22,
+            20,
+            18,
+            19,
+            17,
+            8,
+            16,
+            23,
+            24,
+            25,
+            26,
+            12,
+            13,
+            2
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 8,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        9,
+        172
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 8,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 9,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            1,
+            0,
+            29,
+            28,
+            27,
+            14,
+            12,
+            13,
+            9,
+            8,
+            11,
+            10,
+            6,
+            7,
+            5,
+            21,
+            20,
+            22,
+            24,
+            23,
+            16,
+            15,
+            17,
+            19,
+            18,
+            26,
+            25,
+            4,
+            3,
+            2
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 194,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            24,
+            18,
+            3,
+            2,
+            13,
+            6,
+            5,
+            27,
+            25,
+            26,
+            21,
+            15,
+            14,
+            4,
+            12,
+            11,
+            20,
+            19,
+            1,
+            17,
+            16,
+            10,
+            23,
+            22,
+            0,
+            8,
+            9,
+            7,
+            29,
+            28
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            8
+          ],
+          "g30_automorphism_index": 151,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            18,
+            24,
+            28,
+            29,
+            7,
+            12,
+            14,
+            4,
+            26,
+            25,
+            15,
+            21,
+            5,
+            27,
+            6,
+            10,
+            16,
+            23,
+            0,
+            22,
+            20,
+            11,
+            19,
+            17,
+            1,
+            9,
+            8,
+            13,
+            2,
+            3
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            8
+          ],
+          "g30_automorphism_index": 214,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            26,
+            25,
+            12,
+            14,
+            4,
+            28,
+            29,
+            7,
+            18,
+            24,
+            11,
+            10,
+            2,
+            13,
+            3,
+            21,
+            20,
+            19,
+            8,
+            17,
+            16,
+            15,
+            23,
+            22,
+            9,
+            1,
+            0,
+            27,
+            5,
+            6
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            1,
+            7,
+            8
+          ],
+          "g30_automorphism_index": 75,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            9,
+            8,
+            14,
+            12,
+            13,
+            29,
+            28,
+            27,
+            1,
+            0,
+            15,
+            21,
+            3,
+            4,
+            2,
+            10,
+            16,
+            17,
+            25,
+            19,
+            20,
+            11,
+            22,
+            23,
+            26,
+            18,
+            24,
+            7,
+            6,
+            5
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 205,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            25,
+            26,
+            6,
+            5,
+            27,
+            3,
+            2,
+            13,
+            24,
+            18,
+            10,
+            11,
+            29,
+            7,
+            28,
+            15,
+            16,
+            23,
+            9,
+            22,
+            20,
+            21,
+            19,
+            17,
+            8,
+            0,
+            1,
+            4,
+            14,
+            12
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 2,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        9,
+        194
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 9,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 172,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            21,
+            15,
+            14,
+            4,
+            3,
+            29,
+            7,
+            6,
+            10,
+            11,
+            8,
+            9,
+            13,
+            12,
+            2,
+            1,
+            17,
+            16,
+            26,
+            23,
+            22,
+            0,
+            20,
+            19,
+            25,
+            24,
+            18,
+            28,
+            27,
+            5
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 236,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            29,
+            11,
+            10,
+            6,
+            7,
+            21,
+            3,
+            4,
+            14,
+            15,
+            2,
+            1,
+            17,
+            16,
+            8,
+            9,
+            13,
+            12,
+            26,
+            25,
+            27,
+            5,
+            28,
+            24,
+            23,
+            19,
+            18,
+            20,
+            22,
+            0
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            9
+          ],
+          "g30_automorphism_index": 42,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            5,
+            9,
+            8,
+            7,
+            6,
+            0,
+            4,
+            3,
+            2,
+            1,
+            14,
+            15,
+            16,
+            17,
+            10,
+            11,
+            12,
+            13,
+            18,
+            24,
+            28,
+            29,
+            27,
+            25,
+            19,
+            23,
+            26,
+            22,
+            20,
+            21
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            9
+          ],
+          "g30_automorphism_index": 16,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            2,
+            1,
+            0,
+            4,
+            3,
+            8,
+            7,
+            6,
+            5,
+            9,
+            29,
+            11,
+            20,
+            22,
+            21,
+            15,
+            28,
+            27,
+            26,
+            25,
+            12,
+            14,
+            13,
+            24,
+            23,
+            19,
+            18,
+            17,
+            16,
+            10
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            7,
+            9
+          ],
+          "g30_automorphism_index": 85,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            10,
+            11,
+            29,
+            7,
+            6,
+            14,
+            4,
+            3,
+            21,
+            15,
+            0,
+            1,
+            27,
+            28,
+            5,
+            9,
+            22,
+            20,
+            18,
+            19,
+            17,
+            8,
+            16,
+            23,
+            24,
+            25,
+            26,
+            12,
+            13,
+            2
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 119,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            14,
+            15,
+            21,
+            3,
+            4,
+            10,
+            6,
+            7,
+            29,
+            11,
+            5,
+            9,
+            22,
+            20,
+            0,
+            1,
+            27,
+            28,
+            18,
+            24,
+            13,
+            2,
+            12,
+            25,
+            19,
+            23,
+            26,
+            16,
+            17,
+            8
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 7,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        172,
+        236
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 10,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 80,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            10,
+            2,
+            1,
+            17,
+            16,
+            9,
+            22,
+            20,
+            21,
+            5,
+            0,
+            29,
+            28,
+            27,
+            15,
+            14,
+            4,
+            3,
+            19,
+            18,
+            7,
+            8,
+            6,
+            26,
+            25,
+            24,
+            23,
+            13,
+            12,
+            11
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 178,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            22,
+            9,
+            5,
+            21,
+            20,
+            2,
+            10,
+            16,
+            17,
+            1,
+            6,
+            26,
+            25,
+            27,
+            19,
+            18,
+            7,
+            8,
+            15,
+            14,
+            4,
+            3,
+            0,
+            29,
+            28,
+            12,
+            11,
+            13,
+            24,
+            23
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            10
+          ],
+          "g30_automorphism_index": 48,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            6,
+            5,
+            9,
+            8,
+            7,
+            1,
+            0,
+            4,
+            3,
+            2,
+            22,
+            23,
+            24,
+            13,
+            18,
+            19,
+            20,
+            21,
+            14,
+            15,
+            16,
+            17,
+            10,
+            11,
+            12,
+            28,
+            29,
+            27,
+            25,
+            26
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            10
+          ],
+          "g30_automorphism_index": 24,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            3,
+            2,
+            1,
+            0,
+            4,
+            9,
+            8,
+            7,
+            6,
+            5,
+            17,
+            19,
+            25,
+            27,
+            26,
+            23,
+            16,
+            10,
+            29,
+            11,
+            20,
+            22,
+            21,
+            15,
+            28,
+            12,
+            14,
+            13,
+            24,
+            18
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 136,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            17,
+            1,
+            2,
+            10,
+            16,
+            5,
+            21,
+            20,
+            22,
+            9,
+            3,
+            18,
+            24,
+            13,
+            23,
+            26,
+            4,
+            0,
+            11,
+            29,
+            7,
+            6,
+            8,
+            14,
+            12,
+            28,
+            15,
+            27,
+            25,
+            19
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 170,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            21,
+            5,
+            9,
+            22,
+            20,
+            1,
+            17,
+            16,
+            10,
+            2,
+            8,
+            14,
+            12,
+            13,
+            11,
+            29,
+            7,
+            6,
+            23,
+            26,
+            4,
+            0,
+            3,
+            18,
+            24,
+            25,
+            19,
+            27,
+            28,
+            15
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 13,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        80,
+        178
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 11,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 38,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            4,
+            26,
+            23,
+            22,
+            0,
+            19,
+            17,
+            8,
+            7,
+            18,
+            16,
+            15,
+            28,
+            24,
+            29,
+            11,
+            10,
+            6,
+            9,
+            5,
+            21,
+            20,
+            3,
+            2,
+            13,
+            27,
+            1,
+            25,
+            12,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 80,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            10,
+            2,
+            1,
+            17,
+            16,
+            9,
+            22,
+            20,
+            21,
+            5,
+            0,
+            29,
+            28,
+            27,
+            15,
+            14,
+            4,
+            3,
+            19,
+            18,
+            7,
+            8,
+            6,
+            26,
+            25,
+            24,
+            23,
+            13,
+            12,
+            11
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            11
+          ],
+          "g30_automorphism_index": 135,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            16,
+            23,
+            26,
+            6,
+            10,
+            18,
+            3,
+            21,
+            20,
+            19,
+            4,
+            14,
+            12,
+            25,
+            11,
+            29,
+            0,
+            22,
+            5,
+            9,
+            8,
+            7,
+            17,
+            1,
+            27,
+            13,
+            2,
+            24,
+            28,
+            15
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            11
+          ],
+          "g30_automorphism_index": 162,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            20,
+            19,
+            18,
+            3,
+            21,
+            26,
+            6,
+            10,
+            16,
+            23,
+            7,
+            29,
+            28,
+            24,
+            15,
+            14,
+            8,
+            17,
+            2,
+            1,
+            0,
+            4,
+            22,
+            9,
+            13,
+            27,
+            5,
+            25,
+            12,
+            11
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 60,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            7,
+            18,
+            19,
+            17,
+            8,
+            23,
+            22,
+            0,
+            4,
+            26,
+            20,
+            11,
+            12,
+            25,
+            14,
+            15,
+            21,
+            3,
+            1,
+            2,
+            10,
+            16,
+            6,
+            5,
+            27,
+            13,
+            9,
+            24,
+            28,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            6,
+            10,
+            11
+          ],
+          "g30_automorphism_index": 170,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            21,
+            5,
+            9,
+            22,
+            20,
+            1,
+            17,
+            16,
+            10,
+            2,
+            8,
+            14,
+            12,
+            13,
+            11,
+            29,
+            7,
+            6,
+            23,
+            26,
+            4,
+            0,
+            3,
+            18,
+            24,
+            25,
+            19,
+            27,
+            28,
+            15
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 12,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        38,
+        80
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 12,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 38,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            4,
+            26,
+            23,
+            22,
+            0,
+            19,
+            17,
+            8,
+            7,
+            18,
+            16,
+            15,
+            28,
+            24,
+            29,
+            11,
+            10,
+            6,
+            9,
+            5,
+            21,
+            20,
+            3,
+            2,
+            13,
+            27,
+            1,
+            25,
+            12,
+            14
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 194,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            24,
+            18,
+            3,
+            2,
+            13,
+            6,
+            5,
+            27,
+            25,
+            26,
+            21,
+            15,
+            14,
+            4,
+            12,
+            11,
+            20,
+            19,
+            1,
+            17,
+            16,
+            10,
+            23,
+            22,
+            0,
+            8,
+            9,
+            7,
+            29,
+            28
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            12
+          ],
+          "g30_automorphism_index": 107,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            13,
+            9,
+            22,
+            23,
+            24,
+            17,
+            19,
+            25,
+            27,
+            1,
+            20,
+            11,
+            29,
+            0,
+            28,
+            15,
+            21,
+            5,
+            26,
+            6,
+            10,
+            16,
+            2,
+            3,
+            4,
+            7,
+            18,
+            8,
+            14,
+            12
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            12
+          ],
+          "g30_automorphism_index": 217,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            27,
+            1,
+            17,
+            19,
+            25,
+            22,
+            23,
+            24,
+            13,
+            9,
+            16,
+            15,
+            14,
+            8,
+            12,
+            11,
+            10,
+            2,
+            18,
+            3,
+            21,
+            20,
+            5,
+            6,
+            7,
+            4,
+            26,
+            0,
+            29,
+            28
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            4,
+            11,
+            12
+          ],
+          "g30_automorphism_index": 60,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            7,
+            18,
+            19,
+            17,
+            8,
+            23,
+            22,
+            0,
+            4,
+            26,
+            20,
+            11,
+            12,
+            25,
+            14,
+            15,
+            21,
+            3,
+            1,
+            2,
+            10,
+            16,
+            6,
+            5,
+            27,
+            13,
+            9,
+            24,
+            28,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            8,
+            12
+          ],
+          "g30_automorphism_index": 205,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            25,
+            26,
+            6,
+            5,
+            27,
+            3,
+            2,
+            13,
+            24,
+            18,
+            10,
+            11,
+            29,
+            7,
+            28,
+            15,
+            16,
+            23,
+            9,
+            22,
+            20,
+            21,
+            19,
+            17,
+            8,
+            0,
+            1,
+            4,
+            14,
+            12
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 3,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        38,
+        194
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 13,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 178,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            22,
+            9,
+            5,
+            21,
+            20,
+            2,
+            10,
+            16,
+            17,
+            1,
+            6,
+            26,
+            25,
+            27,
+            19,
+            18,
+            7,
+            8,
+            15,
+            14,
+            4,
+            3,
+            0,
+            29,
+            28,
+            12,
+            11,
+            13,
+            24,
+            23
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 207,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            25,
+            27,
+            5,
+            6,
+            26,
+            2,
+            3,
+            18,
+            24,
+            13,
+            21,
+            20,
+            22,
+            9,
+            23,
+            16,
+            15,
+            28,
+            7,
+            29,
+            11,
+            10,
+            12,
+            14,
+            8,
+            0,
+            4,
+            1,
+            17,
+            19
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            13
+          ],
+          "g30_automorphism_index": 98,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            12,
+            13,
+            2,
+            10,
+            11,
+            5,
+            21,
+            15,
+            28,
+            27,
+            3,
+            4,
+            0,
+            1,
+            29,
+            7,
+            18,
+            24,
+            16,
+            23,
+            26,
+            6,
+            25,
+            19,
+            17,
+            22,
+            20,
+            9,
+            8,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            13
+          ],
+          "g30_automorphism_index": 229,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            28,
+            27,
+            5,
+            21,
+            15,
+            2,
+            10,
+            11,
+            12,
+            13,
+            6,
+            7,
+            8,
+            9,
+            14,
+            4,
+            26,
+            25,
+            20,
+            19,
+            18,
+            3,
+            24,
+            23,
+            22,
+            17,
+            16,
+            1,
+            0,
+            29
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            2,
+            10,
+            13
+          ],
+          "g30_automorphism_index": 136,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            17,
+            1,
+            2,
+            10,
+            16,
+            5,
+            21,
+            20,
+            22,
+            9,
+            3,
+            18,
+            24,
+            13,
+            23,
+            26,
+            4,
+            0,
+            11,
+            29,
+            7,
+            6,
+            8,
+            14,
+            12,
+            28,
+            15,
+            27,
+            25,
+            19
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 192,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            24,
+            13,
+            2,
+            3,
+            18,
+            5,
+            6,
+            26,
+            25,
+            27,
+            10,
+            16,
+            17,
+            1,
+            19,
+            20,
+            11,
+            12,
+            4,
+            14,
+            15,
+            21,
+            28,
+            29,
+            0,
+            8,
+            7,
+            9,
+            22,
+            23
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 10,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        178,
+        207
+      ],
+      "untwisted_direction_count": 5
+    },
+    {
+      "cube_index": 14,
+      "direction_rows": [
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 207,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            25,
+            27,
+            5,
+            6,
+            26,
+            2,
+            3,
+            18,
+            24,
+            13,
+            21,
+            20,
+            22,
+            9,
+            23,
+            16,
+            15,
+            28,
+            7,
+            29,
+            11,
+            10,
+            12,
+            14,
+            8,
+            0,
+            4,
+            1,
+            17,
+            19
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 236,
+          "g30_central": false,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            29,
+            11,
+            10,
+            6,
+            7,
+            21,
+            3,
+            4,
+            14,
+            15,
+            2,
+            1,
+            17,
+            16,
+            8,
+            9,
+            13,
+            12,
+            26,
+            25,
+            27,
+            5,
+            28,
+            24,
+            23,
+            19,
+            18,
+            20,
+            22,
+            0
+          ],
+          "lift_orders": [
+            4,
+            4
+          ],
+          "lift_square_profile": {
+            "deck_a": 2
+          },
+          "twisted_order4_direction": true
+        },
+        {
+          "cube_incidence_count": 15,
+          "cube_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 66,
+          "g30_central": true,
+          "g30_fixed_point_count": 0,
+          "g30_permutation": [
+            8,
+            9,
+            5,
+            6,
+            7,
+            2,
+            3,
+            4,
+            0,
+            1,
+            21,
+            15,
+            28,
+            27,
+            29,
+            11,
+            20,
+            22,
+            26,
+            23,
+            16,
+            10,
+            17,
+            19,
+            25,
+            24,
+            18,
+            13,
+            12,
+            14
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            14
+          ],
+          "g30_automorphism_index": 157,
+          "g30_central": false,
+          "g30_fixed_point_count": 2,
+          "g30_permutation": [
+            19,
+            20,
+            21,
+            3,
+            18,
+            10,
+            6,
+            26,
+            23,
+            16,
+            5,
+            27,
+            28,
+            15,
+            24,
+            13,
+            9,
+            22,
+            4,
+            0,
+            1,
+            2,
+            17,
+            8,
+            14,
+            29,
+            7,
+            11,
+            12,
+            25
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 1,
+          "cube_indices": [
+            14
+          ],
+          "g30_automorphism_index": 184,
+          "g30_central": false,
+          "g30_fixed_point_count": 4,
+          "g30_permutation": [
+            23,
+            16,
+            10,
+            6,
+            26,
+            21,
+            3,
+            18,
+            19,
+            20,
+            2,
+            13,
+            12,
+            11,
+            25,
+            27,
+            1,
+            17,
+            7,
+            8,
+            9,
+            5,
+            22,
+            0,
+            29,
+            14,
+            4,
+            15,
+            28,
+            24
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            5,
+            9,
+            14
+          ],
+          "g30_automorphism_index": 119,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            14,
+            15,
+            21,
+            3,
+            4,
+            10,
+            6,
+            7,
+            29,
+            11,
+            5,
+            9,
+            22,
+            20,
+            0,
+            1,
+            27,
+            28,
+            18,
+            24,
+            13,
+            2,
+            12,
+            25,
+            19,
+            23,
+            26,
+            16,
+            17,
+            8
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        },
+        {
+          "cube_incidence_count": 3,
+          "cube_indices": [
+            3,
+            13,
+            14
+          ],
+          "g30_automorphism_index": 192,
+          "g30_central": false,
+          "g30_fixed_point_count": 6,
+          "g30_permutation": [
+            24,
+            13,
+            2,
+            3,
+            18,
+            5,
+            6,
+            26,
+            25,
+            27,
+            10,
+            16,
+            17,
+            1,
+            19,
+            20,
+            11,
+            12,
+            4,
+            14,
+            15,
+            21,
+            28,
+            29,
+            0,
+            8,
+            7,
+            9,
+            22,
+            23
+          ],
+          "lift_orders": [
+            2,
+            2
+          ],
+          "lift_square_profile": {
+            "identity": 2
+          },
+          "twisted_order4_direction": false
+        }
+      ],
+      "lifted_preimage_type": "D8_x_C2",
+      "native_g15_label": 6,
+      "nonidentity_direction_count": 7,
+      "twisted_cube_incidence_profile": {
+        "3": 2
+      },
+      "twisted_direction_count": 2,
+      "twisted_fixed_point_profile": {
+        "0": 2
+      },
+      "twisted_g30_automorphism_indices": [
+        207,
+        236
+      ],
+      "untwisted_direction_count": 5
+    }
+  ],
+  "cube_source": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+  "distinct_twisted_cube_incidence_profile": {
+    "3": 10
+  },
+  "distinct_twisted_downstairs_element_count": 10,
+  "distinct_twisted_fixed_point_profile": {
+    "0": 10
+  },
+  "distinct_twisted_rows": [
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        1,
+        7,
+        8
+      ],
+      "g30_automorphism_index": 9,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        4,
+        11,
+        12
+      ],
+      "g30_automorphism_index": 38,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        0,
+        1,
+        2
+      ],
+      "g30_automorphism_index": 67,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        0,
+        4,
+        5
+      ],
+      "g30_automorphism_index": 71,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        6,
+        10,
+        11
+      ],
+      "g30_automorphism_index": 80,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        6,
+        7,
+        9
+      ],
+      "g30_automorphism_index": 172,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        2,
+        10,
+        13
+      ],
+      "g30_automorphism_index": 178,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        3,
+        8,
+        12
+      ],
+      "g30_automorphism_index": 194,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        3,
+        13,
+        14
+      ],
+      "g30_automorphism_index": 207,
+      "g30_fixed_point_count": 0
+    },
+    {
+      "cube_incidence_count": 3,
+      "cube_indices": [
+        5,
+        9,
+        14
+      ],
+      "g30_automorphism_index": 236,
+      "g30_fixed_point_count": 0
+    }
+  ],
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "preimage_source": "artifacts/json/native_g60_lifted_cube_preimages_033.json",
+  "twist_definition": "A nonidentity direction x in a downstairs C2^3 cube is twisted when both of its G60 lifts have order 4 and square to the deck involution a. It is untwisted when both lifts have order 2 and square to the identity.",
+  "twisted_direction_count_profile": {
+    "2": 15
+  },
+  "twisted_fixed_profile_profile": [
+    {
+      "cube_count": 15,
+      "profile": [
+        [
+          "0",
+          2
+        ]
+      ]
+    }
+  ],
+  "twisted_incidence_profile_profile": [
+    {
+      "cube_count": 15,
+      "profile": [
+        [
+          "3",
+          2
+        ]
+      ]
+    }
+  ]
+}
