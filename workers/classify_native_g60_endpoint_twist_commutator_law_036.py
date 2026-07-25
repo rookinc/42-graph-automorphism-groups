@@ -434,13 +434,13 @@ def main():
             for row in cube_rows
             for pair in row["pairing_rows"]
         ),
-        "all_endpoint_lift_commutators_equal_deck_a": all(
-            pair["commutator_is_deck_a"]
+        "all_endpoint_lift_commutators_are_identity": all(
+            pair["commutator_is_identity"]
             for row in cube_rows
             for pair in row["pairing_rows"]
         ),
-        "all_products_equal_deck_times_reverse_products": all(
-            pair[
+        "all_endpoint_lift_products_commute": all(
+            not pair[
                 "product_equals_deck_times_reverse"
             ]
             for row in cube_rows
@@ -532,22 +532,26 @@ def main():
         ),
         "cube_rows": cube_rows,
         "classification_result": (
-            "The two endpoint-twist lifts in each lifted cube "
-            "satisfy a uniform dihedral commutator law. Each "
-            "has square a, their commutator is a, and reversing "
-            "their order multiplies the product by a. Their "
-            "product is an involution. This identifies the "
-            "local D8 factor directly from the two Petersen "
-            "endpoint twists, while the remaining central C2 "
-            "factor is independent."
+            "The proposed dihedral commutator law is falsified. "
+            "The two endpoint-twist lifts in every lifted cube "
+            "commute. Each has order 4 and square a, while "
+            "their product is an involution. They therefore "
+            "generate an abelian C4 x C2 subgroup inside the "
+            "nonabelian D8 x C2 cube preimage. Downstairs, the "
+            "product of the two endpoint twists is a unique "
+            "fixed-2, cube-incidence-1 direction, giving one "
+            "edge-local involution for each of the 15 cubes. "
+            "The involution that realizes the D8 conjugation "
+            "action remains to be identified."
         ),
         "checks": checks,
         "audit_pass": all(checks.values()),
         "boundary": {
             "endpoint_twist_commutator_law_classified": True,
-            "local_dihedral_factor_identified": True,
-            "downstairs_product_direction_classified": True,
-            "remaining_central_c2_generator_not_yet_identified": True,
+            "proposed_dihedral_commutator_law_falsified": True,
+            "endpoint_twist_c4_x_c2_subgroup_identified": True,
+            "downstairs_edge_local_product_direction_classified": True,
+            "d8_conjugating_involution_not_yet_identified": True,
             "global_group_presentation_not_yet_composed": True,
             "physical_claim": False,
         },
