@@ -1,0 +1,1868 @@
+{
+  "audit_pass": true,
+  "automorphism_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "boundary": {
+    "candidate_uniqueness_not_assumed": true,
+    "dihedral_reflection_candidates_identified": true,
+    "global_reflection_register_not_yet_classified": true,
+    "physical_claim": false
+  },
+  "certificate_id": "native_g60_cube_dihedral_reflections_037",
+  "checks": {
+    "automorphism_source_audit_pass": true,
+    "commutator_source_audit_pass": true,
+    "cube_source_audit_pass": true,
+    "every_cube_has_reflection_candidate": true,
+    "fifteen_cubes_classified": true,
+    "five_untwisted_directions_per_cube": true,
+    "lift_source_audit_pass": true,
+    "preimage_source_audit_pass": true,
+    "twist_source_audit_pass": true
+  },
+  "classification_result": "The audit identifies the untwisted downstairs directions whose involutory G60 lifts invert an endpoint order-4 twist lift. These are the reflections realizing the D8 conjugation law inside each non-split D8 x C2 cube preimage.",
+  "commutator_source": "artifacts/json/native_g60_endpoint_twist_commutator_law_036.json",
+  "cube_rows": [
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 1,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 4,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 5,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 70,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 0,
+      "endpoint_product_index": 4,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 0,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        1,
+        5,
+        66,
+        70
+      ],
+      "rotation_twist_index": 67,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 1,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 8,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 74,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 75,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 1,
+      "endpoint_product_index": 74,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 1,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        1,
+        8,
+        66,
+        75
+      ],
+      "rotation_twist_index": 9,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 1,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 136,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 137,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 179,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 2,
+      "endpoint_product_index": 137,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 11,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        1,
+        66,
+        136,
+        179
+      ],
+      "rotation_twist_index": 67,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 2,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 64,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 192,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 205,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 3,
+      "endpoint_product_index": 64,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 5,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        2,
+        66,
+        192,
+        205
+      ],
+      "rotation_twist_index": 194,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 5,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 34,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 56,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 60,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 4,
+      "endpoint_product_index": 56,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 4,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        5,
+        34,
+        60,
+        66
+      ],
+      "rotation_twist_index": 38,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 5,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 117,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 119,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 238,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 5,
+      "endpoint_product_index": 117,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 9,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        5,
+        66,
+        119,
+        238
+      ],
+      "rotation_twist_index": 71,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 6,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 69,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 85,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 170,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 6,
+      "endpoint_product_index": 69,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 14,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        6,
+        66,
+        85,
+        170
+      ],
+      "rotation_twist_index": 80,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 75,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 85,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 88,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 125,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 7,
+      "endpoint_product_index": 125,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 8,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        66,
+        75,
+        85,
+        88
+      ],
+      "rotation_twist_index": 9,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 75,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 151,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 205,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 214,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 8,
+      "endpoint_product_index": 151,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 2,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        66,
+        75,
+        205,
+        214
+      ],
+      "rotation_twist_index": 9,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 16,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 42,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 85,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 119,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 9,
+      "endpoint_product_index": 42,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 7,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        16,
+        66,
+        85,
+        119
+      ],
+      "rotation_twist_index": 172,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 24,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 48,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 136,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 170,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 10,
+      "endpoint_product_index": 48,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 13,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        24,
+        66,
+        136,
+        170
+      ],
+      "rotation_twist_index": 80,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 60,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 135,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 162,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 170,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 11,
+      "endpoint_product_index": 135,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 12,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        60,
+        66,
+        162,
+        170
+      ],
+      "rotation_twist_index": 38,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 60,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 107,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 205,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 217,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 12,
+      "endpoint_product_index": 107,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 3,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        60,
+        66,
+        205,
+        217
+      ],
+      "rotation_twist_index": 38,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 98,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 136,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 192,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 229,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 13,
+      "endpoint_product_index": 98,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 10,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        66,
+        136,
+        192,
+        229
+      ],
+      "rotation_twist_index": 178,
+      "untwisted_direction_count": 5
+    },
+    {
+      "candidate_rows": [
+        {
+          "g30_automorphism_index": 66,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 119,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 157,
+          "has_dihedral_reflection_lift": false,
+          "is_endpoint_product_direction": true,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": true,
+              "conjugates_rotation_to_inverse": false,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 184,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "g30_automorphism_index": 192,
+          "has_dihedral_reflection_lift": true,
+          "is_endpoint_product_direction": false,
+          "lift_rows": [
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 0,
+              "order": 2
+            },
+            {
+              "commutes_with_rotation": false,
+              "conjugates_rotation_to_inverse": true,
+              "lies_in_cube_preimage": true,
+              "lift_number": 1,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "cube_index": 14,
+      "endpoint_product_index": 157,
+      "endpoint_product_is_reflection_candidate": false,
+      "native_g15_label": 6,
+      "reflection_candidate_count": 4,
+      "reflection_candidate_indices": [
+        66,
+        119,
+        184,
+        192
+      ],
+      "rotation_twist_index": 207,
+      "untwisted_direction_count": 5
+    }
+  ],
+  "cube_source": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+  "distinct_reflection_direction_count": 26,
+  "endpoint_product_reflection_profile": {
+    "false": 15
+  },
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "preimage_source": "artifacts/json/native_g60_lifted_cube_preimages_033.json",
+  "reflection_candidate_count_profile": {
+    "4": 15
+  },
+  "tested_law": "For each lifted cube, select one endpoint order-4 twist lift r. Search the five untwisted downstairs directions for involutory lifts s satisfying s r s^{-1} = r^{-1}.",
+  "twist_source": "artifacts/json/native_g60_lifted_cube_twist_directions_034.json"
+}
