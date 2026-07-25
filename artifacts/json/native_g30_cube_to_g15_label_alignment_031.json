@@ -1,0 +1,417 @@
+{
+  "alignment_method": "compose the selected intrinsic-center to standard Petersen isomorphism from artifact 029 with the standard Petersen-edge to native quotient-label identification from artifact 008",
+  "alignment_result": "The fifteen intrinsic affine cubes are now bijectively aligned with the existing native G15 quotient labels 0 through 14. Under this binding, order-4 cube intersections reproduce exactly the native quotient edge relation, and the ten cube triangles reproduce exactly the ten labeled quotient triangles already identified as Petersen vertex stars.",
+  "audit_pass": true,
+  "boundary": {
+    "alignment_uniqueness_claim": false,
+    "g60_lift_open": true,
+    "intrinsic_cube_to_native_g15_label_binding": true,
+    "native_g15_edge_relation_reproduced": true,
+    "native_g15_triangle_system_reproduced": true,
+    "physical_claim": false,
+    "selected_alignment_depends_on_selected_petersen_isomorphisms": true
+  },
+  "center_to_standard_petersen_vertex": {
+    "0": 0,
+    "1": 1,
+    "2": 4,
+    "3": 5,
+    "4": 3,
+    "5": 8,
+    "6": 2,
+    "7": 6,
+    "8": 9,
+    "9": 7
+  },
+  "certificate_id": "native_g30_cube_to_g15_label_alignment_031",
+  "checks": {
+    "all_10_native_quotient_triangles_used_once": true,
+    "all_cube_triangles_map_to_native_quotient_triangles": true,
+    "all_cubes_receive_g15_label": true,
+    "center_to_petersen_map_has_10_entries": true,
+    "cube_graph_edges_map_exactly_to_quotient_edges": true,
+    "cube_graph_source_audit_pass": true,
+    "cube_source_audit_pass": true,
+    "cube_to_g15_alignment_is_bijective": true,
+    "quotient_source_audit_pass": true,
+    "quotient_to_petersen_edge_map_has_15_entries": true
+  },
+  "cube_graph_source": "artifacts/json/native_g30_fifteen_cube_graph_027.json",
+  "cube_rows": [
+    {
+      "cube_index": 0,
+      "intrinsic_center_indices": [
+        0,
+        1
+      ],
+      "mapped_petersen_edge": [
+        0,
+        1
+      ],
+      "native_g15_label": 0
+    },
+    {
+      "cube_index": 1,
+      "intrinsic_center_indices": [
+        0,
+        2
+      ],
+      "mapped_petersen_edge": [
+        0,
+        4
+      ],
+      "native_g15_label": 1
+    },
+    {
+      "cube_index": 2,
+      "intrinsic_center_indices": [
+        0,
+        3
+      ],
+      "mapped_petersen_edge": [
+        0,
+        5
+      ],
+      "native_g15_label": 11
+    },
+    {
+      "cube_index": 3,
+      "intrinsic_center_indices": [
+        4,
+        5
+      ],
+      "mapped_petersen_edge": [
+        3,
+        8
+      ],
+      "native_g15_label": 5
+    },
+    {
+      "cube_index": 4,
+      "intrinsic_center_indices": [
+        1,
+        6
+      ],
+      "mapped_petersen_edge": [
+        1,
+        2
+      ],
+      "native_g15_label": 4
+    },
+    {
+      "cube_index": 5,
+      "intrinsic_center_indices": [
+        1,
+        7
+      ],
+      "mapped_petersen_edge": [
+        1,
+        6
+      ],
+      "native_g15_label": 9
+    },
+    {
+      "cube_index": 6,
+      "intrinsic_center_indices": [
+        8,
+        9
+      ],
+      "mapped_petersen_edge": [
+        7,
+        9
+      ],
+      "native_g15_label": 14
+    },
+    {
+      "cube_index": 7,
+      "intrinsic_center_indices": [
+        2,
+        8
+      ],
+      "mapped_petersen_edge": [
+        4,
+        9
+      ],
+      "native_g15_label": 8
+    },
+    {
+      "cube_index": 8,
+      "intrinsic_center_indices": [
+        2,
+        4
+      ],
+      "mapped_petersen_edge": [
+        3,
+        4
+      ],
+      "native_g15_label": 2
+    },
+    {
+      "cube_index": 9,
+      "intrinsic_center_indices": [
+        7,
+        8
+      ],
+      "mapped_petersen_edge": [
+        6,
+        9
+      ],
+      "native_g15_label": 7
+    },
+    {
+      "cube_index": 10,
+      "intrinsic_center_indices": [
+        3,
+        9
+      ],
+      "mapped_petersen_edge": [
+        5,
+        7
+      ],
+      "native_g15_label": 13
+    },
+    {
+      "cube_index": 11,
+      "intrinsic_center_indices": [
+        6,
+        9
+      ],
+      "mapped_petersen_edge": [
+        2,
+        7
+      ],
+      "native_g15_label": 12
+    },
+    {
+      "cube_index": 12,
+      "intrinsic_center_indices": [
+        4,
+        6
+      ],
+      "mapped_petersen_edge": [
+        2,
+        3
+      ],
+      "native_g15_label": 3
+    },
+    {
+      "cube_index": 13,
+      "intrinsic_center_indices": [
+        3,
+        5
+      ],
+      "mapped_petersen_edge": [
+        5,
+        8
+      ],
+      "native_g15_label": 10
+    },
+    {
+      "cube_index": 14,
+      "intrinsic_center_indices": [
+        5,
+        7
+      ],
+      "mapped_petersen_edge": [
+        6,
+        8
+      ],
+      "native_g15_label": 6
+    }
+  ],
+  "cube_source": "artifacts/json/native_g30_petersen_from_cube_centers_029.json",
+  "cube_to_native_g15_label": {
+    "0": 0,
+    "1": 1,
+    "10": 13,
+    "11": 12,
+    "12": 3,
+    "13": 10,
+    "14": 6,
+    "2": 11,
+    "3": 5,
+    "4": 4,
+    "5": 9,
+    "6": 14,
+    "7": 8,
+    "8": 2,
+    "9": 7
+  },
+  "cube_triangle_rows": [
+    {
+      "cube_triangle": [
+        0,
+        1,
+        2
+      ],
+      "mapped_g15_triangle": [
+        0,
+        1,
+        11
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 0
+    },
+    {
+      "cube_triangle": [
+        0,
+        4,
+        5
+      ],
+      "mapped_g15_triangle": [
+        0,
+        4,
+        9
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 1
+    },
+    {
+      "cube_triangle": [
+        1,
+        7,
+        8
+      ],
+      "mapped_g15_triangle": [
+        1,
+        2,
+        8
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 4
+    },
+    {
+      "cube_triangle": [
+        2,
+        10,
+        13
+      ],
+      "mapped_g15_triangle": [
+        10,
+        11,
+        13
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 5
+    },
+    {
+      "cube_triangle": [
+        3,
+        8,
+        12
+      ],
+      "mapped_g15_triangle": [
+        2,
+        3,
+        5
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 3
+    },
+    {
+      "cube_triangle": [
+        3,
+        13,
+        14
+      ],
+      "mapped_g15_triangle": [
+        5,
+        6,
+        10
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 8
+    },
+    {
+      "cube_triangle": [
+        4,
+        11,
+        12
+      ],
+      "mapped_g15_triangle": [
+        3,
+        4,
+        12
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 2
+    },
+    {
+      "cube_triangle": [
+        5,
+        9,
+        14
+      ],
+      "mapped_g15_triangle": [
+        6,
+        7,
+        9
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 6
+    },
+    {
+      "cube_triangle": [
+        6,
+        7,
+        9
+      ],
+      "mapped_g15_triangle": [
+        7,
+        8,
+        14
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 9
+    },
+    {
+      "cube_triangle": [
+        6,
+        10,
+        11
+      ],
+      "mapped_g15_triangle": [
+        12,
+        13,
+        14
+      ],
+      "matches_native_quotient_triangle": true,
+      "petersen_vertex": 7
+    }
+  ],
+  "native_g15_label_profile": {
+    "0": 1,
+    "1": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1
+  },
+  "native_g15_label_to_cube": {
+    "0": 0,
+    "1": 1,
+    "10": 13,
+    "11": 2,
+    "12": 11,
+    "13": 10,
+    "14": 6,
+    "2": 8,
+    "3": 12,
+    "4": 4,
+    "5": 3,
+    "6": 14,
+    "7": 9,
+    "8": 7,
+    "9": 5
+  },
+  "quotient_source": "artifacts/json/native_g30_quotient_line_petersen_008.json"
+}
