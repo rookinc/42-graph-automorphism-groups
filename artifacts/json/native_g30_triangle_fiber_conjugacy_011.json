@@ -1,0 +1,61 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "common_pointwise_kernel_derived": true,
+    "kernel_action_outside_triangle_fiber_open": true,
+    "paired_triangle_action_conjugacy_derived": true,
+    "physical_claim": false
+  },
+  "certificate_id": "native_g30_triangle_fiber_conjugacy_011",
+  "checks": {
+    "conjugating_relabeling_exists": true,
+    "conjugating_relabeling_is_unique": true,
+    "fiber_kernel_equals_triangle_kernels": true,
+    "fiber_kernel_order_is_2": true,
+    "first_and_second_kernels_are_equal": true,
+    "first_kernel_order_is_2": true,
+    "first_local_image_is_s3": true,
+    "full_stabilizer_order_is_12": true,
+    "paired_vertex_bijection_has_three_rows": true,
+    "second_kernel_order_is_2": true,
+    "second_local_image_is_s3": true,
+    "source_stabilizer_audit_pass": true
+  },
+  "conjugacy_result": "The two triangle actions factor through the same S3 quotient and are conjugate by a unique vertex bijection. Their common order-2 kernel fixes all six vertices of the triangle fiber pointwise.",
+  "conjugating_relabeling_count": 1,
+  "conjugating_relabelings": [
+    [
+      1,
+      0,
+      2
+    ]
+  ],
+  "fiber_kernel_order": 2,
+  "first_kernel_order": 2,
+  "first_local_image_order": 6,
+  "first_triangle": [
+    0,
+    7,
+    14
+  ],
+  "full_stabilizer_order": 12,
+  "paired_vertex_bijection": {
+    "0": 8,
+    "14": 29,
+    "7": 4
+  },
+  "second_kernel_order": 2,
+  "second_local_image_order": 6,
+  "second_triangle": [
+    4,
+    8,
+    29
+  ],
+  "selected_conjugating_relabeling": [
+    1,
+    0,
+    2
+  ],
+  "source": "artifacts/json/native_g30_triangle_fiber_local_action_010.json",
+  "stabilizer_source": "artifacts/json/native_g30_triangle_stabilizers_009.json"
+}
