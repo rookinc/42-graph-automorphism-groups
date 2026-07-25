@@ -1,0 +1,249 @@
+\section{The invariant double-cover classification}
+
+The preceding sections studied several regular quotient presentations
+inside one total graph. We now change viewpoint and classify
+\(S_5\)-invariant binary double covers over the fixed base
+
+\[
+Y=L(P).
+\]
+
+These are different classification problems. A cohomology class records a
+cover over a selected base, whereas a quotient frame records one covering
+presentation inside a selected total graph.
+
+\subsection{The fixed cohomology space}
+
+The connected graph \(Y\) has fifteen vertices and thirty edges. Hence
+
+\[
+\dim_{\Ftwo} H^1(Y,\Ftwo)
+=
+|E(Y)|-|V(Y)|+1
+=
+16.
+\]
+
+The natural \(S_5\)-action on \(Y\) induces an action on this cohomology
+space.
+
+% STATUS: Certified computational input
+% SOURCE: Project 41 packet 028m30i
+% Exact repository path to be normalized in Section 9.
+
+\begin{theorem}
+\label{thm:fixed-cohomology}
+
+The fixed subspace has dimension two:
+
+\[
+H^1(L(P),\Ftwo)^{S_5}
+\cong
+\Ftwo^2.
+\]
+
+Consequently there are exactly four \(S_5\)-invariant switching classes of
+binary voltage assignments on \(L(P)\).
+\end{theorem}
+
+\subsection{Triangle and pentagon coordinates}
+
+The cycle space of \(Y\) has dimension sixteen. The triangles of \(Y\)
+span a ten-dimensional subspace. A certified pentagon orbit supplies the
+remaining six dimensions, so the triangle and pentagon data together span
+the full cycle space.
+
+% STATUS: Certified computational input
+% SOURCE: Project 41 packet 028m30i
+
+On the fixed cohomology subspace, choose the two coordinate functionals
+
+\[
+t:
+H^1(Y,\Ftwo)^{S_5}
+\longrightarrow
+\Ftwo
+\]
+
+and
+
+\[
+p:
+H^1(Y,\Ftwo)^{S_5}
+\longrightarrow
+\Ftwo,
+\]
+
+given by evaluation on the certified triangle and pentagon test cycles.
+The resulting map
+
+\[
+\kappa:
+H^1(Y,\Ftwo)^{S_5}
+\longrightarrow
+\Ftwo^2,
+\qquad
+[\phi]\longmapsto(t([\phi]),p([\phi]))
+\]
+
+is an isomorphism.
+
+For
+
+\[
+(a,b)\in\Ftwo^2,
+\]
+
+write
+
+\[
+\mathcal C_{ab}
+\]
+
+for the invariant switching class having coordinate \((a,b)\).
+
+\subsection{The four invariant classes}
+
+% STATUS: Certified computational input
+% SOURCE: Project 41 cohomology-square and cover-order packets
+
+The four classes have the certified properties shown in
+Table~\ref{tab:invariant-cover-square}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lllll}
+\toprule
+Class &
+Connected &
+Triangles &
+Bipartite &
+Automorphism order\\
+\midrule
+\(\mathcal C_{00}\) & No  & Yes & No  & \(28800\)\\
+\(\mathcal C_{01}\) & Yes & Yes & No  & \(240\)\\
+\(\mathcal C_{10}\) & Yes & No  & No  & \(240\)\\
+\(\mathcal C_{11}\) & Yes & No  & Yes & \(720\)\\
+\bottomrule
+\end{tabular}
+\caption{The four \(S_5\)-invariant binary cover classes over
+\(L(P)\).}
+\label{tab:invariant-cover-square}
+\end{table}
+
+The classes form the affine square
+
+\[
+\mathcal C_{00},
+\qquad
+\mathcal C_{01},
+\qquad
+\mathcal C_{10},
+\qquad
+\mathcal C_{11},
+\]
+
+with addition inherited from the vector space
+
+\[
+H^1(Y,\Ftwo)^{S_5}.
+\]
+
+In the earlier descriptive terminology, the two intermediate nonzero
+classes were called the native and alternative classes. The coordinate
+notation is used here because it records the invariant content directly.
+
+\subsection{The all-one class}
+
+Let
+
+\[
+\mathbf 1:E(Y)\longrightarrow\Ftwo
+\]
+
+be the constant-one voltage assignment. Its derived graph joins
+
+\[
+(u,\varepsilon)
+\]
+
+to
+
+\[
+(v,\varepsilon+1)
+\]
+
+over every edge \(uv\) of \(Y\). Therefore its derived graph is precisely
+
+\[
+\KC(Y)=X.
+\]
+
+Every triangle and every pentagon has odd length, so
+
+\[
+t([\mathbf 1])=1,
+\qquad
+p([\mathbf 1])=1.
+\]
+
+Thus
+
+\[
+[\mathbf 1]=\mathcal C_{11}.
+\]
+
+\begin{proposition}
+\label{prop:x-all-one-class}
+
+The graph \(X\) is the derived graph of the invariant class
+
+\[
+\mathcal C_{11}.
+\]
+
+Its automorphism order is \(720\), in agreement with
+Theorem~\ref{thm:full-automorphism-group}.
+\end{proposition}
+
+\subsection{Four classes and three frames}
+
+The four cohomology classes classify invariant covers over a fixed labeled
+base graph. The three quotient frames of Section~7 are instead three
+covering presentations inside the single total graph \(X\).
+
+% STATUS: Certified alignment across the three quotient presentations
+% SOURCE: Project 42 explicit quotient-frame certificate 004
+
+After identifying each quotient with \(L(P)\) and allowing switching of
+fiber labels, the three projections
+
+\[
+X\longrightarrow X/\langle\tau_i\rangle\cong L(P)
+\]
+
+represent the all-one invariant class
+
+\[
+\mathcal C_{11}.
+\]
+
+Thus the numbers four and three refer to different structures:
+
+\[
+\boxed{
+\text{four invariant switching classes over one fixed base}
+}
+\]
+
+and
+
+\[
+\boxed{
+\text{three conjugate quotient frames inside one total graph}.
+}
+\]
+
+No claim is made here that the intermediate invariant classes possess only
+one quotient presentation, or that multiple quotient frames characterize
+\(\mathcal C_{11}\) among all possible total graphs.

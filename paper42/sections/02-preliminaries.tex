@@ -1,0 +1,465 @@
+\section{Preliminaries and notation}
+
+This section establishes notation and standard definitions used throughout
+the paper. No theorem specific to the graph
+
+\[
+X=\KC(L(P))
+\]
+
+is proved here.
+
+\subsection{The Petersen graph and its line graph}
+
+Let \(P\) denote the Petersen graph. Throughout this paper we regard \(P\)
+as a fixed simple undirected graph with
+
+\[
+|V(P)|=10,
+\qquad
+|E(P)|=15,
+\]
+
+in which every vertex has degree three.
+
+We write
+
+\[
+Y=L(P)
+\]
+
+for the line graph of \(P\). Thus the vertices of \(Y\) are the edges of
+\(P\), and two vertices of \(Y\) are adjacent precisely when the
+corresponding edges of \(P\) share a common endpoint.
+
+\begin{proposition}
+The line graph \(Y=L(P)\) is a connected quartic graph on fifteen vertices
+and thirty edges.
+\end{proposition}
+
+\begin{proof}
+Since the Petersen graph has fifteen edges,
+
+\[
+|V(Y)|=|E(P)|=15.
+\]
+
+Each edge of the cubic graph \(P\) is incident with two vertices, each
+contributing two adjacent edges distinct from the edge itself.
+Consequently every vertex of \(Y\) has degree four.
+
+By the Handshake Lemma,
+
+\[
+|E(Y)|
+=
+\frac{15\cdot4}{2}
+=
+30.
+\]
+
+Because the Petersen graph is connected, its line graph is also connected.
+\end{proof}
+
+The natural action of \(\Aut(P)\) on the edge set induces an action on the
+vertex set of \(Y\). Accordingly,
+
+\[
+\Aut(Y)\cong\Aut(P)\cong S_5.
+\]
+
+Throughout the paper we fix one labeled realization of the Petersen graph.
+All explicit computational data refer to this fixed labeling. The complete
+labeling is recorded in Appendix~A.
+
+\subsection{Canonical bipartite double covers}
+
+Let \(Y\) be a finite simple graph.
+
+The canonical bipartite double cover of \(Y\), denoted
+\(\KC(Y)\), has vertex set
+
+\[
+V(\KC(Y))
+=
+V(Y)\times\Ftwo,
+\]
+
+where
+
+\[
+(u,\varepsilon)
+\sim
+(v,\delta)
+\]
+
+if and only if
+
+\[
+u\sim_Y v
+\]
+
+and
+
+\[
+\delta=\varepsilon+1
+\pmod2.
+\]
+
+Equivalently,
+
+\[
+\KC(Y)\cong Y\times K_2.
+\]
+
+The projection
+
+\[
+\pi:\KC(Y)\rightarrow Y
+\]
+
+is a regular two-fold covering projection with deck involution
+
+\[
+\tau(u,\varepsilon)
+=
+(u,\varepsilon+1).
+\]
+
+\begin{proposition}
+If \(Y\) is connected, then \(\KC(Y)\) is bipartite.
+Moreover, \(\KC(Y)\) is connected if and only if \(Y\) is not bipartite.
+\end{proposition}
+
+\begin{proof}
+Every edge joins vertices having opposite second coordinate.
+The connectedness criterion is the standard characterization of canonical
+bipartite double covers.
+\end{proof}
+
+Since \(L(P)\) contains triangles, it is non-bipartite.
+Consequently,
+
+\[
+X=\KC(L(P))
+\]
+
+is connected.
+
+\subsection{Regular two-fold quotients}
+
+Let \(Z\) be a connected graph. A \emph{pair partition} of \(V(Z)\) is a
+partition of the vertex set into unordered pairs.
+
+Every pair partition determines a unique fixed-point-free involution,
+called its \emph{block swap}, which exchanges the two vertices in each
+block. The block swap need not be an automorphism.
+
+\begin{definition}
+A \emph{regular two-fold quotient frame} of \(Z\) is a pair partition whose
+block swap
+\[
+\tau\in\Aut(Z)
+\]
+is an involution and whose orbit projection
+\[
+\pi:
+Z\longrightarrow Z/\langle\tau\rangle
+\]
+is locally bijective.
+\end{definition}
+
+Equivalently, the restriction of \(\pi\) to the neighborhood of every
+vertex is a bijection onto the neighborhood of its image. In that case
+\(\pi\) is a regular two-fold covering projection and
+\(\langle\tau\rangle\) is its deck group.
+
+Throughout this paper, \emph{quotient frame} means a regular two-fold
+quotient frame in this sense.
+
+\subsection{Group actions, orbitals, and coset graphs}
+
+Let a finite group \(G\) act transitively on a finite set \(\Omega\).
+The induced diagonal action on
+\[
+\Omega\times\Omega
+\]
+is given by
+\[
+(\alpha,\beta)^g
+=
+(\alpha^g,\beta^g).
+\]
+
+An \emph{orbital} is an orbit of this diagonal action. The orbitals
+partition \(\Omega\times\Omega\) and form the basis relations of the
+Schurian coherent configuration associated with the permutation action.
+A permutation that permutes these basis relations is called a weak
+automorphism of the configuration
+\cite{Higman1975CoherentConfigurations,
+Cameron2003CoherentConfigurations,
+Eberhard2023HammingSandwiches}.
+
+For an orbital \(R\), define its paired orbital by
+\[
+R^{*}
+=
+\{
+(\beta,\alpha):
+(\alpha,\beta)\in R
+\}.
+\]
+The orbital \(R\) is \emph{self-paired} when \(R=R^{*}\). Every
+self-paired non-diagonal orbital determines a simple undirected graph on
+\(\Omega\), called its orbital graph.
+
+Now let \(H\leq G\), let
+\[
+\Omega=G/H
+\]
+be the left coset space, and let \(G\) act by left multiplication. The
+orbital containing \((H,gH)\) is determined by the double coset \(HgH\).
+Its valency is
+\[
+[H:H\cap gHg^{-1}].
+\]
+It is self-paired precisely when
+\[
+HgH=Hg^{-1}H.
+\]
+
+Consequently, quartic orbital graphs correspond to self-paired double
+cosets satisfying
+\[
+[H:H\cap gHg^{-1}]=4.
+\]
+
+\subsection{Centralizers of transitive coset actions}
+
+Let \(G\) be a finite group, let \(H\leq G\), and let
+\[
+\Omega=G/H
+\]
+be the left coset space with the natural left multiplication action.
+
+\begin{lemma}
+\label{lem:coset-centralizer}
+The centralizer of this transitive permutation representation is
+\[
+C_{\Sym(G/H)}(G)
+\cong
+N_G(H)/H.
+\]
+\end{lemma}
+
+\begin{proof}
+For \(n\in N_G(H)\), define
+\[
+\rho_n(xH)
+=
+xn^{-1}H.
+\]
+This is well-defined because \(n\) normalizes \(H\), and it commutes with
+left multiplication by \(G\). The resulting homomorphism
+\[
+N_G(H)\longrightarrow C_{\Sym(G/H)}(G)
+\]
+has kernel \(H\).
+
+Conversely, let \(c\) centralize the left action and write
+\[
+c(H)=xH.
+\]
+For every \(h\in H\),
+\[
+hxH
+=
+h\,c(H)
+=
+c(hH)
+=
+c(H)
+=
+xH.
+\]
+Thus \(x^{-1}Hx\leq H\). Since \(G\) is finite, equality holds, so
+\(x\in N_G(H)\). Moreover,
+\[
+c(gH)
+=
+g\,c(H)
+=
+gxH
+\]
+for every \(g\in G\). Hence every element of the centralizer arises from
+the construction above.
+\end{proof}
+
+The following standard observation records how normalizers interact with
+orbital relations.
+
+\begin{lemma}
+\label{lem:normalizer-permutes-orbitals}
+Let \(G\leq\Sym(\Omega)\), let
+\[
+n\in N_{\Sym(\Omega)}(G),
+\]
+and let \(R\) be an orbital of \(G\). Then
+\[
+R^n
+=
+\{
+(\alpha^n,\beta^n):
+(\alpha,\beta)\in R
+\}
+\]
+is also an orbital of \(G\).
+
+If \(R\) is self-paired, then \(R^n\) is self-paired, and \(n\) is an
+isomorphism between the corresponding orbital graphs.
+\end{lemma}
+
+\begin{proof}
+Choose \((\alpha,\beta)\in R\). Then
+\[
+R
+=
+\{
+(\alpha^g,\beta^g):
+g\in G
+\}.
+\]
+Since \(n\) normalizes \(G\),
+\[
+R^n
+=
+\{
+((\alpha^n)^{n^{-1}gn},
+(\beta^n)^{n^{-1}gn}):
+g\in G
+\}
+=
+(\alpha^n,\beta^n)^G.
+\]
+Thus \(R^n\) is an orbital.
+
+Coordinate reversal commutes with the diagonal action of \(n\), so
+self-pairedness is preserved. The final assertion follows because \(n\)
+relabels the vertices and carries \(R\) onto \(R^n\).
+\end{proof}
+
+\subsection{The two Klein four classes in \(S_5\)}
+
+Up to conjugacy, \(S_5\) contains two classes of Klein four subgroups. The
+first is
+\[
+V_{4,\mathrm{even}}
+=
+\{
+1,
+(12)(34),
+(13)(24),
+(14)(23)
+\},
+\]
+whose nonidentity elements are all double transpositions. The second is
+\[
+V_{4,\mathrm{mixed}}
+=
+\langle(12),(34)\rangle
+=
+\{
+1,
+(12),
+(34),
+(12)(34)
+\}.
+\]
+
+\begin{proposition}
+The subgroups \(V_{4,\mathrm{even}}\) and
+\(V_{4,\mathrm{mixed}}\) are not conjugate in \(S_5\).
+\end{proposition}
+
+\begin{proof}
+Conjugation preserves cycle type. Every nonidentity element of
+\(V_{4,\mathrm{even}}\) is a double transposition, whereas
+\(V_{4,\mathrm{mixed}}\) contains transpositions.
+\end{proof}
+
+Both subgroups have index thirty, but their coset actions are not
+permutation isomorphic.
+
+\subsection{Binary voltage assignments and switching}
+
+Let \(Y\) be a connected graph. A \emph{binary voltage assignment} is a
+function
+\[
+\phi:E(Y)\longrightarrow\Ftwo.
+\]
+Its derived graph has vertex set
+\[
+V(Y)\times\Ftwo
+\]
+and lifted edges
+\[
+(u,\varepsilon)
+\sim
+(v,\varepsilon+\phi(uv))
+\]
+for every edge \(uv\in E(Y)\) and every \(\varepsilon\in\Ftwo\).
+
+A switching function
+\[
+s:V(Y)\longrightarrow\Ftwo
+\]
+changes the assignment to
+\[
+\phi^{s}(uv)
+=
+\phi(uv)+s(u)+s(v).
+\]
+Switching-equivalent assignments define equivalent covers. Their switching
+classes are naturally identified with
+\[
+H^1(Y,\Ftwo).
+\]
+
+For a cycle \(C\), its \emph{holonomy} is
+\[
+\phi(C)
+=
+\sum_{e\in E(C)}\phi(e)
+\in\Ftwo.
+\]
+A cycle with holonomy \(0\) lifts to two cycles of the same length, while a
+cycle with holonomy \(1\) lifts to one cycle of twice the length.
+
+The constant-one assignment produces the canonical bipartite double cover.
+Section~8 studies the \(S_5\)-fixed part of
+\[
+H^1(L(P),\Ftwo).
+\]
+
+\subsection{Notation}
+
+Throughout the paper we use the following notation.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Symbol & Meaning\\
+\midrule
+\(P\) & Petersen graph\\
+\(Y=L(P)\) & Line graph of the Petersen graph\\
+\(X=\KC(Y)\) & Canonical bipartite double cover of \(Y\)\\
+\(A=\Aut(X)\) & Full automorphism group of \(X\)\\
+\(K\cong S_5\) & Homogeneous-space action on \(X\)\\
+\(C=C_A(K)\) & Centralizer of \(K\) in \(A\)\\
+\(H=\Peven\) & Even Klein four subgroup of \(S_5\)\\
+\(\Omega=S_5/H\) & Degree-thirty homogeneous space\\
+\(\mathcal P_0\) & Natural quotient frame\\
+\(\frorbit=A\cdot\mathcal P_0\) & Orbit of the natural frame\\
+\bottomrule
+\end{tabular}
+\end{center}

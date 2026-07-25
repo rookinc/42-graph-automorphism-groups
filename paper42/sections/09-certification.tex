@@ -1,0 +1,209 @@
+\section{Computational certification and reproducibility}
+
+The conceptual arguments in this paper are combined with exact finite
+computations. This section records which statements depend on
+certificates and which statements are deductions from them.
+
+\subsection{Labeled construction}
+
+All computations begin from one fixed labeled Petersen graph. Its edges
+label the vertices of
+
+\[
+Y=L(P),
+\]
+
+and the vertices of the canonical bipartite double cover are labeled by
+
+\[
+V(Y)\times\Ftwo.
+\]
+
+Appendix~A gives a coordinate-free labeled model. The exact conversion to
+the integer labels used in the machine-readable certificates is part of
+the certificate packet and will be inserted verbatim during the revision
+pass. No mathematical claim depends on the choice of integer labels.
+
+\subsection{Certificate ledger}
+
+The current evidence baseline is repository commit
+
+\[
+\texttt{1604b16}
+\]
+
+with commit message
+
+\begin{quote}
+Add Project 42 graph certificate packet.
+\end{quote}
+
+The principal certified inputs are summarized in
+Table~\ref{tab:certificate-ledger}.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+Result & Evidence identifier & Role in the paper\\
+\midrule
+
+Full automorphism order
+&
+\texttt{all\_one\_group\_anatomy\_audit\_028o.json}
+&
+Supplies \(|\Aut(X)|=720\) after the subgroup
+\(S_5\times S_3\) has been constructed conceptually.\\
+
+Group anatomy
+&
+\texttt{all\_one\_group\_anatomy\_audit\_028o.json}
+&
+Independent check of center, derived subgroup, and abelianization.\\
+
+Quartic orbital census
+&
+Project 42 quartic-orbital census certificate
+&
+Establishes four quartic self-paired orbitals, with exactly one connected
+member.\\
+
+Cover-orbital identification
+&
+Project 42 graph-isomorphism certificate
+&
+Identifies the connected orbital graph with \(\KC(L(P))\).\\
+
+Deck-centralizer alignment
+&
+Project 42 explicit quotient-frame certificate 004
+&
+Places the natural deck involution inside the complementary \(S_3\).\\
+
+Three frame partitions
+&
+Project 42 explicit quotient-frame certificate 004
+&
+Records the three involutions and their fifteen-pair orbit partitions.\\
+
+Forty-five-pair census
+&
+Project 42 pair-census certificate
+&
+Checks that the three certified pair lists contain forty-five distinct
+unordered pairs.\\
+
+Fixed cohomology square
+&
+Project 41 packet 028m30i
+&
+Computes
+\(H^1(L(P),\Ftwo)^{S_5}\cong\Ftwo^2\), the triangle-pentagon coordinates,
+and the four cover-class orders.\\
+
+\bottomrule
+\end{tabularx}
+\caption{Principal computational inputs. Exact repository paths and
+digests are normalized in Appendix~F.}
+\label{tab:certificate-ledger}
+\end{table}
+
+% STATUS: Editorial metadata boundary
+% Exact artifact paths, script names, and SHA-256 values must be copied from
+% notes/source-ledger.md rather than reconstructed from memory.
+
+\subsection{Conceptual deductions}
+
+The following results are not separate searches:
+
+\begin{itemize}
+
+\item
+The centralizer formula
+
+\[
+C_{\Sym(S_5/H)}(S_5)\cong N_{S_5}(H)/H
+\]
+
+is proved conceptually.
+
+\item
+The complementary \(S_3\) is obtained from the normalizer quotient and the
+certified uniqueness of the connected quartic orbital relation.
+
+\item
+The subgroup
+
+\[
+S_5\times S_3
+\]
+
+is constructed conceptually. The automorphism enumeration is used only
+as the matching upper bound.
+
+\item
+The three quotient graphs and their stabilizers follow by conjugacy after
+the single certified alignment of \(\tau_0\) with the complementary
+factor.
+
+\item
+The forty-five-pair count follows conceptually from semiregularity of the
+centralizer action, although the explicit labeled census remains an
+independent check.
+
+\item
+The center, derived subgroup, and abelianization follow directly from the
+direct-product theorem.
+
+\end{itemize}
+
+\subsection{Current nonclaims}
+
+The paper does not currently claim:
+
+\begin{itemize}
+
+\item that every regular \(L(P)\)-quotient frame of \(X\) belongs to
+\(\frorbit\);
+
+\item a conceptual classification of the four quartic double cosets;
+
+\item a representation-theoretic derivation of the fixed cohomology basis;
+
+\item a standard external graph name for \(X\); or
+
+\item that multiple quotient frames characterize the all-one cover class
+among all invariant covers.
+
+\end{itemize}
+
+\subsection{Reproduction contract}
+
+A complete reproduction release must contain:
+
+\begin{enumerate}
+
+\item the labeled definitions of \(P\), \(Y\), and \(X\);
+
+\item the permutation generators for the transitive \(S_5\)-action;
+
+\item the quartic orbital census and graph fingerprints;
+
+\item the explicit graph isomorphism certificate;
+
+\item the full automorphism generators and order certificate;
+
+\item the three quotient involutions and pair partitions;
+
+\item the fixed-cohomology basis and four voltage representatives;
+
+\item the software and package versions;
+
+\item the repository commit; and
+
+\item SHA-256 digests for every source and output artifact.
+
+\end{enumerate}
+
+The long-form reproduction manifest belongs in Appendix~F rather than in
+the main mathematical argument.

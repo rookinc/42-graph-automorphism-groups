@@ -1,0 +1,474 @@
+\section{The centralizer and the full automorphism group}
+
+Section~5 established that the graph
+
+\[
+X
+\]
+
+admits a homogeneous-space realization as the connected quartic orbital
+graph arising from the action of
+
+\[
+S_{5}
+\]
+
+on
+
+\[
+S_{5}/V_{4,\mathrm{even}}.
+\]
+
+This realization exposes symmetries that are invisible from the canonical
+covering construction alone.
+
+In this section we determine the full automorphism group of \(X\).
+
+
+\subsection{The normalizer of \(V_{4,\mathrm{even}}\)}
+
+% STATUS: Conceptual
+
+Let
+\[
+H
+=
+V_{4,\mathrm{even}}
+=
+\{
+1,
+(12)(34),
+(13)(24),
+(14)(23)
+\}.
+\]
+
+\begin{proposition}
+\label{prop:normalizer-quotient}
+The normalizer of \(H\) in \(S_5\) is the point stabilizer of \(5\).
+Consequently,
+\[
+N_{S_5}(H)\cong S_4
+\]
+and
+\[
+N_{S_5}(H)/H\cong S_3.
+\]
+\end{proposition}
+
+\begin{proof}
+The common fixed-point set of the three nonidentity elements of \(H\) is
+the singleton \(\{5\}\). Every element normalizing \(H\) must preserve
+this set, so
+\[
+N_{S_5}(H)
+\leq
+\operatorname{Stab}_{S_5}(5)
+\cong
+S_4.
+\]
+
+Conversely, the point stabilizer of \(5\) permutes the three double
+transpositions in \(H\), and therefore normalizes \(H\). Hence
+\[
+N_{S_5}(H)
+=
+\operatorname{Stab}_{S_5}(5)
+\cong
+S_4.
+\]
+
+Conjugation on the three nonidentity elements of \(H\) gives a surjective
+homomorphism
+\[
+N_{S_5}(H)\longrightarrow S_3.
+\]
+Its kernel is the centralizer of \(H\) in \(S_4\), which is \(H\) itself.
+Therefore
+\[
+N_{S_5}(H)/H
+\cong
+S_3.
+\]
+\end{proof}
+
+\subsection{The centralizer of the coset action}
+
+% STATUS: Conceptual
+
+Let
+\[
+\Omega
+=
+S_5/H
+\]
+with \(H=V_{4,\mathrm{even}}\), and let \(S_5\) act by left
+multiplication.
+
+\begin{corollary}
+\label{cor:coset-centralizer}
+The centralizer of this permutation representation is
+\[
+C_{\Sym(\Omega)}(S_5)
+\cong
+S_3.
+\]
+\end{corollary}
+
+\begin{proof}
+By Lemma~\ref{lem:coset-centralizer},
+\[
+C_{\Sym(\Omega)}(S_5)
+\cong
+N_{S_5}(H)/H.
+\]
+Proposition~\ref{prop:normalizer-quotient} identifies the quotient with
+\(S_3\).
+\end{proof}
+
+\subsection{Fixation of the distinguished orbital}
+
+% STATUS: Conceptual deduction from certified computation
+% DEPENDS: Certified quartic orbital census in Section 5
+% LITERATURE: Cameron2003CoherentConfigurations
+%             Eberhard2023HammingSandwiches
+
+The centralizer may permute the orbital relations of the Schurian coherent
+configuration; it need not fix every relation individually. The certified
+uniqueness result of Section~5 forces fixation in the present case.
+
+\begin{theorem}
+\label{thm:centralizer-fixes-orbital}
+The centralizer of the \(S_5\)-action on
+\[
+\Omega=S_5/V_{4,\mathrm{even}}
+\]
+acts by automorphisms of the distinguished connected quartic orbital
+graph. Consequently,
+\[
+C_{\Sym(\Omega)}(S_5)
+\leq
+\Aut(X).
+\]
+\end{theorem}
+
+\begin{proof}
+The centralizer is contained in the normalizer of the permutation group.
+By Lemma~\ref{lem:normalizer-permutes-orbitals}, it permutes the
+self-paired orbital relations and carries each orbital graph to an
+isomorphic orbital graph.
+
+The certified census in Section~5 contains exactly four quartic
+self-paired orbital graphs. Exactly one is connected; the other three each
+have two components of order fifteen. Valency and connectedness are
+preserved under graph isomorphism, so the unique connected quartic
+relation is fixed by every element of the centralizer.
+
+By Theorem~\ref{thm:coincidence}, this distinguished orbital graph
+is \(X\). Hence every element of the centralizer preserves the edge
+relation of \(X\).
+\end{proof}
+
+Combining Theorem~\ref{thm:centralizer-fixes-orbital} with
+Corollary~\ref{cor:coset-centralizer} gives
+\[
+S_3
+\cong
+C_{\Sym(\Omega)}(S_5)
+\leq
+\Aut(X).
+\]
+
+\subsection{The commuting product}
+
+% STATUS: Conceptual deduction
+
+Under the homogeneous-space identification of Section~5, let
+
+\[
+K\cong S_{5}
+\]
+
+denote the subgroup induced by left multiplication on
+
+\[
+\Omega=S_{5}/V_{4,\mathrm{even}},
+\]
+
+and let
+
+\[
+C=C_{\Sym(\Omega)}(K).
+\]
+
+The orbital construction gives
+
+\[
+K\leq\Aut(X),
+\]
+
+while the fixation theorem of the preceding subsection gives
+
+\[
+C\leq\Aut(X).
+\]
+
+By Corollary~\ref{cor:coset-centralizer},
+
+\[
+C\cong S_{3}.
+\]
+
+\begin{proposition}
+\label{prop:commuting-product}
+
+The subgroups \(K\) and \(C\) generate an internal direct product
+
+\[
+KC
+\cong
+S_{5}\times S_{3}.
+\]
+
+In particular,
+
+\[
+|KC|=720.
+\]
+
+\end{proposition}
+
+\begin{proof}
+
+By definition of the centralizer, every element of \(C\) commutes with
+every element of \(K\).
+
+It remains to determine the intersection. If
+
+\[
+x\in K\cap C,
+\]
+
+then \(x\) belongs to \(K\) and centralizes all of \(K\). Hence
+
+\[
+x\in Z(K).
+\]
+
+Since
+
+\[
+K\cong S_{5}
+\]
+
+and \(S_{5}\) has trivial center,
+
+\[
+K\cap C=1.
+\]
+
+Therefore the commuting product is internal and direct:
+
+\[
+KC
+\cong
+K\times C
+\cong
+S_{5}\times S_{3}.
+\]
+
+Its order is
+
+\[
+|KC|
+=
+|S_{5}|\cdot|S_{3}|
+=
+120\cdot6
+=
+720.
+\]
+\end{proof}
+
+\subsection{The full automorphism group}
+
+% STATUS: Certified computational input followed by conceptual deduction
+% SOURCE: all_one_group_anatomy_audit_028o.json
+% COMMIT: 1604b16
+
+The remaining computational input is an exact enumeration of the full
+automorphism group.
+
+\begin{theorem}
+\label{thm:full-automorphism-group}
+
+The full automorphism group of \(X\) is
+
+\[
+\Aut(X)
+\cong
+S_{5}\times S_{3}.
+\]
+
+\end{theorem}
+
+\begin{proof}
+
+The certified automorphism computation described in Section~9 gives
+
+\[
+|\Aut(X)|=720.
+\]
+
+By Proposition~\ref{prop:commuting-product}, the group \(\Aut(X)\)
+already contains the subgroup
+
+\[
+KC
+\cong
+S_{5}\times S_{3}
+\]
+
+of order \(720\).
+
+Consequently,
+
+\[
+\Aut(X)=KC,
+\]
+
+and therefore
+
+\[
+\Aut(X)
+\cong
+S_{5}\times S_{3}.
+\]
+\end{proof}
+
+The computation is used only to exclude automorphisms outside the
+conceptually constructed subgroup \(K\times C\). The complementary
+\(S_{3}\) itself is forced by the homogeneous-space realization and the
+uniqueness of the connected quartic orbital relation.
+
+\subsection{Group-theoretic consequences}
+
+% STATUS: Conceptual deduction from Theorem 6.5
+
+The direct-product description determines the elementary anatomy of the
+full automorphism group.
+
+\begin{corollary}
+\label{cor:group-anatomy}
+
+Let
+
+\[
+A=\Aut(X).
+\]
+
+Then
+
+\[
+Z(A)=1,
+\]
+
+\[
+A'
+\cong
+A_{5}\times C_{3},
+\]
+
+and
+
+\[
+A^{\mathrm{ab}}
+\cong
+C_{2}\times C_{2}.
+\]
+
+In particular,
+
+\[
+|A'|=180
+\]
+
+and
+
+\[
+[A:A']=4.
+\]
+
+\end{corollary}
+
+\begin{proof}
+
+By Theorem~\ref{thm:full-automorphism-group},
+
+\[
+A
+\cong
+S_{5}\times S_{3}.
+\]
+
+The center of a direct product is the product of the centers. Since both
+\(S_{5}\) and \(S_{3}\) have trivial center,
+
+\[
+Z(A)
+=
+Z(S_{5})\times Z(S_{3})
+=
+1.
+\]
+
+The derived subgroup of a direct product is the product of the derived
+subgroups. Using
+
+\[
+S_{5}'=A_{5}
+\]
+
+and
+
+\[
+S_{3}'=A_{3}\cong C_{3},
+\]
+
+we obtain
+
+\[
+A'
+\cong
+A_{5}\times C_{3}.
+\]
+
+Finally,
+
+\[
+S_{5}^{\mathrm{ab}}\cong C_{2}
+\]
+
+and
+
+\[
+S_{3}^{\mathrm{ab}}\cong C_{2},
+\]
+
+so
+
+\[
+A^{\mathrm{ab}}
+\cong
+C_{2}\times C_{2}.
+\]
+
+The order and index statements follow immediately.
+\end{proof}
+
+The full group is therefore centerless, while its derived subgroup retains
+the alternating symmetry of the Petersen structure together with the
+three-cycle subgroup of the complementary \(S_{3}\).
+
+The next section interprets the three involutions of that complementary
+factor as an automorphism orbit of regular quotient frames.

@@ -1,0 +1,99 @@
+\section{Labeled graph models}
+
+\subsection{A canonical set-based Petersen model}
+
+A coordinate-free labeled realization of the Petersen graph is the Kneser
+graph
+
+\[
+P=KG(5,2).
+\]
+
+Its vertices are the two-element subsets of
+
+\[
+[5]=\{1,2,3,4,5\},
+\]
+
+and two vertices are adjacent when they are disjoint.
+
+Thus
+
+\[
+V(P)
+=
+\{
+12,13,14,15,23,24,25,34,35,45
+\},
+\]
+
+where \(ij\) abbreviates \(\{i,j\}\).
+
+Its fifteen edges are
+
+\[
+\begin{aligned}
+&
+\{12,34\},\{12,35\},\{12,45\},\\
+&
+\{13,24\},\{13,25\},\{13,45\},\\
+&
+\{14,23\},\{14,25\},\{14,35\},\\
+&
+\{15,23\},\{15,24\},\{15,34\},\\
+&
+\{23,45\},\{24,35\},\{25,34\}.
+\end{aligned}
+\]
+
+These fifteen edges form the vertex set of
+
+\[
+Y=L(P).
+\]
+
+Two vertices of \(Y\) are adjacent when the corresponding Petersen edges
+share an endpoint.
+
+\subsection{The double-cover model}
+
+The vertices of \(X\) are
+
+\[
+(e,\varepsilon),
+\qquad
+e\in E(P),
+\quad
+\varepsilon\in\Ftwo.
+\]
+
+Adjacency is
+
+\[
+(e,\varepsilon)
+\sim
+(f,\varepsilon+1)
+\]
+
+precisely when \(e\) and \(f\) share a Petersen vertex.
+
+This set-based model is sufficient for all conceptual proofs in the paper.
+
+\subsection{Certificate integer labels}
+
+% STATUS: Review-draft insertion boundary
+
+The machine-readable certificates use integer vertex labels. The final
+appendix must include the exact bijection
+
+\[
+E(P)\times\Ftwo
+\longrightarrow
+\{0,1,\ldots,29\}
+\]
+
+copied verbatim from the labeled certificate packet.
+
+The present review draft deliberately does not reconstruct that table from
+memory. The conversion table is editorial metadata, not an unresolved
+mathematical claim.

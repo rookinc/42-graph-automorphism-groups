@@ -1,0 +1,502 @@
+\section{Construction and elementary structure of \(X\)}
+
+In this section we construct the graph
+
+\[
+X=\KC(L(P))
+\]
+
+in several equivalent ways and record its elementary graph-theoretic
+properties. These descriptions will be used interchangeably throughout the
+remainder of the paper.
+
+\subsection{Canonical-cover and tensor-product models}
+
+Let
+
+\[
+Y=L(P)
+\]
+
+be the line graph of the Petersen graph.
+
+The principal object of this paper is the canonical bipartite double cover
+
+\[
+X=\KC(Y).
+\]
+
+Equivalently,
+
+\[
+X\cong Y\times K_2,
+\]
+
+where \(K_2\) denotes the complete graph on two vertices and the product is
+the tensor product of graphs.
+
+Thus
+
+\[
+V(X)
+=
+V(Y)\times\Ftwo,
+\]
+
+and two vertices
+
+\[
+(u,\varepsilon),
+\qquad
+(v,\delta)
+\]
+
+are adjacent if and only if
+
+\[
+u\sim_Y v
+\]
+
+and
+
+\[
+\delta
+=
+\varepsilon+1
+\pmod2.
+\]
+
+The projection
+
+\[
+\pi:
+X
+\longrightarrow
+Y,
+\qquad
+(u,\varepsilon)
+\longmapsto
+u,
+\]
+
+is a regular two-fold covering projection whose deck involution is
+
+\[
+\tau(u,\varepsilon)
+=
+(u,\varepsilon+1).
+\]
+
+\begin{proposition}
+
+The graph \(X\) is connected, bipartite, quartic, and satisfies
+
+\[
+|V(X)|=30,
+\qquad
+|E(X)|=60.
+\]
+
+\end{proposition}
+
+\begin{proof}
+
+Since
+
+\[
+|V(Y)|=15,
+\]
+
+the double cover contains
+
+\[
+2\cdot15=30
+\]
+
+vertices.
+
+Every vertex of \(Y\) has degree four, and the covering projection is
+locally bijective. Hence every vertex of \(X\) also has degree four.
+
+Applying the Handshake Lemma,
+
+\[
+|E(X)|
+=
+\frac{30\cdot4}{2}
+=
+60.
+\]
+
+By Proposition~2.2 the canonical bipartite double cover of a connected
+non-bipartite graph is connected and bipartite. Since \(L(P)\) contains
+triangles, the result follows.
+
+\end{proof}
+
+The remaining subsections describe the same graph from alternative
+viewpoints that will be useful in later sections.
+
+
+\subsection{The Petersen-edge model}
+
+A vertex of the line graph \(Y=L(P)\) corresponds to an edge of the
+Petersen graph. Consequently every vertex of
+
+\[
+X=\KC(L(P))
+\]
+
+may be written in the form
+
+\[
+(e,\varepsilon),
+\]
+
+where
+
+\[
+e\in E(P),
+\qquad
+\varepsilon\in\Ftwo.
+\]
+
+Thus \(X\) consists of two copies of the fifteen edges of the Petersen
+graph.
+
+Two vertices
+
+\[
+(e,\varepsilon),
+\qquad
+(f,\delta)
+\]
+
+are adjacent precisely when
+
+\begin{enumerate}
+\item the edges \(e\) and \(f\) of the Petersen graph share a common
+vertex, and
+
+\item
+
+\[
+\delta=\varepsilon+1
+\pmod2.
+\]
+
+\end{enumerate}
+
+Equivalently,
+
+\[
+(e,\varepsilon)
+\sim
+(f,\varepsilon+1)
+\]
+
+if and only if
+
+\[
+e\cap f\neq\varnothing.
+\]
+
+This coordinate system will be used throughout the paper. In particular,
+the explicit vertex labels appearing in the computational certificates are
+obtained by fixing a labeling of the fifteen edges of the Petersen graph,
+as recorded in Appendix~A.
+
+
+\subsection{The neighborhood-incidence model}
+
+Let
+
+\[
+\mathcal N(Y)
+\]
+
+denote the neighborhood incidence structure of the graph \(Y\). Its points
+are the vertices of \(Y\), and its blocks are the open neighborhoods
+
+\[
+N_Y(v),
+\qquad
+v\in V(Y).
+\]
+
+Since \(Y\) is simple and quartic, every block has cardinality four.
+
+The Levi graph of this incidence structure has one bipartition consisting
+of the vertices of \(Y\) and the other consisting of the neighborhood
+blocks. A vertex is incident with a block precisely when it belongs to the
+corresponding neighborhood.
+
+\begin{proposition}
+
+The graph \(X=\KC(L(P))\) is isomorphic to the Levi graph of the
+neighborhood incidence structure of \(Y=L(P)\).
+
+\end{proposition}
+
+\begin{proof}
+
+The canonical bipartite double cover separates each vertex of \(Y\) into
+two sheets while preserving every adjacency relation between neighboring
+vertices.
+
+The neighborhood-incidence construction records exactly the same incidence
+information by replacing one sheet with neighborhood blocks. Identifying
+each neighborhood block with its corresponding lifted fiber produces a
+graph isomorphism.
+
+\end{proof}
+
+The canonical-cover, tensor-product, Petersen-edge, and neighborhood-
+incidence descriptions therefore define the same graph. We shall pass
+freely between these models according to convenience.
+
+
+\subsection{Connectedness, bipartiteness, and girth}
+
+By Proposition~2.2, the graph
+
+\[
+X=\KC(L(P))
+\]
+
+is connected and bipartite.
+
+The remaining elementary invariant is its girth.
+
+\begin{proposition}
+
+The girth of \(X\) is six.
+
+\end{proposition}
+
+\begin{proof}
+
+Since \(X\) is bipartite, every cycle has even length.
+It therefore suffices to exclude cycles of length four.
+
+Suppose
+
+\[
+x_1x_2x_3x_4x_1
+\]
+
+were a 4-cycle in \(X\).
+
+Projecting to the base graph \(Y=L(P)\) yields vertices
+
+\[
+u_1,u_2,u_3,u_4
+\]
+
+such that
+
+\[
+u_i\sim u_{i+1}
+\]
+
+for each \(i\), with indices taken modulo four.
+
+Because the covering projection is locally bijective, the projected walk is
+a closed walk of length four in \(Y\).
+
+However, \(L(P)\) contains no 4-cycles.
+
+Indeed, every pair of adjacent vertices in \(L(P)\) corresponds to two
+incident edges of the Petersen graph, and the Petersen graph contains no
+triangles or squares from which a 4-cycle in its line graph could arise.
+
+Hence no 4-cycle exists in \(X\).
+
+Since \(L(P)\) contains triangles, each triangle lifts to a cycle of length
+six in the canonical bipartite double cover.
+
+Therefore the shortest cycle in \(X\) has length six.
+
+\end{proof}
+
+Consequently,
+
+\[
+X
+\]
+
+is a connected bipartite quartic graph of girth six.
+
+
+\subsection{Symmetry and connectivity}
+
+The canonical bipartite double cover inherits every automorphism of the
+base graph.
+
+Every automorphism
+
+\[
+g\in\Aut(L(P))
+\]
+
+acts on
+
+\[
+X=\KC(L(P))
+\]
+
+by
+
+\[
+(u,\varepsilon)
+\longmapsto
+(g(u),\varepsilon).
+\]
+
+This lifted action preserves adjacency and commutes with the deck
+involution
+
+\[
+\tau(u,\varepsilon)
+=
+(u,\varepsilon+1).
+\]
+
+Consequently,
+
+\[
+\Aut(L(P))
+\times
+\langle\tau\rangle
+\cong
+S_{5}\times C_{2}
+\]
+
+acts faithfully on \(X\).
+
+The full automorphism group of \(X\) is determined later in
+Section~6. At present we record only the elementary consequences of the
+lifted action.
+
+\begin{proposition}
+
+The graph \(X\) is vertex-transitive, edge-transitive, and arc-transitive.
+
+\end{proposition}
+
+\begin{proof}
+
+The line graph of the Petersen graph is arc-transitive.
+
+Since every automorphism lifts to the canonical bipartite double cover,
+the lifted action remains transitive on vertices, edges, and oriented
+edges.
+
+\end{proof}
+
+
+\subsection{Metric and spectral profile}
+
+The graph \(X\) has diameter four.
+
+Its distance distribution from any vertex is
+
+\[
+(1,4,12,11,2),
+\]
+
+showing that every vertex has
+
+\[
+1+4+12+11+2
+=
+30
+\]
+
+vertices at distances
+
+\[
+0,1,2,3,4,
+\]
+
+respectively.
+
+The adjacency matrix of the canonical bipartite double cover has block
+form
+
+\[
+A_X
+=
+\begin{pmatrix}
+0&A_Y\\
+A_Y&0
+\end{pmatrix},
+\]
+
+where \(A_Y\) is the adjacency matrix of the line graph \(Y=L(P)\).
+
+Consequently every eigenvalue
+
+\[
+\lambda
+\]
+
+of \(A_Y\) gives rise to the pair of eigenvalues
+
+\[
+\pm\lambda
+\]
+
+of \(A_X\).
+
+The resulting spectrum is
+
+\[
+\operatorname{Spec}(X)
+=
+\{
+4^{1},
+2^{10},
+1^{4},
+(-1)^{4},
+(-2)^{10},
+(-4)^{1}
+\}.
+\]
+
+These metric and spectral invariants will be used later only as recognition
+data; the proofs of the principal theorems do not depend upon them.
+
+
+\subsection{Recognition profile}
+
+The elementary invariants established in this section are summarized in
+Table~\ref{tab:recognition-profile}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\toprule
+Invariant & Value\\
+\midrule
+Order & \(30\)\\
+Size & \(60\)\\
+Degree & \(4\)\\
+Connected & Yes\\
+Bipartite & Yes\\
+Girth & \(6\)\\
+Diameter & \(4\)\\
+Distance distribution & \((1,4,12,11,2)\)\\
+Spectrum &
+\(\{4^{1},2^{10},1^{4},(-1)^{4},(-2)^{10},(-4)^{1}\}\)\\
+\bottomrule
+\end{tabular}
+\caption{Elementary graph-theoretic invariants of
+\(X=\KC(L(P))\).}
+\label{tab:recognition-profile}
+\end{table}
+
+These invariants characterize the graph from the viewpoint of elementary
+graph theory. The subsequent sections investigate the additional structure
+arising from its quotient frames, homogeneous-space realization, and
+automorphism group.

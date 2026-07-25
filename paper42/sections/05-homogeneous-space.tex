@@ -1,0 +1,370 @@
+\section{The homogeneous-space realization}
+
+Sections~3 and~4 constructed the graph
+
+\[
+X=\KC(L(P))
+\]
+
+as the canonical bipartite double cover of the line graph of the Petersen
+graph.
+
+In this section we temporarily set that construction aside.
+
+Instead we begin with a transitive permutation action of the symmetric
+group \(S_{5}\) on a homogeneous space of degree thirty and study the
+orbital graphs arising from that action.
+
+Only at the end of the section do we identify the resulting graph with the
+graph constructed previously.
+
+\subsection{The degree-thirty coset actions}
+
+The symmetric group
+
+\[
+S_{5}
+\]
+
+contains two conjugacy classes of Klein four subgroups, introduced in
+Section~2.6.
+
+These determine the homogeneous spaces
+
+\[
+\Omega_{\mathrm{even}}
+=
+S_{5}/V_{4,\mathrm{even}}
+\]
+
+and
+
+\[
+\Omega_{\mathrm{mixed}}
+=
+S_{5}/V_{4,\mathrm{mixed}}.
+\]
+
+Each action has degree
+
+\[
+30,
+\]
+
+since both Klein four subgroups have index thirty.
+
+Although these actions have the same degree, they are not permutation
+isomorphic because the corresponding subgroups are not conjugate in
+\(S_{5}\).
+
+Consequently they define two distinct homogeneous spaces equipped with
+transitive actions of the symmetric group.
+
+% STATUS: Conceptual
+
+
+\subsection{The \(A_{5}\)-orbit distinction}
+
+We compare the restrictions of the two degree-thirty actions to the
+alternating subgroup \(A_{5}\). Their orbit structures are different.
+
+\begin{proposition}
+
+The restriction of the action on
+
+\[
+\Omega_{\mathrm{even}}
+\]
+
+to \(A_{5}\) has exactly two orbits, each of size fifteen.
+
+The restriction of the action on
+
+\[
+\Omega_{\mathrm{mixed}}
+\]
+
+remains transitive.
+
+\end{proposition}
+
+\begin{proof}
+
+The subgroup
+
+\[
+V_{4,\mathrm{even}}
+\]
+
+is contained in
+
+\[
+A_{5},
+\]
+
+so
+
+\[
+A_{5}
+\]
+
+acts on the coset space
+
+\[
+S_{5}/V_{4,\mathrm{even}}
+\]
+
+with two orbits corresponding to the two cosets of
+
+\[
+A_{5}
+\]
+
+in
+
+\[
+S_{5}.
+\]
+
+Each orbit therefore has size
+
+\[
+|A_{5}:V_{4,\mathrm{even}}|
+=
+60/4
+=
+15.
+\]
+
+In contrast,
+
+\[
+V_{4,\mathrm{mixed}}
+\]
+
+contains odd permutations and is not contained in
+
+\[
+A_{5}.
+\]
+
+Consequently,
+
+\[
+A_{5}V_{4,\mathrm{mixed}}
+=
+S_{5},
+\]
+
+and the restriction of the action remains transitive.
+
+\end{proof}
+
+Thus the two degree-thirty homogeneous spaces are already distinguished at
+the level of the alternating subgroup.
+
+The homogeneous space
+
+\[
+\Omega_{\mathrm{even}}
+\]
+
+naturally decomposes into two equal halves,
+
+whereas
+
+\[
+\Omega_{\mathrm{mixed}}
+\]
+
+does not.
+
+% STATUS: Conceptual
+
+
+\subsection{Certified quartic orbital census}
+
+% STATUS: Certified computation
+% SOURCE: orbital_census_certificate
+% Theorem established by exhaustive finite computation.
+
+The action of
+
+\[
+S_{5}
+\]
+
+on
+
+\[
+\Omega_{\mathrm{even}}
+=
+S_{5}/V_{4,\mathrm{even}}
+\]
+
+admits a finite family of self-paired orbital graphs.
+
+The complete quartic orbital census was performed by exhaustive
+computation and is recorded in the certified artifacts described in
+Section~9.
+
+\begin{theorem}[Certified quartic orbital census]
+\label{thm:quartic-orbital-census}
+
+Among the self-paired orbital graphs arising from the action of
+
+\[
+S_{5}
+\]
+
+on
+
+\[
+S_{5}/V_{4,\mathrm{even}},
+\]
+
+there exist exactly four quartic orbital graphs.
+
+Three are disconnected.
+
+Exactly one is connected.
+
+\end{theorem}
+
+The four orbital graphs are summarized in
+Table~\ref{tab:quartic-orbitals}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\toprule
+Components &
+Triangle-free &
+Bipartite &
+Status\\
+\midrule
+15+15 & No & No & Certified\\
+30 & Yes & Yes & Certified\\
+15+15 & No & No & Certified\\
+15+15 & No & No & Certified\\
+\bottomrule
+\end{tabular}
+\caption{Certified quartic self-paired orbital census for
+\(S_{5}/V_{4,\mathrm{even}}\).}
+\label{tab:quartic-orbitals}
+\end{table}
+
+No conceptual proof of this classification is presently known.
+The theorem records the exact outcome of the certified finite census.
+
+
+\subsection{The connected triangle-free orbital}
+
+% STATUS: Conceptual deduction from certified computation
+
+The graph constructed in Section~3 is connected and bipartite.
+Consequently, among the four certified quartic orbital graphs, only a
+connected bipartite member can possibly coincide with the graph under
+consideration.
+
+\begin{proposition}
+
+Among the certified quartic orbital graphs on
+
+\[
+\Omega_{\mathrm{even}},
+\]
+
+exactly one is connected, bipartite, and triangle-free.
+
+\end{proposition}
+
+\begin{proof}
+
+By the certified quartic orbital census of Theorem~\ref{thm:quartic-orbital-census}, exactly one
+quartic orbital graph is connected.
+
+The remaining three have two connected components of order fifteen.
+
+The connected member is bipartite, whereas each disconnected member
+contains triangles.
+
+Therefore exactly one certified quartic orbital graph satisfies the
+elementary graph-theoretic invariants established in Section~3.
+
+\end{proof}
+
+Accordingly, there is a unique certified candidate for identification with
+the graph constructed in Section~3.
+
+No graph isomorphism has yet been invoked.
+
+
+\subsection{The coincidence theorem}
+
+% STATUS: Conceptual deduction from certified computation
+% SOURCE: graph isomorphism certificate
+
+The graph constructed in Section~3 and the connected quartic orbital graph
+identified in Section~5.4 arise from entirely different mathematical
+constructions.
+
+The first is obtained as the canonical bipartite double cover of the line
+graph of the Petersen graph.
+
+The second arises from the action of
+
+\[
+S_{5}
+\]
+
+on the homogeneous space
+
+\[
+S_{5}/V_{4,\mathrm{even}}.
+\]
+
+The following theorem identifies these constructions.
+
+\begin{theorem}[Coincidence Theorem]
+\label{thm:coincidence}
+
+The connected triangle-free quartic orbital graph on
+
+\[
+S_{5}/V_{4,\mathrm{even}}
+\]
+
+is isomorphic to
+
+\[
+X=\KC(L(P)).
+\]
+
+\end{theorem}
+
+\begin{proof}
+
+The certified orbital census establishes the existence of exactly one
+connected quartic orbital graph on
+
+\[
+S_{5}/V_{4,\mathrm{even}}.
+\]
+
+Section~3 constructs a connected bipartite quartic graph having the same
+elementary graph-theoretic invariants.
+
+A certified graph-isomorphism computation establishes an explicit
+isomorphism between these two graphs.
+
+Therefore the two constructions determine the same graph.
+
+\end{proof}
+
+Henceforth we make no distinction between these two presentations and
+identify both constructions with the graph
+
+\[
+X.
+\]

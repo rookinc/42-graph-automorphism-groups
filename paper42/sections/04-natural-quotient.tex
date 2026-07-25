@@ -1,0 +1,402 @@
+\section{The natural quotient frame}
+
+The canonical bipartite double cover carries an evident regular two-fold
+covering structure. In this section we develop this distinguished quotient
+frame and determine its stabilizer inside the automorphism group.
+
+\subsection{Natural fibers and the deck involution}
+
+Recall that
+
+\[
+X=\KC(L(P))
+\]
+
+has vertex set
+
+\[
+V(X)
+=
+V(L(P))\times\Ftwo.
+\]
+
+For each
+
+\[
+u\in V(L(P))
+\]
+
+define the fiber
+
+\[
+F_u
+=
+\{
+(u,0),
+(u,1)
+\}.
+\]
+
+The collection
+
+\[
+\mathcal P_0
+=
+\{
+F_u
+:
+u\in V(L(P))
+\}
+\]
+
+is a partition of
+
+\[
+V(X)
+\]
+
+into fifteen unordered pairs.
+
+The associated involution is
+
+\[
+\tau_0(u,\varepsilon)
+=
+(u,\varepsilon+1),
+\]
+
+which exchanges the two vertices of every fiber.
+
+Since
+
+\[
+\tau_0^2=\mathrm{id},
+\]
+
+and
+
+\[
+\tau_0
+\]
+
+preserves adjacency, it is a fixed-point-free involutory automorphism of
+\(X\).
+
+The partition
+
+\[
+\mathcal P_0
+\]
+
+is therefore a regular two-fold quotient frame in the sense of
+Definition~2.3.
+
+
+\subsection{The natural quotient}
+
+The quotient graph determined by the fiber partition
+
+\[
+\mathcal P_0
+\]
+
+is naturally identified with the line graph of the Petersen graph.
+
+\begin{proposition}
+
+The quotient projection
+
+\[
+\pi:
+X
+\longrightarrow
+X/\mathcal P_0
+\]
+
+is a regular two-fold covering projection and
+
+\[
+X/\mathcal P_0
+\cong
+L(P).
+\]
+
+\end{proposition}
+
+\begin{proof}
+
+Every block of
+
+\[
+\mathcal P_0
+\]
+
+is a fiber
+
+\[
+\{
+(u,0),
+(u,1)
+\}
+\]
+
+over a unique vertex
+
+\[
+u\in L(P).
+\]
+
+Define
+
+\[
+\Phi:
+X/\mathcal P_0
+\longrightarrow
+L(P)
+\]
+
+by
+
+\[
+\Phi(F_u)=u.
+\]
+
+This map is clearly bijective.
+
+Two quotient vertices
+
+\[
+F_u,
+\qquad
+F_v
+\]
+
+are adjacent precisely when some vertex of
+
+\[
+F_u
+\]
+
+is adjacent to some vertex of
+
+\[
+F_v.
+\]
+
+By construction of the canonical bipartite double cover,
+
+\[
+(u,\varepsilon)
+\sim
+(v,\varepsilon+1)
+\]
+
+if and only if
+
+\[
+u\sim v
+\]
+
+in
+
+\[
+L(P).
+\]
+
+Hence
+
+\[
+F_u
+\sim
+F_v
+\]
+
+in the quotient exactly when
+
+\[
+u
+\sim
+v
+\]
+
+in
+
+\[
+L(P).
+\]
+
+Therefore
+
+\[
+\Phi
+\]
+
+is a graph isomorphism.
+
+Since every edge of
+
+\[
+L(P)
+\]
+
+lifts to two disjoint edges joining the corresponding fibers, the quotient
+projection is a regular two-fold covering projection.
+
+\end{proof}
+
+Consequently, the fiber partition
+
+\[
+\mathcal P_0
+\]
+
+recovers the original base graph from which the canonical bipartite double
+cover was constructed.
+
+
+\subsection{The lifted \(S_{5}\)-action}
+
+Every automorphism
+
+\[
+g\in\Aut(L(P))
+\]
+
+lifts naturally to an automorphism of the canonical bipartite double cover by
+
+\[
+\widehat g(u,\varepsilon)
+=
+(g(u),\varepsilon).
+\]
+
+Since adjacency in
+
+\[
+X=\KC(L(P))
+\]
+
+depends only on adjacency in the base graph together with the parity
+coordinate, every lifted map preserves adjacency.
+
+Moreover,
+
+\[
+\widehat g
+\]
+
+commutes with the deck involution
+
+\[
+\tau_0,
+\]
+
+since
+
+\[
+\widehat g\,\tau_0
+=
+\tau_0\,\widehat g.
+\]
+
+Thus the lifted action preserves every fiber of the natural quotient frame
+\(\mathcal P_0\).
+
+\begin{theorem}
+
+The stabilizer of the natural quotient frame is
+
+\[
+A_{\mathcal P_0}
+\cong
+S_{5}\times C_{2}.
+\]
+
+\end{theorem}
+
+\begin{proof}
+
+Every automorphism of the base graph lifts uniquely to an automorphism of
+the cover preserving each fiber. This gives an embedded copy of
+
+\[
+S_{5}
+\cong
+\Aut(L(P)).
+\]
+
+The deck involution
+
+\[
+\tau_0
+\]
+
+also preserves every fiber.
+
+Since every lifted automorphism commutes with
+
+\[
+\tau_0,
+\]
+
+these actions generate a subgroup
+
+\[
+S_{5}\times C_{2}.
+\]
+
+Conversely, let
+
+\[
+\varphi
+\]
+
+preserve the quotient frame
+
+\[
+\mathcal P_0.
+\]
+
+Then
+
+\[
+\varphi
+\]
+
+induces an automorphism of the quotient graph
+
+\[
+X/\mathcal P_0
+\cong
+L(P),
+\]
+
+whose lift differs from
+
+\[
+\varphi
+\]
+
+by at most the deck involution.
+
+Hence every frame-preserving automorphism lies in
+
+\[
+S_{5}\times\langle\tau_0\rangle,
+\]
+
+proving
+
+\[
+A_{\mathcal P_0}
+\cong
+S_{5}\times C_{2}.
+\]
+
+\end{proof}
+
+Theorem~4.2 describes the symmetry group visible from the natural quotient
+frame. Section~6 shows that the full automorphism group is strictly larger,
+arising from additional symmetries that exchange quotient frames rather
+than preserve a single one.
+
