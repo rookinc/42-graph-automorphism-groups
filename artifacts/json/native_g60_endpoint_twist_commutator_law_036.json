@@ -1,0 +1,1283 @@
+{
+  "audit_pass": false,
+  "automorphism_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "boundary": {
+    "downstairs_product_direction_classified": true,
+    "endpoint_twist_commutator_law_classified": true,
+    "global_group_presentation_not_yet_composed": true,
+    "local_dihedral_factor_identified": true,
+    "physical_claim": false,
+    "remaining_central_c2_generator_not_yet_identified": true
+  },
+  "bridge_source": "sources/project42_g60_to_g30_a_quotient_certificate_035.json",
+  "certificate_id": "native_g60_endpoint_twist_commutator_law_036",
+  "checks": {
+    "all_cubes_have_same_commutator_profile": true,
+    "all_cubes_have_same_product_order_profile": true,
+    "all_endpoint_lift_commutators_equal_deck_a": false,
+    "all_endpoint_lift_products_are_involutions": true,
+    "all_endpoint_twist_lifts_have_order4": true,
+    "all_products_equal_deck_times_reverse_products": false,
+    "automorphism_source_audit_pass": true,
+    "bridge_source_audit_pass": true,
+    "cube_source_audit_pass": true,
+    "fifteen_cube_rows_constructed": true,
+    "four_lift_pairings_checked_per_cube": true,
+    "lift_source_audit_pass": true,
+    "partner_source_audit_pass": true,
+    "twist_source_audit_pass": true
+  },
+  "classification_result": "The two endpoint-twist lifts in each lifted cube satisfy a uniform dihedral commutator law. Each has square a, their commutator is a, and reversing their order multiplies the product by a. Their product is an involution. This identifies the local D8 factor directly from the two Petersen endpoint twists, while the remaining central C2 factor is independent.",
+  "commutator_profile_profile": [
+    {
+      "cube_count": 15,
+      "profile": [
+        [
+          "identity",
+          4
+        ]
+      ]
+    }
+  ],
+  "cube_count": 15,
+  "cube_rows": [
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 0,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        0
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 4,
+      "endpoint_twist_indices": [
+        67,
+        71
+      ],
+      "native_g15_label": 0,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        1
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 1,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        1
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 74,
+      "endpoint_twist_indices": [
+        67,
+        9
+      ],
+      "native_g15_label": 1,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        2
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 2,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        2
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 137,
+      "endpoint_twist_indices": [
+        67,
+        178
+      ],
+      "native_g15_label": 11,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        3
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 3,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        3
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 64,
+      "endpoint_twist_indices": [
+        194,
+        207
+      ],
+      "native_g15_label": 5,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        4,
+        5
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 4,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        4
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 56,
+      "endpoint_twist_indices": [
+        71,
+        38
+      ],
+      "native_g15_label": 4,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        1,
+        6
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 5,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        5
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 117,
+      "endpoint_twist_indices": [
+        71,
+        236
+      ],
+      "native_g15_label": 9,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        1,
+        7
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 6,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        6
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 69,
+      "endpoint_twist_indices": [
+        172,
+        80
+      ],
+      "native_g15_label": 14,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        8,
+        9
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 7,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        7
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 125,
+      "endpoint_twist_indices": [
+        9,
+        172
+      ],
+      "native_g15_label": 8,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        2,
+        8
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 8,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        8
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 151,
+      "endpoint_twist_indices": [
+        9,
+        194
+      ],
+      "native_g15_label": 2,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        2,
+        4
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 9,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        9
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 42,
+      "endpoint_twist_indices": [
+        236,
+        172
+      ],
+      "native_g15_label": 7,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        7,
+        8
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 10,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        10
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 48,
+      "endpoint_twist_indices": [
+        178,
+        80
+      ],
+      "native_g15_label": 13,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        3,
+        9
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 11,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        11
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 135,
+      "endpoint_twist_indices": [
+        38,
+        80
+      ],
+      "native_g15_label": 12,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        6,
+        9
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 12,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        12
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 107,
+      "endpoint_twist_indices": [
+        194,
+        38
+      ],
+      "native_g15_label": 3,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        4,
+        6
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 13,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        13
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 98,
+      "endpoint_twist_indices": [
+        178,
+        207
+      ],
+      "native_g15_label": 10,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        3,
+        5
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    },
+    {
+      "commutator_profile": {
+        "identity": 4
+      },
+      "cube_index": 14,
+      "downstairs_product_cube_incidence_count": 1,
+      "downstairs_product_cube_indices": [
+        14
+      ],
+      "downstairs_product_fixed_point_count": 2,
+      "downstairs_product_index": 157,
+      "endpoint_twist_indices": [
+        207,
+        236
+      ],
+      "native_g15_label": 6,
+      "pairing_rows": [
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 0,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 0,
+          "right_order": 4
+        },
+        {
+          "commutator_is_deck_a": false,
+          "commutator_is_identity": true,
+          "left_lift_number": 1,
+          "left_order": 4,
+          "product_equals_deck_times_reverse": false,
+          "product_order": 2,
+          "product_square_is_deck_a": false,
+          "product_square_is_identity": true,
+          "reverse_product_order": 2,
+          "right_lift_number": 1,
+          "right_order": 4
+        }
+      ],
+      "petersen_endpoint_vertices": [
+        5,
+        7
+      ],
+      "product_order_profile": {
+        "2": 4
+      },
+      "product_square_profile": {
+        "identity": 4
+      }
+    }
+  ],
+  "cube_source": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+  "distinct_downstairs_product_count": 15,
+  "downstairs_product_cube_incidence_profile": {
+    "1": 15
+  },
+  "downstairs_product_fixed_point_profile": {
+    "2": 15
+  },
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "partner_source": "artifacts/json/native_g60_twist_center_partner_law_035.json",
+  "product_order_profile_profile": [
+    {
+      "cube_count": 15,
+      "profile": [
+        [
+          "2",
+          4
+        ]
+      ]
+    }
+  ],
+  "tested_law": "For each Petersen edge cube with endpoint twists t_u and t_v, choose arbitrary lifts x_u and x_v. Test whether x_u^2=x_v^2=a, whether their commutator is a, and whether x_u x_v is an involution. Multiplication of either lift by the central deck a must not change these results.",
+  "twist_source": "artifacts/json/native_g60_lifted_cube_twist_directions_034.json"
+}
