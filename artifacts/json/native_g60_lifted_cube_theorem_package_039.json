@@ -1,0 +1,174 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "all_g30_automorphisms_lift": true,
+    "finite_group_theorem_package": true,
+    "full_480_group_abstract_type_open": true,
+    "full_aut_g60_equality_open": true,
+    "lifted_cube_extension_geometry_complete": true,
+    "physical_claim": false
+  },
+  "certificate_id": "native_g60_lifted_cube_theorem_package_039",
+  "checks": {
+    "all_240_g30_automorphisms_lift": true,
+    "all_extensions_are_nonsplit": true,
+    "all_source_audits_pass": true,
+    "all_sources_exist": true,
+    "constructed_lift_count_is_480": true,
+    "endpoint_twists_commute": true,
+    "fifteen_preimages_are_d8_x_c2": true,
+    "four_reflections_per_cube": true,
+    "reflection_formula_matches_all_cubes": true,
+    "reflection_registers_are_affine_planes": true,
+    "ten_twisted_directions_total": true,
+    "twist_partner_law_passes": true,
+    "two_twisted_directions_per_cube": true
+  },
+  "local_presentation": {
+    "central_downstairs_direction": "z",
+    "deck": "a",
+    "endpoint_centers": [
+      "c_u",
+      "c_v"
+    ],
+    "endpoint_twists": [
+      "t_u = z c_u",
+      "t_v = z c_v"
+    ],
+    "lift_relations": [
+      "x_u^2 = a",
+      "x_v^2 = a",
+      "[x_u, x_v] = 1",
+      "(x_u x_v)^2 = 1"
+    ],
+    "reflection_register": [
+      "z",
+      "c_u",
+      "c_v",
+      "z c_u c_v"
+    ]
+  },
+  "source_receipts": [
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_automorphism_lifts_to_g60_032",
+      "path": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+      "sha256": "3e42fcff219e433ac5d63413a1767add5607cfa721d399607e9c1503979f807b"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_lifted_cube_preimages_033",
+      "path": "artifacts/json/native_g60_lifted_cube_preimages_033.json",
+      "sha256": "700ab363def411cfa7a207dc9b24f35a91e2045a9eaaf23c28829c66b9aaec14"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_lifted_cube_twist_directions_034",
+      "path": "artifacts/json/native_g60_lifted_cube_twist_directions_034.json",
+      "sha256": "f730dbca664fe7a9277322d689aa883526d1ea29fc8ffb9af821227af953af79"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_twist_center_partner_law_035",
+      "path": "artifacts/json/native_g60_twist_center_partner_law_035.json",
+      "sha256": "5b69a4713d5d841ef3e7b14fdacc47fcc6c7abe2dba0538acd568a849b05e207"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_endpoint_twist_commutator_law_036",
+      "path": "artifacts/json/native_g60_endpoint_twist_commutator_law_036.json",
+      "sha256": "480f86b739f49744f43e4ff40362d58b106924efee03f16ed55a78fc8190c775"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_cube_dihedral_reflections_037",
+      "path": "artifacts/json/native_g60_cube_dihedral_reflections_037.json",
+      "sha256": "19ce3b6b5bbf0fb31f5ec89bbd3b2bbe99d3944f9b80280b296231ffb43b32ef"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g60_cube_reflection_affine_plane_038",
+      "path": "artifacts/json/native_g60_cube_reflection_affine_plane_038.json",
+      "sha256": "8484b77a4982d4e4673e95d865268d5316d49d438659525654cc4b9fa862cb2c"
+    }
+  ],
+  "summary_counts": {
+    "constructed_g60_lift_count": 480,
+    "distinct_edge_local_fourth_reflection_count": 15,
+    "distinct_twisted_direction_count": 10,
+    "downstairs_cube_count": 15,
+    "downstairs_cube_type": "C2_x_C2_x_C2",
+    "g30_automorphism_count": 240,
+    "lifted_cube_preimage_order": 16,
+    "lifted_cube_preimage_type": "D8_x_C2",
+    "reflection_direction_count_per_cube": 4,
+    "twisted_direction_count_per_cube": 2
+  },
+  "theorem_result": "The native G60 double cover lifts all 240 automorphisms of G30 to 480 explicit G60 automorphisms. Each of the fifteen affine C2^3 cubes has a non-split order-16 preimage isomorphic to D8 x C2. Its two Petersen endpoint twists lift to commuting order-4 elements squaring to the deck involution a. The four directions admitting dihedral reflection lifts form the affine plane {z, c_u, c_v, z c_u c_v}. Thus the Petersen endpoint geometry controls both the twist support and reflection geometry of every lifted cube.",
+  "theorem_statements": [
+    {
+      "evidence": [
+        "native_g30_automorphism_lifts_to_g60_032"
+      ],
+      "statement": "Every automorphism of G30 preserves the native G60 double-cover class and has exactly two lifts differing by the deck involution a.",
+      "theorem_id": "T039-1"
+    },
+    {
+      "evidence": [
+        "native_g30_automorphism_lifts_to_g60_032"
+      ],
+      "statement": "The resulting lifted automorphism group contains 480 explicitly constructed permutations of G60.",
+      "theorem_id": "T039-2"
+    },
+    {
+      "evidence": [
+        "native_g60_lifted_cube_preimages_033"
+      ],
+      "statement": "The full preimage of each of the fifteen affine C2^3 cubes has order 16 and abstract type D8 x C2.",
+      "theorem_id": "T039-3"
+    },
+    {
+      "evidence": [
+        "native_g60_lifted_cube_preimages_033"
+      ],
+      "statement": "Each central extension 1 -> <a> -> E_tilde -> C2^3 -> 1 is non-split.",
+      "theorem_id": "T039-4"
+    },
+    {
+      "evidence": [
+        "native_g60_lifted_cube_twist_directions_034"
+      ],
+      "statement": "Each downstairs cube has exactly two twisted directions whose lifts have order 4 and square a.",
+      "theorem_id": "T039-5"
+    },
+    {
+      "evidence": [
+        "native_g60_twist_center_partner_law_035"
+      ],
+      "statement": "The ten twisted directions are exactly zc, where c ranges over the ten six-fixed-point Petersen vertex centers and z is the central deck of G30.",
+      "theorem_id": "T039-6"
+    },
+    {
+      "evidence": [
+        "native_g60_endpoint_twist_commutator_law_036"
+      ],
+      "statement": "The two endpoint twist lifts commute, each squares to a, and their product is an involution. They generate C4 x C2 rather than the D8 factor.",
+      "theorem_id": "T039-7"
+    },
+    {
+      "evidence": [
+        "native_g60_cube_dihedral_reflections_037"
+      ],
+      "statement": "Each lifted cube has four downstairs reflection directions with involutory lifts that invert an endpoint order-4 twist.",
+      "theorem_id": "T039-8"
+    },
+    {
+      "evidence": [
+        "native_g60_cube_reflection_affine_plane_038"
+      ],
+      "statement": "For Petersen edge {u,v}, the reflection register is {z, c_u, c_v, z c_u c_v}, an affine plane inside the downstairs C2^3 cube.",
+      "theorem_id": "T039-9"
+    }
+  ],
+  "title": "Native G60 lifted-cube extension and reflection geometry"
+}
