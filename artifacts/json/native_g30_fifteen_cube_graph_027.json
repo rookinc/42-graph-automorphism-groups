@@ -1,0 +1,267 @@
+{
+  "adjacency_rule": "two conjugate C2^3 cubes are adjacent exactly when their subgroup intersection has order 4",
+  "audit_pass": true,
+  "automorphism_group_order": 120,
+  "automorphism_vertex_orbits": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  ],
+  "boundary": {
+    "cube_to_native_g15_label_alignment_open": true,
+    "fifteen_cube_graph_constructed": true,
+    "g15_intrinsic_cube_recovery_proved": true,
+    "line_petersen_isomorphism_proved": true,
+    "order4_intersection_adjacency_selected": true,
+    "physical_claim": false
+  },
+  "census_source": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+  "certificate_id": "native_g30_fifteen_cube_graph_027",
+  "checks": {
+    "automorphism_action_is_vertex_transitive": true,
+    "automorphism_group_order_is_120": true,
+    "census_source_audit_pass": true,
+    "edge_count_is_30": true,
+    "graph_is_connected": true,
+    "graph_is_quartic": true,
+    "isomorphic_to_line_petersen": true,
+    "line_petersen_edge_count_matches": true,
+    "line_petersen_vertex_count_matches": true,
+    "triangle_count_is_10": true,
+    "vertex_count_is_15": true
+  },
+  "classification_result": "The graph on the fifteen conjugate C2^3 cubes, with adjacency defined by order-4 subgroup intersection, is a connected quartic graph with 15 vertices, 30 edges, and 10 triangles. It is explicitly isomorphic to the line graph of the Petersen graph. Thus G15 is recovered intrinsically as the order-4 intersection graph of the fifteen native affine cubes in Aut(G30).",
+  "component_sizes": [
+    15
+  ],
+  "degree_profile": {
+    "4": 15
+  },
+  "edge_count": 30,
+  "edge_intersection_v4_fixed_profile_counts": [
+    {
+      "edge_count": 30,
+      "profile": [
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          1
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      3,
+      14
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      13,
+      14
+    ]
+  ],
+  "graph6": "NwaGADP@pC@PEHKAAaG",
+  "isomorphic_to_line_petersen": true,
+  "isomorphism_count_to_line_petersen": 120,
+  "line_petersen_graph6": "N`H?Kb?aOD@q\\?CqDD?",
+  "representative_isomorphism_to_line_petersen": {
+    "0": 12,
+    "1": 13,
+    "10": 3,
+    "11": 5,
+    "12": 7,
+    "13": 0,
+    "14": 2,
+    "2": 4,
+    "3": 1,
+    "4": 8,
+    "5": 11,
+    "6": 6,
+    "7": 14,
+    "8": 9,
+    "9": 10
+  },
+  "triangle_count": 10,
+  "triangles": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      4,
+      5
+    ],
+    [
+      1,
+      7,
+      8
+    ],
+    [
+      2,
+      10,
+      13
+    ],
+    [
+      3,
+      8,
+      12
+    ],
+    [
+      3,
+      13,
+      14
+    ],
+    [
+      4,
+      11,
+      12
+    ],
+    [
+      5,
+      9,
+      14
+    ],
+    [
+      6,
+      7,
+      9
+    ],
+    [
+      6,
+      10,
+      11
+    ]
+  ],
+  "vertex_count": 15
+}
