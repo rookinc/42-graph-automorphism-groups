@@ -1,0 +1,73 @@
+{
+  "audit_pass": true,
+  "automorphisms_centralizing_a": 480,
+  "automorphisms_preserving_a_fibers": 480,
+  "boundary": {
+    "classification_uses_independent_graph_enumeration": true,
+    "every_g60_automorphism_centralizes_a_certified": true,
+    "every_g60_automorphism_preserves_a_fibers_certified": true,
+    "full_aut_g60_equals_lifted_group_certified": true,
+    "full_aut_g60_order_certified": true,
+    "named_single_standard_group_isomorphism_not_yet_presented": true,
+    "physical_claim": false
+  },
+  "bridge_source": "sources/project42_g60_to_g30_a_quotient_certificate_035.json",
+  "certificate_id": "native_g60_full_automorphism_group_042",
+  "checks": {
+    "all_full_automorphisms_centralize_a": true,
+    "all_full_automorphisms_preserve_a_fibers": true,
+    "bridge_source_audit_pass": true,
+    "constructed_lifted_group_has_order_480": true,
+    "every_enumerated_permutation_preserves_edges": true,
+    "extension_source_audit_pass": true,
+    "full_automorphism_group_has_order_480": true,
+    "full_group_equals_constructed_lifted_group": true,
+    "group_source_audit_pass": true,
+    "lift_source_audit_pass": true,
+    "native_graph_has_120_edges": true,
+    "native_graph_has_60_vertices": true,
+    "native_graph_is_connected": true,
+    "native_graph_is_quartic": true,
+    "native_graph_is_simple": true,
+    "networkx_enumeration_has_no_duplicates": true,
+    "no_constructed_lift_missing_from_full_group": true,
+    "no_extra_full_automorphism_outside_lifted_group": true,
+    "order_profile_matches_040": true
+  },
+  "constructed_lifted_group_order": 480,
+  "degree_profile": {
+    "4": 60
+  },
+  "duplicate_mapping_count": 0,
+  "enumerated_mapping_count": 480,
+  "enumeration_engine": "networkx.algorithms.isomorphism.GraphMatcher",
+  "extension_source": "artifacts/json/native_g60_lifted_group_extension_type_041.json",
+  "full_automorphism_group_order": 480,
+  "full_group_classification": {
+    "abelianization": "C2_x_C2",
+    "abelianization_order": 4,
+    "center_order": 2,
+    "derived_subgroup": "A5_x_C2",
+    "derived_subgroup_order": 120,
+    "order": 480
+  },
+  "full_group_element_order_profile": {
+    "1": 1,
+    "10": 72,
+    "12": 40,
+    "2": 83,
+    "3": 20,
+    "4": 140,
+    "5": 24,
+    "6": 100
+  },
+  "full_not_in_lifted_count": 0,
+  "g60_edge_count": 120,
+  "g60_vertex_count": 60,
+  "group_source": "artifacts/json/native_g60_lifted_automorphism_group_040.json",
+  "groups_equal": true,
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "lifted_missing_from_full_count": 0,
+  "runtime_seconds": 3.106917,
+  "theorem_result": "Independent enumeration from the exact native G60 edge set gives exactly 480 graph automorphisms. The enumerated set equals the previously constructed set obtained by lifting all 240 automorphisms of G30. Therefore every automorphism of G60 preserves the native a-fiber system, and Aut(G60) is exactly the 480-element lifted group. Its derived subgroup is A5 x C2 and its abelianization is C2 x C2."
+}
