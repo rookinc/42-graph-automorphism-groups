@@ -1,0 +1,207 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "finite_group_theorem_package": true,
+    "g15_intrinsic_recovery": true,
+    "native_label_alignment_open": true,
+    "petersen_intrinsic_recovery": true,
+    "physical_claim": false,
+    "relation_to_g60_cube_system_open": true
+  },
+  "certificate_id": "native_g30_cube_geometry_theorem_package_030",
+  "checks": {
+    "all_source_artifacts_exist": true,
+    "all_source_audits_pass": true,
+    "center_graph_is_petersen": true,
+    "cube_graph_is_line_petersen": true,
+    "cube_group_is_c2_cubed": true,
+    "fifteen_conjugate_cubes": true,
+    "fifteen_cubes_are_petersen_edges": true,
+    "linear_action_is_rank1_transvection": true,
+    "named_fixed_plane_identified": true,
+    "normalizer_is_d8_x_c2": true,
+    "normalizer_order_is_16": true,
+    "seven_involution_register_complete": true,
+    "ten_common_v4_centers": true
+  },
+  "reconstruction_chain": [
+    "G30 automorphism action",
+    "local affine cube E=C2^3",
+    "15 conjugate affine cubes",
+    "order-4 cube intersection graph",
+    "G15 isomorphic to L(Petersen)",
+    "10 common-V4 triangle centers",
+    "Petersen center graph",
+    "15 cubes identified as Petersen edges"
+  ],
+  "source_receipts": [
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_generated_order8_subgroup_015",
+      "path": "artifacts/json/native_g30_generated_order8_subgroup_015.json",
+      "sha256": "577ff29c4329b1cc76930f17e3eb7e265cfc6522874ad797275b0e94a75ea70e"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_action_016",
+      "path": "artifacts/json/native_g30_c2_cube_action_016.json",
+      "sha256": "25504980c01231d2b9bc3f5f77c2fc1216ad41a003a5b495e77635d311c844e0"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_orbit_quotient_017",
+      "path": "artifacts/json/native_g30_c2_cube_orbit_quotient_017.json",
+      "sha256": "92fb93bbdeaec3d6962a71aed49b46f23bccd20274898d80cbbf8b5353b708d1"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_orbit_skeleton_018",
+      "path": "artifacts/json/native_g30_c2_orbit_skeleton_018.json",
+      "sha256": "d9c259f248e33cd35effb1de2fe1c6b543ab166b1f5f0de128175b74da9d66ed"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_weighted_orbit_skeleton_019",
+      "path": "artifacts/json/native_g30_weighted_orbit_skeleton_019.json",
+      "sha256": "218cd5e6ad65c059b89f2d6c189e1499d9da58a076bc04525266c98624be9b64"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_normalizer_020",
+      "path": "artifacts/json/native_g30_c2_cube_normalizer_020.json",
+      "sha256": "03ea1fea0c7e44b9698ea0d947957202e79ace86cf7d112d3ac21ead5ced2102"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_normalizer_group_021",
+      "path": "artifacts/json/native_g30_c2_cube_normalizer_group_021.json",
+      "sha256": "4350faf17896224b9d80727e7db68742f76707d75b03e87fc80a9c0908674282"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_linear_action_022",
+      "path": "artifacts/json/native_g30_c2_cube_linear_action_022.json",
+      "sha256": "d88f6e5d77b137287f113406b5b88f98fc4142a15bda7518f490c573399ee6c9"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_named_fixed_plane_023",
+      "path": "artifacts/json/native_g30_c2_cube_named_fixed_plane_023.json",
+      "sha256": "4f088ab390b592e0384494c3c4f1671b60f5f81477a11b3ccdff1e1d89274f41"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_involution_register_024",
+      "path": "artifacts/json/native_g30_c2_cube_involution_register_024.json",
+      "sha256": "a18975df3efb66d1846d67ed22fa6ff8e55d3da7e27164341f975f472616c056"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_u_k_fixed_subgraph_comparison_025",
+      "path": "artifacts/json/native_g30_u_k_fixed_subgraph_comparison_025.json",
+      "sha256": "f9a6dfaf8da18d290c82ba8426663b2709e01783615b2149d9cb7d4f87a3c379"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_c2_cube_conjugacy_census_026",
+      "path": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+      "sha256": "d9ded04bab8e4a0bd2deb8c7815846c35eb99934641cded3a2f589112a998ec9"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_fifteen_cube_graph_027",
+      "path": "artifacts/json/native_g30_fifteen_cube_graph_027.json",
+      "sha256": "3460706cc0d28d4a9342a64b80ec7971ebc7650b1c2ded8ca941298fff08d71e"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_cube_triangle_centers_028",
+      "path": "artifacts/json/native_g30_cube_triangle_centers_028.json",
+      "sha256": "b8fe05394931ea5cd5daf994574143226dcb50f042162cb15392228639705a57"
+    },
+    {
+      "audit_pass": true,
+      "certificate_id": "native_g30_petersen_from_cube_centers_029",
+      "path": "artifacts/json/native_g30_petersen_from_cube_centers_029.json",
+      "sha256": "0411a315e363b38447af67f88023745f1bd033855527231f3e1dc78d623fd27d"
+    }
+  ],
+  "summary_counts": {
+    "aut_g30_order": 240,
+    "center_graph_edge_count": 15,
+    "common_v4_center_count": 10,
+    "conjugate_cube_count": 15,
+    "cube_graph_edge_count": 30,
+    "cube_graph_triangle_count": 10,
+    "cube_normalizer_order": 16,
+    "cube_normalizer_type": "D8_x_C2",
+    "seed_cube_order": 8,
+    "seed_cube_type": "C2_x_C2_x_C2"
+  },
+  "theorem_result": "Inside Aut(G30), the local elementary abelian subgroup E=C2^3 has 15 conjugates. Their order-4 intersection graph is L(Petersen)=G15. Its 10 triangles have canonical common Klein four centers with fixed-point profile 0,0,6. Those centers form the Petersen graph, and each of the 15 cubes is exactly one Petersen edge. Thus Petersen and G15 are reconstructed intrinsically from native G30 automorphism subgroup geometry.",
+  "theorem_statements": [
+    {
+      "evidence": [
+        "native_g30_generated_order8_subgroup_015"
+      ],
+      "statement": "The subgroup generated by the triangle-local Klein four and the V4_mixed vertex stabilizer is elementary abelian of order 8, hence isomorphic to C2^3.",
+      "theorem_id": "T030-1"
+    },
+    {
+      "evidence": [
+        "native_g30_c2_cube_normalizer_020",
+        "native_g30_c2_cube_normalizer_group_021"
+      ],
+      "statement": "Its normalizer in Aut(G30) has order 16 and is explicitly isomorphic to D8 x C2.",
+      "theorem_id": "T030-2"
+    },
+    {
+      "evidence": [
+        "native_g30_c2_cube_linear_action_022",
+        "native_g30_c2_cube_named_fixed_plane_023",
+        "native_g30_c2_cube_involution_register_024"
+      ],
+      "statement": "The normalizer acts on C2^3 through an order-2 rank-1 transvection over F2. The kernel is the cube subgroup itself.",
+      "theorem_id": "T030-3"
+    },
+    {
+      "evidence": [
+        "native_g30_c2_cube_conjugacy_census_026"
+      ],
+      "statement": "The conjugacy orbit of the cube subgroup in Aut(G30) contains exactly 15 cubes.",
+      "theorem_id": "T030-4"
+    },
+    {
+      "evidence": [
+        "native_g30_fifteen_cube_graph_027"
+      ],
+      "statement": "Two cubes are adjacent when their subgroup intersection has order 4. This gives a connected quartic graph on 15 vertices, explicitly isomorphic to L(Petersen).",
+      "theorem_id": "T030-5"
+    },
+    {
+      "evidence": [
+        "native_g30_cube_triangle_centers_028"
+      ],
+      "statement": "The 10 triangles of the cube-intersection graph are in bijection with 10 common Klein four centers having nonidentity fixed-point profile 0,0,6.",
+      "theorem_id": "T030-6"
+    },
+    {
+      "evidence": [
+        "native_g30_petersen_from_cube_centers_029"
+      ],
+      "statement": "The 10 centers form the Petersen graph when two centers are adjacent exactly when their three-cube supports share one cube. Each of the 15 cubes is exactly one Petersen edge.",
+      "theorem_id": "T030-7"
+    },
+    {
+      "evidence": [
+        "native_g30_c2_cube_conjugacy_census_026",
+        "native_g30_fifteen_cube_graph_027",
+        "native_g30_cube_triangle_centers_028",
+        "native_g30_petersen_from_cube_centers_029"
+      ],
+      "statement": "Therefore Petersen and G15=L(Petersen) are recovered intrinsically from the conjugacy and intersection geometry of affine C2^3 cube subgroups inside Aut(G30).",
+      "theorem_id": "T030-8"
+    }
+  ],
+  "title": "Native affine-cube reconstruction of Petersen and G15 from G30"
+}
