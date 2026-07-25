@@ -1,0 +1,1408 @@
+{
+  "alternative_involution_symdiff_counts": {
+    "ab": 98,
+    "b": 104
+  },
+  "audit_pass": true,
+  "boundary": {
+    "exports_exact_g60_graph": true,
+    "exports_exact_g60_to_g30_fibers": true,
+    "exports_exact_g60_to_g30_vertex_map": true,
+    "g15_cube_lift_not_yet_constructed": true,
+    "identifies_quotient_involution_as_a": true,
+    "physical_claim": false,
+    "project42_import_not_yet_performed": true
+  },
+  "bundle_source": "sources/upstream/g60_native_generator_input_bundle_001.v1.json",
+  "bundle_source_sha256": "d9ad376911b03cad2aa0f9214b5372de78135ca6fa3b72e56da5f3478f9771ee",
+  "certificate_id": "project42_g60_to_g30_a_quotient_certificate_035",
+  "checks": {
+    "a_orbit_count_is_30": true,
+    "a_orbits_equal_historical_classes": true,
+    "a_quotient_has_60_edges": true,
+    "a_quotient_matches_project42_g30_exactly": true,
+    "ab_quotient_does_not_match_project42_g30": true,
+    "b_quotient_does_not_match_project42_g30": true,
+    "bundle_current_g60_has_120_edges": true,
+    "bundle_current_g60_has_60_vertices": true,
+    "every_g30_vertex_has_two_g60_preimages": true,
+    "every_g60_vertex_has_one_g30_image": true,
+    "involution_a_is_fixed_point_free": true,
+    "involution_a_squares_to_identity": true
+  },
+  "fiber_count": 30,
+  "fiber_size": 2,
+  "g30_edge_count": 60,
+  "g30_fibers_from_g60": [
+    {
+      "g30_vertex": 0,
+      "g60_vertices": [
+        0,
+        40
+      ]
+    },
+    {
+      "g30_vertex": 1,
+      "g60_vertices": [
+        1,
+        50
+      ]
+    },
+    {
+      "g30_vertex": 2,
+      "g60_vertices": [
+        2,
+        10
+      ]
+    },
+    {
+      "g30_vertex": 3,
+      "g60_vertices": [
+        3,
+        20
+      ]
+    },
+    {
+      "g30_vertex": 4,
+      "g60_vertices": [
+        4,
+        30
+      ]
+    },
+    {
+      "g30_vertex": 5,
+      "g60_vertices": [
+        5,
+        35
+      ]
+    },
+    {
+      "g30_vertex": 6,
+      "g60_vertices": [
+        6,
+        45
+      ]
+    },
+    {
+      "g30_vertex": 7,
+      "g60_vertices": [
+        7,
+        55
+      ]
+    },
+    {
+      "g30_vertex": 8,
+      "g60_vertices": [
+        8,
+        15
+      ]
+    },
+    {
+      "g30_vertex": 9,
+      "g60_vertices": [
+        9,
+        25
+      ]
+    },
+    {
+      "g30_vertex": 10,
+      "g60_vertices": [
+        11,
+        46
+      ]
+    },
+    {
+      "g30_vertex": 11,
+      "g60_vertices": [
+        12,
+        43
+      ]
+    },
+    {
+      "g30_vertex": 12,
+      "g60_vertices": [
+        13,
+        32
+      ]
+    },
+    {
+      "g30_vertex": 13,
+      "g60_vertices": [
+        14,
+        29
+      ]
+    },
+    {
+      "g30_vertex": 14,
+      "g60_vertices": [
+        16,
+        31
+      ]
+    },
+    {
+      "g30_vertex": 15,
+      "g60_vertices": [
+        17,
+        38
+      ]
+    },
+    {
+      "g30_vertex": 16,
+      "g60_vertices": [
+        18,
+        47
+      ]
+    },
+    {
+      "g30_vertex": 17,
+      "g60_vertices": [
+        19,
+        54
+      ]
+    },
+    {
+      "g30_vertex": 18,
+      "g60_vertices": [
+        21,
+        56
+      ]
+    },
+    {
+      "g30_vertex": 19,
+      "g60_vertices": [
+        22,
+        53
+      ]
+    },
+    {
+      "g30_vertex": 20,
+      "g60_vertices": [
+        23,
+        42
+      ]
+    },
+    {
+      "g30_vertex": 21,
+      "g60_vertices": [
+        24,
+        39
+      ]
+    },
+    {
+      "g30_vertex": 22,
+      "g60_vertices": [
+        26,
+        41
+      ]
+    },
+    {
+      "g30_vertex": 23,
+      "g60_vertices": [
+        27,
+        48
+      ]
+    },
+    {
+      "g30_vertex": 24,
+      "g60_vertices": [
+        28,
+        57
+      ]
+    },
+    {
+      "g30_vertex": 25,
+      "g60_vertices": [
+        33,
+        52
+      ]
+    },
+    {
+      "g30_vertex": 26,
+      "g60_vertices": [
+        34,
+        49
+      ]
+    },
+    {
+      "g30_vertex": 27,
+      "g60_vertices": [
+        36,
+        51
+      ]
+    },
+    {
+      "g30_vertex": 28,
+      "g60_vertices": [
+        37,
+        58
+      ]
+    },
+    {
+      "g30_vertex": 29,
+      "g60_vertices": [
+        44,
+        59
+      ]
+    }
+  ],
+  "g30_vertex_count": 30,
+  "g60_edge_count": 120,
+  "g60_edges": [
+    [
+      0,
+      16
+    ],
+    [
+      0,
+      19
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      55
+    ],
+    [
+      1,
+      15
+    ],
+    [
+      1,
+      26
+    ],
+    [
+      1,
+      29
+    ],
+    [
+      1,
+      35
+    ],
+    [
+      2,
+      25
+    ],
+    [
+      2,
+      36
+    ],
+    [
+      2,
+      39
+    ],
+    [
+      2,
+      45
+    ],
+    [
+      3,
+      35
+    ],
+    [
+      3,
+      46
+    ],
+    [
+      3,
+      49
+    ],
+    [
+      3,
+      55
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      4,
+      45
+    ],
+    [
+      4,
+      56
+    ],
+    [
+      4,
+      59
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      5,
+      20
+    ],
+    [
+      5,
+      50
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6,
+      21
+    ],
+    [
+      6,
+      24
+    ],
+    [
+      6,
+      30
+    ],
+    [
+      7,
+      20
+    ],
+    [
+      7,
+      31
+    ],
+    [
+      7,
+      34
+    ],
+    [
+      7,
+      40
+    ],
+    [
+      8,
+      30
+    ],
+    [
+      8,
+      41
+    ],
+    [
+      8,
+      44
+    ],
+    [
+      8,
+      50
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      40
+    ],
+    [
+      9,
+      51
+    ],
+    [
+      9,
+      54
+    ],
+    [
+      10,
+      24
+    ],
+    [
+      10,
+      51
+    ],
+    [
+      11,
+      17
+    ],
+    [
+      11,
+      20
+    ],
+    [
+      11,
+      23
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      12,
+      18
+    ],
+    [
+      12,
+      24
+    ],
+    [
+      12,
+      58
+    ],
+    [
+      13,
+      17
+    ],
+    [
+      13,
+      51
+    ],
+    [
+      13,
+      57
+    ],
+    [
+      13,
+      59
+    ],
+    [
+      14,
+      50
+    ],
+    [
+      14,
+      52
+    ],
+    [
+      14,
+      58
+    ],
+    [
+      15,
+      26
+    ],
+    [
+      15,
+      59
+    ],
+    [
+      16,
+      55
+    ],
+    [
+      16,
+      58
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      17,
+      59
+    ],
+    [
+      18,
+      22
+    ],
+    [
+      18,
+      24
+    ],
+    [
+      18,
+      26
+    ],
+    [
+      19,
+      23
+    ],
+    [
+      19,
+      25
+    ],
+    [
+      19,
+      27
+    ],
+    [
+      20,
+      34
+    ],
+    [
+      21,
+      27
+    ],
+    [
+      21,
+      30
+    ],
+    [
+      21,
+      33
+    ],
+    [
+      22,
+      26
+    ],
+    [
+      22,
+      28
+    ],
+    [
+      22,
+      34
+    ],
+    [
+      23,
+      27
+    ],
+    [
+      25,
+      36
+    ],
+    [
+      27,
+      33
+    ],
+    [
+      28,
+      32
+    ],
+    [
+      28,
+      34
+    ],
+    [
+      28,
+      36
+    ],
+    [
+      29,
+      33
+    ],
+    [
+      29,
+      35
+    ],
+    [
+      29,
+      37
+    ],
+    [
+      30,
+      44
+    ],
+    [
+      31,
+      37
+    ],
+    [
+      31,
+      40
+    ],
+    [
+      31,
+      43
+    ],
+    [
+      32,
+      36
+    ],
+    [
+      32,
+      38
+    ],
+    [
+      32,
+      44
+    ],
+    [
+      33,
+      37
+    ],
+    [
+      35,
+      46
+    ],
+    [
+      37,
+      43
+    ],
+    [
+      38,
+      42
+    ],
+    [
+      38,
+      44
+    ],
+    [
+      38,
+      46
+    ],
+    [
+      39,
+      43
+    ],
+    [
+      39,
+      45
+    ],
+    [
+      39,
+      47
+    ],
+    [
+      40,
+      54
+    ],
+    [
+      41,
+      47
+    ],
+    [
+      41,
+      50
+    ],
+    [
+      41,
+      53
+    ],
+    [
+      42,
+      46
+    ],
+    [
+      42,
+      48
+    ],
+    [
+      42,
+      54
+    ],
+    [
+      43,
+      47
+    ],
+    [
+      45,
+      56
+    ],
+    [
+      47,
+      53
+    ],
+    [
+      48,
+      52
+    ],
+    [
+      48,
+      54
+    ],
+    [
+      48,
+      56
+    ],
+    [
+      49,
+      53
+    ],
+    [
+      49,
+      55
+    ],
+    [
+      49,
+      57
+    ],
+    [
+      51,
+      57
+    ],
+    [
+      52,
+      56
+    ],
+    [
+      52,
+      58
+    ],
+    [
+      53,
+      57
+    ]
+  ],
+  "g60_vertex_count": 60,
+  "g60_vertex_rows": [
+    {
+      "a_partner": 40,
+      "g30_vertex": 0,
+      "g60_vertex": 0
+    },
+    {
+      "a_partner": 50,
+      "g30_vertex": 1,
+      "g60_vertex": 1
+    },
+    {
+      "a_partner": 10,
+      "g30_vertex": 2,
+      "g60_vertex": 2
+    },
+    {
+      "a_partner": 20,
+      "g30_vertex": 3,
+      "g60_vertex": 3
+    },
+    {
+      "a_partner": 30,
+      "g30_vertex": 4,
+      "g60_vertex": 4
+    },
+    {
+      "a_partner": 35,
+      "g30_vertex": 5,
+      "g60_vertex": 5
+    },
+    {
+      "a_partner": 45,
+      "g30_vertex": 6,
+      "g60_vertex": 6
+    },
+    {
+      "a_partner": 55,
+      "g30_vertex": 7,
+      "g60_vertex": 7
+    },
+    {
+      "a_partner": 15,
+      "g30_vertex": 8,
+      "g60_vertex": 8
+    },
+    {
+      "a_partner": 25,
+      "g30_vertex": 9,
+      "g60_vertex": 9
+    },
+    {
+      "a_partner": 2,
+      "g30_vertex": 2,
+      "g60_vertex": 10
+    },
+    {
+      "a_partner": 46,
+      "g30_vertex": 10,
+      "g60_vertex": 11
+    },
+    {
+      "a_partner": 43,
+      "g30_vertex": 11,
+      "g60_vertex": 12
+    },
+    {
+      "a_partner": 32,
+      "g30_vertex": 12,
+      "g60_vertex": 13
+    },
+    {
+      "a_partner": 29,
+      "g30_vertex": 13,
+      "g60_vertex": 14
+    },
+    {
+      "a_partner": 8,
+      "g30_vertex": 8,
+      "g60_vertex": 15
+    },
+    {
+      "a_partner": 31,
+      "g30_vertex": 14,
+      "g60_vertex": 16
+    },
+    {
+      "a_partner": 38,
+      "g30_vertex": 15,
+      "g60_vertex": 17
+    },
+    {
+      "a_partner": 47,
+      "g30_vertex": 16,
+      "g60_vertex": 18
+    },
+    {
+      "a_partner": 54,
+      "g30_vertex": 17,
+      "g60_vertex": 19
+    },
+    {
+      "a_partner": 3,
+      "g30_vertex": 3,
+      "g60_vertex": 20
+    },
+    {
+      "a_partner": 56,
+      "g30_vertex": 18,
+      "g60_vertex": 21
+    },
+    {
+      "a_partner": 53,
+      "g30_vertex": 19,
+      "g60_vertex": 22
+    },
+    {
+      "a_partner": 42,
+      "g30_vertex": 20,
+      "g60_vertex": 23
+    },
+    {
+      "a_partner": 39,
+      "g30_vertex": 21,
+      "g60_vertex": 24
+    },
+    {
+      "a_partner": 9,
+      "g30_vertex": 9,
+      "g60_vertex": 25
+    },
+    {
+      "a_partner": 41,
+      "g30_vertex": 22,
+      "g60_vertex": 26
+    },
+    {
+      "a_partner": 48,
+      "g30_vertex": 23,
+      "g60_vertex": 27
+    },
+    {
+      "a_partner": 57,
+      "g30_vertex": 24,
+      "g60_vertex": 28
+    },
+    {
+      "a_partner": 14,
+      "g30_vertex": 13,
+      "g60_vertex": 29
+    },
+    {
+      "a_partner": 4,
+      "g30_vertex": 4,
+      "g60_vertex": 30
+    },
+    {
+      "a_partner": 16,
+      "g30_vertex": 14,
+      "g60_vertex": 31
+    },
+    {
+      "a_partner": 13,
+      "g30_vertex": 12,
+      "g60_vertex": 32
+    },
+    {
+      "a_partner": 52,
+      "g30_vertex": 25,
+      "g60_vertex": 33
+    },
+    {
+      "a_partner": 49,
+      "g30_vertex": 26,
+      "g60_vertex": 34
+    },
+    {
+      "a_partner": 5,
+      "g30_vertex": 5,
+      "g60_vertex": 35
+    },
+    {
+      "a_partner": 51,
+      "g30_vertex": 27,
+      "g60_vertex": 36
+    },
+    {
+      "a_partner": 58,
+      "g30_vertex": 28,
+      "g60_vertex": 37
+    },
+    {
+      "a_partner": 17,
+      "g30_vertex": 15,
+      "g60_vertex": 38
+    },
+    {
+      "a_partner": 24,
+      "g30_vertex": 21,
+      "g60_vertex": 39
+    },
+    {
+      "a_partner": 0,
+      "g30_vertex": 0,
+      "g60_vertex": 40
+    },
+    {
+      "a_partner": 26,
+      "g30_vertex": 22,
+      "g60_vertex": 41
+    },
+    {
+      "a_partner": 23,
+      "g30_vertex": 20,
+      "g60_vertex": 42
+    },
+    {
+      "a_partner": 12,
+      "g30_vertex": 11,
+      "g60_vertex": 43
+    },
+    {
+      "a_partner": 59,
+      "g30_vertex": 29,
+      "g60_vertex": 44
+    },
+    {
+      "a_partner": 6,
+      "g30_vertex": 6,
+      "g60_vertex": 45
+    },
+    {
+      "a_partner": 11,
+      "g30_vertex": 10,
+      "g60_vertex": 46
+    },
+    {
+      "a_partner": 18,
+      "g30_vertex": 16,
+      "g60_vertex": 47
+    },
+    {
+      "a_partner": 27,
+      "g30_vertex": 23,
+      "g60_vertex": 48
+    },
+    {
+      "a_partner": 34,
+      "g30_vertex": 26,
+      "g60_vertex": 49
+    },
+    {
+      "a_partner": 1,
+      "g30_vertex": 1,
+      "g60_vertex": 50
+    },
+    {
+      "a_partner": 36,
+      "g30_vertex": 27,
+      "g60_vertex": 51
+    },
+    {
+      "a_partner": 33,
+      "g30_vertex": 25,
+      "g60_vertex": 52
+    },
+    {
+      "a_partner": 22,
+      "g30_vertex": 19,
+      "g60_vertex": 53
+    },
+    {
+      "a_partner": 19,
+      "g30_vertex": 17,
+      "g60_vertex": 54
+    },
+    {
+      "a_partner": 7,
+      "g30_vertex": 7,
+      "g60_vertex": 55
+    },
+    {
+      "a_partner": 21,
+      "g30_vertex": 18,
+      "g60_vertex": 56
+    },
+    {
+      "a_partner": 28,
+      "g30_vertex": 24,
+      "g60_vertex": 57
+    },
+    {
+      "a_partner": 37,
+      "g30_vertex": 28,
+      "g60_vertex": 58
+    },
+    {
+      "a_partner": 44,
+      "g30_vertex": 29,
+      "g60_vertex": 59
+    }
+  ],
+  "g60_vertex_to_g30_vertex": {
+    "0": 0,
+    "1": 1,
+    "10": 2,
+    "11": 10,
+    "12": 11,
+    "13": 12,
+    "14": 13,
+    "15": 8,
+    "16": 14,
+    "17": 15,
+    "18": 16,
+    "19": 17,
+    "2": 2,
+    "20": 3,
+    "21": 18,
+    "22": 19,
+    "23": 20,
+    "24": 21,
+    "25": 9,
+    "26": 22,
+    "27": 23,
+    "28": 24,
+    "29": 13,
+    "3": 3,
+    "30": 4,
+    "31": 14,
+    "32": 12,
+    "33": 25,
+    "34": 26,
+    "35": 5,
+    "36": 27,
+    "37": 28,
+    "38": 15,
+    "39": 21,
+    "4": 4,
+    "40": 0,
+    "41": 22,
+    "42": 20,
+    "43": 11,
+    "44": 29,
+    "45": 6,
+    "46": 10,
+    "47": 16,
+    "48": 23,
+    "49": 26,
+    "5": 5,
+    "50": 1,
+    "51": 27,
+    "52": 25,
+    "53": 19,
+    "54": 17,
+    "55": 7,
+    "56": 18,
+    "57": 24,
+    "58": 28,
+    "59": 29,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9
+  },
+  "historical_source": "sources/upstream/phase2b_z2_lift_reconstructed_g30_isomorphism.json",
+  "historical_source_sha256": "151434a1f3dc7f08abed1bb2d9c3807d9deadce4ea7ca50901446b14663b893b",
+  "involution_a": {
+    "0": 40,
+    "1": 50,
+    "10": 2,
+    "11": 46,
+    "12": 43,
+    "13": 32,
+    "14": 29,
+    "15": 8,
+    "16": 31,
+    "17": 38,
+    "18": 47,
+    "19": 54,
+    "2": 10,
+    "20": 3,
+    "21": 56,
+    "22": 53,
+    "23": 42,
+    "24": 39,
+    "25": 9,
+    "26": 41,
+    "27": 48,
+    "28": 57,
+    "29": 14,
+    "3": 20,
+    "30": 4,
+    "31": 16,
+    "32": 13,
+    "33": 52,
+    "34": 49,
+    "35": 5,
+    "36": 51,
+    "37": 58,
+    "38": 17,
+    "39": 24,
+    "4": 30,
+    "40": 0,
+    "41": 26,
+    "42": 23,
+    "43": 12,
+    "44": 59,
+    "45": 6,
+    "46": 11,
+    "47": 18,
+    "48": 27,
+    "49": 34,
+    "5": 35,
+    "50": 1,
+    "51": 36,
+    "52": 33,
+    "53": 22,
+    "54": 19,
+    "55": 7,
+    "56": 21,
+    "57": 28,
+    "58": 37,
+    "59": 44,
+    "6": 45,
+    "7": 55,
+    "8": 15,
+    "9": 25
+  },
+  "project42_g30_source": "/Users/scottcave/dev/cori/research/mathematics/thalean-graph-theory/42-graph-automorphism-groups/sources/native_g30_graph_input_001.json",
+  "project42_g30_source_sha256": "3e17ae32411fbcc2640aff9723b1f83a5fdb421021bea06bed888d07e18fbdff",
+  "quotient_edges": [
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      1,
+      22
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      21
+    ],
+    [
+      2,
+      27
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      26
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      18
+    ],
+    [
+      4,
+      29
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      13
+    ],
+    [
+      6,
+      18
+    ],
+    [
+      6,
+      21
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      7,
+      26
+    ],
+    [
+      8,
+      22
+    ],
+    [
+      8,
+      29
+    ],
+    [
+      9,
+      17
+    ],
+    [
+      9,
+      27
+    ],
+    [
+      10,
+      15
+    ],
+    [
+      10,
+      20
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      16
+    ],
+    [
+      11,
+      21
+    ],
+    [
+      11,
+      28
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      12,
+      24
+    ],
+    [
+      12,
+      27
+    ],
+    [
+      12,
+      29
+    ],
+    [
+      13,
+      25
+    ],
+    [
+      13,
+      28
+    ],
+    [
+      14,
+      28
+    ],
+    [
+      15,
+      20
+    ],
+    [
+      15,
+      29
+    ],
+    [
+      16,
+      19
+    ],
+    [
+      16,
+      21
+    ],
+    [
+      16,
+      22
+    ],
+    [
+      17,
+      20
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      18,
+      23
+    ],
+    [
+      18,
+      25
+    ],
+    [
+      19,
+      22
+    ],
+    [
+      19,
+      24
+    ],
+    [
+      19,
+      26
+    ],
+    [
+      20,
+      23
+    ],
+    [
+      23,
+      25
+    ],
+    [
+      24,
+      26
+    ],
+    [
+      24,
+      27
+    ],
+    [
+      25,
+      28
+    ]
+  ],
+  "quotient_involution": "a",
+  "quotient_statement": "Project 42 native G30 is exactly the quotient of the current-label native G60 graph by the fixed-point-free involution a.",
+  "result": "The exact 30 two-vertex fibers of the native G60 to Project 42 G30 quotient are the orbits of involution a. The resulting quotient edge set agrees with Project 42 vertex labels and edges without relabeling."
+}
