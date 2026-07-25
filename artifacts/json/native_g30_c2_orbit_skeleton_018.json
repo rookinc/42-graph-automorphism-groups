@@ -1,0 +1,110 @@
+{
+  "audit_pass": true,
+  "automorphism_element_order_profile": {
+    "1": 1,
+    "2": 1
+  },
+  "automorphism_group_order": 2,
+  "automorphism_vertex_orbits": [
+    [
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "automorphisms": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ]
+  ],
+  "boundary": {
+    "automorphism_group_enumerated": true,
+    "external_named_graph_identification_open": true,
+    "physical_claim": false,
+    "simple_orbit_skeleton_classified": true,
+    "weighted_loop_structure_not_discarded": true
+  },
+  "certificate_id": "native_g30_c2_orbit_skeleton_018",
+  "checks": {
+    "automorphism_group_enumerated": true,
+    "connected": true,
+    "cycle_rank_is_2": true,
+    "degree_profile_is_2x3_plus_4x2": true,
+    "edge_count_is_7": true,
+    "source_audit_pass": true,
+    "vertex_count_is_6": true
+  },
+  "classification_result": "The simple six-vertex orbit skeleton is recorded canonically by its edge set, graph6 string, cycle rank, and full automorphism action. No external graph name is assumed.",
+  "component_sizes": [
+    6
+  ],
+  "cycle_rank": 2,
+  "degree_profile": {
+    "2": 4,
+    "3": 2
+  },
+  "edge_count": 7,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "graph6": "EoSw",
+  "source": "artifacts/json/native_g30_c2_cube_orbit_quotient_017.json",
+  "triangle_count": 1,
+  "triangles": [
+    [
+      3,
+      4,
+      5
+    ]
+  ],
+  "vertex_count": 6
+}
