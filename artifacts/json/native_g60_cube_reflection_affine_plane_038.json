@@ -1,0 +1,539 @@
+{
+  "affine_plane_profile": {
+    "true": 15
+  },
+  "audit_pass": true,
+  "automorphism_source": "artifacts/json/native_g30_full_automorphism_action_001.json",
+  "boundary": {
+    "fifteen_edge_local_fourth_reflections_identified": true,
+    "fourfold_reflection_formula_proved": true,
+    "physical_claim": false,
+    "reflection_affine_plane_proved": true,
+    "universal_reflection_identified_as_z": true,
+    "upstairs_reflection_lift_selection_not_canonical": true
+  },
+  "central_deck_index": 66,
+  "certificate_id": "native_g60_cube_reflection_affine_plane_038",
+  "checks": {
+    "all_reflection_elements_lie_in_cube": true,
+    "automorphism_source_audit_pass": true,
+    "central_deck_index_is_66": true,
+    "cube_source_audit_pass": true,
+    "every_reflection_set_is_z_coset": true,
+    "every_reflection_set_matches_z_cu_cv_zcucv": true,
+    "every_z_translate_is_order4_subgroup": true,
+    "fifteen_cube_rows_constructed": true,
+    "fifteen_distinct_fourth_reflections": true,
+    "fourth_reflections_are_not_vertex_centers": true,
+    "no_reflection_set_contains_identity": true,
+    "no_reflection_set_is_subgroup": true,
+    "partner_source_audit_pass": true,
+    "reflection_source_audit_pass": true
+  },
+  "classification_result": "Index 66 is the universal central deck direction z. For every Petersen edge cube {u,v}, its four dihedral reflection directions are precisely z, the two endpoint centers c_u and c_v, and the fourth element z c_u c_v. These four elements form an affine plane, namely a z-coset of an order-4 subgroup of the affine cube. The fifteen fourth elements are distinct and edge-local.",
+  "cube_rows": [
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 0,
+      "fourth_reflection_index": 70,
+      "identity_in_reflection_set": false,
+      "left_center_index": 1,
+      "native_g15_label": 0,
+      "observed_reflection_indices": [
+        1,
+        5,
+        66,
+        70
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        1
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        1,
+        5,
+        66,
+        70
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 5,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 1,
+      "fourth_reflection_index": 8,
+      "identity_in_reflection_set": false,
+      "left_center_index": 1,
+      "native_g15_label": 1,
+      "observed_reflection_indices": [
+        1,
+        8,
+        66,
+        75
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        2
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        1,
+        8,
+        66,
+        75
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 75,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 2,
+      "fourth_reflection_index": 179,
+      "identity_in_reflection_set": false,
+      "left_center_index": 1,
+      "native_g15_label": 11,
+      "observed_reflection_indices": [
+        1,
+        66,
+        136,
+        179
+      ],
+      "petersen_endpoint_vertices": [
+        0,
+        3
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        1,
+        66,
+        136,
+        179
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 136,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 3,
+      "fourth_reflection_index": 2,
+      "identity_in_reflection_set": false,
+      "left_center_index": 205,
+      "native_g15_label": 5,
+      "observed_reflection_indices": [
+        2,
+        66,
+        192,
+        205
+      ],
+      "petersen_endpoint_vertices": [
+        4,
+        5
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        2,
+        66,
+        192,
+        205
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 192,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 4,
+      "fourth_reflection_index": 34,
+      "identity_in_reflection_set": false,
+      "left_center_index": 5,
+      "native_g15_label": 4,
+      "observed_reflection_indices": [
+        5,
+        34,
+        60,
+        66
+      ],
+      "petersen_endpoint_vertices": [
+        1,
+        6
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        5,
+        34,
+        60,
+        66
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 60,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 5,
+      "fourth_reflection_index": 238,
+      "identity_in_reflection_set": false,
+      "left_center_index": 5,
+      "native_g15_label": 9,
+      "observed_reflection_indices": [
+        5,
+        66,
+        119,
+        238
+      ],
+      "petersen_endpoint_vertices": [
+        1,
+        7
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        5,
+        66,
+        119,
+        238
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 119,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 6,
+      "fourth_reflection_index": 6,
+      "identity_in_reflection_set": false,
+      "left_center_index": 85,
+      "native_g15_label": 14,
+      "observed_reflection_indices": [
+        6,
+        66,
+        85,
+        170
+      ],
+      "petersen_endpoint_vertices": [
+        8,
+        9
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        6,
+        66,
+        85,
+        170
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 170,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 7,
+      "fourth_reflection_index": 88,
+      "identity_in_reflection_set": false,
+      "left_center_index": 75,
+      "native_g15_label": 8,
+      "observed_reflection_indices": [
+        66,
+        75,
+        85,
+        88
+      ],
+      "petersen_endpoint_vertices": [
+        2,
+        8
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        66,
+        75,
+        85,
+        88
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 85,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 8,
+      "fourth_reflection_index": 214,
+      "identity_in_reflection_set": false,
+      "left_center_index": 75,
+      "native_g15_label": 2,
+      "observed_reflection_indices": [
+        66,
+        75,
+        205,
+        214
+      ],
+      "petersen_endpoint_vertices": [
+        2,
+        4
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        66,
+        75,
+        205,
+        214
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 205,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 9,
+      "fourth_reflection_index": 16,
+      "identity_in_reflection_set": false,
+      "left_center_index": 119,
+      "native_g15_label": 7,
+      "observed_reflection_indices": [
+        16,
+        66,
+        85,
+        119
+      ],
+      "petersen_endpoint_vertices": [
+        7,
+        8
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        16,
+        66,
+        85,
+        119
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 85,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 10,
+      "fourth_reflection_index": 24,
+      "identity_in_reflection_set": false,
+      "left_center_index": 136,
+      "native_g15_label": 13,
+      "observed_reflection_indices": [
+        24,
+        66,
+        136,
+        170
+      ],
+      "petersen_endpoint_vertices": [
+        3,
+        9
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        24,
+        66,
+        136,
+        170
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 170,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 11,
+      "fourth_reflection_index": 162,
+      "identity_in_reflection_set": false,
+      "left_center_index": 60,
+      "native_g15_label": 12,
+      "observed_reflection_indices": [
+        60,
+        66,
+        162,
+        170
+      ],
+      "petersen_endpoint_vertices": [
+        6,
+        9
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        60,
+        66,
+        162,
+        170
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 170,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 12,
+      "fourth_reflection_index": 217,
+      "identity_in_reflection_set": false,
+      "left_center_index": 205,
+      "native_g15_label": 3,
+      "observed_reflection_indices": [
+        60,
+        66,
+        205,
+        217
+      ],
+      "petersen_endpoint_vertices": [
+        4,
+        6
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        60,
+        66,
+        205,
+        217
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 60,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 13,
+      "fourth_reflection_index": 229,
+      "identity_in_reflection_set": false,
+      "left_center_index": 136,
+      "native_g15_label": 10,
+      "observed_reflection_indices": [
+        66,
+        136,
+        192,
+        229
+      ],
+      "petersen_endpoint_vertices": [
+        3,
+        5
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        66,
+        136,
+        192,
+        229
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 192,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    },
+    {
+      "all_reflections_lie_in_cube": true,
+      "central_deck_index": 66,
+      "cube_index": 14,
+      "fourth_reflection_index": 184,
+      "identity_in_reflection_set": false,
+      "left_center_index": 192,
+      "native_g15_label": 6,
+      "observed_reflection_indices": [
+        66,
+        119,
+        184,
+        192
+      ],
+      "petersen_endpoint_vertices": [
+        5,
+        7
+      ],
+      "predicted_equals_observed": true,
+      "predicted_reflection_indices": [
+        66,
+        119,
+        184,
+        192
+      ],
+      "reflection_set_closed": false,
+      "reflection_set_is_z_coset": true,
+      "right_center_index": 119,
+      "translated_by_z_contains_identity": true,
+      "translated_by_z_generated_order": 4,
+      "translated_by_z_is_order4_subgroup": true,
+      "translated_by_z_size": 4
+    }
+  ],
+  "cube_source": "artifacts/json/native_g30_c2_cube_conjugacy_census_026.json",
+  "distinct_fourth_reflection_count": 15,
+  "partner_source": "artifacts/json/native_g60_twist_center_partner_law_035.json",
+  "predicted_match_profile": {
+    "true": 15
+  },
+  "reflection_formula": "For the cube corresponding to Petersen edge {u,v}, the four downstairs directions with involutory G60 lifts that invert an endpoint twist are exactly {z, c_u, c_v, z c_u c_v}. This four-set is not a subgroup. Translating it by z produces an order-4 subgroup, so the reflection register is an affine plane inside the downstairs C2^3 cube.",
+  "reflection_source": "artifacts/json/native_g60_cube_dihedral_reflections_037.json"
+}
