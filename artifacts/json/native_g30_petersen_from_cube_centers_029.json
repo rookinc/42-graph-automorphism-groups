@@ -1,0 +1,1188 @@
+{
+  "adjacency_rule": "two six-fixed-point cube-triangle centers are adjacent exactly when their three-cube supports share one cube",
+  "audit_pass": true,
+  "automorphism_group_order": 120,
+  "boundary": {
+    "cube_graph_is_line_graph_of_center_graph": true,
+    "fifteen_cubes_are_petersen_edges": true,
+    "native_label_alignment_open": true,
+    "petersen_center_graph_recovered": true,
+    "physical_claim": false,
+    "ten_centers_are_petersen_vertices": true
+  },
+  "center_pair_rows": [
+    {
+      "adjacent": true,
+      "left_center": 0,
+      "right_center": 1,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        0
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 0,
+      "right_center": 2,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        1
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 0,
+      "right_center": 3,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        2
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 4,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 5,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 6,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 7,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 0,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 2,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 3,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 4,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 5,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 1,
+      "right_center": 6,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        4
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 1,
+      "right_center": 7,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        5
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 1,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 2,
+      "right_center": 3,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 2,
+      "right_center": 4,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        8
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 2,
+      "right_center": 5,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 2,
+      "right_center": 6,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 2,
+      "right_center": 7,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 2,
+      "right_center": 8,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        7
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 2,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 3,
+      "right_center": 4,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 3,
+      "right_center": 5,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        13
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 3,
+      "right_center": 6,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 3,
+      "right_center": 7,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 3,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 3,
+      "right_center": 9,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        10
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 4,
+      "right_center": 5,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        3
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 4,
+      "right_center": 6,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        12
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 4,
+      "right_center": 7,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 4,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 4,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 5,
+      "right_center": 6,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 5,
+      "right_center": 7,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        14
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 5,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 5,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 6,
+      "right_center": 7,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": false,
+      "left_center": 6,
+      "right_center": 8,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 6,
+      "right_center": 9,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        11
+      ]
+    },
+    {
+      "adjacent": true,
+      "left_center": 7,
+      "right_center": 8,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        9
+      ]
+    },
+    {
+      "adjacent": false,
+      "left_center": 7,
+      "right_center": 9,
+      "shared_cube_count": 0,
+      "shared_cubes": []
+    },
+    {
+      "adjacent": true,
+      "left_center": 8,
+      "right_center": 9,
+      "shared_cube_count": 1,
+      "shared_cubes": [
+        6
+      ]
+    }
+  ],
+  "center_rows": [
+    {
+      "center_index": 0,
+      "cube_indices": [
+        0,
+        1,
+        2
+      ],
+      "degree": 3,
+      "neighbors": [
+        1,
+        2,
+        3
+      ],
+      "six_fixed_center_involution": [
+        0,
+        1,
+        27,
+        28,
+        29,
+        13,
+        12,
+        14,
+        8,
+        9,
+        25,
+        26,
+        6,
+        5,
+        7,
+        18,
+        19,
+        17,
+        15,
+        16,
+        23,
+        24,
+        22,
+        20,
+        21,
+        10,
+        11,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "center_index": 1,
+      "cube_indices": [
+        0,
+        4,
+        5
+      ],
+      "degree": 3,
+      "neighbors": [
+        0,
+        6,
+        7
+      ],
+      "six_fixed_center_involution": [
+        0,
+        22,
+        23,
+        26,
+        4,
+        19,
+        18,
+        7,
+        8,
+        17,
+        24,
+        28,
+        15,
+        16,
+        14,
+        12,
+        13,
+        9,
+        6,
+        5,
+        27,
+        25,
+        1,
+        2,
+        10,
+        21,
+        3,
+        20,
+        11,
+        29
+      ]
+    },
+    {
+      "center_index": 2,
+      "cube_indices": [
+        1,
+        7,
+        8
+      ],
+      "degree": 3,
+      "neighbors": [
+        0,
+        4,
+        8
+      ],
+      "six_fixed_center_involution": [
+        9,
+        8,
+        14,
+        12,
+        13,
+        29,
+        28,
+        27,
+        1,
+        0,
+        15,
+        21,
+        3,
+        4,
+        2,
+        10,
+        16,
+        17,
+        25,
+        19,
+        20,
+        11,
+        22,
+        23,
+        26,
+        18,
+        24,
+        7,
+        6,
+        5
+      ]
+    },
+    {
+      "center_index": 3,
+      "cube_indices": [
+        2,
+        10,
+        13
+      ],
+      "degree": 3,
+      "neighbors": [
+        0,
+        5,
+        9
+      ],
+      "six_fixed_center_involution": [
+        17,
+        1,
+        2,
+        10,
+        16,
+        5,
+        21,
+        20,
+        22,
+        9,
+        3,
+        18,
+        24,
+        13,
+        23,
+        26,
+        4,
+        0,
+        11,
+        29,
+        7,
+        6,
+        8,
+        14,
+        12,
+        28,
+        15,
+        27,
+        25,
+        19
+      ]
+    },
+    {
+      "center_index": 4,
+      "cube_indices": [
+        3,
+        8,
+        12
+      ],
+      "degree": 3,
+      "neighbors": [
+        2,
+        5,
+        6
+      ],
+      "six_fixed_center_involution": [
+        25,
+        26,
+        6,
+        5,
+        27,
+        3,
+        2,
+        13,
+        24,
+        18,
+        10,
+        11,
+        29,
+        7,
+        28,
+        15,
+        16,
+        23,
+        9,
+        22,
+        20,
+        21,
+        19,
+        17,
+        8,
+        0,
+        1,
+        4,
+        14,
+        12
+      ]
+    },
+    {
+      "center_index": 5,
+      "cube_indices": [
+        3,
+        13,
+        14
+      ],
+      "degree": 3,
+      "neighbors": [
+        3,
+        4,
+        7
+      ],
+      "six_fixed_center_involution": [
+        24,
+        13,
+        2,
+        3,
+        18,
+        5,
+        6,
+        26,
+        25,
+        27,
+        10,
+        16,
+        17,
+        1,
+        19,
+        20,
+        11,
+        12,
+        4,
+        14,
+        15,
+        21,
+        28,
+        29,
+        0,
+        8,
+        7,
+        9,
+        22,
+        23
+      ]
+    },
+    {
+      "center_index": 6,
+      "cube_indices": [
+        4,
+        11,
+        12
+      ],
+      "degree": 3,
+      "neighbors": [
+        1,
+        4,
+        9
+      ],
+      "six_fixed_center_involution": [
+        7,
+        18,
+        19,
+        17,
+        8,
+        23,
+        22,
+        0,
+        4,
+        26,
+        20,
+        11,
+        12,
+        25,
+        14,
+        15,
+        21,
+        3,
+        1,
+        2,
+        10,
+        16,
+        6,
+        5,
+        27,
+        13,
+        9,
+        24,
+        28,
+        29
+      ]
+    },
+    {
+      "center_index": 7,
+      "cube_indices": [
+        5,
+        9,
+        14
+      ],
+      "degree": 3,
+      "neighbors": [
+        1,
+        5,
+        8
+      ],
+      "six_fixed_center_involution": [
+        14,
+        15,
+        21,
+        3,
+        4,
+        10,
+        6,
+        7,
+        29,
+        11,
+        5,
+        9,
+        22,
+        20,
+        0,
+        1,
+        27,
+        28,
+        18,
+        24,
+        13,
+        2,
+        12,
+        25,
+        19,
+        23,
+        26,
+        16,
+        17,
+        8
+      ]
+    },
+    {
+      "center_index": 8,
+      "cube_indices": [
+        6,
+        7,
+        9
+      ],
+      "degree": 3,
+      "neighbors": [
+        2,
+        7,
+        9
+      ],
+      "six_fixed_center_involution": [
+        10,
+        11,
+        29,
+        7,
+        6,
+        14,
+        4,
+        3,
+        21,
+        15,
+        0,
+        1,
+        27,
+        28,
+        5,
+        9,
+        22,
+        20,
+        18,
+        19,
+        17,
+        8,
+        16,
+        23,
+        24,
+        25,
+        26,
+        12,
+        13,
+        2
+      ]
+    },
+    {
+      "center_index": 9,
+      "cube_indices": [
+        6,
+        10,
+        11
+      ],
+      "degree": 3,
+      "neighbors": [
+        3,
+        6,
+        8
+      ],
+      "six_fixed_center_involution": [
+        21,
+        5,
+        9,
+        22,
+        20,
+        1,
+        17,
+        16,
+        10,
+        2,
+        8,
+        14,
+        12,
+        13,
+        11,
+        29,
+        7,
+        6,
+        23,
+        26,
+        4,
+        0,
+        3,
+        18,
+        24,
+        25,
+        19,
+        27,
+        28,
+        15
+      ]
+    }
+  ],
+  "center_source": "artifacts/json/native_g30_cube_triangle_centers_028.json",
+  "certificate_id": "native_g30_petersen_from_cube_centers_029",
+  "checks": {
+    "center_edge_count_is_15": true,
+    "center_graph_automorphism_order_is_120": true,
+    "center_graph_is_connected": true,
+    "center_graph_is_cubic": true,
+    "center_graph_is_triangle_free": true,
+    "center_graph_isomorphic_to_petersen": true,
+    "center_source_audit_pass": true,
+    "center_vertex_count_is_10": true,
+    "cube_edges_equal_all_petersen_edges": true,
+    "cube_graph_source_audit_pass": true,
+    "every_cube_defines_center_edge": true,
+    "every_cube_is_incident_to_two_centers": true,
+    "fifteen_cubes_give_fifteen_distinct_edges": true,
+    "petersen_isomorphism_count_is_120": true
+  },
+  "classification_result": "The ten common-V4 cube-triangle centers form a connected cubic triangle-free graph on ten vertices. Two centers are adjacent exactly when their three-cube supports share one cube. This graph is explicitly isomorphic to the Petersen graph. Every one of the fifteen cubes belongs to exactly two centers and therefore becomes exactly one Petersen edge. Thus the native cube system recovers both Petersen and its line graph: centers are Petersen vertices, cubes are Petersen edges, and order-4 cube intersection is line-graph adjacency.",
+  "component_sizes": [
+    10
+  ],
+  "cube_edge_rows": [
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 0,
+      "incident_center_count": 2,
+      "incident_centers": [
+        0,
+        1
+      ],
+      "petersen_edge": [
+        0,
+        1
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 1,
+      "incident_center_count": 2,
+      "incident_centers": [
+        0,
+        2
+      ],
+      "petersen_edge": [
+        0,
+        2
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 2,
+      "incident_center_count": 2,
+      "incident_centers": [
+        0,
+        3
+      ],
+      "petersen_edge": [
+        0,
+        3
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 3,
+      "incident_center_count": 2,
+      "incident_centers": [
+        4,
+        5
+      ],
+      "petersen_edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 4,
+      "incident_center_count": 2,
+      "incident_centers": [
+        1,
+        6
+      ],
+      "petersen_edge": [
+        1,
+        6
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 5,
+      "incident_center_count": 2,
+      "incident_centers": [
+        1,
+        7
+      ],
+      "petersen_edge": [
+        1,
+        7
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 6,
+      "incident_center_count": 2,
+      "incident_centers": [
+        8,
+        9
+      ],
+      "petersen_edge": [
+        8,
+        9
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 7,
+      "incident_center_count": 2,
+      "incident_centers": [
+        2,
+        8
+      ],
+      "petersen_edge": [
+        2,
+        8
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 8,
+      "incident_center_count": 2,
+      "incident_centers": [
+        2,
+        4
+      ],
+      "petersen_edge": [
+        2,
+        4
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 9,
+      "incident_center_count": 2,
+      "incident_centers": [
+        7,
+        8
+      ],
+      "petersen_edge": [
+        7,
+        8
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 10,
+      "incident_center_count": 2,
+      "incident_centers": [
+        3,
+        9
+      ],
+      "petersen_edge": [
+        3,
+        9
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 11,
+      "incident_center_count": 2,
+      "incident_centers": [
+        6,
+        9
+      ],
+      "petersen_edge": [
+        6,
+        9
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 12,
+      "incident_center_count": 2,
+      "incident_centers": [
+        4,
+        6
+      ],
+      "petersen_edge": [
+        4,
+        6
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 13,
+      "incident_center_count": 2,
+      "incident_centers": [
+        3,
+        5
+      ],
+      "petersen_edge": [
+        3,
+        5
+      ]
+    },
+    {
+      "center_pair_is_adjacent": true,
+      "cube_index": 14,
+      "incident_center_count": 2,
+      "incident_centers": [
+        5,
+        7
+      ],
+      "petersen_edge": [
+        5,
+        7
+      ]
+    }
+  ],
+  "cube_graph_source": "artifacts/json/native_g30_fifteen_cube_graph_027.json",
+  "cube_to_petersen_edge": {
+    "0": [
+      0,
+      1
+    ],
+    "1": [
+      0,
+      2
+    ],
+    "10": [
+      3,
+      9
+    ],
+    "11": [
+      6,
+      9
+    ],
+    "12": [
+      4,
+      6
+    ],
+    "13": [
+      3,
+      5
+    ],
+    "14": [
+      5,
+      7
+    ],
+    "2": [
+      0,
+      3
+    ],
+    "3": [
+      4,
+      5
+    ],
+    "4": [
+      1,
+      6
+    ],
+    "5": [
+      1,
+      7
+    ],
+    "6": [
+      8,
+      9
+    ],
+    "7": [
+      2,
+      8
+    ],
+    "8": [
+      2,
+      4
+    ],
+    "9": [
+      7,
+      8
+    ]
+  },
+  "degree_profile": {
+    "3": 10
+  },
+  "edge_count": 15,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "graph6": "IsGYQG`Cg",
+  "isomorphic_to_petersen": true,
+  "isomorphism_count_to_petersen": 120,
+  "petersen_graph6": "IheA@GUAo",
+  "representative_isomorphism_to_petersen": {
+    "0": 0,
+    "1": 1,
+    "2": 4,
+    "3": 5,
+    "4": 3,
+    "5": 8,
+    "6": 2,
+    "7": 6,
+    "8": 9,
+    "9": 7
+  },
+  "triangle_count": 0,
+  "vertex_count": 10
+}
