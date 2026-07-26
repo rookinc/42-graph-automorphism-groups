@@ -1,0 +1,74 @@
+\section{Introduction}
+
+Let $G60$ denote the connected quartic graph on sixty vertices identified
+with $\mathrm{AT4val}[60,6]$. The purpose of this paper is to determine
+its full automorphism group, describe that group abstractly, and provide
+an explicit certificate connecting the native permutation action to the
+abstract model.
+
+The graph admits a canonical fixed-point-free involution $a$. Its orbits
+form thirty two-element fibers, and the corresponding quotient is a
+thirty-vertex graph denoted $G30$. This quotient provides the natural
+starting point for the automorphism calculation. Every automorphism of
+$G30$ has exactly two lifts to $G60$, producing a subgroup of order
+$480$ in $\operatorname{Aut}(G60)$.
+
+The existence of a subgroup of order $480$ does not by itself determine
+the full automorphism group. A priori, the native graph could possess
+additional symmetries that do not preserve the chosen fiber system. We
+therefore perform an independent exhaustive enumeration directly on the
+sixty-vertex graph. The enumeration returns exactly $480$
+automorphisms. Moreover, every enumerated automorphism preserves the
+$a$-fiber partition and centralizes the deck involution. It follows that
+the lifted subgroup is the full automorphism group.
+
+The order alone does not identify the group. We therefore calculate its
+center, derived series, abelianization, element-order profile, and
+index-two subgroups. These invariants lead to the fiber-product model
+\[
+S_5 \times_{C_2} D_8
+=
+\left\{
+(\sigma,d)\in S_5\times D_8:
+\operatorname{sgn}(\sigma)=\chi(d)
+\right\},
+\]
+where $\chi\colon D_8\to C_2$ is the quotient character whose kernel is
+a Klein four subgroup. We then construct a generator correspondence and
+extend it to an explicit bijection between all $480$ elements of the
+native automorphism group and all $480$ elements of the fiber-product
+model. The bijection is verified against every ordered product.
+
+The principal result is therefore the following.
+
+\begin{theorem}
+For the native graph $G60\cong \mathrm{AT4val}[60,6]$,
+\[
+\left|\operatorname{Aut}(G60)\right|=480
+\]
+and
+\[
+\operatorname{Aut}(G60)
+\cong
+S_5\times_{C_2}D_8,
+\]
+where the fiber product matches the sign character of $S_5$ with the
+quotient character of $D_8$ having Klein four kernel.
+\end{theorem}
+
+This manuscript concerns the sixty-vertex graph $G60$. It is distinct
+from the companion study of the thirty-vertex graph
+\[
+X=\operatorname{KC}(L(P)),
+\]
+whose automorphism group has order $720$ and is isomorphic to
+$S_5\times S_3$. The two graphs and their automorphism groups must not be
+conflated.
+
+The paper is organized as follows. Section~2 fixes the native graph and
+its exact data model. Section~3 develops the canonical quotient and the
+lifting construction. Section~4 proves completeness by independent
+native enumeration. Section~5 determines the internal group structure.
+Section~6 identifies the fiber-product model. Section~7 constructs the
+explicit isomorphism. Section~8 records the computational certificates,
+and Section~9 summarizes the classification.
