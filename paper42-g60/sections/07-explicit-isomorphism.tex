@@ -1,0 +1,192 @@
+\section{The explicit isomorphism}
+\label{sec:explicit-isomorphism}
+
+Section~\ref{sec:fiber-product} identifies the abstract group suggested
+by the native invariants. We now strengthen that classification by
+constructing an explicit isomorphism
+\[
+\Phi\colon
+\operatorname{Aut}(G60)
+\longrightarrow
+S_5\times_{C_2}D_8.
+\]
+
+This step removes any remaining dependence on fingerprint comparison.
+The two groups are connected element by element, and multiplication is
+verified throughout the complete multiplication table.
+
+\subsection{Native and model groups}
+
+Let
+\[
+A=\operatorname{Aut}(G60)
+\]
+be represented by its $480$ native permutations on the fixed
+sixty-vertex labeling.
+
+Let
+\[
+F=S_5\times_{C_2}D_8
+\]
+be the fiber-product model of
+Theorem~\ref{thm:fiber-product-identification}. Its elements are pairs
+\[
+(\sigma,d)\in S_5\times D_8
+\]
+satisfying
+\[
+\operatorname{sgn}(\sigma)=\chi_{\mathrm{V4}}(d).
+\]
+
+Both groups are enumerated exactly and use deterministic element
+encodings. The native elements are stored as permutation tuples, while
+the model elements are stored as compatible coordinate pairs.
+
+\subsection{Generator correspondence}
+
+A generating set
+\[
+\mathcal{S}_A=\{g_1,\ldots,g_k\}
+\]
+is selected from the native permutation group. A corresponding set
+\[
+\mathcal{S}_F=\{h_1,\ldots,h_k\}
+\]
+is selected in the fiber-product model.
+
+The correspondence
+\[
+g_i\longmapsto h_i
+\]
+is chosen so that the native generators and model generators satisfy the
+same multiplication relations.
+
+The generator images include representatives of the following
+structural features:
+
+\begin{itemize}
+\item the normal $A_5$ subgroup;
+\item odd $S_5$ parity;
+\item the central involution;
+\item an order-four dihedral direction;
+\item a reflection direction.
+\end{itemize}
+
+The exact generator arrays and model coordinates are recorded in the
+certificate described in Appendix~B.
+
+\subsection{Extension to all elements}
+
+Starting from the identity, the generator correspondence is extended
+through simultaneous traversal of the two Cayley graphs.
+
+Suppose that a native element $x\in A$ has already been assigned an
+image $\Phi(x)\in F$. For each paired generator
+\[
+g_i\longmapsto h_i,
+\]
+define
+\[
+\Phi(xg_i)=\Phi(x)h_i.
+\]
+
+Whenever an element is reached by more than one word, the independently
+computed model images are required to agree. Thus the traversal checks
+the consistency of the generator correspondence while constructing the
+map.
+
+The traversal reaches every element of $A$ and every element of $F$.
+It produces a bijection
+\[
+\Phi\colon A\longrightarrow F
+\]
+with
+\[
+|\operatorname{dom}\Phi|
+=
+|\operatorname{im}\Phi|
+=
+480.
+\]
+
+No native element is assigned two different model images, and no two
+native elements are assigned the same model image.
+
+\subsection{Complete multiplication verification}
+
+After constructing the bijection, we test the homomorphism law
+independently for every ordered pair
+\[
+(x,y)\in A\times A.
+\]
+
+For each pair, the verification checks
+\[
+\Phi(xy)=\Phi(x)\Phi(y).
+\]
+
+The number of ordered pairs is
+\[
+|A|^2
+=
+480^2
+=
+230400.
+\]
+
+All $230400$ checks pass.
+
+\begin{theorem}
+\label{thm:explicit-isomorphism}
+The exported map
+\[
+\Phi\colon
+\operatorname{Aut}(G60)
+\longrightarrow
+S_5\times_{C_2}D_8
+\]
+is a group isomorphism.
+\end{theorem}
+
+\begin{proof}
+The simultaneous generator traversal constructs a bijection between the
+two $480$-element sets. The exhaustive multiplication test verifies
+\[
+\Phi(xy)=\Phi(x)\Phi(y)
+\]
+for every ordered pair $(x,y)\in A\times A$. Therefore $\Phi$ is a
+bijective homomorphism and hence an isomorphism.
+\end{proof}
+
+\subsection{Certificate digest}
+
+The full mapping is stored as a machine-readable artifact. A canonical
+serialization of the mapping has SHA-256 digest
+\[
+\texttt{9a2b9bc2294a858cb7411fec33aa9c69786ad387184de839925f73453a3e169d}.
+\]
+
+The digest binds the theorem statement to one exact exported
+correspondence. It does not replace the mathematical proof, but it
+allows the explicit certificate used in the verification to be
+identified without ambiguity.
+
+\subsection{Consequences}
+
+The explicit isomorphism simultaneously confirms:
+
+\begin{enumerate}
+\item the native automorphism group has no missing elements;
+\item the fiber-product model has no extra elements;
+\item the proposed generator correspondence is globally consistent;
+\item the group law is preserved on all elements, not merely on the
+generators or on selected relations.
+\end{enumerate}
+
+The classification
+\[
+\operatorname{Aut}(G60)
+\cong
+S_5\times_{C_2}D_8
+\]
+is therefore established both structurally and constructively.
