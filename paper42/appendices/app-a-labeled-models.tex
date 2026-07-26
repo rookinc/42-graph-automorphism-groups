@@ -81,19 +81,74 @@ This set-based model is sufficient for all conceptual proofs in the paper.
 
 \subsection{Certificate integer labels}
 
-% STATUS: Review-draft insertion boundary
-
-The machine-readable certificates use integer vertex labels. The final
-appendix must include the exact bijection
+The machine-readable certificates use integer vertex labels. Let
+\(e_b\) denote the Petersen edge in row \(b\) of
+Table~\ref{tab:certificate-label-map}. The certificate convention is
 
 \[
-E(P)\times\Ftwo
-\longrightarrow
-\{0,1,\ldots,29\}
+(e_b,\varepsilon)
+\longmapsto
+2b+\varepsilon,
+\qquad
+\varepsilon\in\Ftwo.
 \]
 
-copied verbatim from the labeled certificate packet.
+\begin{table}[h]
+\centering
+\begin{tabular}{rrrr}
+\toprule
+Base index \(b\) & Petersen edge \(e_b\) &
+\((e_b,0)\) & \((e_b,1)\)\\
+\midrule
+0 & $\{12,34\}$ & 0 & 1\\
+1 & $\{12,45\}$ & 2 & 3\\
+2 & $\{23,45\}$ & 4 & 5\\
+3 & $\{15,23\}$ & 6 & 7\\
+4 & $\{15,34\}$ & 8 & 9\\
+5 & $\{14,23\}$ & 10 & 11\\
+6 & $\{14,25\}$ & 12 & 13\\
+7 & $\{13,25\}$ & 14 & 15\\
+8 & $\{13,45\}$ & 16 & 17\\
+9 & $\{25,34\}$ & 18 & 19\\
+10 & $\{14,35\}$ & 20 & 21\\
+11 & $\{12,35\}$ & 22 & 23\\
+12 & $\{15,24\}$ & 24 & 25\\
+13 & $\{24,35\}$ & 26 & 27\\
+14 & $\{13,24\}$ & 28 & 29\\
+\bottomrule
+\end{tabular}
+\caption{Exact conversion between the set-based cover coordinates and the
+integer labels used by the machine-readable certificates.}
+\label{tab:certificate-label-map}
+\end{table}
 
-The present review draft deliberately does not reconstruct that table from
-memory. The conversion table is editorial metadata, not an unresolved
-mathematical claim.
+The underlying Project 41 alignment is recorded in
+
+\begin{verbatim}
+sources/project41-paper42/a5_v4_k22_four_slot_alignment_audit_019.json
+\end{verbatim}
+
+with SHA-256 digest
+
+\begin{verbatim}
+e8bbfe48053bdc1a80407ce7a26bf02b12f83bfcf695fed0073a9a8581ae896a
+\end{verbatim}
+
+Audit \(019\) fixes the fifteen base indices and their Petersen-edge
+alignment. It uses an integer-labeled standard Petersen model. The
+Project 42 bridge certificate
+
+\begin{verbatim}
+artifacts/json/project42_kneser_label_bridge_045.json
+\end{verbatim}
+
+enumerates all \(120\) graph isomorphisms from that standard model to the
+fixed \(KG(5,2)\) model used in this appendix and selects the
+lexicographically least image tuple. Its SHA-256 digest is
+
+\begin{verbatim}
+381d0b5e0ef0a11fa152417f3e6b4a74b0e38a449f12d06e9a1616ea2e2943c6
+\end{verbatim}
+
+The choice of this bridge is editorial coordinate data. It changes no
+abstract graph, covering, automorphism-group, or quotient-frame claim.

@@ -19,24 +19,26 @@ and the vertices of the canonical bipartite double cover are labeled by
 V(Y)\times\Ftwo.
 \]
 
-Appendix~A gives a coordinate-free labeled model. The exact conversion to
-the integer labels used in the machine-readable certificates is part of
-the certificate packet and will be inserted verbatim during the revision
-pass. No mathematical claim depends on the choice of integer labels.
+Appendix~A gives both the coordinate-free labeled model and the exact
+conversion to the integer labels used in the machine-readable
+certificates. Certificate~\(045\) records the deterministic bridge from
+the standard integer-labeled Petersen model to the fixed \(KG(5,2)\)
+coordinates. No mathematical claim depends on this editorial coordinate
+choice.
 
 \subsection{Certificate ledger}
 
-The current evidence baseline is repository commit
+The original Project 42 evidence baseline is repository commit
 
 \[
-\texttt{1604b16}
+\texttt{1604b16}.
 \]
 
-with commit message
-
-\begin{quote}
-Add Project 42 graph certificate packet.
-\end{quote}
+The present revision imports the authoritative Project 41 packet without
+modification and adds deterministic Project 42 certificates \(045\)
+through \(048\). Appendix~F records their exact paths and SHA-256
+digests. The release commit and archive digest are recorded by the
+external release manifest generated after packaging.
 
 The principal certified inputs are summarized in
 Table~\ref{tab:certificate-ledger}.
@@ -48,58 +50,62 @@ Table~\ref{tab:certificate-ledger}.
 Result & Evidence identifier & Role in the paper\\
 \midrule
 
-Full automorphism order
+Labeled coordinate bridge
 &
-\texttt{all\_one\_group\_anatomy\_audit\_028o.json}
+\texttt{project42\_kneser\_label\_bridge\_045.json}
 &
-Supplies \(|\Aut(X)|=720\) after the subgroup
-\(S_5\times S_3\) has been constructed conceptually.\\
+Records the deterministic conversion between the integer Petersen model
+and the fixed \(KG(5,2)\) coordinates used in Appendix~A.\\
 
-Group anatomy
+Full automorphism order and group anatomy
 &
-\texttt{all\_one\_group\_anatomy\_audit\_028o.json}
+\texttt{project42\_group\_orbital\_certificate\_046.json}
 &
-Independent check of center, derived subgroup, and abelianization.\\
+Combines the exact \(720\)-element carrier action with the certified
+\(S_5\times S_3\) structure, center, derived subgroup, abelianization,
+and deterministic permutation generators.\\
 
 Quartic orbital census
 &
-Project 42 quartic-orbital census certificate
+\texttt{project42\_group\_orbital\_certificate\_046.json}
 &
-Establishes four quartic self-paired orbitals, with exactly one connected
-member.\\
+Establishes four quartic self-paired orbitals, with exactly one connected,
+bipartite, triangle-free member.\\
 
 Cover-orbital identification
 &
-Project 42 graph-isomorphism certificate
+\texttt{project42\_group\_orbital\_certificate\_046.json}
 &
-Identifies the connected orbital graph with \(\KC(L(P))\).\\
+Matches the selected connected orbital edge set exactly with the all-one
+canonical double cover.\\
 
 Deck-centralizer alignment
 &
-Project 42 explicit quotient-frame certificate 004
+\texttt{project42\_quotient\_frame\_orbit\_certificate\_004.json}
 &
 Places the natural deck involution inside the complementary \(S_3\).\\
 
-Three frame partitions
+Three frame partitions and pair census
 &
-Project 42 explicit quotient-frame certificate 004
+\texttt{project42\_quotient\_frame\_orbit\_certificate\_004.json}
 &
-Records the three involutions and their fifteen-pair orbit partitions.\\
-
-Forty-five-pair census
-&
-Project 42 pair-census certificate
-&
-Checks that the three certified pair lists contain forty-five distinct
-unordered pairs.\\
+Records the three involutions, their fifteen-pair orbit partitions, and
+the forty-five distinct unordered pairs.\\
 
 Fixed cohomology square
 &
-Project 41 packet 028m30i
+\texttt{project42\_cohomology\_certificate\_047.json}
 &
-Computes
-\(H^1(L(P),\Ftwo)^{S_5}\cong\Ftwo^2\), the triangle-pentagon coordinates,
-and the four cover-class orders.\\
+Reconstructs
+\(H^1(L(P),\Ftwo)^{S_5}\cong\Ftwo^2\), the coboundary matrix, fixed basis,
+triangle-pentagon coordinates, and four voltage representatives.\\
+
+Four invariant cover classes
+&
+\texttt{project42\_cover\_class\_certificate\_048.json}
+&
+Records exact graph fingerprints, canonical edge digests, voltage
+representatives, and automorphism orders for all four classes.\\
 
 \bottomrule
 \end{tabularx}
@@ -108,9 +114,10 @@ digests are normalized in Appendix~F.}
 \label{tab:certificate-ledger}
 \end{table}
 
-% STATUS: Editorial metadata boundary
-% Exact artifact paths, script names, and SHA-256 values must be copied from
-% notes/source-ledger.md rather than reconstructed from memory.
+The path-and-digest ledger is generated directly from repository files
+and printed in Appendix~F. The preserved
+\texttt{notes/source-ledger.md} contains no historical digest entries and
+is not used as a substitute for filesystem-derived hashes.
 
 \subsection{Conceptual deductions}
 

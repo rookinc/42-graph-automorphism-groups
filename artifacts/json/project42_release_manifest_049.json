@@ -1,0 +1,356 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "appendix_f_excluded_to_avoid_self_reference": true,
+    "appendix_f_hash_embedded": false,
+    "archive_generated_by": "scripts/zipit.sh",
+    "expected_archive_path": "dist/project42_overleaf.zip",
+    "historical_source_ledger_has_digest_entries": false,
+    "overleaf_archive_hash_embedded": false,
+    "overleaf_archive_requires_external_release_manifest": true,
+    "physical_claim": false,
+    "release_commit_finalized": false
+  },
+  "categories": {
+    "exporter_scripts": [
+      {
+        "category": "exporter_script",
+        "path": "scripts/export_project42_kneser_label_bridge_045.py",
+        "sha256": "eac763d38626fe1add0fb38f52af54a62deec1e1661323d67b8d4430c44e6bae",
+        "size_bytes": 6390
+      },
+      {
+        "category": "exporter_script",
+        "path": "scripts/export_project42_group_orbital_certificate_046.py",
+        "sha256": "e61750dcb5fbf66cfa66a78906f9b09e7d64bdfd46fa7bcfa5698e30eb36ccf4",
+        "size_bytes": 8533
+      },
+      {
+        "category": "exporter_script",
+        "path": "scripts/export_project42_cohomology_certificate_047.py",
+        "sha256": "69e919496b7b45870f9cffcd8e720fbdfb048268b73de09e830a10bfcf513b66",
+        "size_bytes": 22978
+      },
+      {
+        "category": "exporter_script",
+        "path": "scripts/export_project42_cover_class_certificate_048.py",
+        "sha256": "f85c3920c4a2183fdc278755593ce9a0964cfb398b388d7ed64da9a658d34c4d",
+        "size_bytes": 8961
+      },
+      {
+        "category": "exporter_script",
+        "path": "scripts/export_project42_release_manifest_049.py",
+        "sha256": "18c63967de0b6b6491c4d50a1eee6d36a7a5ebd457f0636f9346ec974d82da1c",
+        "size_bytes": 10749
+      }
+    ],
+    "generated_project42_certificates": [
+      {
+        "category": "generated_project42_certificate",
+        "path": "artifacts/json/project42_kneser_label_bridge_045.json",
+        "sha256": "381d0b5e0ef0a11fa152417f3e6b4a74b0e38a449f12d06e9a1616ea2e2943c6",
+        "size_bytes": 8497
+      },
+      {
+        "category": "generated_project42_certificate",
+        "path": "artifacts/json/project42_group_orbital_certificate_046.json",
+        "sha256": "792293307621a5c93b5245499c9c38889744586792928c546f4050163c1cfb44",
+        "size_bytes": 18458
+      },
+      {
+        "category": "generated_project42_certificate",
+        "path": "artifacts/json/project42_cohomology_certificate_047.json",
+        "sha256": "ef626db85ad4bf94af204a1decc9fce659d60f50e7ae314128375f07ae21b2e6",
+        "size_bytes": 13608
+      },
+      {
+        "category": "generated_project42_certificate",
+        "path": "artifacts/json/project42_cover_class_certificate_048.json",
+        "sha256": "9cf3dd06e131d7a80dd03387581d63299176972cbe9b7b11c28a98ee8691e59e",
+        "size_bytes": 17818
+      }
+    ],
+    "imported_project41_sources": [
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/a5_v4_k22_four_slot_alignment_audit_019.json",
+        "sha256": "e8bbfe48053bdc1a80407ce7a26bf02b12f83bfcf695fed0073a9a8581ae896a",
+        "size_bytes": 31266
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/all_one_full_automorphism_census_audit_028n.json",
+        "sha256": "30f2af7f43b263a7580e1755fdb7f3c7697e3830c192f3ffe1990eecc91aad0d",
+        "size_bytes": 2994
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/all_one_group_anatomy_audit_028o.json",
+        "sha256": "b6b8de22f2e9c0b629334eccf8a7ba4ed5fbb3dbdb4c79074acbeb0e0ce2722a",
+        "size_bytes": 2164
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/all_one_oriented_frame_identification_audit_028p.json",
+        "sha256": "e15185b78e18e31487bdaac0b8fb06d2455f116db4cb8237d8c99a6fe0ed9dda",
+        "size_bytes": 3011
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/invariant_cover_square_automorphism_orders_audit_028m.json",
+        "sha256": "303872532aabb6e589644695a261f778913b6570c5a18c01123cd0ce98f06752",
+        "size_bytes": 9042
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/invariant_cover_square_closure_audit_028q.json",
+        "sha256": "d5130f44d0a5c887444f1eccb58061a5c9d69583d04a4a542a5d515c8e056e0d",
+        "size_bytes": 1750
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_certificate_source_inventory_001.json",
+        "sha256": "1a407eb2f84b2b83953a1c308be254b67a87cc0d01288d6e4053eb817cb25d8f",
+        "size_bytes": 158876
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_certificate_source_inventory_001.md",
+        "sha256": "740bc492d937c306b65c01218ae7b9f82e9788b13a7c33926385a36c2fd2f539",
+        "size_bytes": 109187
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_claim_status_and_completeness_search_003.json",
+        "sha256": "9f33be945c5c87fd34cc317d4173f1c5f0006b1c5721aab69838aba02322274f",
+        "size_bytes": 49639
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_claim_status_and_completeness_search_003.md",
+        "sha256": "453ffda944b3825a1a5b9493e75bd558271f3809336a58d64405683cade258bf",
+        "size_bytes": 24979
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_core_certificate_packet_002.json",
+        "sha256": "495a80a3192ff0fc2840a4353a45477b2a1bd2c9fd3f4a63502e9df16a20b9cb",
+        "size_bytes": 57567
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_core_certificate_packet_002.md",
+        "sha256": "6752a02ff834728a70381714a9e2cb38912fdaece71bb7bb61a92a614f2a91cd",
+        "size_bytes": 12467
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_full_carrier_action_certificate_031.json",
+        "sha256": "0e25fcd57cbd93f08a931b0b3adcf456044918fd19402d1da0a063fd89606b8b",
+        "size_bytes": 370581
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_invariant_cover_square_certificate_032.json",
+        "sha256": "e6e27815bdc9b31e83f71ae8fecd7787042b0dc0dd6a3b75ab1e96c4d1bc6f60",
+        "size_bytes": 26537
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_native_voltage_derivation_certificate_033.json",
+        "sha256": "9d5046dec7ea5d32f88782aa158a79082d4facf6f0b4fd4a7d3a3e4c552a0f70",
+        "size_bytes": 8541
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_quotient_frame_orbit_certificate_004.json",
+        "sha256": "9e6f11edfffa8cb1fbf4db86935d9e28c0442a1bd72fbe21607055423b66d041",
+        "size_bytes": 22266
+      },
+      {
+        "category": "imported_project41_source",
+        "path": "sources/project41-paper42/project42_quotient_frame_orbit_certificate_004.md",
+        "sha256": "71501f8523e43c92257237f511741b205502c68e6059bdfc3aa44a6f068cc18a",
+        "size_bytes": 2109
+      }
+    ],
+    "manuscript_files_excluding_appendix_f": [
+      {
+        "category": "manuscript_file",
+        "path": "paper42/appendices/app-a-labeled-models.tex",
+        "sha256": "6ad2690d3045b6a35a629c89cfe98c6ce8141f158b76d6093281a3034bf40247",
+        "size_bytes": 3145
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/appendices/app-b-quotient-frames.tex",
+        "sha256": "19668119e06d485ae2f8c33551e050a2c05eb1da4cc880f26ce5784ad2e1cf07",
+        "size_bytes": 4349
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/appendices/app-c-group-orbitals.tex",
+        "sha256": "176a8c0888d87d28c0f3730462f1bd3a195b5c99de55db4d4379bd213865f021",
+        "size_bytes": 4959
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/appendices/app-d-cohomology.tex",
+        "sha256": "1729d37a91064811b537a7fb52117e8d0f9556adf09eda1c75c8f812776ca4ff",
+        "size_bytes": 5868
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/appendices/app-e-cover-classes.tex",
+        "sha256": "5ca3816dbef5f6192a89f623052328c13ed28dda58043debd4b5ab7bfb7a081e",
+        "size_bytes": 3122
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/frontmatter/abstract.tex",
+        "sha256": "eedd4d7ca7df78686dd769d123b6e8710bca0e33d8d0179c72c5bab658dcfe94",
+        "size_bytes": 1377
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/latexmkrc",
+        "sha256": "89c64dcd58f7644d4b64df8c399938b6026bb3e2fe9e6745b0c03e54a1b2eb3e",
+        "size_bytes": 45
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/macros.tex",
+        "sha256": "b3f58f2894616c44ec2e345f33f6d3350d308a975938353789749cdebd618eb3",
+        "size_bytes": 301
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/main.tex",
+        "sha256": "8ef3f9eea47e038f195f155cc71adf14acff165be9edb4631595ba36a2892919",
+        "size_bytes": 1206
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/preamble.tex",
+        "sha256": "0ca10604e8de4b08976957c1fdefae0a63fad0dfb07b69d2b562d275c5f09c52",
+        "size_bytes": 655
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/refs.bib",
+        "sha256": "e4e61dab84697d4be2c9ec50ee7be871b96cd933648919f27d1829cd264fdb63",
+        "size_bytes": 1190
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/01-introduction.tex",
+        "sha256": "fb6a68c10bd21f30f4228d49e073c32e62ee3b1cd20baf1036522ecca84a3f0f",
+        "size_bytes": 4782
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/02-preliminaries.tex",
+        "sha256": "97c7c9d56c780b62c6cb3e9bad26d3fb2501a4cf26b1e8c93838e903e49c2f5f",
+        "size_bytes": 9225
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/03-construction-and-invariants.tex",
+        "sha256": "d535179663bc4006ee306c7fff22abf80c05734c64b7cfc4196ebaefb75f4a6b",
+        "size_bytes": 8039
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/04-natural-quotient.tex",
+        "sha256": "44274afb9f832caba923649058eb02b51c4589f1f742aa432e94e8f59c9501ee",
+        "size_bytes": 4254
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/05-homogeneous-space.tex",
+        "sha256": "48f573022d006638f4cd47249c7205d679254a45394e1ef99167dcb83a86b5e9",
+        "size_bytes": 6355
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/06-automorphism-group.tex",
+        "sha256": "6420cd34799e7d05b0c1e49ea89782515b12642ab5a44633e721328d5a251f7b",
+        "size_bytes": 7347
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/07-quotient-frame-orbit.tex",
+        "sha256": "08e15c2e2531f2df25e60654676720fd763f7777e9bce1522a7d745ef174e773",
+        "size_bytes": 7310
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/08-invariant-double-covers.tex",
+        "sha256": "eea022b719da6327ad9f1a013e26656cd5c9638cc6a75da74c468dbe8b40c2ad",
+        "size_bytes": 4846
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/09-certification.tex",
+        "sha256": "8edcb15da348fd06ce6ee6737dc4e0ad2bc5e365d9ca106c08d840fc48ab74cf",
+        "size_bytes": 5895
+      },
+      {
+        "category": "manuscript_file",
+        "path": "paper42/sections/10-conclusion.tex",
+        "sha256": "8c39dfb30ea2058e91ed8d48b74fb3f74bf7efde072425b98610e60fdb7c9ac3",
+        "size_bytes": 2107
+      }
+    ],
+    "support_files": [
+      {
+        "category": "support_file",
+        "path": "scripts/zipit.sh",
+        "sha256": "a578f250c49dadcd46e8b1277b7d403a0582b6a6e98b96a747f7d86401f3dc5e",
+        "size_bytes": 1660
+      },
+      {
+        "category": "support_file",
+        "path": "notes/source-ledger.md",
+        "sha256": "a5a7cdc5014f2c692e4160a25057852e9c8612d7ee44c6fceb175ad1f1c515a9",
+        "size_bytes": 109
+      },
+      {
+        "category": "support_file",
+        "path": "README.md",
+        "sha256": "2a0270b90d40b96a7bc84046df364e298b72ce04fe0f3557ead7e8aa9e1c2440",
+        "size_bytes": 919
+      }
+    ]
+  },
+  "certificate_id": "project42_release_manifest_049",
+  "checks": {
+    "all_digests_sha256_length": true,
+    "all_files_nonempty": true,
+    "appendix_f_excluded": true,
+    "archive_excluded": true,
+    "exporter_count_5": true,
+    "generated_certificate_count_4": true,
+    "imported_source_count_17": true,
+    "manifest_paths_unique": true,
+    "support_file_count_3": true
+  },
+  "counts": {
+    "exporter_scripts": 5,
+    "generated_project42_certificates": 4,
+    "imported_project41_sources": 17,
+    "manuscript_files_excluding_appendix_f": 21,
+    "support_files": 3
+  },
+  "record_identity": {
+    "affiliation": "Center of Recursive Inquiry (CoRI), Matsqui Territory, Abbotsford, British Columbia, Canada",
+    "author": "Scott Allen Cave",
+    "generation_head": "e0e4964bfe4b43dbe4ecd2fcb69964a600a2af0d",
+    "generation_head_short": "e0e4964",
+    "original_evidence_baseline": "1604b16",
+    "preprint_doi": "10.5281/zenodo.21480350",
+    "project": "Project 42",
+    "repository_project": "42-graph-automorphism-groups"
+  },
+  "total_embedded_receipt_count": 50
+}

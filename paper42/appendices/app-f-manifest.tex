@@ -7,8 +7,11 @@
 Field & Value\\
 \midrule
 Project & Project 42\\
-Repository project & \texttt{42-graph-automorphism-groups}\\
-Evidence baseline & \texttt{1604b16}\\
+Repository project &
+\texttt{42-graph-automorphism-groups}\\
+Original evidence baseline & \texttt{1604b16}\\
+Manifest generation head &
+\texttt{e0e4964}\\
 Preprint DOI & \texttt{10.5281/zenodo.21480350}\\
 Author & Scott Allen Cave\\
 Affiliation &
@@ -17,42 +20,230 @@ British Columbia, Canada\\
 \bottomrule
 \end{tabular}
 
-\subsection{Required release contents}
+\subsection{Manifest scope}
 
-The release manifest must identify the exact paths and SHA-256 digests for:
+Certificate \(049\) records filesystem-derived SHA-256 receipts for the
+authoritative imported Project 41 packet, generated Project 42
+certificates \(045\)--\(048\), every exporter used to create certificates
+\(045\)--\(049\), the packaging script, the preserved source-ledger note,
+the repository README, and every manuscript file except this appendix.
+
+Appendix F is excluded from its own embedded ledger to avoid self-reference.
+The Overleaf archive is also excluded because an archive
+cannot contain its own final digest. The release commit and archive
+SHA-256 digest therefore belong to the external release manifest created
+after the final commit and packaging step.
+
+\subsection{Imported Project 41 sources}
+
+\begin{verbatim}
+sources/project41-paper42/a5_v4_k22_four_slot_alignment_audit_019.json
+e8bbfe48053bdc1a80407ce7a26bf02b12f83bfcf695fed0073a9a8581ae896a
+
+sources/project41-paper42/all_one_full_automorphism_census_audit_028n.json
+30f2af7f43b263a7580e1755fdb7f3c7697e3830c192f3ffe1990eecc91aad0d
+
+sources/project41-paper42/all_one_group_anatomy_audit_028o.json
+b6b8de22f2e9c0b629334eccf8a7ba4ed5fbb3dbdb4c79074acbeb0e0ce2722a
+
+sources/project41-paper42/all_one_oriented_frame_identification_audit_028p.json
+e15185b78e18e31487bdaac0b8fb06d2455f116db4cb8237d8c99a6fe0ed9dda
+
+sources/project41-paper42/invariant_cover_square_automorphism_orders_audit_028m.json
+303872532aabb6e589644695a261f778913b6570c5a18c01123cd0ce98f06752
+
+sources/project41-paper42/invariant_cover_square_closure_audit_028q.json
+d5130f44d0a5c887444f1eccb58061a5c9d69583d04a4a542a5d515c8e056e0d
+
+sources/project41-paper42/project42_certificate_source_inventory_001.json
+1a407eb2f84b2b83953a1c308be254b67a87cc0d01288d6e4053eb817cb25d8f
+
+sources/project41-paper42/project42_certificate_source_inventory_001.md
+740bc492d937c306b65c01218ae7b9f82e9788b13a7c33926385a36c2fd2f539
+
+sources/project41-paper42/project42_claim_status_and_completeness_search_003.json
+9f33be945c5c87fd34cc317d4173f1c5f0006b1c5721aab69838aba02322274f
+
+sources/project41-paper42/project42_claim_status_and_completeness_search_003.md
+453ffda944b3825a1a5b9493e75bd558271f3809336a58d64405683cade258bf
+
+sources/project41-paper42/project42_core_certificate_packet_002.json
+495a80a3192ff0fc2840a4353a45477b2a1bd2c9fd3f4a63502e9df16a20b9cb
+
+sources/project41-paper42/project42_core_certificate_packet_002.md
+6752a02ff834728a70381714a9e2cb38912fdaece71bb7bb61a92a614f2a91cd
+
+sources/project41-paper42/project42_full_carrier_action_certificate_031.json
+0e25fcd57cbd93f08a931b0b3adcf456044918fd19402d1da0a063fd89606b8b
+
+sources/project41-paper42/project42_invariant_cover_square_certificate_032.json
+e6e27815bdc9b31e83f71ae8fecd7787042b0dc0dd6a3b75ab1e96c4d1bc6f60
+
+sources/project41-paper42/project42_native_voltage_derivation_certificate_033.json
+9d5046dec7ea5d32f88782aa158a79082d4facf6f0b4fd4a7d3a3e4c552a0f70
+
+sources/project41-paper42/project42_quotient_frame_orbit_certificate_004.json
+9e6f11edfffa8cb1fbf4db86935d9e28c0442a1bd72fbe21607055423b66d041
+
+sources/project41-paper42/project42_quotient_frame_orbit_certificate_004.md
+71501f8523e43c92257237f511741b205502c68e6059bdfc3aa44a6f068cc18a
+\end{verbatim}
+
+\subsection{Generated Project 42 certificates}
+
+\begin{verbatim}
+artifacts/json/project42_kneser_label_bridge_045.json
+381d0b5e0ef0a11fa152417f3e6b4a74b0e38a449f12d06e9a1616ea2e2943c6
+
+artifacts/json/project42_group_orbital_certificate_046.json
+792293307621a5c93b5245499c9c38889744586792928c546f4050163c1cfb44
+
+artifacts/json/project42_cohomology_certificate_047.json
+ef626db85ad4bf94af204a1decc9fce659d60f50e7ae314128375f07ae21b2e6
+
+artifacts/json/project42_cover_class_certificate_048.json
+9cf3dd06e131d7a80dd03387581d63299176972cbe9b7b11c28a98ee8691e59e
+\end{verbatim}
+
+\subsection{Exporter scripts}
+
+\begin{verbatim}
+scripts/export_project42_kneser_label_bridge_045.py
+eac763d38626fe1add0fb38f52af54a62deec1e1661323d67b8d4430c44e6bae
+
+scripts/export_project42_group_orbital_certificate_046.py
+e61750dcb5fbf66cfa66a78906f9b09e7d64bdfd46fa7bcfa5698e30eb36ccf4
+
+scripts/export_project42_cohomology_certificate_047.py
+69e919496b7b45870f9cffcd8e720fbdfb048268b73de09e830a10bfcf513b66
+
+scripts/export_project42_cover_class_certificate_048.py
+f85c3920c4a2183fdc278755593ce9a0964cfb398b388d7ed64da9a658d34c4d
+
+scripts/export_project42_release_manifest_049.py
+18c63967de0b6b6491c4d50a1eee6d36a7a5ebd457f0636f9346ec974d82da1c
+\end{verbatim}
+
+\subsection{Support and packaging files}
+
+\begin{verbatim}
+scripts/zipit.sh
+a578f250c49dadcd46e8b1277b7d403a0582b6a6e98b96a747f7d86401f3dc5e
+
+notes/source-ledger.md
+a5a7cdc5014f2c692e4160a25057852e9c8612d7ee44c6fceb175ad1f1c515a9
+
+README.md
+2a0270b90d40b96a7bc84046df364e298b72ce04fe0f3557ead7e8aa9e1c2440
+\end{verbatim}
+
+\subsection{Manuscript source ledger}
+
+The following receipts cover every file beneath
+\texttt{paper42/} except
+\texttt{paper42/appendices/app-f-manifest.tex}.
+
+\begin{verbatim}
+paper42/appendices/app-a-labeled-models.tex
+6ad2690d3045b6a35a629c89cfe98c6ce8141f158b76d6093281a3034bf40247
+
+paper42/appendices/app-b-quotient-frames.tex
+19668119e06d485ae2f8c33551e050a2c05eb1da4cc880f26ce5784ad2e1cf07
+
+paper42/appendices/app-c-group-orbitals.tex
+176a8c0888d87d28c0f3730462f1bd3a195b5c99de55db4d4379bd213865f021
+
+paper42/appendices/app-d-cohomology.tex
+1729d37a91064811b537a7fb52117e8d0f9556adf09eda1c75c8f812776ca4ff
+
+paper42/appendices/app-e-cover-classes.tex
+5ca3816dbef5f6192a89f623052328c13ed28dda58043debd4b5ab7bfb7a081e
+
+paper42/frontmatter/abstract.tex
+eedd4d7ca7df78686dd769d123b6e8710bca0e33d8d0179c72c5bab658dcfe94
+
+paper42/latexmkrc
+89c64dcd58f7644d4b64df8c399938b6026bb3e2fe9e6745b0c03e54a1b2eb3e
+
+paper42/macros.tex
+b3f58f2894616c44ec2e345f33f6d3350d308a975938353789749cdebd618eb3
+
+paper42/main.tex
+8ef3f9eea47e038f195f155cc71adf14acff165be9edb4631595ba36a2892919
+
+paper42/preamble.tex
+0ca10604e8de4b08976957c1fdefae0a63fad0dfb07b69d2b562d275c5f09c52
+
+paper42/refs.bib
+e4e61dab84697d4be2c9ec50ee7be871b96cd933648919f27d1829cd264fdb63
+
+paper42/sections/01-introduction.tex
+fb6a68c10bd21f30f4228d49e073c32e62ee3b1cd20baf1036522ecca84a3f0f
+
+paper42/sections/02-preliminaries.tex
+97c7c9d56c780b62c6cb3e9bad26d3fb2501a4cf26b1e8c93838e903e49c2f5f
+
+paper42/sections/03-construction-and-invariants.tex
+d535179663bc4006ee306c7fff22abf80c05734c64b7cfc4196ebaefb75f4a6b
+
+paper42/sections/04-natural-quotient.tex
+44274afb9f832caba923649058eb02b51c4589f1f742aa432e94e8f59c9501ee
+
+paper42/sections/05-homogeneous-space.tex
+48f573022d006638f4cd47249c7205d679254a45394e1ef99167dcb83a86b5e9
+
+paper42/sections/06-automorphism-group.tex
+6420cd34799e7d05b0c1e49ea89782515b12642ab5a44633e721328d5a251f7b
+
+paper42/sections/07-quotient-frame-orbit.tex
+08e15c2e2531f2df25e60654676720fd763f7777e9bce1522a7d745ef174e773
+
+paper42/sections/08-invariant-double-covers.tex
+eea022b719da6327ad9f1a013e26656cd5c9638cc6a75da74c468dbe8b40c2ad
+
+paper42/sections/09-certification.tex
+8edcb15da348fd06ce6ee6737dc4e0ad2bc5e365d9ca106c08d840fc48ab74cf
+
+paper42/sections/10-conclusion.tex
+8c39dfb30ea2058e91ed8d48b74fb3f74bf7efde072425b98610e60fdb7c9ac3
+\end{verbatim}
+
+\subsection{Manifest certificate}
+
+The machine-readable manifest is
+
+\begin{verbatim}
+artifacts/json/project42_release_manifest_049.json
+\end{verbatim}
+
+with SHA-256 digest
+
+\begin{verbatim}
+7734ab2f2084459ad3695bd821c67c51d65111cd5e3d964a787175000b3f0083
+\end{verbatim}
+
+At generation time it contained
+50
+file receipts and passed every internal consistency check.
+
+\subsection{External release boundary}
+
+After the manuscript changes are committed, the release procedure is:
 
 \begin{enumerate}
 
-\item the labeled Petersen, line-graph, and double-cover inputs;
+\item run \texttt{scripts/zipit.sh};
 
-\item the even- and mixed-\(V_4\) coset actions;
+\item compute the SHA-256 digest of
+\texttt{dist/project42\_overleaf.zip};
 
-\item the quartic orbital census;
+\item record the final Git commit and archive digest in an external
+release manifest; and
 
-\item the graph-isomorphism certificate;
-
-\item the automorphism group and group-anatomy certificate;
-
-\item the quotient-frame certificate and pair census;
-
-\item the invariant cohomology calculation;
-
-\item the cover-class fingerprints;
-
-\item every script used to generate those outputs; and
-
-\item the final Overleaf source archive.
+\item verify the archive listing against the staged
+\texttt{paper42/} tree.
 
 \end{enumerate}
 
-\subsection{Review-draft boundary}
-
-This appendix is structurally complete but does not yet reproduce the long
-path-and-digest ledger. Those values must be copied from
-
-\[
-\texttt{notes/source-ledger.md}
-\]
-
-and the certificate artifacts during the revision pass. They must not be
-reconstructed from conversation history.
+The external release manifest is deliberately not embedded in the archive
+whose digest it records.

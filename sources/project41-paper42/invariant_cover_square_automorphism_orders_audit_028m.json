@@ -1,0 +1,365 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "all_one_order_uses_independent_full_enumeration": true,
+    "connected_extension_splitting_tested": false,
+    "historical_replay_used": false,
+    "named_graph_identification_claimed": false,
+    "project_mutation_during_computation": false
+  },
+  "checks": {
+    "all_one_center_trivial": true,
+    "all_one_derived_order_180": true,
+    "all_one_exact_structure": true,
+    "all_one_full_order_720": true,
+    "all_one_orbit_stabilizer": true,
+    "all_one_partition_orbit_3": true,
+    "all_one_partition_stabilizer_240": true,
+    "all_one_structure_S5_x_S3": true,
+    "all_one_worker_constructs_240_stabilizer": true,
+    "all_one_worker_does_not_claim_full_order": true,
+    "alternative_intrinsic_projection": true,
+    "alternative_order_240": true,
+    "native_intrinsic_projection": true,
+    "native_order_240": true,
+    "no_historical_replay": true,
+    "oriented_frame_coset_geometry": true,
+    "oriented_frame_exact_identification": true,
+    "oriented_frame_unique_orbital": true,
+    "zero_order_28800": true,
+    "zero_structure_wreath": true
+  },
+  "measurements": {
+    "all_one_full_census": {
+      "automorphism_count": 720,
+      "natural_pair_orbit_size": 45,
+      "partition_orbit_size": 3,
+      "partition_stabilizer_order": 240
+    },
+    "all_one_initial_worker": {
+      "constructed_lift_count": 240,
+      "exact_order_certificate": false,
+      "first_exact_2wl_round": null,
+      "full_aut_order": null,
+      "full_aut_upper_bound": null,
+      "graph_summary": {
+        "bipartite": true,
+        "component_sizes": [
+          30
+        ],
+        "degree_profile": {
+          "4": 30
+        },
+        "edge_count": 60,
+        "odd_girth": null,
+        "triangle_count": 0
+      },
+      "intrinsic_projection": false,
+      "kernel_order": 2,
+      "label": "all_one",
+      "lift_count_profile": {
+        "2": 120
+      },
+      "rounds": [
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                2,
+                2
+              ],
+              15,
+              360
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 3,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 0,
+          "unordered_pair_class_count": 2
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                3,
+                3
+              ],
+              15,
+              180
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 4,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 1,
+          "unordered_pair_class_count": 3
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                4,
+                4
+              ],
+              15,
+              30
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 6,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 2,
+          "unordered_pair_class_count": 5
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                4,
+                4
+              ],
+              15,
+              30
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 6,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 3,
+          "unordered_pair_class_count": 5
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                4,
+                4
+              ],
+              15,
+              30
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 6,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 4,
+          "unordered_pair_class_count": 5
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                4,
+                4
+              ],
+              15,
+              30
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 6,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 5,
+          "unordered_pair_class_count": 5
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                4,
+                4
+              ],
+              15,
+              30
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 6,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 6,
+          "unordered_pair_class_count": 5
+        }
+      ]
+    },
+    "alternative": {
+      "constructed_lift_count": 240,
+      "exact_order_certificate": true,
+      "first_exact_2wl_round": 2,
+      "full_aut_order": 240,
+      "full_aut_upper_bound": 240,
+      "graph_summary": {
+        "bipartite": false,
+        "component_sizes": [
+          30
+        ],
+        "degree_profile": {
+          "4": 30
+        },
+        "edge_count": 60,
+        "odd_girth": 5,
+        "triangle_count": 0
+      },
+      "intrinsic_projection": true,
+      "kernel_order": 2,
+      "label": "alternative",
+      "lift_count_profile": {
+        "2": 120
+      },
+      "rounds": [
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                2,
+                2
+              ],
+              15,
+              360
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 3,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 0,
+          "unordered_pair_class_count": 2
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                3,
+                3
+              ],
+              15,
+              180
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 4,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 1,
+          "unordered_pair_class_count": 3
+        },
+        {
+          "largest_mixed_classes": [],
+          "mixed_class_count": 0,
+          "ordered_color_count": 7,
+          "recovered_exact": true,
+          "relation_separated": true,
+          "round": 2,
+          "unordered_pair_class_count": 6
+        }
+      ]
+    },
+    "automorphism_orders": {
+      "all_one": 720,
+      "alternative": 240,
+      "native": 240,
+      "zero": 28800
+    },
+    "native": {
+      "constructed_lift_count": 240,
+      "exact_order_certificate": true,
+      "first_exact_2wl_round": 2,
+      "full_aut_order": 240,
+      "full_aut_upper_bound": 240,
+      "graph_summary": {
+        "bipartite": false,
+        "component_sizes": [
+          30
+        ],
+        "degree_profile": {
+          "4": 30
+        },
+        "edge_count": 60,
+        "odd_girth": 3,
+        "triangle_count": 20
+      },
+      "intrinsic_projection": true,
+      "kernel_order": 2,
+      "label": "native",
+      "lift_count_profile": {
+        "2": 120
+      },
+      "rounds": [
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                2,
+                2
+              ],
+              15,
+              360
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 3,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 0,
+          "unordered_pair_class_count": 2
+        },
+        {
+          "largest_mixed_classes": [
+            [
+              [
+                3,
+                3
+              ],
+              15,
+              240
+            ]
+          ],
+          "mixed_class_count": 1,
+          "ordered_color_count": 4,
+          "recovered_exact": false,
+          "relation_separated": false,
+          "round": 1,
+          "unordered_pair_class_count": 3
+        },
+        {
+          "largest_mixed_classes": [],
+          "mixed_class_count": 0,
+          "ordered_color_count": 7,
+          "recovered_exact": true,
+          "relation_separated": true,
+          "round": 2,
+          "unordered_pair_class_count": 6
+        }
+      ]
+    },
+    "zero": {
+      "Aut_structure": "S5_wreath_C2",
+      "component_count": 2,
+      "exact_order_certificate": true,
+      "full_aut_order": 28800,
+      "graph_summary": {
+        "bipartite": false,
+        "component_sizes": [
+          15,
+          15
+        ],
+        "degree_profile": {
+          "4": 30
+        },
+        "edge_count": 60,
+        "odd_girth": 3,
+        "triangle_count": 20
+      },
+      "label": "zero"
+    }
+  },
+  "timestamp": "2026-07-21T18:47:04.911845+00:00",
+  "verdict": "the_four_S5_fixed_C2_cover_classes_have_exact_full_automorphism_orders_28800_240_240_720_for_zero_native_alternative_all_one"
+}

@@ -56,25 +56,225 @@ and satisfy
 
 The graph \(X\) is the derived graph of \(\mathcal C_{11}\).
 
-% STATUS: Review-draft insertion boundary
+\subsection{Exact edge ordering}
 
-The final appendix must include:
+The certificate uses the following lexicographic ordering of
+\(E(Y)\):
 
-\begin{itemize}
+\begin{verbatim}
+  (0,1), (0,4), (0,9), (0,11), (1,2)
+  (1,8), (1,11), (2,3), (2,5), (2,8)
+  (3,4), (3,5), (3,12), (4,9), (4,12)
+  (5,6), (5,10), (6,7), (6,9), (6,10)
+  (7,8), (7,9), (7,14), (8,14), (10,11)
+  (10,13), (11,13), (12,13), (12,14), (13,14)
+\end{verbatim}
 
-\item the exact edge ordering of \(Y\);
+All edge-indexed vectors and matrices below use this ordering.
 
-\item the coboundary matrix;
+\subsection{Coboundary matrix}
 
-\item a basis for the two-dimensional fixed subspace;
+Let
 
-\item the selected triangle and pentagon test cycles;
+\[
+\delta\colon C^0(Y,\Ftwo)\longrightarrow C^1(Y,\Ftwo)
+\]
 
-\item the four voltage vectors; and
+be the vertex coboundary map. Its \(15\times30\) matrix has one row for
+each vertex and one column for each edge in the ordering above. The
+entry is \(1\) precisely when the vertex is incident with the edge.
 
-\item the certificate hashes.
+\begin{verbatim}
+0: 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1: 1 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2: 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+3: 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+4: 0 1 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+5: 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+6: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+7: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0
+8: 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0
+9: 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0
+10: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 1 0 0 0 0
+11: 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0
+12: 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0
+13: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1
+14: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 1 1
+\end{verbatim}
 
-\end{itemize}
+The certified rank is
 
-These data are available in the Project 41 cohomology-square packet and
-must be imported without manual re-entry.
+\[
+\operatorname{rank}\delta=14.
+\]
+
+Consequently,
+
+\[
+\dim H^1(Y,\Ftwo)
+=
+30-14
+=
+16.
+\]
+
+\subsection{Deterministic spanning-tree gauge}
+
+The lexicographic greedy spanning tree is
+
+\begin{verbatim}
+  (0,1), (0,4), (0,9), (0,11), (1,2)
+  (1,8), (2,3), (2,5), (3,12), (5,6)
+  (5,10), (6,7), (7,14), (10,13)
+\end{verbatim}
+
+and the sixteen cotree edges are
+
+\begin{verbatim}
+  (1,11), (2,8), (3,4), (3,5), (4,9)
+  (4,12), (6,9), (6,10), (7,8), (7,9)
+  (8,14), (10,11), (11,13), (12,13), (12,14)
+  (13,14)
+\end{verbatim}
+
+Setting the tree-edge coordinates to zero identifies each cohomology
+class with a unique vector in \(\Ftwo^{16}\).
+
+\subsection{Fixed subspace}
+
+The induced \(S_5\) action on \(H^1(Y,\Ftwo)\) has a two-dimensional
+fixed subspace. A deterministic basis in cotree coordinates is
+
+\begin{verbatim}
+b_0
+  0 0 1 0 0 1 0 0 1 0 1 1 1 1 0
+  1
+
+b_1
+  1 1 0 1 1 1 0 1 1 1 0 1 0 1 1
+  1
+\end{verbatim}
+
+The complete fixed set consists of four vectors, exactly the four cover
+classes recorded in the invariant square.
+
+\subsection{Selected test cycles}
+
+The lexicographically selected triangle is
+
+\[
+0-1-11-0
+\]
+
+with edge vector
+
+\begin{verbatim}
+  1 0 0 1 0 0 1 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+\end{verbatim}
+
+The selected pentagon is
+
+\[
+0-1-2-3-4-0
+\]
+
+with edge vector
+
+\begin{verbatim}
+  1 1 0 0 1 0 0 1 0 0 1 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+\end{verbatim}
+
+The ten triangles span a rank-ten subspace. Adding the \(S_5\)-orbit of
+the selected pentagon raises the span rank to sixteen.
+
+\subsection{Voltage representatives}
+
+The four thirty-edge voltage vectors are
+
+\begin{verbatim}
+\mathcal C_{00}
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+\mathcal C_{01}
+  1 1 0 0 1 0 1 1 1 1 1 0 1 1 0
+  1 1 1 0 0 1 1 0 1 1 0 1 1 1 0
+
+\mathcal C_{10}
+  0 0 1 1 0 1 0 0 0 0 0 1 0 0 1
+  0 0 0 1 1 0 0 1 0 0 1 0 0 0 1
+
+\mathcal C_{11}
+  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+\end{verbatim}
+
+Their canonical sixteen-coordinate representatives are
+
+\begin{verbatim}
+\mathcal C_{00}
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0
+
+\mathcal C_{01}
+  0 0 1 0 0 1 0 0 1 0 1 1 1 1 0
+  1
+
+\mathcal C_{10}
+  1 1 0 1 1 1 0 1 1 1 0 1 0 1 1
+  1
+
+\mathcal C_{11}
+  1 1 1 1 1 0 0 1 0 1 1 0 1 0 1
+  0
+\end{verbatim}
+
+Evaluation on the selected triangle and pentagon gives
+
+\[
+\begin{array}{c|cc}
+\text{Class} & t & p\\
+\hline
+\mathcal C_{00} & 0 & 0\\
+\mathcal C_{01} & 0 & 1\\
+\mathcal C_{10} & 1 & 0\\
+\mathcal C_{11} & 1 & 1
+\end{array}
+\]
+
+and
+
+\[
+\mathcal C_{01}+\mathcal C_{10}
+=
+\mathcal C_{11}.
+\]
+
+\subsection{Certificate provenance}
+
+The deterministic reconstruction is stored in
+
+\begin{verbatim}
+artifacts/json/project42_cohomology_certificate_047.json
+\end{verbatim}
+
+with SHA-256 digest
+
+\begin{verbatim}
+ef626db85ad4bf94af204a1decc9fce659d60f50e7ae314128375f07ae21b2e6
+\end{verbatim}
+
+Its exact source certificates are
+
+\begin{verbatim}
+sources/project41-paper42/project42_invariant_cover_square_certificate_032.json
+sources/project41-paper42/project42_native_voltage_derivation_certificate_033.json
+sources/project41-paper42/project42_full_carrier_action_certificate_031.json
+\end{verbatim}
+
+The explicit cohomology packet was not present as an older Project 41
+artifact. Certificate \(047\) reconstructs it deterministically from the
+certified base graph, voltage classes, and full carrier action. It
+changes no abstract cover-class claim.

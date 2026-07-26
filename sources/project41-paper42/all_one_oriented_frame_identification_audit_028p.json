@@ -1,0 +1,120 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "historical_replay_used": false,
+    "native_mixed_V4_quotient_identified_as_same_graph": false,
+    "standard_external_graph_name_claimed": false
+  },
+  "measurements": {
+    "S5_kernel_order": 120,
+    "S5_vertex_orbit_size": 30,
+    "all_one_is_unique_connected_triangle_free_degree4_orbital": true,
+    "connected_triangle_free_degree4_candidate_count": 1,
+    "coset_geometry": "S5_over_V4_even",
+    "degree4_orbital_candidate_count": 4,
+    "degree4_orbital_candidates": [
+      {
+        "bipartite": false,
+        "component_sizes": [
+          15,
+          15
+        ],
+        "degree_set": [
+          4
+        ],
+        "edge_count": 60,
+        "equals_all_one": false,
+        "orbit_index": 1,
+        "orbit_size": 60,
+        "seed_pair": [
+          0,
+          2
+        ],
+        "triangle_count": 20
+      },
+      {
+        "bipartite": true,
+        "component_sizes": [
+          30
+        ],
+        "degree_set": [
+          4
+        ],
+        "edge_count": 60,
+        "equals_all_one": true,
+        "orbit_index": 2,
+        "orbit_size": 60,
+        "seed_pair": [
+          0,
+          3
+        ],
+        "triangle_count": 0
+      },
+      {
+        "bipartite": false,
+        "component_sizes": [
+          15,
+          15
+        ],
+        "degree_set": [
+          4
+        ],
+        "edge_count": 60,
+        "equals_all_one": false,
+        "orbit_index": 3,
+        "orbit_size": 60,
+        "seed_pair": [
+          0,
+          4
+        ],
+        "triangle_count": 20
+      },
+      {
+        "bipartite": false,
+        "component_sizes": [
+          15,
+          15
+        ],
+        "degree_set": [
+          4
+        ],
+        "edge_count": 60,
+        "equals_all_one": false,
+        "orbit_index": 7,
+        "orbit_size": 60,
+        "seed_pair": [
+          0,
+          14
+        ],
+        "triangle_count": 20
+      }
+    ],
+    "elapsed_seconds": 0.743,
+    "exact_identification_pass": true,
+    "full_automorphism_order": 720,
+    "historical_replay_used": false,
+    "identified_vertex_set": "Omega30_oriented_channel_frames",
+    "mutation_performed": false,
+    "partition_orbit_size": 3,
+    "runpy_used": false,
+    "status": "project41_all_one_oriented_frame_identification_complete",
+    "timestamp": "2026-07-21T18:42:51.880331+00:00",
+    "unordered_pair_orbit_count": 9,
+    "vertex_stabilizer_all_even": true,
+    "vertex_stabilizer_element_order_profile": {
+      "1": 1,
+      "2": 3
+    },
+    "vertex_stabilizer_identification": "V4_even",
+    "vertex_stabilizer_order": 4,
+    "vertex_stabilizer_petersen_parities": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "worker_source": "/Users/scottcave/tmp/project41-028m30j2/project41_cover_order_worker_028m30j2.py"
+  },
+  "timestamp": "2026-07-21T18:47:04.911845+00:00",
+  "verdict": "the_all_one_cover_is_the_unique_connected_triangle_free_degree4_S5_orbital_graph_on_the_oriented_frame_coset_geometry_S5_over_even_V4"
+}

@@ -1,0 +1,1444 @@
+{
+  "audit_id": "a5_v4_k22_four_slot_alignment_audit_019",
+  "audit_pass": true,
+  "boundary": {
+    "a5_petersen_to_native_v4_fiber_alignment_derived": true,
+    "canonical_local_face_index_convention_constructed": true,
+    "finite_5_3_4_quotient_complex_proved": false,
+    "global_bit_gauge_resolved": false,
+    "intrinsic_bit_value_to_named_face_assignment_derived": false,
+    "literal_5_3_4_honeycomb_identity_proved": false,
+    "local_face_bit_flip_gauge_count_per_edge": 4,
+    "native_v4_fiber_to_k22_residue_alignment_derived": true,
+    "pentagram_twist_carriers_joined_on_all_15_edges": true,
+    "physical_tessellation_claim": false,
+    "rank_four_chamber_system_constructed": false,
+    "rank_four_incidence_groupoid_derived": false
+  },
+  "checks": {
+    "alignment_failure_count_zero": true,
+    "alignment_row_count_15": true,
+    "all_source_audits_pass": true,
+    "audit004_label_ambiguity_count_zero": true,
+    "audit004_label_map_is_bijection": true,
+    "audit004_native_label_map_preserves_edges": true,
+    "audit004_to_source_line_graph_isomorphism_found": true,
+    "audit004_triangle_failure_count_zero": true,
+    "audit004_unknown_fiber_count_zero": true,
+    "c3_vertex_relabel_failure_count_zero": true,
+    "c3_vertex_relabel_is_bijection": true,
+    "one_coordinate_map_per_state": true,
+    "source_edge_relabel_failure_count_zero": true,
+    "source_edge_to_native_state_is_bijection": true,
+    "source_petersen_edge_count_15": true,
+    "source_vertex_relabel_failure_count_zero": true,
+    "source_vertex_relabel_is_bijection": true,
+    "two_pullback_sources_per_state": true,
+    "two_twist_carriers_per_state": true
+  },
+  "interpretation": "After deriving the missing label reconciliations, all fifteen lawful A5 Petersen edges align exactly with the native G15 states, their four-state V4 G60 fibers, the transverse two-by-two dodecahedral pullback coordinates, and the four K2,2 cross-incidence slots. Every Petersen edge also lies on exactly two canonical cross-system pentagram-twist carriers, and each carrier has multiplier of order four modulo five.",
+  "keeper": "Every lawful A5 edge already carries the same four-state V4 square as the dodecahedral K2,2 residue. What remains open is not the square, but the globally coherent naming of its two binary axes.",
+  "measurements": {
+    "alignment_failure_count": 0,
+    "alignment_row_count": 15,
+    "alignment_rows": [
+      {
+        "ab_face_indices": [
+          0,
+          1
+        ],
+        "b_face_indices": [
+          0,
+          1
+        ],
+        "c3_pair": [
+          0,
+          1
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 0,
+        "native_v4_g60_fiber": [
+          0,
+          8,
+          15,
+          40
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          2
+        ],
+        "source_petersen_edge": [
+          0,
+          1
+        ],
+        "standard_petersen_edge": [
+          0,
+          1
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 0
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 8
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 15
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 40
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 0,
+            "b_face_index": 0,
+            "g60_state": 0
+          },
+          {
+            "ab_face_index": 0,
+            "b_face_index": 1,
+            "g60_state": 8
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 0,
+            "g60_state": 15
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 1,
+            "g60_state": 40
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          1,
+          3
+        ],
+        "b_face_indices": [
+          1,
+          3
+        ],
+        "c3_pair": [
+          0,
+          5
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 1,
+        "native_v4_g60_fiber": [
+          1,
+          9,
+          25,
+          50
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          1,
+          8
+        ],
+        "standard_petersen_edge": [
+          0,
+          4
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 1
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 9
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 25
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 50
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 1,
+            "b_face_index": 1,
+            "g60_state": 1
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 3,
+            "g60_state": 9
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 1,
+            "g60_state": 25
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 3,
+            "g60_state": 50
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          3,
+          5
+        ],
+        "b_face_indices": [
+          1,
+          5
+        ],
+        "c3_pair": [
+          2,
+          5
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 2,
+        "native_v4_g60_fiber": [
+          2,
+          5,
+          10,
+          35
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          5,
+          8
+        ],
+        "standard_petersen_edge": [
+          3,
+          4
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 2
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 5
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 10
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 35
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 3,
+            "b_face_index": 1,
+            "g60_state": 2
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 5,
+            "g60_state": 5
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 5,
+            "g60_state": 10
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 1,
+            "g60_state": 35
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          2,
+          5
+        ],
+        "b_face_indices": [
+          1,
+          4
+        ],
+        "c3_pair": [
+          2,
+          6
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 3,
+        "native_v4_g60_fiber": [
+          3,
+          6,
+          20,
+          45
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          5,
+          6
+        ],
+        "standard_petersen_edge": [
+          2,
+          3
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 3
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 6
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 20
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 45
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 2,
+            "b_face_index": 1,
+            "g60_state": 3
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 4,
+            "g60_state": 6
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 4,
+            "g60_state": 20
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 1,
+            "g60_state": 45
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          0,
+          2
+        ],
+        "b_face_indices": [
+          1,
+          2
+        ],
+        "c3_pair": [
+          1,
+          6
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 4,
+        "native_v4_g60_fiber": [
+          4,
+          7,
+          30,
+          55
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          0,
+          6
+        ],
+        "standard_petersen_edge": [
+          1,
+          2
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 4
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 7
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 30
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 55
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 0,
+            "b_face_index": 1,
+            "g60_state": 4
+          },
+          {
+            "ab_face_index": 0,
+            "b_face_index": 2,
+            "g60_state": 7
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 2,
+            "g60_state": 30
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 1,
+            "g60_state": 55
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          2,
+          3
+        ],
+        "b_face_indices": [
+          4,
+          5
+        ],
+        "c3_pair": [
+          2,
+          3
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 5,
+        "native_v4_g60_fiber": [
+          11,
+          24,
+          39,
+          46
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          3,
+          5
+        ],
+        "standard_petersen_edge": [
+          3,
+          8
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 11
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 24
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 39
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 46
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 2,
+            "b_face_index": 4,
+            "g60_state": 11
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 4,
+            "g60_state": 24
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 5,
+            "g60_state": 39
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 5,
+            "g60_state": 46
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          2,
+          4
+        ],
+        "b_face_indices": [
+          0,
+          5
+        ],
+        "c3_pair": [
+          3,
+          8
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 6,
+        "native_v4_g60_fiber": [
+          12,
+          17,
+          38,
+          43
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          3,
+          4
+        ],
+        "standard_petersen_edge": [
+          6,
+          8
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 12
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 17
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 38
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 43
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 2,
+            "b_face_index": 0,
+            "g60_state": 12
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 0,
+            "g60_state": 17
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 5,
+            "g60_state": 38
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 5,
+            "g60_state": 43
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          1,
+          4
+        ],
+        "b_face_indices": [
+          2,
+          5
+        ],
+        "c3_pair": [
+          4,
+          8
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 7,
+        "native_v4_g60_fiber": [
+          13,
+          32,
+          37,
+          58
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          4,
+          9
+        ],
+        "standard_petersen_edge": [
+          6,
+          9
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 13
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 32
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 37
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 58
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 1,
+            "b_face_index": 2,
+            "g60_state": 13
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 5,
+            "g60_state": 32
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 5,
+            "g60_state": 37
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 2,
+            "g60_state": 58
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          1,
+          5
+        ],
+        "b_face_indices": [
+          3,
+          5
+        ],
+        "c3_pair": [
+          4,
+          5
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 8,
+        "native_v4_g60_fiber": [
+          14,
+          29,
+          36,
+          51
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          8,
+          9
+        ],
+        "standard_petersen_edge": [
+          4,
+          9
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 14
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 29
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 36
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 51
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 1,
+            "b_face_index": 3,
+            "g60_state": 14
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 5,
+            "g60_state": 29
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 5,
+            "g60_state": 36
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 3,
+            "g60_state": 51
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          1,
+          2
+        ],
+        "b_face_indices": [
+          0,
+          2
+        ],
+        "c3_pair": [
+          1,
+          8
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 9,
+        "native_v4_g60_fiber": [
+          16,
+          31,
+          44,
+          59
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          0,
+          4
+        ],
+        "standard_petersen_edge": [
+          1,
+          6
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 16
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 31
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 44
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 59
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 1,
+            "b_face_index": 0,
+            "g60_state": 16
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 2,
+            "g60_state": 31
+          },
+          {
+            "ab_face_index": 1,
+            "b_face_index": 2,
+            "g60_state": 44
+          },
+          {
+            "ab_face_index": 2,
+            "b_face_index": 0,
+            "g60_state": 59
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          3,
+          4
+        ],
+        "b_face_indices": [
+          0,
+          4
+        ],
+        "c3_pair": [
+          3,
+          7
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 10,
+        "native_v4_g60_fiber": [
+          18,
+          23,
+          42,
+          47
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          2,
+          3
+        ],
+        "standard_petersen_edge": [
+          5,
+          8
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 18
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 23
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 42
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 47
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 3,
+            "b_face_index": 0,
+            "g60_state": 18
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 0,
+            "g60_state": 23
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 4,
+            "g60_state": 42
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 4,
+            "g60_state": 47
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          0,
+          3
+        ],
+        "b_face_indices": [
+          0,
+          3
+        ],
+        "c3_pair": [
+          0,
+          7
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 11,
+        "native_v4_g60_fiber": [
+          19,
+          26,
+          41,
+          54
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          1,
+          2
+        ],
+        "standard_petersen_edge": [
+          0,
+          5
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 19
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 26
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 41
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 54
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 0,
+            "b_face_index": 0,
+            "g60_state": 19
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 0,
+            "g60_state": 26
+          },
+          {
+            "ab_face_index": 0,
+            "b_face_index": 3,
+            "g60_state": 41
+          },
+          {
+            "ab_face_index": 3,
+            "b_face_index": 3,
+            "g60_state": 54
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          0,
+          5
+        ],
+        "b_face_indices": [
+          2,
+          4
+        ],
+        "c3_pair": [
+          6,
+          9
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 12,
+        "native_v4_g60_fiber": [
+          21,
+          34,
+          49,
+          56
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          6,
+          7
+        ],
+        "standard_petersen_edge": [
+          2,
+          7
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 21
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 34
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 49
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 56
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 0,
+            "b_face_index": 2,
+            "g60_state": 21
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 2,
+            "g60_state": 34
+          },
+          {
+            "ab_face_index": 0,
+            "b_face_index": 4,
+            "g60_state": 49
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 4,
+            "g60_state": 56
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          0,
+          4
+        ],
+        "b_face_indices": [
+          3,
+          4
+        ],
+        "c3_pair": [
+          7,
+          9
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 13,
+        "native_v4_g60_fiber": [
+          22,
+          27,
+          48,
+          53
+        ],
+        "pentagram_twist_multipliers": [
+          2,
+          3
+        ],
+        "source_petersen_edge": [
+          2,
+          7
+        ],
+        "standard_petersen_edge": [
+          5,
+          7
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 22
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 27
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 48
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 53
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 0,
+            "b_face_index": 3,
+            "g60_state": 22
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 3,
+            "g60_state": 27
+          },
+          {
+            "ab_face_index": 0,
+            "b_face_index": 4,
+            "g60_state": 48
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 4,
+            "g60_state": 53
+          }
+        ]
+      },
+      {
+        "ab_face_indices": [
+          4,
+          5
+        ],
+        "b_face_indices": [
+          2,
+          3
+        ],
+        "c3_pair": [
+          4,
+          9
+        ],
+        "local_face_bit_flip_gauge_count": 4,
+        "native_g15_state": 14,
+        "native_v4_g60_fiber": [
+          28,
+          33,
+          52,
+          57
+        ],
+        "pentagram_twist_multipliers": [
+          3,
+          3
+        ],
+        "source_petersen_edge": [
+          7,
+          9
+        ],
+        "standard_petersen_edge": [
+          7,
+          9
+        ],
+        "state_coordinates": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "g60_state": 28
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "g60_state": 33
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "g60_state": 52
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "g60_state": 57
+          }
+        ],
+        "state_to_k22_slot": [
+          {
+            "ab_face_index": 4,
+            "b_face_index": 2,
+            "g60_state": 28
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 2,
+            "g60_state": 33
+          },
+          {
+            "ab_face_index": 4,
+            "b_face_index": 3,
+            "g60_state": 52
+          },
+          {
+            "ab_face_index": 5,
+            "b_face_index": 3,
+            "g60_state": 57
+          }
+        ]
+      }
+    ],
+    "audit004_label_to_native_state": {
+      "0": 0,
+      "1": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 6,
+      "14": 1,
+      "2": 4,
+      "3": 5,
+      "4": 2,
+      "5": 3,
+      "6": 14,
+      "7": 8,
+      "8": 7,
+      "9": 13
+    },
+    "audit004_label_to_source_edge_index": {
+      "0": 0,
+      "1": 1,
+      "10": 5,
+      "11": 3,
+      "12": 12,
+      "13": 7,
+      "14": 4,
+      "2": 2,
+      "3": 8,
+      "4": 11,
+      "5": 10,
+      "6": 13,
+      "7": 14,
+      "8": 9,
+      "9": 6
+    },
+    "c3_to_standard_petersen_vertex": {
+      "0": 0,
+      "1": 1,
+      "2": 3,
+      "3": 8,
+      "4": 9,
+      "5": 4,
+      "6": 2,
+      "7": 5,
+      "8": 6,
+      "9": 7
+    },
+    "coordinate_variant_profile": {
+      "1": 15
+    },
+    "pullback_source_count_profile": {
+      "2": 15
+    },
+    "source_petersen_to_standard_vertex": {
+      "0": 1,
+      "1": 0,
+      "2": 5,
+      "3": 8,
+      "4": 6,
+      "5": 3,
+      "6": 2,
+      "7": 7,
+      "8": 4,
+      "9": 9
+    },
+    "twist_carrier_count_profile": {
+      "2": 15
+    },
+    "twist_multiplier_pair_profile": {
+      "(2, 2)": 1,
+      "(2, 3)": 8,
+      "(3, 3)": 6
+    }
+  },
+  "next_target": "Use the two order-four pentagram-twist carriers incident to each Petersen edge to test whether they canonically select the local b-bit and ab-bit orientations. Determine whether the independent fourfold face-bit gauge reduces globally to one coherent cocycle class, or remains an irreducible incidence-groupoid freedom.",
+  "sources": {
+    "a11": {
+      "audit_pass": true,
+      "path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/cross_system_pentagram_twist_audit_011.json",
+      "sha256": "f1a5a9424834ef9b667bb5862cb0cd1757918826e8649aadca7b1af31f8906be",
+      "verdict": "canonical_cross_system_face_matching_carries_an_exact_order4_pentagram_twist"
+    },
+    "a15": {
+      "audit_pass": true,
+      "path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/intrinsic_g15_line_petersen_audit_015.json",
+      "sha256": "83c030fa9c5a9a1fbe31dee3f046790022c3a4f8db9f84166094157c334d7239",
+      "verdict": "the_recovered_native_v4_deck_quotient_is_intrinsically_the_line_graph_of_the_petersen_graph"
+    },
+    "a18": {
+      "audit_pass": true,
+      "path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/c3_petersen_connection_geometry_audit_018.json",
+      "sha256": "814eb50e6cc390569d87c7eb9be00275b30d3f07dfa6c1b65ecf8be04330c73c",
+      "verdict": "the_fifteen_successful_connection_sets_are_exactly_the_edges_of_the_petersen_graph_on_the_ten_c3_subgroups_of_a5_and_native_g15_is_its_line_graph"
+    },
+    "a4": {
+      "audit_pass": true,
+      "path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/dodecahedral_edge_pullback_square_audit_004.json",
+      "sha256": "cfa0b1e4415ec140fc762363ecf05abb17078da2612e33cdf6939955372e57c1",
+      "verdict": "native_filament_fiber_is_transverse_dodecahedral_edge_pullback_square"
+    },
+    "a5": {
+      "audit_pass": true,
+      "path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/complementary_hemidodecahedral_edge_residue_audit_005.json",
+      "sha256": "02b5b707c7a55f51d7392b9f2dd6320a95f9e0935f1892b21f66d7298eb316df",
+      "verdict": "complementary_hemidodecahedral_face_systems_form_exact_order4_edge_residues"
+    }
+  },
+  "timestamp": "2026-07-19T13:42:01.664243+00:00",
+  "verdict": "all_fifteen_a5_petersen_edges_align_exactly_with_native_v4_fibers_k22_dodecahedral_residues_and_two_order4_pentagram_twist_carriers_after_derived_label_reconciliation"
+}

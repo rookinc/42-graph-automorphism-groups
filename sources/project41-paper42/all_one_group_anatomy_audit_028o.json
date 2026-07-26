@@ -1,0 +1,75 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "graph_identification_claimed_here": false,
+    "historical_replay_used": false,
+    "isomorphism_is_exact_permutation_group_certificate": true
+  },
+  "measurements": {
+    "Aut_structure": "S5_x_S3",
+    "abelianization_order": 4,
+    "automorphism_count": 720,
+    "center_order": 1,
+    "centralizer_element_order_distribution": {
+      "1": 1,
+      "2": 3,
+      "3": 2
+    },
+    "centralizer_is_S3_pass": true,
+    "derived_subgroup_order": 180,
+    "direct_product_pass": true,
+    "elapsed_seconds": 3.418,
+    "engine": "networkx.GraphMatcher_plus_exact_permutation_group_checks",
+    "exact_structure_pass": true,
+    "full_element_order_distribution": {
+      "1": 1,
+      "10": 72,
+      "12": 60,
+      "15": 48,
+      "2": 103,
+      "3": 62,
+      "4": 120,
+      "5": 24,
+      "6": 230
+    },
+    "historical_replay_used": false,
+    "kernel_centralizer_intersection_order": 1,
+    "kernel_centralizer_order": 6,
+    "kernel_element_order_distribution": {
+      "1": 1,
+      "2": 25,
+      "3": 20,
+      "4": 30,
+      "5": 24,
+      "6": 20
+    },
+    "kernel_is_S5_pass": true,
+    "kernel_times_centralizer_order": 720,
+    "mutation_performed": false,
+    "natural_partition_stabilizer_order": 240,
+    "natural_partition_stabilizer_structure": "S5_x_C2",
+    "natural_stabilizer_element_order_distribution": {
+      "1": 1,
+      "10": 24,
+      "2": 51,
+      "3": 20,
+      "4": 60,
+      "5": 24,
+      "6": 60
+    },
+    "partition_action_image_order": 6,
+    "partition_action_image_order_profile": {
+      "1": 1,
+      "2": 3,
+      "3": 2
+    },
+    "partition_action_kernel_order": 120,
+    "partition_orbit_size": 3,
+    "runpy_used": false,
+    "status": "project41_all_one_group_anatomy_complete",
+    "timestamp": "2026-07-21T18:35:46.989738+00:00",
+    "worker_source": "/Users/scottcave/tmp/project41-028m30j2/project41_cover_order_worker_028m30j2.py"
+  },
+  "timestamp": "2026-07-21T18:47:04.911845+00:00",
+  "verdict": "the_all_one_cover_automorphism_group_is_exactly_S5_times_S3_with_trivial_center_derived_subgroup_A5_times_C3_and_natural_partition_stabilizer_S5_times_C2"
+}

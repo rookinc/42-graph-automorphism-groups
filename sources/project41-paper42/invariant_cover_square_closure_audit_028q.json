@@ -1,0 +1,48 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "archived_G30_identified": false,
+    "connected_extension_splitting_for_native_and_alternative": false,
+    "external_standard_graph_name_for_all_one": false,
+    "historical_replay_used": false,
+    "physics_claim": false
+  },
+  "checks": {
+    "all_one_center_trivial": true,
+    "all_one_derived_order_180": true,
+    "all_one_exact_structure": true,
+    "all_one_full_order_720": true,
+    "all_one_orbit_stabilizer": true,
+    "all_one_partition_orbit_3": true,
+    "all_one_partition_stabilizer_240": true,
+    "all_one_structure_S5_x_S3": true,
+    "all_one_worker_constructs_240_stabilizer": true,
+    "all_one_worker_does_not_claim_full_order": true,
+    "alternative_intrinsic_projection": true,
+    "alternative_order_240": true,
+    "native_intrinsic_projection": true,
+    "native_order_240": true,
+    "no_historical_replay": true,
+    "oriented_frame_coset_geometry": true,
+    "oriented_frame_exact_identification": true,
+    "oriented_frame_unique_orbital": true,
+    "zero_order_28800": true,
+    "zero_structure_wreath": true
+  },
+  "closed_results": {
+    "all_one_group": "S5_x_S3",
+    "all_one_partition_action": "S3",
+    "all_one_partition_count": 3,
+    "all_one_partition_stabilizer": "S5_x_C2",
+    "all_one_vertex_set": "S5_over_V4_even",
+    "automorphism_orders": {
+      "all_one": 720,
+      "alternative": 240,
+      "native": 240,
+      "zero": 28800
+    },
+    "native_vertex_set": "S5_over_V4_mixed"
+  },
+  "timestamp": "2026-07-21T18:47:04.911845+00:00",
+  "verdict": "the_invariant_cover_square_is_closed_at_full_automorphism_order_and_the_all_one_class_is_exactly_the_unique_connected_triangle_free_degree4_orbital_on_S5_over_even_V4_with_full_group_S5_times_S3"
+}

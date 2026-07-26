@@ -1,0 +1,494 @@
+{
+  "audit_pass": true,
+  "bit_counts": {
+    "0": 10,
+    "1": 20
+  },
+  "boundary": {
+    "derives_native_voltage_from_g60_structure": true,
+    "identifies_aligned_source_history": false,
+    "physical_claim": false,
+    "proves_unique_historical_writer": false,
+    "uses_imported_aligned_cocycle": false
+  },
+  "certificate_id": "project42_native_voltage_derivation_certificate_033",
+  "checks": {
+    "all_four_v4_coordinates_occur_15_times": true,
+    "fifteen_copies_per_g60_edge": true,
+    "four_g60_lifts_per_g15_edge": true,
+    "four_states_per_g15_vertex": true,
+    "g15_edge_count_is_30": true,
+    "g15_vertex_count_is_15": true,
+    "g60_edge_count_is_120": true,
+    "g60_state_count_is_60": true,
+    "native_bit_counts_are_10_20": true,
+    "native_voltage_matches_public_reconstruction": true,
+    "source_audit019_pass": true
+  },
+  "coordinate_counts": [
+    {
+      "coordinate": [
+        0,
+        0
+      ],
+      "count": 15
+    },
+    {
+      "coordinate": [
+        0,
+        1
+      ],
+      "count": 15
+    },
+    {
+      "coordinate": [
+        1,
+        0
+      ],
+      "count": 15
+    },
+    {
+      "coordinate": [
+        1,
+        1
+      ],
+      "count": 15
+    }
+  ],
+  "delta_counts": [
+    {
+      "count": 6,
+      "delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "count": 16,
+      "delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "count": 4,
+      "delta": [
+        1,
+        0
+      ]
+    },
+    {
+      "count": 4,
+      "delta": [
+        1,
+        1
+      ]
+    }
+  ],
+  "derivation": "native G60 edges -> native V4 fibers -> common V4 translation delta per G15 edge -> coordinate parity",
+  "edge_rows": [
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        0,
+        1
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        0,
+        4
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        0,
+        9
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        0,
+        11
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        1,
+        2
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        1,
+        8
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        1,
+        11
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        2,
+        3
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        2,
+        5
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        2,
+        8
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        3,
+        4
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        3,
+        5
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        3,
+        12
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        4,
+        9
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        4,
+        12
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        5,
+        6
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        5,
+        10
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        6,
+        7
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        6,
+        9
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        6,
+        10
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        7,
+        8
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        7,
+        9
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        7,
+        14
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        1,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        8,
+        14
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        1,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        10,
+        11
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        10,
+        13
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        11,
+        13
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        12,
+        13
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": -1,
+      "g15_edge": [
+        12,
+        14
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 1,
+      "v4_translation_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "epsilon": 1,
+      "g15_edge": [
+        13,
+        14
+      ],
+      "g60_lift_count": 4,
+      "native_bit": 0,
+      "v4_translation_delta": [
+        0,
+        0
+      ]
+    }
+  ],
+  "g15_edge_count": 30,
+  "g15_vertex_count": 15,
+  "g60_edge_count": 120,
+  "g60_state_count": 60,
+  "native_bit_law": "native_bit = delta_coordinate_0 xor delta_coordinate_1",
+  "source_audit019": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/a5_v4_k22_four_slot_alignment_audit_019.json",
+  "source_audit019_pass": true,
+  "source_g900_edges": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/16-fifteen-thalion-ring/support/generated/g900_twisted_ring_candidate_edges.csv",
+  "source_project": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue",
+  "source_script": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/scripts/audit_invariant_cover_square_automorphism_orders_028m.py",
+  "states_per_g15_vertex_profile": [
+    4
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "audit_pass": true,
+  "boundary": {
+    "abstract_graph_or_group_claim_changed": false,
+    "kneser_bridge_is_project42_editorial_coordinate_choice": true,
+    "project41_alignment_reused": true,
+    "project41_supplied_kneser_label_map": false
+  },
+  "certificate_id": "project42_kneser_label_bridge_045",
+  "checks": {
+    "audit019_pass": true,
+    "integer_labels_cover_0_through_29": true,
+    "isomorphism_count_120": true,
+    "kneser_edge_count_15": true,
+    "kneser_vertex_count_10": true,
+    "label_row_count_15": true,
+    "selected_mapping_preserves_edges": true,
+    "standard_edge_count_15": true,
+    "standard_vertex_count_10": true
+  },
+  "conventions": {
+    "cover_integer_law": "integer_vertex = 2 * base_index + sheet",
+    "kneser_adjacency": "two 2-subsets of {1,2,3,4,5} are adjacent iff disjoint",
+    "kneser_vertex_order": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "23",
+      "24",
+      "25",
+      "34",
+      "35",
+      "45"
+    ],
+    "selection_rule": "lexicographically least image tuple among all graph isomorphisms",
+    "standard_petersen_model": "outer 0-1-2-3-4 cycle, inner 5-7-9-6-8 cycle, spokes i-(i+5)"
+  },
+  "isomorphism_count": 120,
+  "label_rows": [
+    {
+      "base_index": 0,
+      "kneser_edge": [
+        "12",
+        "34"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "12",
+          "34"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 0,
+      "sheet_1_coordinate": {
+        "edge": [
+          "12",
+          "34"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 1,
+      "standard_petersen_edge": [
+        0,
+        1
+      ]
+    },
+    {
+      "base_index": 1,
+      "kneser_edge": [
+        "12",
+        "45"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "12",
+          "45"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 2,
+      "sheet_1_coordinate": {
+        "edge": [
+          "12",
+          "45"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 3,
+      "standard_petersen_edge": [
+        0,
+        4
+      ]
+    },
+    {
+      "base_index": 2,
+      "kneser_edge": [
+        "23",
+        "45"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "23",
+          "45"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 4,
+      "sheet_1_coordinate": {
+        "edge": [
+          "23",
+          "45"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 5,
+      "standard_petersen_edge": [
+        3,
+        4
+      ]
+    },
+    {
+      "base_index": 3,
+      "kneser_edge": [
+        "15",
+        "23"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "15",
+          "23"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 6,
+      "sheet_1_coordinate": {
+        "edge": [
+          "15",
+          "23"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 7,
+      "standard_petersen_edge": [
+        2,
+        3
+      ]
+    },
+    {
+      "base_index": 4,
+      "kneser_edge": [
+        "15",
+        "34"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "15",
+          "34"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 8,
+      "sheet_1_coordinate": {
+        "edge": [
+          "15",
+          "34"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 9,
+      "standard_petersen_edge": [
+        1,
+        2
+      ]
+    },
+    {
+      "base_index": 5,
+      "kneser_edge": [
+        "14",
+        "23"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "14",
+          "23"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 10,
+      "sheet_1_coordinate": {
+        "edge": [
+          "14",
+          "23"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 11,
+      "standard_petersen_edge": [
+        3,
+        8
+      ]
+    },
+    {
+      "base_index": 6,
+      "kneser_edge": [
+        "14",
+        "25"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "14",
+          "25"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 12,
+      "sheet_1_coordinate": {
+        "edge": [
+          "14",
+          "25"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 13,
+      "standard_petersen_edge": [
+        6,
+        8
+      ]
+    },
+    {
+      "base_index": 7,
+      "kneser_edge": [
+        "13",
+        "25"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "13",
+          "25"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 14,
+      "sheet_1_coordinate": {
+        "edge": [
+          "13",
+          "25"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 15,
+      "standard_petersen_edge": [
+        6,
+        9
+      ]
+    },
+    {
+      "base_index": 8,
+      "kneser_edge": [
+        "13",
+        "45"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "13",
+          "45"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 16,
+      "sheet_1_coordinate": {
+        "edge": [
+          "13",
+          "45"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 17,
+      "standard_petersen_edge": [
+        4,
+        9
+      ]
+    },
+    {
+      "base_index": 9,
+      "kneser_edge": [
+        "25",
+        "34"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "25",
+          "34"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 18,
+      "sheet_1_coordinate": {
+        "edge": [
+          "25",
+          "34"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 19,
+      "standard_petersen_edge": [
+        1,
+        6
+      ]
+    },
+    {
+      "base_index": 10,
+      "kneser_edge": [
+        "14",
+        "35"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "14",
+          "35"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 20,
+      "sheet_1_coordinate": {
+        "edge": [
+          "14",
+          "35"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 21,
+      "standard_petersen_edge": [
+        5,
+        8
+      ]
+    },
+    {
+      "base_index": 11,
+      "kneser_edge": [
+        "12",
+        "35"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "12",
+          "35"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 22,
+      "sheet_1_coordinate": {
+        "edge": [
+          "12",
+          "35"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 23,
+      "standard_petersen_edge": [
+        0,
+        5
+      ]
+    },
+    {
+      "base_index": 12,
+      "kneser_edge": [
+        "15",
+        "24"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "15",
+          "24"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 24,
+      "sheet_1_coordinate": {
+        "edge": [
+          "15",
+          "24"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 25,
+      "standard_petersen_edge": [
+        2,
+        7
+      ]
+    },
+    {
+      "base_index": 13,
+      "kneser_edge": [
+        "24",
+        "35"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "24",
+          "35"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 26,
+      "sheet_1_coordinate": {
+        "edge": [
+          "24",
+          "35"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 27,
+      "standard_petersen_edge": [
+        5,
+        7
+      ]
+    },
+    {
+      "base_index": 14,
+      "kneser_edge": [
+        "13",
+        "24"
+      ],
+      "sheet_0_coordinate": {
+        "edge": [
+          "13",
+          "24"
+        ],
+        "sheet": 0
+      },
+      "sheet_0_integer": 28,
+      "sheet_1_coordinate": {
+        "edge": [
+          "13",
+          "24"
+        ],
+        "sheet": 1
+      },
+      "sheet_1_integer": 29,
+      "standard_petersen_edge": [
+        7,
+        9
+      ]
+    }
+  ],
+  "selected_standard_to_kneser": {
+    "0": "12",
+    "1": "34",
+    "2": "15",
+    "3": "23",
+    "4": "45",
+    "5": "35",
+    "6": "25",
+    "7": "24",
+    "8": "14",
+    "9": "13"
+  },
+  "source": {
+    "audit019_path": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue/artifacts/json/a5_v4_k22_four_slot_alignment_audit_019.json",
+    "audit019_sha256": "e8bbfe48053bdc1a80407ce7a26bf02b12f83bfcf695fed0073a9a8581ae896a"
+  }
+}

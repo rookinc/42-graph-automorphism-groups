@@ -1,0 +1,1915 @@
+{
+  "claims": [
+    {
+      "claim": "Aut(X) has order 720",
+      "source": "028N, 028O, 028M, 028Q",
+      "status": "locked"
+    },
+    {
+      "claim": "natural quotient stabilizer is S5 x C2 of order 240",
+      "source": "028N, 028O, 028M, 028Q",
+      "status": "locked"
+    },
+    {
+      "claim": "natural partition orbit has size 3",
+      "source": "028N, 028O, 028M, 028Q",
+      "status": "locked"
+    },
+    {
+      "claim": "natural pair orbit contains 45 distinct pairs",
+      "source": "028N, 028M",
+      "status": "locked"
+    },
+    {
+      "claim": "Aut(X) is S5 x S3",
+      "source": "028O",
+      "status": "locked"
+    },
+    {
+      "claim": "vertex action is S5/V4_even",
+      "source": "028P",
+      "status": "locked"
+    },
+    {
+      "claim": "X is unique connected triangle-free quartic orbital",
+      "source": "028P",
+      "status": "locked"
+    },
+    {
+      "claim": "there exist no admissible L(P)-quotient systems outside the natural orbit",
+      "source": "requires exhaustive involution or partition census",
+      "status": "not yet demonstrated by current packet"
+    },
+    {
+      "claim": "the three orbit partitions are pairwise block-disjoint",
+      "source": "028N forty-five-pair orbit",
+      "status": "locked"
+    }
+  ],
+  "completeness_search_hits": [],
+  "core_report": [
+    {
+      "boundary": {
+        "group_structure_identified_here": false,
+        "historical_replay_used": false,
+        "natural_G15_partition_characteristic": false,
+        "networkx_full_enumeration_used": true
+      },
+      "file": "artifacts/json/all_one_full_automorphism_census_audit_028n.json",
+      "important": [
+        {
+          "path": "$.boundary",
+          "value": {
+            "group_structure_identified_here": false,
+            "historical_replay_used": false,
+            "natural_G15_partition_characteristic": false,
+            "networkx_full_enumeration_used": true
+          }
+        },
+        {
+          "path": "$.boundary.group_structure_identified_here",
+          "value": false
+        },
+        {
+          "path": "$.boundary.historical_replay_used",
+          "value": false
+        },
+        {
+          "path": "$.boundary.natural_G15_partition_characteristic",
+          "value": false
+        },
+        {
+          "path": "$.boundary.networkx_full_enumeration_used",
+          "value": true
+        },
+        {
+          "path": "$.measurements.expected_240_partition_stabilizer_pass",
+          "value": true
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit",
+          "value": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              29
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              28
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              2,
+              25
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              3,
+              24
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              19
+            ],
+            [
+              4,
+              27
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              26
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              15
+            ],
+            [
+              6,
+              23
+            ],
+            [
+              7,
+              14
+            ],
+            [
+              7,
+              22
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              17
+            ],
+            [
+              8,
+              21
+            ],
+            [
+              9,
+              16
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              11,
+              28
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              12,
+              25
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              18,
+              27
+            ],
+            [
+              19,
+              26
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              28,
+              29
+            ]
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[0]",
+          "value": [
+            0,
+            1
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[0][0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[0][1]",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[1]",
+          "value": [
+            0,
+            11
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[1][0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[1][1]",
+          "value": 11
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[2]",
+          "value": [
+            0,
+            29
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[2][0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[2][1]",
+          "value": 29
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[3]",
+          "value": [
+            1,
+            10
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[3][0]",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[3][1]",
+          "value": 10
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[4]",
+          "value": [
+            1,
+            28
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[4][0]",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[4][1]",
+          "value": 28
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[5]",
+          "value": [
+            2,
+            3
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[5][0]",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[5][1]",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[6]",
+          "value": [
+            2,
+            13
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[6][0]",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[6][1]",
+          "value": 13
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[7]",
+          "value": [
+            2,
+            25
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[7][0]",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[7][1]",
+          "value": 25
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[8]",
+          "value": [
+            3,
+            12
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[8][0]",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[8][1]",
+          "value": 12
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[9]",
+          "value": [
+            3,
+            24
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[9][0]",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[9][1]",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[10]",
+          "value": [
+            4,
+            5
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[10][0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[10][1]",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[11]",
+          "value": [
+            4,
+            19
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[11][0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[11][1]",
+          "value": 19
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[12]",
+          "value": [
+            4,
+            27
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[12][0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[12][1]",
+          "value": 27
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[13]",
+          "value": [
+            5,
+            18
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[13][0]",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[13][1]",
+          "value": 18
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[14]",
+          "value": [
+            5,
+            26
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[14][0]",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[14][1]",
+          "value": 26
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[15]",
+          "value": [
+            6,
+            7
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[15][0]",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[15][1]",
+          "value": 7
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[16]",
+          "value": [
+            6,
+            15
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[16][0]",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[16][1]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[17]",
+          "value": [
+            6,
+            23
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[17][0]",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[17][1]",
+          "value": 23
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[18]",
+          "value": [
+            7,
+            14
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[18][0]",
+          "value": 7
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[18][1]",
+          "value": 14
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[19]",
+          "value": [
+            7,
+            22
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[19][0]",
+          "value": 7
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[19][1]",
+          "value": 22
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[20]",
+          "value": [
+            8,
+            9
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[20][0]",
+          "value": 8
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[20][1]",
+          "value": 9
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[21]",
+          "value": [
+            8,
+            17
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[21][0]",
+          "value": 8
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[21][1]",
+          "value": 17
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[22]",
+          "value": [
+            8,
+            21
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[22][0]",
+          "value": 8
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[22][1]",
+          "value": 21
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[23]",
+          "value": [
+            9,
+            16
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[23][0]",
+          "value": 9
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[23][1]",
+          "value": 16
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[24]",
+          "value": [
+            9,
+            20
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[24][0]",
+          "value": 9
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[24][1]",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[25]",
+          "value": [
+            10,
+            11
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[25][0]",
+          "value": 10
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[25][1]",
+          "value": 11
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[26]",
+          "value": [
+            10,
+            29
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[26][0]",
+          "value": 10
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[26][1]",
+          "value": 29
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[27]",
+          "value": [
+            11,
+            28
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[27][0]",
+          "value": 11
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[27][1]",
+          "value": 28
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[28]",
+          "value": [
+            12,
+            13
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[28][0]",
+          "value": 12
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[28][1]",
+          "value": 13
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[29]",
+          "value": [
+            12,
+            25
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[29][0]",
+          "value": 12
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[29][1]",
+          "value": 25
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[30]",
+          "value": [
+            13,
+            24
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[30][0]",
+          "value": 13
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[30][1]",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[31]",
+          "value": [
+            14,
+            15
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[31][0]",
+          "value": 14
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[31][1]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[32]",
+          "value": [
+            14,
+            23
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[32][0]",
+          "value": 14
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[32][1]",
+          "value": 23
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[33]",
+          "value": [
+            15,
+            22
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[33][0]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[33][1]",
+          "value": 22
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[34]",
+          "value": [
+            16,
+            17
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[34][0]",
+          "value": 16
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[34][1]",
+          "value": 17
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[35]",
+          "value": [
+            16,
+            21
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[35][0]",
+          "value": 16
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[35][1]",
+          "value": 21
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[36]",
+          "value": [
+            17,
+            20
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[36][0]",
+          "value": 17
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[36][1]",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[37]",
+          "value": [
+            18,
+            19
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[37][0]",
+          "value": 18
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[37][1]",
+          "value": 19
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[38]",
+          "value": [
+            18,
+            27
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[38][0]",
+          "value": 18
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[38][1]",
+          "value": 27
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[39]",
+          "value": [
+            19,
+            26
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[39][0]",
+          "value": 19
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[39][1]",
+          "value": 26
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[40]",
+          "value": [
+            20,
+            21
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[40][0]",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[40][1]",
+          "value": 21
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[41]",
+          "value": [
+            22,
+            23
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[41][0]",
+          "value": 22
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[41][1]",
+          "value": 23
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[42]",
+          "value": [
+            24,
+            25
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[42][0]",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[42][1]",
+          "value": 25
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[43]",
+          "value": [
+            26,
+            27
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[43][0]",
+          "value": 26
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[43][1]",
+          "value": 27
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[44]",
+          "value": [
+            28,
+            29
+          ]
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[44][0]",
+          "value": 28
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit[44][1]",
+          "value": 29
+        },
+        {
+          "path": "$.measurements.natural_pair_orbit_size",
+          "value": 45
+        },
+        {
+          "path": "$.measurements.natural_partition_orbit_size",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.natural_partition_stabilizer_count",
+          "value": 240
+        },
+        {
+          "path": "$.measurements.orbit_stabilizer_pass",
+          "value": true
+        },
+        {
+          "path": "$.verdict",
+          "value": "the_all_one_bipartite_cover_has_full_automorphism_order720_and_its_natural_G15_partition_has_order240_stabilizer_and_orbit_size3"
+        }
+      ],
+      "verdict": "the_all_one_bipartite_cover_has_full_automorphism_order720_and_its_natural_G15_partition_has_order240_stabilizer_and_orbit_size3"
+    },
+    {
+      "boundary": {
+        "graph_identification_claimed_here": false,
+        "historical_replay_used": false,
+        "isomorphism_is_exact_permutation_group_certificate": true
+      },
+      "file": "artifacts/json/all_one_group_anatomy_audit_028o.json",
+      "important": [
+        {
+          "path": "$.boundary",
+          "value": {
+            "graph_identification_claimed_here": false,
+            "historical_replay_used": false,
+            "isomorphism_is_exact_permutation_group_certificate": true
+          }
+        },
+        {
+          "path": "$.boundary.graph_identification_claimed_here",
+          "value": false
+        },
+        {
+          "path": "$.boundary.historical_replay_used",
+          "value": false
+        },
+        {
+          "path": "$.boundary.isomorphism_is_exact_permutation_group_certificate",
+          "value": true
+        },
+        {
+          "path": "$.measurements.centralizer_element_order_distribution",
+          "value": {
+            "1": 1,
+            "2": 3,
+            "3": 2
+          }
+        },
+        {
+          "path": "$.measurements.centralizer_element_order_distribution.1",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.centralizer_element_order_distribution.2",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.centralizer_element_order_distribution.3",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.centralizer_is_S3_pass",
+          "value": true
+        },
+        {
+          "path": "$.measurements.kernel_centralizer_intersection_order",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.kernel_centralizer_order",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution",
+          "value": {
+            "1": 1,
+            "2": 25,
+            "3": 20,
+            "4": 30,
+            "5": 24,
+            "6": 20
+          }
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.1",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.2",
+          "value": 25
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.3",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.4",
+          "value": 30
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.5",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.kernel_element_order_distribution.6",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.kernel_is_S5_pass",
+          "value": true
+        },
+        {
+          "path": "$.measurements.kernel_times_centralizer_order",
+          "value": 720
+        },
+        {
+          "path": "$.measurements.natural_partition_stabilizer_order",
+          "value": 240
+        },
+        {
+          "path": "$.measurements.natural_partition_stabilizer_structure",
+          "value": "S5_x_C2"
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution",
+          "value": {
+            "1": 1,
+            "10": 24,
+            "2": 51,
+            "3": 20,
+            "4": 60,
+            "5": 24,
+            "6": 60
+          }
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.1",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.10",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.2",
+          "value": 51
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.3",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.4",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.5",
+          "value": 24
+        },
+        {
+          "path": "$.measurements.natural_stabilizer_element_order_distribution.6",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.partition_action_image_order",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.partition_action_image_order_profile",
+          "value": {
+            "1": 1,
+            "2": 3,
+            "3": 2
+          }
+        },
+        {
+          "path": "$.measurements.partition_action_image_order_profile.1",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.partition_action_image_order_profile.2",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.partition_action_image_order_profile.3",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.partition_action_kernel_order",
+          "value": 120
+        },
+        {
+          "path": "$.measurements.partition_orbit_size",
+          "value": 3
+        },
+        {
+          "path": "$.verdict",
+          "value": "the_all_one_cover_automorphism_group_is_exactly_S5_times_S3_with_trivial_center_derived_subgroup_A5_times_C3_and_natural_partition_stabilizer_S5_times_C2"
+        }
+      ],
+      "verdict": "the_all_one_cover_automorphism_group_is_exactly_S5_times_S3_with_trivial_center_derived_subgroup_A5_times_C3_and_natural_partition_stabilizer_S5_times_C2"
+    },
+    {
+      "boundary": {
+        "historical_replay_used": false,
+        "native_mixed_V4_quotient_identified_as_same_graph": false,
+        "standard_external_graph_name_claimed": false
+      },
+      "file": "artifacts/json/all_one_oriented_frame_identification_audit_028p.json",
+      "important": [
+        {
+          "path": "$.boundary",
+          "value": {
+            "historical_replay_used": false,
+            "native_mixed_V4_quotient_identified_as_same_graph": false,
+            "standard_external_graph_name_claimed": false
+          }
+        },
+        {
+          "path": "$.boundary.historical_replay_used",
+          "value": false
+        },
+        {
+          "path": "$.boundary.native_mixed_V4_quotient_identified_as_same_graph",
+          "value": false
+        },
+        {
+          "path": "$.boundary.standard_external_graph_name_claimed",
+          "value": false
+        },
+        {
+          "path": "$.measurements.S5_kernel_order",
+          "value": 120
+        },
+        {
+          "path": "$.measurements.S5_vertex_orbit_size",
+          "value": 30
+        },
+        {
+          "path": "$.measurements.all_one_is_unique_connected_triangle_free_degree4_orbital",
+          "value": true
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidate_count",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates",
+          "value": [
+            {
+              "bipartite": false,
+              "component_sizes": [
+                15,
+                15
+              ],
+              "degree_set": [
+                4
+              ],
+              "edge_count": 60,
+              "equals_all_one": false,
+              "orbit_index": 1,
+              "orbit_size": 60,
+              "seed_pair": [
+                0,
+                2
+              ],
+              "triangle_count": 20
+            },
+            {
+              "bipartite": true,
+              "component_sizes": [
+                30
+              ],
+              "degree_set": [
+                4
+              ],
+              "edge_count": 60,
+              "equals_all_one": true,
+              "orbit_index": 2,
+              "orbit_size": 60,
+              "seed_pair": [
+                0,
+                3
+              ],
+              "triangle_count": 0
+            },
+            {
+              "bipartite": false,
+              "component_sizes": [
+                15,
+                15
+              ],
+              "degree_set": [
+                4
+              ],
+              "edge_count": 60,
+              "equals_all_one": false,
+              "orbit_index": 3,
+              "orbit_size": 60,
+              "seed_pair": [
+                0,
+                4
+              ],
+              "triangle_count": 20
+            },
+            {
+              "bipartite": false,
+              "component_sizes": [
+                15,
+                15
+              ],
+              "degree_set": [
+                4
+              ],
+              "edge_count": 60,
+              "equals_all_one": false,
+              "orbit_index": 7,
+              "orbit_size": 60,
+              "seed_pair": [
+                0,
+                14
+              ],
+              "triangle_count": 20
+            }
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0]",
+          "value": {
+            "bipartite": false,
+            "component_sizes": [
+              15,
+              15
+            ],
+            "degree_set": [
+              4
+            ],
+            "edge_count": 60,
+            "equals_all_one": false,
+            "orbit_index": 1,
+            "orbit_size": 60,
+            "seed_pair": [
+              0,
+              2
+            ],
+            "triangle_count": 20
+          }
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].bipartite",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].component_sizes",
+          "value": [
+            15,
+            15
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].component_sizes[0]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].component_sizes[1]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].degree_set",
+          "value": [
+            4
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].degree_set[0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].edge_count",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].equals_all_one",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].orbit_index",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].orbit_size",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].seed_pair",
+          "value": [
+            0,
+            2
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].seed_pair[0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].seed_pair[1]",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[0].triangle_count",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1]",
+          "value": {
+            "bipartite": true,
+            "component_sizes": [
+              30
+            ],
+            "degree_set": [
+              4
+            ],
+            "edge_count": 60,
+            "equals_all_one": true,
+            "orbit_index": 2,
+            "orbit_size": 60,
+            "seed_pair": [
+              0,
+              3
+            ],
+            "triangle_count": 0
+          }
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].bipartite",
+          "value": true
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].component_sizes",
+          "value": [
+            30
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].component_sizes[0]",
+          "value": 30
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].degree_set",
+          "value": [
+            4
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].degree_set[0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].edge_count",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].equals_all_one",
+          "value": true
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].orbit_index",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].orbit_size",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].seed_pair",
+          "value": [
+            0,
+            3
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].seed_pair[0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].seed_pair[1]",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[1].triangle_count",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2]",
+          "value": {
+            "bipartite": false,
+            "component_sizes": [
+              15,
+              15
+            ],
+            "degree_set": [
+              4
+            ],
+            "edge_count": 60,
+            "equals_all_one": false,
+            "orbit_index": 3,
+            "orbit_size": 60,
+            "seed_pair": [
+              0,
+              4
+            ],
+            "triangle_count": 20
+          }
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].bipartite",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].component_sizes",
+          "value": [
+            15,
+            15
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].component_sizes[0]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].component_sizes[1]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].degree_set",
+          "value": [
+            4
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].degree_set[0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].edge_count",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].equals_all_one",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].orbit_index",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].orbit_size",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].seed_pair",
+          "value": [
+            0,
+            4
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].seed_pair[0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].seed_pair[1]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[2].triangle_count",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3]",
+          "value": {
+            "bipartite": false,
+            "component_sizes": [
+              15,
+              15
+            ],
+            "degree_set": [
+              4
+            ],
+            "edge_count": 60,
+            "equals_all_one": false,
+            "orbit_index": 7,
+            "orbit_size": 60,
+            "seed_pair": [
+              0,
+              14
+            ],
+            "triangle_count": 20
+          }
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].bipartite",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].component_sizes",
+          "value": [
+            15,
+            15
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].component_sizes[0]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].component_sizes[1]",
+          "value": 15
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].degree_set",
+          "value": [
+            4
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].degree_set[0]",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].edge_count",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].equals_all_one",
+          "value": false
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].orbit_index",
+          "value": 7
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].orbit_size",
+          "value": 60
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].seed_pair",
+          "value": [
+            0,
+            14
+          ]
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].seed_pair[0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].seed_pair[1]",
+          "value": 14
+        },
+        {
+          "path": "$.measurements.degree4_orbital_candidates[3].triangle_count",
+          "value": 20
+        },
+        {
+          "path": "$.measurements.partition_orbit_size",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.unordered_pair_orbit_count",
+          "value": 9
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_all_even",
+          "value": true
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_element_order_profile",
+          "value": {
+            "1": 1,
+            "2": 3
+          }
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_element_order_profile.1",
+          "value": 1
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_element_order_profile.2",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_identification",
+          "value": "V4_even"
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_order",
+          "value": 4
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_petersen_parities",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_petersen_parities[0]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_petersen_parities[1]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_petersen_parities[2]",
+          "value": 0
+        },
+        {
+          "path": "$.measurements.vertex_stabilizer_petersen_parities[3]",
+          "value": 0
+        },
+        {
+          "path": "$.verdict",
+          "value": "the_all_one_cover_is_the_unique_connected_triangle_free_degree4_S5_orbital_graph_on_the_oriented_frame_coset_geometry_S5_over_even_V4"
+        }
+      ],
+      "verdict": "the_all_one_cover_is_the_unique_connected_triangle_free_degree4_S5_orbital_graph_on_the_oriented_frame_coset_geometry_S5_over_even_V4"
+    },
+    {
+      "boundary": {
+        "all_one_order_uses_independent_full_enumeration": true,
+        "connected_extension_splitting_tested": false,
+        "historical_replay_used": false,
+        "named_graph_identification_claimed": false,
+        "project_mutation_during_computation": false
+      },
+      "file": "artifacts/json/invariant_cover_square_automorphism_orders_audit_028m.json",
+      "important": [
+        {
+          "path": "$.boundary",
+          "value": {
+            "all_one_order_uses_independent_full_enumeration": true,
+            "connected_extension_splitting_tested": false,
+            "historical_replay_used": false,
+            "named_graph_identification_claimed": false,
+            "project_mutation_during_computation": false
+          }
+        },
+        {
+          "path": "$.boundary.all_one_order_uses_independent_full_enumeration",
+          "value": true
+        },
+        {
+          "path": "$.boundary.connected_extension_splitting_tested",
+          "value": false
+        },
+        {
+          "path": "$.boundary.historical_replay_used",
+          "value": false
+        },
+        {
+          "path": "$.boundary.named_graph_identification_claimed",
+          "value": false
+        },
+        {
+          "path": "$.boundary.project_mutation_during_computation",
+          "value": false
+        },
+        {
+          "path": "$.checks.all_one_orbit_stabilizer",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_partition_orbit_3",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_partition_stabilizer_240",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_worker_constructs_240_stabilizer",
+          "value": true
+        },
+        {
+          "path": "$.checks.oriented_frame_unique_orbital",
+          "value": true
+        },
+        {
+          "path": "$.measurements.all_one_full_census.natural_pair_orbit_size",
+          "value": 45
+        },
+        {
+          "path": "$.measurements.all_one_full_census.partition_orbit_size",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.all_one_full_census.partition_stabilizer_order",
+          "value": 240
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.kernel_order",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[0].unordered_pair_class_count",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[1].unordered_pair_class_count",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[2].unordered_pair_class_count",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[3].unordered_pair_class_count",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[4].unordered_pair_class_count",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[5].unordered_pair_class_count",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.all_one_initial_worker.rounds[6].unordered_pair_class_count",
+          "value": 5
+        },
+        {
+          "path": "$.measurements.alternative.kernel_order",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.alternative.rounds[0].unordered_pair_class_count",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.alternative.rounds[1].unordered_pair_class_count",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.alternative.rounds[2].unordered_pair_class_count",
+          "value": 6
+        },
+        {
+          "path": "$.measurements.native.kernel_order",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.native.rounds[0].unordered_pair_class_count",
+          "value": 2
+        },
+        {
+          "path": "$.measurements.native.rounds[1].unordered_pair_class_count",
+          "value": 3
+        },
+        {
+          "path": "$.measurements.native.rounds[2].unordered_pair_class_count",
+          "value": 6
+        },
+        {
+          "path": "$.verdict",
+          "value": "the_four_S5_fixed_C2_cover_classes_have_exact_full_automorphism_orders_28800_240_240_720_for_zero_native_alternative_all_one"
+        }
+      ],
+      "verdict": "the_four_S5_fixed_C2_cover_classes_have_exact_full_automorphism_orders_28800_240_240_720_for_zero_native_alternative_all_one"
+    },
+    {
+      "boundary": {
+        "archived_G30_identified": false,
+        "connected_extension_splitting_for_native_and_alternative": false,
+        "external_standard_graph_name_for_all_one": false,
+        "historical_replay_used": false,
+        "physics_claim": false
+      },
+      "file": "artifacts/json/invariant_cover_square_closure_audit_028q.json",
+      "important": [
+        {
+          "path": "$.boundary",
+          "value": {
+            "archived_G30_identified": false,
+            "connected_extension_splitting_for_native_and_alternative": false,
+            "external_standard_graph_name_for_all_one": false,
+            "historical_replay_used": false,
+            "physics_claim": false
+          }
+        },
+        {
+          "path": "$.boundary.archived_G30_identified",
+          "value": false
+        },
+        {
+          "path": "$.boundary.connected_extension_splitting_for_native_and_alternative",
+          "value": false
+        },
+        {
+          "path": "$.boundary.external_standard_graph_name_for_all_one",
+          "value": false
+        },
+        {
+          "path": "$.boundary.historical_replay_used",
+          "value": false
+        },
+        {
+          "path": "$.boundary.physics_claim",
+          "value": false
+        },
+        {
+          "path": "$.checks.all_one_orbit_stabilizer",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_partition_orbit_3",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_partition_stabilizer_240",
+          "value": true
+        },
+        {
+          "path": "$.checks.all_one_worker_constructs_240_stabilizer",
+          "value": true
+        },
+        {
+          "path": "$.checks.oriented_frame_unique_orbital",
+          "value": true
+        },
+        {
+          "path": "$.closed_results.all_one_partition_action",
+          "value": "S3"
+        },
+        {
+          "path": "$.closed_results.all_one_partition_count",
+          "value": 3
+        },
+        {
+          "path": "$.closed_results.all_one_partition_stabilizer",
+          "value": "S5_x_C2"
+        },
+        {
+          "path": "$.verdict",
+          "value": "the_invariant_cover_square_is_closed_at_full_automorphism_order_and_the_all_one_class_is_exactly_the_unique_connected_triangle_free_degree4_orbital_on_S5_over_even_V4_with_full_group_S5_times_S3"
+        }
+      ],
+      "verdict": "the_invariant_cover_square_is_closed_at_full_automorphism_order_and_the_all_one_class_is_exactly_the_unique_connected_triangle_free_degree4_orbital_on_S5_over_even_V4_with_full_group_S5_times_S3"
+    }
+  ],
+  "project": "/Users/scottcave/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue"
+}

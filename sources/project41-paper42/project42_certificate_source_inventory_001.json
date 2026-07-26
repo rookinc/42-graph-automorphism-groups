@@ -1,0 +1,3716 @@
+{
+  "match_count": 59,
+  "matches": [
+    {
+      "json_hits": [
+        {
+          "json_path": "$.measurements.status",
+          "value": "project41_all_one_full_aut_census_complete"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_all_one_bipartite_cover_has_full_automorphism_order720_and_its_natural_G15_partition_has_order240_stabilizer_and_orbit_size3"
+        }
+      ],
+      "path": "artifacts/json/all_one_full_automorphism_census_audit_028n.json",
+      "size": 2994,
+      "terms": [
+        "all_one"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.measurements.centralizer_element_order_distribution.1",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.centralizer_element_order_distribution.2",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.centralizer_element_order_distribution.3",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.centralizer_is_S3_pass",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_centralizer_intersection_order",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_centralizer_order",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.1",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.2",
+          "value": "25"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.3",
+          "value": "20"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.4",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.5",
+          "value": "24"
+        },
+        {
+          "json_path": "$.measurements.kernel_element_order_distribution.6",
+          "value": "20"
+        },
+        {
+          "json_path": "$.measurements.kernel_is_S5_pass",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_times_centralizer_order",
+          "value": "720"
+        },
+        {
+          "json_path": "$.measurements.partition_action_kernel_order",
+          "value": "120"
+        },
+        {
+          "json_path": "$.measurements.status",
+          "value": "project41_all_one_group_anatomy_complete"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_all_one_cover_automorphism_group_is_exactly_S5_times_S3_with_trivial_center_derived_subgroup_A5_times_C3_and_natural_partition_stabilizer_S5_times_C2"
+        }
+      ],
+      "path": "artifacts/json/all_one_group_anatomy_audit_028o.json",
+      "size": 2164,
+      "terms": [
+        "centralizer",
+        "kernel",
+        "all_one"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.measurements.S5_kernel_order",
+          "value": "120"
+        },
+        {
+          "json_path": "$.measurements.all_one_is_unique_connected_triangle_free_degree4_orbital",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.coset_geometry",
+          "value": "S5_over_V4_even"
+        },
+        {
+          "json_path": "$.measurements.degree4_orbital_candidates[0].equals_all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.degree4_orbital_candidates[1].equals_all_one",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.degree4_orbital_candidates[2].equals_all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.degree4_orbital_candidates[3].equals_all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.status",
+          "value": "project41_all_one_oriented_frame_identification_complete"
+        },
+        {
+          "json_path": "$.measurements.vertex_stabilizer_identification",
+          "value": "V4_even"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_all_one_cover_is_the_unique_connected_triangle_free_degree4_S5_orbital_graph_on_the_oriented_frame_coset_geometry_S5_over_even_V4"
+        }
+      ],
+      "path": "artifacts/json/all_one_oriented_frame_identification_audit_028p.json",
+      "size": 3011,
+      "terms": [
+        "kernel",
+        "V4_even",
+        "even_v4",
+        "all_one"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit027d.verdict",
+          "value": "the_global_interface_obstruction_characters_are_exactly_diagonal_native_v4_axis_characters_G0_uses_both_ordered_pentagon_stabilizer_axes_G1_uses_the_right_stabilizer_axis_G2_uses_the_left_stabilizer_axis_and_G3_uses_their_product_sign_kernel_axis"
+        }
+      ],
+      "path": "artifacts/json/character_phase_compensation_audit_027e.json",
+      "size": 30345,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/dual_icosahedral_distance_decomposition_audit_028f.json",
+      "size": 33462,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.five_point_action_kernel_is_trivial",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The order-60 regular group acts by conjugation on its five V4 subgroups. This action is defined on every group element, is a homomorphism, has trivial kernel, and has an image of order 60. Every image permutation is even, and the image is exactly the full standard alternating group on five points. Therefore the native G60 Cayley group is explicitly isomorphic to standard A5."
+        },
+        {
+          "json_path": "$.measurements.five_point_action_kernel_size",
+          "value": "1"
+        }
+      ],
+      "path": "artifacts/json/explicit_standard_a5_identification_audit_016.json",
+      "size": 24730,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.boundary.action_kernel_order",
+          "value": "2"
+        },
+        {
+          "json_path": "$.checks.action_kernel_order2",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The five conjugate rank-8 refinements are the coset geometry of the self-normalizing order-24 color subgroup inside the full order-120 icosahedral graph automorphism group. Conjugation gives a faithful quotient after removing a central kernel of order two. The image is A5 in its standard 2-transitive degree-five action. Thus the five refinements form an intrinsic K5 object, and the original rank-8 refinement is one distinguished K5 vertex whose stabilizer is C2 times A4."
+        },
+        {
+          "json_path": "$.measurements.action_kernel_order",
+          "value": "2"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_five_conjugate_rank8_refinements_carry_the_exact_degree5_quotient_action_of_the_full_icosahedral_group_with_kernel_C2_and_image_A5_the_action_is_2_transitive_the_original_C2_times_A4_color_group_is_one_point_stabilizer_and_the_five_refinements_therefore_form_an_intrinsic_K5_set"
+        }
+      ],
+      "path": "artifacts/json/index5_refinement_action_audit_028k.json",
+      "size": 5790,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.boundary.all_one_order_uses_independent_full_enumeration",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_center_trivial",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_derived_order_180",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_exact_structure",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_full_order_720",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_orbit_stabilizer",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_partition_orbit_3",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_partition_stabilizer_240",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_structure_S5_x_S3",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_worker_constructs_240_stabilizer",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_worker_does_not_claim_full_order",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.zero_order_28800",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.all_one_full_census.automorphism_count",
+          "value": "720"
+        },
+        {
+          "json_path": "$.measurements.all_one_full_census.natural_pair_orbit_size",
+          "value": "45"
+        },
+        {
+          "json_path": "$.measurements.all_one_full_census.partition_orbit_size",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_full_census.partition_stabilizer_order",
+          "value": "240"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.constructed_lift_count",
+          "value": "240"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.exact_order_certificate",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.graph_summary.bipartite",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.graph_summary.component_sizes[0]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.graph_summary.degree_profile.4",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.graph_summary.edge_count",
+          "value": "60"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.graph_summary.triangle_count",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.intrinsic_projection",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.kernel_order",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.label",
+          "value": "all_one"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.lift_count_profile.2",
+          "value": "120"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].largest_mixed_classes[0][0][0]",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].largest_mixed_classes[0][0][1]",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].largest_mixed_classes[0][2]",
+          "value": "360"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].ordered_color_count",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].round",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[0].unordered_pair_class_count",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].largest_mixed_classes[0][0][0]",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].largest_mixed_classes[0][0][1]",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].largest_mixed_classes[0][2]",
+          "value": "180"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].ordered_color_count",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].round",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[1].unordered_pair_class_count",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].largest_mixed_classes[0][0][0]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].largest_mixed_classes[0][0][1]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].largest_mixed_classes[0][2]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].ordered_color_count",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].round",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[2].unordered_pair_class_count",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].largest_mixed_classes[0][0][0]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].largest_mixed_classes[0][0][1]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].largest_mixed_classes[0][2]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].ordered_color_count",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].round",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[3].unordered_pair_class_count",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].largest_mixed_classes[0][0][0]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].largest_mixed_classes[0][0][1]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].largest_mixed_classes[0][2]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].ordered_color_count",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].round",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[4].unordered_pair_class_count",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].largest_mixed_classes[0][0][0]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].largest_mixed_classes[0][0][1]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].largest_mixed_classes[0][2]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].ordered_color_count",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].round",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[5].unordered_pair_class_count",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].largest_mixed_classes[0][0][0]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].largest_mixed_classes[0][0][1]",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].largest_mixed_classes[0][1]",
+          "value": "15"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].largest_mixed_classes[0][2]",
+          "value": "30"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].mixed_class_count",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].ordered_color_count",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].recovered_exact",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].relation_separated",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].round",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.all_one_initial_worker.rounds[6].unordered_pair_class_count",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.alternative.kernel_order",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.automorphism_orders.all_one",
+          "value": "720"
+        },
+        {
+          "json_path": "$.measurements.automorphism_orders.zero",
+          "value": "28800"
+        }
+      ],
+      "path": "artifacts/json/invariant_cover_square_automorphism_orders_audit_028m.json",
+      "size": 9042,
+      "terms": [
+        "kernel",
+        "all_one",
+        "28800"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.boundary.external_standard_graph_name_for_all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.checks.all_one_center_trivial",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_derived_order_180",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_exact_structure",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_full_order_720",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_orbit_stabilizer",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_partition_orbit_3",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_partition_stabilizer_240",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_structure_S5_x_S3",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_worker_constructs_240_stabilizer",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.all_one_worker_does_not_claim_full_order",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.zero_order_28800",
+          "value": "True"
+        },
+        {
+          "json_path": "$.closed_results.all_one_group",
+          "value": "S5_x_S3"
+        },
+        {
+          "json_path": "$.closed_results.all_one_partition_action",
+          "value": "S3"
+        },
+        {
+          "json_path": "$.closed_results.all_one_partition_count",
+          "value": "3"
+        },
+        {
+          "json_path": "$.closed_results.all_one_partition_stabilizer",
+          "value": "S5_x_C2"
+        },
+        {
+          "json_path": "$.closed_results.all_one_vertex_set",
+          "value": "S5_over_V4_even"
+        },
+        {
+          "json_path": "$.closed_results.automorphism_orders.all_one",
+          "value": "720"
+        },
+        {
+          "json_path": "$.closed_results.automorphism_orders.zero",
+          "value": "28800"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_invariant_cover_square_is_closed_at_full_automorphism_order_and_the_all_one_class_is_exactly_the_unique_connected_triangle_free_degree4_orbital_on_S5_over_even_V4_with_full_group_S5_times_S3"
+        }
+      ],
+      "path": "artifacts/json/invariant_cover_square_closure_audit_028q.json",
+      "size": 1750,
+      "terms": [
+        "V4_even",
+        "even_v4",
+        "all_one",
+        "28800"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.character_has_two_kernel_elements",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.stabilizer_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The failed first 026B run exposed a genuine omitted invariant, not a global obstruction. The actual signed V4 orbit carries ordered left and right order-two pentagon stabilizers. Their nonidentity generators are distinct togglers, and their product is the sign-kernel axis. A left sheet shift equal to the left stabilizer generator collapses left face-copy incidence; the analogous statement holds on the right. Therefore exactly four of the nine gauge-reduced shift pairs are locally admissible. The five rejected pairs are explained exactly by two left-only, two right-only, and one simultaneous stabilizer collision. Once the ordered side stabilizers are retained, the remaining automorphism group is trivial and the four survivors are four distinct ordered local grammar types."
+        },
+        {
+          "json_path": "$.native_v4.kernel_axis",
+          "value": "a"
+        },
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/local_shift_pair_admissibility_classification_audit_026b.json",
+      "size": 26932,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit027d.verdict",
+          "value": "the_global_interface_obstruction_characters_are_exactly_diagonal_native_v4_axis_characters_G0_uses_both_ordered_pentagon_stabilizer_axes_G1_uses_the_right_stabilizer_axis_G2_uses_the_left_stabilizer_axis_and_G3_uses_their_product_sign_kernel_axis"
+        }
+      ],
+      "path": "artifacts/json/native_affine_compensation_audit_027f.json",
+      "size": 12626,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.every_certificate_has_native_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.ordered_stabilizer_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The Audit 027C mask IDs are not arbitrary binary labels. Every certificate has equal left and right masks, so it is a diagonal character chi_r(u,v)=phi_r(u) xor phi_r(v). The one-factor character phi_r has kernel {identity,r}, giving each certificate a native V4 axis. In the ordered local frame, G0 is certified by both pentagon-stabilizer axes, G1 by the right stabilizer axis, G2 by the left stabilizer axis, and G3 by their product, which is the signed-face character kernel axis. Every certificate vanishes on common left-right gauge motion and on the grammar's own sheet-shift pair, but reads every admissible inter-orbit interface as odd."
+        },
+        {
+          "json_path": "$.measurements.character_rows[0].kernel_axis",
+          "value": "b"
+        },
+        {
+          "json_path": "$.measurements.character_rows[1].kernel_axis",
+          "value": "ab"
+        },
+        {
+          "json_path": "$.measurements.character_rows[2].kernel_axis",
+          "value": "b"
+        },
+        {
+          "json_path": "$.measurements.character_rows[3].kernel_axis",
+          "value": "ab"
+        },
+        {
+          "json_path": "$.measurements.character_rows[4].kernel_axis",
+          "value": "a"
+        },
+        {
+          "json_path": "$.native_frame.kernel_axis",
+          "value": "a"
+        },
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        },
+        {
+          "json_path": "$.verdict",
+          "value": "the_global_interface_obstruction_characters_are_exactly_diagonal_native_v4_axis_characters_G0_uses_both_ordered_pentagon_stabilizer_axes_G1_uses_the_right_stabilizer_axis_G2_uses_the_left_stabilizer_axis_and_G3_uses_their_product_sign_kernel_axis"
+        }
+      ],
+      "path": "artifacts/json/native_character_axis_interpretation_audit_027d.json",
+      "size": 9853,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/nested_dodecahedral_registration_audit_028c.json",
+      "size": 60334,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.kernel_exact_C2_cubed_shift_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.kernel_order8",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.rotation_action_fixed_kernel_size2",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[0][2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[1][2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[2][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[2][2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[3][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[3][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.even_parity_kernel[3][2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[0][2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.fixed_kernel_elements[1][2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_order",
+          "value": "8"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].b[0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].b[1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].b[2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].exact_kernel_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[1][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].expected_shifts[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].parity",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[1][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[0].shifts[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].b[0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].b[1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].b[2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].exact_kernel_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[1][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].expected_shifts[2][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].parity",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[1][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[1].shifts[2][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].b[0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].b[1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].b[2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].exact_kernel_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[0][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].expected_shifts[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].parity",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[0][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[2].shifts[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].b[0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].b[1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].b[2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].exact_kernel_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[0][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].expected_shifts[2][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].parity",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[0][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[0][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[1][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[2][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[3].shifts[2][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].b[0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].b[1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].b[2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].exact_kernel_law",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[0][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[1][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[1][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[2][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_shift_rows[4].expected_shifts[2][1]",
+          "value": "0"
+        }
+      ],
+      "path": "artifacts/json/rank8_schurian_automorphism_group_audit_028j.json",
+      "size": 11849,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit028k.verdict",
+          "value": "the_five_conjugate_rank8_refinements_carry_the_exact_degree5_quotient_action_of_the_full_icosahedral_group_with_kernel_C2_and_image_A5_the_action_is_2_transitive_the_original_C2_times_A4_color_group_is_one_point_stabilizer_and_the_five_refinements_therefore_form_an_intrinsic_K5_set"
+        }
+      ],
+      "path": "artifacts/json/refinement_native_k5_equivariant_join_audit_028l.json",
+      "size": 11506,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.sign_kernel_is_a3",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The exact three-sheeted G15-to-K5 cover has full S3 monodromy. After correcting by the cyclic role frames inside each selected syntheme, every oriented K5 edge induces the same nontrivial automorphism of the native V4 axis set: the carrier axis is fixed while the b and ab axes are exchanged. The individual edge actions therefore generate the sign quotient C2 of S3, with kernel A3. Every K5 triangle has nontrivial C2 holonomy, so the b and ab axes cannot be globally separated, although the carrier axis is globally fixed. In native binary coordinates the holonomy swaps the two coordinates. Combining this C2 action with the native V4 translations gives V4 semidirect C2, a nonabelian order-eight group with D8 element-order profile. It is exactly the full automorphism group of the local four-state square."
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[0][0]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[0][1]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[0][2]",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[1][0]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[1][1]",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[1][2]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[2][0]",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[2][1]",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel[2][2]",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.sign_kernel_order",
+          "value": "3"
+        }
+      ],
+      "path": "artifacts/json/s3_sign_v4_d8_local_system_audit_021.json",
+      "size": 23023,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.boundary.face_sign_character_kernel[0]",
+          "value": "a"
+        },
+        {
+          "json_path": "$.boundary.face_sign_character_kernel[1]",
+          "value": "identity"
+        },
+        {
+          "json_path": "$.checks.negative_kernel_orbits_are_six_pairs",
+          "value": "True"
+        },
+        {
+          "json_path": "$.checks.positive_kernel_orbits_are_six_pairs",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The twelve positive five-state face blocks obtained from the exact H40 pentagram pairings are one signed section, not a full V4-invariant face set. Closing this section under the native V4 action produces exactly twenty-four five-state blocks: twelve positive and twelve negative. Each sign section separately partitions all sixty native G60 states, while the combined system contains every state twice. The full V4 action has six free orbits of size four, each containing two positive and two negative blocks. The sign is governed by the homomorphism V4->C2 with kernel {identity,a}; b and ab exchange the positive and negative sections. This is the exact signed face-level closure compatible with the previously derived S3-sign/V4/D8 local system."
+        },
+        {
+          "json_path": "$.keeper",
+          "value": "The quotient face set is a positive section of a unique V4-equivariant signed double closure: twelve positive and twelve negative five-state face blocks, related by the character with kernel {identity,a}."
+        },
+        {
+          "json_path": "$.measurements.character_kernel[0]",
+          "value": "a"
+        },
+        {
+          "json_path": "$.measurements.character_kernel[1]",
+          "value": "identity"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbit_profiles.negative.2",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbit_profiles.positive.2",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][0][0].face_index",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][0][1].face_index",
+          "value": "8"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][1][0].face_index",
+          "value": "7"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][1][1].face_index",
+          "value": "11"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[0][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][0][0].face_index",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][0][1].face_index",
+          "value": "9"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][1][0].face_index",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][1][1].face_index",
+          "value": "10"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[1][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][0][0].face_index",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][0][1].face_index",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][1][0].face_index",
+          "value": "11"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][1][1].face_index",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[2][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][0][0].face_index",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][0][1].face_index",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][1][0].face_index",
+          "value": "10"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][1][1].face_index",
+          "value": "7"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[3][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][0][0].face_index",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][0][1].face_index",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][1][0].face_index",
+          "value": "8"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][1][1].face_index",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[4][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][0][0].face_index",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][0][1].face_index",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][1][0].face_index",
+          "value": "9"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][1][1].face_index",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.negative[5][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][0][0].face_index",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][0][1].face_index",
+          "value": "11"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][1][0].face_index",
+          "value": "7"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][1][1].face_index",
+          "value": "8"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[0][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][0][0].face_index",
+          "value": "1"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][0][1].face_index",
+          "value": "10"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][1][0].face_index",
+          "value": "4"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][1][1].face_index",
+          "value": "9"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[1][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][0][0].face_index",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][0][1].face_index",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][1][0].face_index",
+          "value": "11"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][1][1].face_index",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[2][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][0][0].face_index",
+          "value": "3"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][0][1].face_index",
+          "value": "7"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][1][0].face_index",
+          "value": "10"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][1][1].face_index",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[3][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][0][0].face_index",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][0][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][0][1].face_index",
+          "value": "5"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][0][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][1][0].face_index",
+          "value": "8"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][1][0].side",
+          "value": "left"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][1][1].face_index",
+          "value": "0"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[4][1][1].side",
+          "value": "right"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[5][0][0].face_index",
+          "value": "6"
+        },
+        {
+          "json_path": "$.measurements.kernel_orbits_by_sign.positive[5][0][0].side",
+          "value": "left"
+        }
+      ],
+      "path": "artifacts/json/signed_24_face_block_closure_audit_025.json",
+      "size": 82668,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/signed_block_doubling_obstruction_audit_028b.json",
+      "size": 15193,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.character_has_two_kernel_elements",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[0].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[1].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[2].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[3].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[4].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.orbit_rows[5].checks.side_generator_product_is_kernel_axis",
+          "value": "True"
+        },
+        {
+          "json_path": "$.native_v4.kernel_axis",
+          "value": "a"
+        },
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/six_orbit_pairwise_grammar_compatibility_audit_026c.json",
+      "size": 117772,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.next_target",
+          "value": "Compare the full S3 monodromy of the three-cover with the natural automorphism group Aut(V4) acting on the three nonidentity native deck transformations a, b, and ab. Test whether triangle holonomy permutes these three V4 axes exactly as it permutes the carrier, b, and ab roles. A positive result would replace the remaining local face-bit gauge by a canonical S3-twisted V4 incidence local system."
+        }
+      ],
+      "path": "artifacts/json/synthematic_total_534_transport_tower_audit_020.json",
+      "size": 24550,
+      "terms": [
+        "triangle holonomy"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/three_k4_cell_state_lift_audit_028g.json",
+      "size": 30463,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.checks.all_one_gauge_count2",
+          "value": "True"
+        },
+        {
+          "json_path": "$.interpretation",
+          "value": "The measured 3-by-3 array of four-state incidence blocks is not merely a count pattern. After coordinatizing each four-face cell as the same V4 torsor, every block is cut out by one exact low-complexity law. Internal flow is translation by the first seam generator u. Forward cross-cell flow equates the u-character on the source with the v-character on the target. Reverse flow uses the transposed character relation. The constants are cell-origin gauge data: two relative gauges produce the all-zero normal form and two produce the all-one normal form."
+        },
+        {
+          "json_path": "$.measurements.all_one_gauge_count",
+          "value": "2"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[0].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[1].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[2].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[3].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[4].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[5].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[6].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[7].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[8].all_one",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[9].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[10].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[11].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[12].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[13].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[14].all_one",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.gauge_rows[15].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.uniform_gauges[0].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.uniform_gauges[1].all_one",
+          "value": "False"
+        },
+        {
+          "json_path": "$.measurements.uniform_gauges[2].all_one",
+          "value": "True"
+        },
+        {
+          "json_path": "$.measurements.uniform_gauges[3].all_one",
+          "value": "True"
+        }
+      ],
+      "path": "artifacts/json/v4_affine_character_cell_grammar_audit_028h.json",
+      "size": 36215,
+      "terms": [
+        "all-one",
+        "all_one"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.audit025.verdict",
+          "value": "the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab"
+        }
+      ],
+      "path": "artifacts/json/v4xv4_gauge_orbit_theorem_audit_026a.json",
+      "size": 22421,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "1: # All-One Full Automorphism Census Audit 028N\n2: \n3: ## Result",
+          "line": 1
+        },
+        {
+          "context": "3: ## Result\n4: \n5: The all-one bipartite cover has exactly 720 automorphisms.\n6: \n7: A chosen G15 fiber partition has stabilizer order 240. Its orbit has",
+          "line": 5
+        },
+        {
+          "context": "15: ## Interpretation\n16: \n17: The all-one graph does not carry one characteristic G15 quotient. It\n18: carries three equivalent quotient presentations.\n19: ",
+          "line": 17
+        }
+      ],
+      "path": "notes/all_one_full_automorphism_census_audit_028n.md",
+      "size": 683,
+      "terms": [
+        "all-one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "1: # All-One Group Anatomy Audit 028O\n2: \n3: ## Result",
+          "line": 1
+        },
+        {
+          "context": "5: The full automorphism group is\n6: \n7:     Aut(X_all_one) = S5 x S3.\n8: \n9: The action on the three G15 partitions has image S3 and kernel S5.",
+          "line": 7
+        },
+        {
+          "context": "7:     Aut(X_all_one) = S5 x S3.\n8: \n9: The action on the three G15 partitions has image S3 and kernel S5.\n10: \n11: The centralizer of the kernel has order six, is S3, intersects the",
+          "line": 9
+        },
+        {
+          "context": "9: The action on the three G15 partitions has image S3 and kernel S5.\n10: \n11: The centralizer of the kernel has order six, is S3, intersects the\n12: kernel trivially, and the two factors generate all 720 automorphisms.\n13: ",
+          "line": 11
+        },
+        {
+          "context": "10: \n11: The centralizer of the kernel has order six, is S3, intersects the\n12: kernel trivially, and the two factors generate all 720 automorphisms.\n13: \n14: Further invariants are",
+          "line": 12
+        },
+        {
+          "context": "28: ## Keeper\n29: \n30: The extra S3 permutes the three equivalent G15 quotient systems.",
+          "line": 30
+        }
+      ],
+      "path": "notes/all_one_group_anatomy_audit_028o.md",
+      "size": 727,
+      "terms": [
+        "quotient system",
+        "quotient systems",
+        "centralizer",
+        "kernel",
+        "S5 x S3",
+        "all-one",
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "1: # All-One Oriented Frame Identification Audit 028P\n2: \n3: ## Result",
+          "line": 1
+        },
+        {
+          "context": "3: ## Result\n4: \n5: The order-120 S5 kernel acts transitively on the 30 vertices. A vertex\n6: stabilizer is an even V4 in the Petersen S5 action. Therefore the\n7: vertex set is",
+          "line": 5
+        },
+        {
+          "context": "7: vertex set is\n8: \n9:     Omega30 = S5 / V4_even.\n10: \n11: There are four degree-four S5 orbital graphs on this set. Three split",
+          "line": 9
+        },
+        {
+          "context": "9:     Omega30 = S5 / V4_even.\n10: \n11: There are four degree-four S5 orbital graphs on this set. Three split\n12: as 15 plus 15 and contain triangles. Exactly one is connected and\n13: triangle-free, and it is the all-one bipartite cover.",
+          "line": 11
+        },
+        {
+          "context": "11: There are four degree-four S5 orbital graphs on this set. Three split\n12: as 15 plus 15 and contain triangles. Exactly one is connected and\n13: triangle-free, and it is the all-one bipartite cover.\n14: \n15: Thus",
+          "line": 13
+        },
+        {
+          "context": "15: Thus\n16: \n17:     X_all_one\n18: \n19: is the unique connected triangle-free degree-four S5 orbital graph on",
+          "line": 17
+        },
+        {
+          "context": "17:     X_all_one\n18: \n19: is the unique connected triangle-free degree-four S5 orbital graph on\n20: the oriented-frame geometry S5 / V4_even.\n21: ",
+          "line": 19
+        },
+        {
+          "context": "18: \n19: is the unique connected triangle-free degree-four S5 orbital graph on\n20: the oriented-frame geometry S5 / V4_even.\n21: \n22: ## Boundary",
+          "line": 20
+        },
+        {
+          "context": "27: ## Keeper\n28: \n29: All-one belongs to the even-V4 oriented-frame geometry.",
+          "line": 29
+        }
+      ],
+      "path": "notes/all_one_oriented_frame_identification_audit_028p.md",
+      "size": 779,
+      "terms": [
+        "kernel",
+        "V4_even",
+        "orbital graph",
+        "all-one",
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "3: Audit pass: true\n4: \n5: Verdict: `the_five_conjugate_rank8_refinements_carry_the_exact_degree5_quotient_action_of_the_full_icosahedral_group_with_kernel_C2_and_image_A5_the_action_is_2_transitive_the_original_C2_times_A4_color_group_is_one_point_stabilizer_and_the_five_refinements_therefore_form_an_intrinsic_K5_set`\n6: \n7: ## Result",
+          "line": 5
+        },
+        {
+          "context": "12: The action has:\n13: \n14: - kernel order 2\n15: - image order 60\n16: - image element-order profile of A5",
+          "line": 14
+        }
+      ],
+      "path": "notes/index5_refinement_action_audit_028k.md",
+      "size": 1183,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "6: orders\n7: \n8:     zero         28800\n9:     native         240\n10:     alternative    240",
+          "line": 8
+        },
+        {
+          "context": "9:     native         240\n10:     alternative    240\n11:     all_one        720\n12: \n13: The zero class is two disjoint G15 copies and has automorphism group",
+          "line": 11
+        },
+        {
+          "context": "18: automorphisms lifts exactly twice, so the full order is 240.\n19: \n20: The all-one cover also has 240 automorphisms preserving one chosen\n21: fiber partition, but that partition is not characteristic. Independent\n22: full enumeration gives order 720.",
+          "line": 20
+        },
+        {
+          "context": "29: ## Keeper\n30: \n31: The automorphism-order square is 28800, 240, 240, 720.",
+          "line": 31
+        }
+      ],
+      "path": "notes/invariant_cover_square_automorphism_orders_audit_028m.md",
+      "size": 903,
+      "terms": [
+        "all-one",
+        "all_one",
+        "28800"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "8:     native        triangle 0  pentagon 1\n9:     alternative   triangle 1  pentagon 0\n10:     all_one       triangle 1  pentagon 1\n11: \n12: Their full automorphism orders are",
+          "line": 10
+        },
+        {
+          "context": "12: Their full automorphism orders are\n13: \n14:     28800, 240, 240, 720.\n15: \n16: The all-one class has full group S5 x S3. Its three equivalent G15",
+          "line": 14
+        },
+        {
+          "context": "14:     28800, 240, 240, 720.\n15: \n16: The all-one class has full group S5 x S3. Its three equivalent G15\n17: fiber partitions form the natural three-point S3 action. Each\n18: partition stabilizer is S5 x C2.",
+          "line": 16
+        },
+        {
+          "context": "18: partition stabilizer is S5 x C2.\n19: \n20: The all-one vertex geometry is S5 / V4_even. The native central\n21: quotient lies on S5 / V4_mixed.\n22: ",
+          "line": 20
+        },
+        {
+          "context": "24: \n25: This closes the invariant cover square at automorphism order, group\n26: anatomy for all-one, and homogeneous-space identification.\n27: \n28: It does not identify the archived G30, prove splitting types for both",
+          "line": 26
+        },
+        {
+          "context": "28: It does not identify the archived G30, prove splitting types for both\n29: order-240 connected extensions, or assign an external standard graph\n30: name to the all-one graph.\n31: \n32: ## Keeper",
+          "line": 30
+        },
+        {
+          "context": "32: ## Keeper\n33: \n34: The two degree-30 geometries are distinct: even V4 carries all-one,\n35: while mixed V4 carries the native central quotient.",
+          "line": 34
+        }
+      ],
+      "path": "notes/invariant_cover_square_closure_audit_028q.md",
+      "size": 1051,
+      "terms": [
+        "S5 x S3",
+        "V4_even",
+        "all-one",
+        "all_one",
+        "28800"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "20: - Right generator: `b`\n21: - Generator product: `a`\n22: - Sign-kernel axis: `a`\n23: \n24: ## Admissibility theorem",
+          "line": 22
+        },
+        {
+          "context": "62: ## Interpretation\n63: \n64: The failed first 026B run exposed a genuine omitted invariant, not a global obstruction. The actual signed V4 orbit carries ordered left and right order-two pentagon stabilizers. Their nonidentity generators are distinct togglers, and their product is the sign-kernel axis. A left sheet shift equal to the left stabilizer generator collapses left face-copy incidence; the analogous statement holds on the right. Therefore exactly four of the nine gauge-reduced shift pairs are locally admissible. The five rejected pairs are explained exactly by two left-only, two right-only, and one simultaneous stabilizer collision. Once the ordered side stabilizers are retained, the remaining automorphism group is trivial and the four survivors are four distinct ordered local grammar types.\n65: \n66: ## Boundary",
+          "line": 64
+        }
+      ],
+      "path": "notes/local_shift_pair_admissibility_classification_audit_026b.md",
+      "size": 2906,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "3: Audit pass: true\n4: \n5: Verdict: `the_global_interface_obstruction_characters_are_exactly_diagonal_native_v4_axis_characters_G0_uses_both_ordered_pentagon_stabilizer_axes_G1_uses_the_right_stabilizer_axis_G2_uses_the_left_stabilizer_axis_and_G3_uses_their_product_sign_kernel_axis`\n6: \n7: ## Native frame",
+          "line": 5
+        },
+        {
+          "context": "9: - Left pentagon stabilizer axis: `ab`\n10: - Right pentagon stabilizer axis: `b`\n11: - Product / sign-kernel axis: `a`\n12: \n13: ## Character interpretation",
+          "line": 11
+        }
+      ],
+      "path": "notes/native_character_axis_interpretation_audit_027d.md",
+      "size": 1117,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "3: Audit pass: true\n4: \n5: Verdict: the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab\n6: \n7: The twelve exact five-state face carriers form a positive",
+          "line": 5
+        }
+      ],
+      "path": "notes/signed_24_face_block_closure_audit_025.md",
+      "size": 1361,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "15: \n16: With cell 0 fixed, the 16 relative origin gauges contain four\n17: uniform-constant gauges: two all-zero and two all-one. The\n18: canonical all-zero gauge shifts the cells by\n19: ",
+          "line": 17
+        }
+      ],
+      "path": "notes/v4_affine_character_cell_grammar_audit_028h.md",
+      "size": 1140,
+      "terms": [
+        "all-one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "24:     HOME\n25:     / \"tmp/project41-028m30j2/results\"\n26:     / \"all_one_networkx_aut_census_028m30j3.json\"\n27: )\n28: ",
+          "line": 26
+        },
+        {
+          "context": "99: \n100:     edges = module.build_cover_edges(\n101:         source[\"voltages\"][\"all_one\"],\n102:         source[\"g15_edges\"],\n103:     )",
+          "line": 101
+        },
+        {
+          "context": "208:             ),\n209:         \"status\":\n210:             \"project41_all_one_full_aut_census_complete\",\n211:     })\n212: ",
+          "line": 210
+        },
+        {
+          "context": "224:             repr(exc),\n225:         \"status\":\n226:             \"project41_all_one_full_aut_census_timed_out\",\n227:     })\n228: ",
+          "line": 226
+        },
+        {
+          "context": "238:             traceback.format_exc(),\n239:         \"status\":\n240:             \"project41_all_one_full_aut_census_failed\",\n241:     })\n242: ",
+          "line": 240
+        }
+      ],
+      "path": "scripts/audit_all_one_full_automorphism_census_028n.py",
+      "size": 5439,
+      "terms": [
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "23:     HOME\n24:     / \"tmp/project41-028m30j2/results\"\n25:     / \"all_one_group_anatomy_028m30j4.json\"\n26: )\n27: ",
+          "line": 25
+        },
+        {
+          "context": "171: \n172:     edges = module.build_cover_edges(\n173:         source[\"voltages\"][\"all_one\"],\n174:         source[\"g15_edges\"],\n175:     )",
+          "line": 173
+        },
+        {
+          "context": "255:     )\n256: \n257:     action_kernel = frozenset(\n258:         automorphism\n259:         for automorphism",
+          "line": 257
+        },
+        {
+          "context": "284:     )\n285: \n286:     kernel_centralizer = frozenset(\n287:         element\n288:         for element in automorphisms",
+          "line": 286
+        },
+        {
+          "context": "288:         for element in automorphisms\n289:         if all(\n290:             compose(element, kernel_element)\n291:             == compose(kernel_element, element)\n292:             for kernel_element in action_kernel",
+          "line": 290
+        },
+        {
+          "context": "289:         if all(\n290:             compose(element, kernel_element)\n291:             == compose(kernel_element, element)\n292:             for kernel_element in action_kernel\n293:         )",
+          "line": 291
+        },
+        {
+          "context": "290:             compose(element, kernel_element)\n291:             == compose(kernel_element, element)\n292:             for kernel_element in action_kernel\n293:         )\n294:     )",
+          "line": 292
+        },
+        {
+          "context": "294:     )\n295: \n296:     kernel_centralizer_intersection = (\n297:         action_kernel\n298:         & kernel_centralizer",
+          "line": 296
+        },
+        {
+          "context": "295: \n296:     kernel_centralizer_intersection = (\n297:         action_kernel\n298:         & kernel_centralizer\n299:     )",
+          "line": 297
+        },
+        {
+          "context": "296:     kernel_centralizer_intersection = (\n297:         action_kernel\n298:         & kernel_centralizer\n299:     )\n300: ",
+          "line": 298
+        },
+        {
+          "context": "300: \n301:     product_set = {\n302:         compose(kernel_element, centralizer_element)\n303:         for kernel_element in action_kernel\n304:         for centralizer_element in kernel_centralizer",
+          "line": 302
+        },
+        {
+          "context": "301:     product_set = {\n302:         compose(kernel_element, centralizer_element)\n303:         for kernel_element in action_kernel\n304:         for centralizer_element in kernel_centralizer\n305:     }",
+          "line": 303
+        },
+        {
+          "context": "302:         compose(kernel_element, centralizer_element)\n303:         for kernel_element in action_kernel\n304:         for centralizer_element in kernel_centralizer\n305:     }\n306: ",
+          "line": 304
+        },
+        {
+          "context": "310:     )\n311: \n312:     kernel_orders = Counter(\n313:         element_order(element)\n314:         for element in action_kernel",
+          "line": 312
+        },
+        {
+          "context": "312:     kernel_orders = Counter(\n313:         element_order(element)\n314:         for element in action_kernel\n315:     )\n316: ",
+          "line": 314
+        },
+        {
+          "context": "315:     )\n316: \n317:     centralizer_orders = Counter(\n318:         element_order(element)\n319:         for element in kernel_centralizer",
+          "line": 317
+        },
+        {
+          "context": "317:     centralizer_orders = Counter(\n318:         element_order(element)\n319:         for element in kernel_centralizer\n320:     )\n321: ",
+          "line": 319
+        },
+        {
+          "context": "336:     )\n337: \n338:     kernel_quotient_action_count = len({\n339:         tuple(\n340:             sorted(",
+          "line": 338
+        },
+        {
+          "context": "348:             )\n349:         )\n350:         for automorphism in action_kernel\n351:     })\n352: ",
+          "line": 350
+        },
+        {
+          "context": "352: \n353:     direct_product_pass = (\n354:         len(action_kernel) == 120\n355:         and len(kernel_centralizer) == 6\n356:         and len(",
+          "line": 354
+        },
+        {
+          "context": "353:     direct_product_pass = (\n354:         len(action_kernel) == 120\n355:         and len(kernel_centralizer) == 6\n356:         and len(\n357:             kernel_centralizer_intersection",
+          "line": 355
+        },
+        {
+          "context": "355:         and len(kernel_centralizer) == 6\n356:         and len(\n357:             kernel_centralizer_intersection\n358:         ) == 1\n359:         and len(product_set) == 720",
+          "line": 357
+        },
+        {
+          "context": "362:     )\n363: \n364:     kernel_is_S5_pass = (\n365:         len(action_kernel) == 120\n366:         and kernel_orders == Counter({",
+          "line": 364
+        },
+        {
+          "context": "363: \n364:     kernel_is_S5_pass = (\n365:         len(action_kernel) == 120\n366:         and kernel_orders == Counter({\n367:             1: 1,",
+          "line": 365
+        },
+        {
+          "context": "364:     kernel_is_S5_pass = (\n365:         len(action_kernel) == 120\n366:         and kernel_orders == Counter({\n367:             1: 1,\n368:             2: 25,",
+          "line": 366
+        },
+        {
+          "context": "374:     )\n375: \n376:     centralizer_is_S3_pass = (\n377:         len(kernel_centralizer) == 6\n378:         and centralizer_orders == Counter({",
+          "line": 376
+        },
+        {
+          "context": "375: \n376:     centralizer_is_S3_pass = (\n377:         len(kernel_centralizer) == 6\n378:         and centralizer_orders == Counter({\n379:             1: 1,",
+          "line": 377
+        },
+        {
+          "context": "376:     centralizer_is_S3_pass = (\n377:         len(kernel_centralizer) == 6\n378:         and centralizer_orders == Counter({\n379:             1: 1,\n380:             2: 3,",
+          "line": 378
+        },
+        {
+          "context": "383:         and {\n384:             partition_actions[element]\n385:             for element in kernel_centralizer\n386:         } == action_image\n387:     )",
+          "line": 385
+        },
+        {
+          "context": "389:     exact_structure_pass = (\n390:         direct_product_pass\n391:         and kernel_is_S5_pass\n392:         and centralizer_is_S3_pass\n393:         and len(center) == 1",
+          "line": 391
+        },
+        {
+          "context": "390:         direct_product_pass\n391:         and kernel_is_S5_pass\n392:         and centralizer_is_S3_pass\n393:         and len(center) == 1\n394:         and len(derived_subgroup) == 180",
+          "line": 392
+        },
+        {
+          "context": "411:                 )\n412:             ),\n413:         \"partition_action_kernel_order\":\n414:             len(action_kernel),\n415:         \"natural_partition_stabilizer_order\":",
+          "line": 413
+        },
+        {
+          "context": "412:             ),\n413:         \"partition_action_kernel_order\":\n414:             len(action_kernel),\n415:         \"natural_partition_stabilizer_order\":\n416:             len(natural_stabilizer),",
+          "line": 414
+        },
+        {
+          "context": "422:             len(automorphisms)\n423:             // len(derived_subgroup),\n424:         \"kernel_centralizer_order\":\n425:             len(kernel_centralizer),\n426:         \"kernel_centralizer_intersection_order\":",
+          "line": 424
+        },
+        {
+          "context": "423:             // len(derived_subgroup),\n424:         \"kernel_centralizer_order\":\n425:             len(kernel_centralizer),\n426:         \"kernel_centralizer_intersection_order\":\n427:             len(",
+          "line": 425
+        },
+        {
+          "context": "424:         \"kernel_centralizer_order\":\n425:             len(kernel_centralizer),\n426:         \"kernel_centralizer_intersection_order\":\n427:             len(\n428:                 kernel_centralizer_intersection",
+          "line": 426
+        },
+        {
+          "context": "426:         \"kernel_centralizer_intersection_order\":\n427:             len(\n428:                 kernel_centralizer_intersection\n429:             ),\n430:         \"kernel_times_centralizer_order\":",
+          "line": 428
+        },
+        {
+          "context": "428:                 kernel_centralizer_intersection\n429:             ),\n430:         \"kernel_times_centralizer_order\":\n431:             len(product_set),\n432:         \"full_element_order_distribution\":",
+          "line": 430
+        },
+        {
+          "context": "432:         \"full_element_order_distribution\":\n433:             dict(sorted(all_orders.items())),\n434:         \"kernel_element_order_distribution\":\n435:             dict(sorted(kernel_orders.items())),\n436:         \"centralizer_element_order_distribution\":",
+          "line": 434
+        },
+        {
+          "context": "433:             dict(sorted(all_orders.items())),\n434:         \"kernel_element_order_distribution\":\n435:             dict(sorted(kernel_orders.items())),\n436:         \"centralizer_element_order_distribution\":\n437:             dict(",
+          "line": 435
+        },
+        {
+          "context": "434:         \"kernel_element_order_distribution\":\n435:             dict(sorted(kernel_orders.items())),\n436:         \"centralizer_element_order_distribution\":\n437:             dict(\n438:                 sorted(",
+          "line": 436
+        },
+        {
+          "context": "437:             dict(\n438:                 sorted(\n439:                     centralizer_orders.items()\n440:                 )\n441:             ),",
+          "line": 439
+        },
+        {
+          "context": "448:         \"direct_product_pass\":\n449:             direct_product_pass,\n450:         \"kernel_is_S5_pass\":\n451:             kernel_is_S5_pass,\n452:         \"centralizer_is_S3_pass\":",
+          "line": 450
+        },
+        {
+          "context": "449:             direct_product_pass,\n450:         \"kernel_is_S5_pass\":\n451:             kernel_is_S5_pass,\n452:         \"centralizer_is_S3_pass\":\n453:             centralizer_is_S3_pass,",
+          "line": 451
+        },
+        {
+          "context": "450:         \"kernel_is_S5_pass\":\n451:             kernel_is_S5_pass,\n452:         \"centralizer_is_S3_pass\":\n453:             centralizer_is_S3_pass,\n454:         \"exact_structure_pass\":",
+          "line": 452
+        },
+        {
+          "context": "451:             kernel_is_S5_pass,\n452:         \"centralizer_is_S3_pass\":\n453:             centralizer_is_S3_pass,\n454:         \"exact_structure_pass\":\n455:             exact_structure_pass,",
+          "line": 453
+        },
+        {
+          "context": "468:         \"status\":\n469:             (\n470:                 \"project41_all_one_group_anatomy_complete\"\n471:                 if exact_structure_pass\n472:                 else",
+          "line": 470
+        },
+        {
+          "context": "471:                 if exact_structure_pass\n472:                 else\n473:                 \"project41_all_one_group_anatomy_inconclusive\"\n474:             ),\n475:     })",
+          "line": 473
+        },
+        {
+          "context": "484:             False,\n485:         \"status\":\n486:             \"project41_all_one_group_anatomy_failed\",\n487:     })\n488: ",
+          "line": 486
+        }
+      ],
+      "path": "scripts/audit_all_one_group_anatomy_028o.py",
+      "size": 11390,
+      "terms": [
+        "centralizer",
+        "kernel",
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "24:     HOME\n25:     / \"tmp/project41-028m30j2/results\"\n26:     / \"all_one_oriented_frame_identification_028m30j5.json\"\n27: )\n28: ",
+          "line": 26
+        },
+        {
+          "context": "173:     source = module.reconstruct_source()\n174: \n175:     all_one_edges = frozenset(\n176:         module.build_cover_edges(\n177:             source[\"voltages\"][\"all_one\"],",
+          "line": 175
+        },
+        {
+          "context": "175:     all_one_edges = frozenset(\n176:         module.build_cover_edges(\n177:             source[\"voltages\"][\"all_one\"],\n178:             source[\"g15_edges\"],\n179:         )",
+          "line": 177
+        },
+        {
+          "context": "182:     graph = nx.Graph()\n183:     graph.add_nodes_from(range(30))\n184:     graph.add_edges_from(all_one_edges)\n185: \n186:     full_automorphisms = tuple(",
+          "line": 184
+        },
+        {
+          "context": "221:     )\n222: \n223:     kernel = tuple(\n224:         automorphism\n225:         for automorphism",
+          "line": 223
+        },
+        {
+          "context": "237:     )\n238: \n239:     if len(kernel) != 120:\n240:         raise RuntimeError(\n241:             \"partition-action kernel is not order 120\"",
+          "line": 239
+        },
+        {
+          "context": "239:     if len(kernel) != 120:\n240:         raise RuntimeError(\n241:             \"partition-action kernel is not order 120\"\n242:         )\n243: ",
+          "line": 241
+        },
+        {
+          "context": "245:         automorphism[0]\n246:         for automorphism\n247:         in kernel\n248:     }\n249: ",
+          "line": 247
+        },
+        {
+          "context": "251:         automorphism\n252:         for automorphism\n253:         in kernel\n254:         if automorphism[0] == 0\n255:     )",
+          "line": 253
+        },
+        {
+          "context": "260:     ):\n261:         raise RuntimeError(\n262:             \"kernel is not transitive with V4 stabilizer\"\n263:         )\n264: ",
+          "line": 262
+        },
+        {
+          "context": "407:         orbit = pair_orbit(\n408:             seed,\n409:             kernel,\n410:         )\n411: ",
+          "line": 409
+        },
+        {
+          "context": "441:                     len(orbit),\n442:                 **summary,\n443:                 \"equals_all_one\":\n444:                     orbit == all_one_edges,\n445:             })",
+          "line": 443
+        },
+        {
+          "context": "442:                 **summary,\n443:                 \"equals_all_one\":\n444:                     orbit == all_one_edges,\n445:             })\n446: ",
+          "line": 444
+        },
+        {
+          "context": "462:         len(full_automorphisms) == 720\n463:         and len(partition_orbit) == 3\n464:         and len(kernel) == 120\n465:         and len(vertex_orbit) == 30\n466:         and len(vertex_stabilizer) == 4",
+          "line": 464
+        },
+        {
+          "context": "478:             0\n479:         ][\n480:             \"equals_all_one\"\n481:         ]\n482:     )",
+          "line": 480
+        },
+        {
+          "context": "487:         \"partition_orbit_size\":\n488:             len(partition_orbit),\n489:         \"S5_kernel_order\":\n490:             len(kernel),\n491:         \"S5_vertex_orbit_size\":",
+          "line": 489
+        },
+        {
+          "context": "488:             len(partition_orbit),\n489:         \"S5_kernel_order\":\n490:             len(kernel),\n491:         \"S5_vertex_orbit_size\":\n492:             len(vertex_orbit),",
+          "line": 490
+        },
+        {
+          "context": "508:             ),\n509:         \"vertex_stabilizer_identification\":\n510:             \"V4_even\",\n511:         \"coset_geometry\":\n512:             \"S5_over_V4_even\",",
+          "line": 510
+        },
+        {
+          "context": "510:             \"V4_even\",\n511:         \"coset_geometry\":\n512:             \"S5_over_V4_even\",\n513:         \"unordered_pair_orbit_count\":\n514:             len(",
+          "line": 512
+        },
+        {
+          "context": "525:                 connected_triangle_free\n526:             ),\n527:         \"all_one_is_unique_connected_triangle_free_degree4_orbital\":\n528:             exact_identification,\n529:         \"identified_vertex_set\":",
+          "line": 527
+        },
+        {
+          "context": "533:         \"status\":\n534:             (\n535:                 \"project41_all_one_oriented_frame_identification_complete\"\n536:                 if exact_identification\n537:                 else",
+          "line": 535
+        },
+        {
+          "context": "536:                 if exact_identification\n537:                 else\n538:                 \"project41_all_one_oriented_frame_identification_inconclusive\"\n539:             ),\n540:     })",
+          "line": 538
+        },
+        {
+          "context": "549:             False,\n550:         \"status\":\n551:             \"project41_all_one_oriented_frame_identification_failed\",\n552:     })\n553: ",
+          "line": 551
+        }
+      ],
+      "path": "scripts/audit_all_one_oriented_frame_identification_028p.py",
+      "size": 12634,
+      "terms": [
+        "kernel",
+        "V4_even",
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "30:     HOME\n31:     / \"dev/cori/research/mathematics/thalean-graph-theory\"\n32:     / \"18-g900-kernel-admission/artifacts/json\"\n33:     / \"g60_native_generator_input_bundle_001.v1.json\",\n34: )",
+          "line": 32
+        }
+      ],
+      "path": "scripts/audit_connection_stabilizer_native_deck_action_014.py",
+      "size": 20166,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "151:         if len(set(orbit)) != 2:\n152:             raise RuntimeError(\n153:                 \"quotient involution has a fixed point\"\n154:             )\n155: ",
+          "line": 153
+        }
+      ],
+      "path": "scripts/audit_desargues_signed_axis_gluing_007.py",
+      "size": 20386,
+      "terms": [
+        "quotient involution"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "257: image = set(action.values()) if action_defined else set()\n258: \n259: kernel = [\n260:     element\n261:     for element, image_perm in action.items()",
+          "line": 259
+        },
+        {
+          "context": "364:     \"five_point_action_image_size_60\":\n365:         len(image) == 60,\n366:     \"five_point_action_kernel_is_trivial\":\n367:         kernel == [identity60],\n368:     \"all_image_permutations_are_even\":",
+          "line": 366
+        },
+        {
+          "context": "365:         len(image) == 60,\n366:     \"five_point_action_kernel_is_trivial\":\n367:         kernel == [identity60],\n368:     \"all_image_permutations_are_even\":\n369:         all(is_even(element) for element in image),",
+          "line": 367
+        },
+        {
+          "context": "418: print(\"action_defined:\", str(action_defined).lower())\n419: print(\"image_size:\", len(image))\n420: print(\"kernel_size:\", len(kernel))\n421: print(\n422:     \"homomorphism_failure_count:\",",
+          "line": 420
+        },
+        {
+          "context": "600:         \"five_point_action_image_size\":\n601:             len(image),\n602:         \"five_point_action_kernel_size\":\n603:             len(kernel),\n604:         \"homomorphism_failure_count\":",
+          "line": 602
+        },
+        {
+          "context": "601:             len(image),\n602:         \"five_point_action_kernel_size\":\n603:             len(kernel),\n604:         \"homomorphism_failure_count\":\n605:             homomorphism_failure_count,",
+          "line": 603
+        },
+        {
+          "context": "630:         \"The order-60 regular group acts by conjugation on its \"\n631:         \"five V4 subgroups. This action is defined on every group \"\n632:         \"element, is a homomorphism, has trivial kernel, and has \"\n633:         \"an image of order 60. Every image permutation is even, \"\n634:         \"and the image is exactly the full standard alternating \"",
+          "line": 632
+        },
+        {
+          "context": "731: )\n732: print(\"five_point_action_image_size:\", len(image))\n733: print(\"five_point_action_kernel_size:\", len(kernel))\n734: print(\n735:     \"homomorphism_failure_count:\",",
+          "line": 733
+        }
+      ],
+      "path": "scripts/audit_explicit_standard_a5_identification_016.py",
+      "size": 19051,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "23: \n24:    hence is the standard degree-5 action of A5.\n25: 3. The action kernel has order 2.\n26: 4. The action is 2-transitive.\n27: 5. One-point stabilizers have:",
+          "line": 25
+        },
+        {
+          "context": "727: )\n728: \n729: action_kernel = tuple(\n730:     group_element\n731:     for group_element in full_group",
+          "line": 729
+        },
+        {
+          "context": "869:             action_image\n870:         ) == 60,\n871:     \"action_kernel_order2\":\n872:         len(\n873:             action_kernel",
+          "line": 871
+        },
+        {
+          "context": "871:     \"action_kernel_order2\":\n872:         len(\n873:             action_kernel\n874:         ) == 2,\n875:     \"image_element_order_profile_A5\":",
+          "line": 873
+        },
+        {
+          "context": "943: )\n944: print(\n945:     \"action_kernel_order:\",\n946:     len(\n947:         action_kernel",
+          "line": 945
+        },
+        {
+          "context": "945:     \"action_kernel_order:\",\n946:     len(\n947:         action_kernel\n948:     ),\n949: )",
+          "line": 947
+        },
+        {
+          "context": "1049: verdict = (\n1050:     \"the_five_conjugate_rank8_refinements_carry_the_exact_degree5_\"\n1051:     \"quotient_action_of_the_full_icosahedral_group_with_kernel_C2_\"\n1052:     \"and_image_A5_the_action_is_2_transitive_the_original_C2_times_\"\n1053:     \"A4_color_group_is_one_point_stabilizer_and_the_five_refinements_\"",
+          "line": 1051
+        },
+        {
+          "context": "1163:                 action_image\n1164:             ),\n1165:         \"action_kernel_order\":\n1166:             len(\n1167:                 action_kernel",
+          "line": 1165
+        },
+        {
+          "context": "1165:         \"action_kernel_order\":\n1166:             len(\n1167:                 action_kernel\n1168:             ),\n1169:         \"action_image_element_order_profile\":",
+          "line": 1167
+        },
+        {
+          "context": "1211:         \"of the self-normalizing order-24 color subgroup inside the full \"\n1212:         \"order-120 icosahedral graph automorphism group. Conjugation gives \"\n1213:         \"a faithful quotient after removing a central kernel of order two. \"\n1214:         \"The image is A5 in its standard 2-transitive degree-five action. \"\n1215:         \"Thus the five refinements form an intrinsic K5 object, and the \"",
+          "line": 1213
+        },
+        {
+          "context": "1220:         \"five_refinement_A5_action_proved\":\n1221:             audit_pass,\n1222:         \"action_kernel_order\":\n1223:             2\n1224:             if audit_pass",
+          "line": 1222
+        },
+        {
+          "context": "1264:     \"The action has:\",\n1265:     \"\",\n1266:     \"- kernel order 2\",\n1267:     \"- image order 60\",\n1268:     \"- image element-order profile of A5\",",
+          "line": 1266
+        },
+        {
+          "context": "1344: )\n1345: print(\n1346:     \"action_kernel_order:\",\n1347:     len(\n1348:         action_kernel",
+          "line": 1346
+        },
+        {
+          "context": "1346:     \"action_kernel_order:\",\n1347:     len(\n1348:         action_kernel\n1349:     ),\n1350: )",
+          "line": 1348
+        }
+      ],
+      "path": "scripts/audit_index5_refinement_action_028k.py",
+      "size": 31393,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "733:             for edge in g15_edges\n734:         },\n735:         \"all_one\": {\n736:             edge: 1\n737:             for edge in g15_edges",
+          "line": 735
+        },
+        {
+          "context": "918:     )\n919: \n920:     kernel_order = lift_count_by_base[\n921:         tuple(range(15))\n922:     ]",
+          "line": 920
+        },
+        {
+          "context": "925: \n926:     upper_bound = (\n927:         120 * kernel_order\n928:         if intrinsic_projection\n929:         else None",
+          "line": 927
+        },
+        {
+          "context": "940:         and lift_count_profile\n941:         == Counter({2: 120})\n942:         and kernel_order == 2\n943:         and lower_bound == 240\n944:         and upper_bound == 240",
+          "line": 942
+        },
+        {
+          "context": "962:                 )\n963:             ),\n964:         \"kernel_order\":\n965:             kernel_order,\n966:         \"constructed_lift_count\":",
+          "line": 964
+        },
+        {
+          "context": "963:             ),\n964:         \"kernel_order\":\n965:             kernel_order,\n966:         \"constructed_lift_count\":\n967:             lower_bound,",
+          "line": 965
+        },
+        {
+          "context": "1006:             len(components),\n1007:         \"full_aut_order\":\n1008:             28800 if exact else None,\n1009:         \"Aut_structure\":\n1010:             \"S5_wreath_C2\"",
+          "line": 1008
+        },
+        {
+          "context": "1026:             \"native\",\n1027:             \"alternative\",\n1028:             \"all_one\",\n1029:         ],\n1030:     )",
+          "line": 1028
+        }
+      ],
+      "path": "scripts/audit_invariant_cover_square_automorphism_orders_028m.py",
+      "size": 26630,
+      "terms": [
+        "kernel",
+        "all_one",
+        "28800"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "411:     \"character_identity_zero\":\n412:         character.get(identity_name) == 0,\n413:     \"character_has_two_kernel_elements\":\n414:         Counter(character.values()) == {0: 2, 1: 2},\n415:     \"character_is_homomorphism\":",
+          "line": 413
+        },
+        {
+          "context": "435:     raise SystemExit(1)\n436: \n437: kernel_axis_candidates = tuple(\n438:     name\n439:     for name in nonidentity_names",
+          "line": 437
+        },
+        {
+          "context": "447: )\n448: \n449: if len(kernel_axis_candidates) != 1 or len(togglers) != 2:\n450:     raise SystemExit(\n451:         \"unexpected sign-character partition of nonidentity elements\"",
+          "line": 449
+        },
+        {
+          "context": "452:     )\n453: \n454: kernel_axis = kernel_axis_candidates[0]\n455: \n456: # ------------------------------------------------------------------",
+          "line": 454
+        },
+        {
+          "context": "618:             right_stabilizer_generator\n619:         ] == 1,\n620:     \"stabilizer_generator_product_is_kernel_axis\":\n621:         multiply(\n622:             left_stabilizer_generator,",
+          "line": 620
+        },
+        {
+          "context": "622:             left_stabilizer_generator,\n623:             right_stabilizer_generator,\n624:         ) == kernel_axis,\n625: }\n626: ",
+          "line": 624
+        },
+        {
+          "context": "1345:     right_stabilizer_generator,\n1346: )\n1347: print(\"kernel_axis:\", kernel_axis)\n1348: print(\"togglers:\", togglers)\n1349: print(",
+          "line": 1347
+        },
+        {
+          "context": "1537:         \"sign_character\":\n1538:             character,\n1539:         \"kernel_axis\":\n1540:             kernel_axis,\n1541:         \"togglers\":",
+          "line": 1539
+        },
+        {
+          "context": "1538:             character,\n1539:         \"kernel_axis\":\n1540:             kernel_axis,\n1541:         \"togglers\":\n1542:             list(togglers),",
+          "line": 1540
+        },
+        {
+          "context": "1690:         \"ordered left and right order-two pentagon stabilizers. Their \"\n1691:         \"nonidentity generators are distinct togglers, and their product \"\n1692:         \"is the sign-kernel axis. A left sheet shift equal to the left \"\n1693:         \"stabilizer generator collapses left face-copy incidence; the \"\n1694:         \"analogous statement holds on the right. Therefore exactly four \"",
+          "line": 1692
+        },
+        {
+          "context": "1759:     f\"- Right generator: `{right_stabilizer_generator}`\",\n1760:     f\"- Generator product: `{multiply(left_stabilizer_generator, right_stabilizer_generator)}`\",\n1761:     f\"- Sign-kernel axis: `{kernel_axis}`\",\n1762:     \"\",\n1763:     \"## Admissibility theorem\",",
+          "line": 1761
+        }
+      ],
+      "path": "scripts/audit_local_shift_pair_admissibility_classification_026b.py",
+      "size": 49931,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "22: Because the Audit 025 sign character distinguishes\n23: \n24:     kernel nonidentity: a\n25:     togglers: b, ab,\n26: ",
+          "line": 24
+        },
+        {
+          "context": "418:     \"character_identity_zero\":\n419:         character.get(identity_name) == 0,\n420:     \"character_has_two_kernel_elements\":\n421:         Counter(character.values()) == {0: 2, 1: 2},\n422:     \"character_is_homomorphism\":",
+          "line": 420
+        },
+        {
+          "context": "442:     raise SystemExit(1)\n443: \n444: kernel_nonidentity = tuple(\n445:     name\n446:     for name in nonidentity_names",
+          "line": 444
+        },
+        {
+          "context": "454: )\n455: \n456: if len(kernel_nonidentity) != 1 or len(togglers) != 2:\n457:     raise SystemExit(\n458:         \"unexpected sign-character partition of nonidentity elements\"",
+          "line": 456
+        },
+        {
+          "context": "459:     )\n460: \n461: kernel_axis = kernel_nonidentity[0]\n462: \n463: # ------------------------------------------------------------------",
+          "line": 461
+        },
+        {
+          "context": "620:     \"character_preserving_aut_group_order2\":\n621:         len(character_preserving_automorphisms) == 2,\n622:     \"character_preserving_automorphisms_fix_kernel_axis\":\n623:         all(\n624:             mapping[kernel_axis] == kernel_axis",
+          "line": 622
+        },
+        {
+          "context": "622:     \"character_preserving_automorphisms_fix_kernel_axis\":\n623:         all(\n624:             mapping[kernel_axis] == kernel_axis\n625:             for mapping in character_preserving_automorphisms\n626:         ),",
+          "line": 624
+        },
+        {
+          "context": "829: \n830:     # The sign-aware fingerprint deliberately forgets the names b and ab\n831:     # while retaining the character distinction between the kernel axis\n832:     # and the toggler coset. Left and right remain ordered.\n833:     fingerprint_payload = {",
+          "line": 831
+        },
+        {
+          "context": "1193:     \"left_right_order_remains_distinguished\":\n1194:         shift_pair_to_aut_orbit[\n1195:             (kernel_axis, togglers[0])\n1196:         ]\n1197:         != shift_pair_to_aut_orbit[",
+          "line": 1195
+        },
+        {
+          "context": "1196:         ]\n1197:         != shift_pair_to_aut_orbit[\n1198:             (togglers[0], kernel_axis)\n1199:         ],\n1200:     \"same_and_distinct_toggler_pairs_are_distinguished\":",
+          "line": 1198
+        },
+        {
+          "context": "1238:     )),\n1239: )\n1240: print(\"kernel_axis:\", kernel_axis)\n1241: print(\"togglers:\", togglers)\n1242: print(",
+          "line": 1240
+        },
+        {
+          "context": "1380:         \"sign_character\":\n1381:             character,\n1382:         \"kernel_axis\":\n1383:             kernel_axis,\n1384:         \"togglers\":",
+          "line": 1382
+        },
+        {
+          "context": "1381:             character,\n1382:         \"kernel_axis\":\n1383:             kernel_axis,\n1384:         \"togglers\":\n1385:             list(togglers),",
+          "line": 1383
+        },
+        {
+          "context": "1550:         \"shift pairs do not collapse to one unlabeled type because \"\n1551:         \"the Audit 025 sign character distinguishes the unique \"\n1552:         \"nonidentity kernel axis from the two togglers. Under the \"\n1553:         \"order-two character-preserving automorphism group of V4, \"\n1554:         \"which fixes the kernel axis and exchanges the togglers, \"",
+          "line": 1552
+        },
+        {
+          "context": "1552:         \"nonidentity kernel axis from the two togglers. Under the \"\n1553:         \"order-two character-preserving automorphism group of V4, \"\n1554:         \"which fixes the kernel axis and exchanges the togglers, \"\n1555:         \"the nine shift pairs form exactly five local grammar types. \"\n1556:         \"A separately computed sign-aware incidence fingerprint gives \"",
+          "line": 1554
+        },
+        {
+          "context": "1588:         \"After seed gauge is removed, the signed V4 character leaves \"\n1589:         \"five intrinsic ordered local lift grammars, not nine and not \"\n1590:         \"one: kernel/kernel, kernel/toggler, toggler/kernel, equal \"\n1591:         \"toggler/toggler, and distinct toggler/toggler.\"\n1592:     ),",
+          "line": 1590
+        }
+      ],
+      "path": "scripts/audit_local_shift_pair_grammar_classification_026b.py",
+      "size": 46603,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "26:     chi_r(u,v) = phi_r(u) xor phi_r(v),\n27: \n28: where phi_r is the unique nonzero V4 character with kernel {1,r}.\n29: \n30: It then identifies the native kernel axis r for every grammar:",
+          "line": 28
+        },
+        {
+          "context": "28: where phi_r is the unique nonzero V4 character with kernel {1,r}.\n29: \n30: It then identifies the native kernel axis r for every grammar:\n31: - G0: both ordered pentagon-stabilizer axes,\n32: - G1: the right pentagon-stabilizer axis,",
+          "line": 30
+        },
+        {
+          "context": "32: - G1: the right pentagon-stabilizer axis,\n33: - G2: the left pentagon-stabilizer axis,\n34: - G3: their product, the sign-kernel axis.\n35: \n36: The audit also verifies:",
+          "line": 34
+        },
+        {
+          "context": "376: }\n377: \n378: # Nonzero characters on one V4 factor, keyed by their kernel axis.\n379: factor_character_by_kernel_axis: Dict[\n380:     str,",
+          "line": 378
+        },
+        {
+          "context": "377: \n378: # Nonzero characters on one V4 factor, keyed by their kernel axis.\n379: factor_character_by_kernel_axis: Dict[\n380:     str,\n381:     Dict[str, int],",
+          "line": 379
+        },
+        {
+          "context": "408:     if len(zero_nonidentity) != 1:\n409:         raise SystemExit(\n410:             f\"factor character {mask} does not have one kernel axis\"\n411:         )\n412: ",
+          "line": 410
+        },
+        {
+          "context": "411:         )\n412: \n413:     factor_character_by_kernel_axis[\n414:         zero_nonidentity[0]\n415:     ] = values",
+          "line": 413
+        },
+        {
+          "context": "416: \n417: if set(\n418:     factor_character_by_kernel_axis\n419: ) != set(nonidentity_names):\n420:     raise SystemExit(\"factor characters do not recover all native axes\")",
+          "line": 418
+        },
+        {
+          "context": "492: )\n493: \n494: kernel_axis = str(\n495:     payload026b[\n496:         \"native_v4\"",
+          "line": 494
+        },
+        {
+          "context": "496:         \"native_v4\"\n497:     ][\n498:         \"kernel_axis\"\n499:     ]\n500: )",
+          "line": 498
+        },
+        {
+          "context": "503:     left_stabilizer_generator,\n504:     right_stabilizer_generator,\n505: ) != kernel_axis:\n506:     raise SystemExit(\n507:         \"ordered stabilizer generators do not multiply to kernel axis\"",
+          "line": 505
+        },
+        {
+          "context": "505: ) != kernel_axis:\n506:     raise SystemExit(\n507:         \"ordered stabilizer generators do not multiply to kernel axis\"\n508:     )\n509: ",
+          "line": 507
+        },
+        {
+          "context": "586:         ]\n587: \n588:         kernel_axis_for_character = (\n589:             zero_nonidentity[0]\n590:             if len(zero_nonidentity) == 1",
+          "line": 588
+        },
+        {
+          "context": "648:             \"homomorphism\":\n649:                 homomorphism,\n650:             \"kernel_axis\":\n651:                 kernel_axis_for_character,\n652:             \"left_factor_values\":",
+          "line": 650
+        },
+        {
+          "context": "649:                 homomorphism,\n650:             \"kernel_axis\":\n651:                 kernel_axis_for_character,\n652:             \"left_factor_values\":\n653:                 left_factor_values,",
+          "line": 651
+        },
+        {
+          "context": "686:         tuple(sorted(\n687:             (\n688:                 row[\"kernel_axis\"]\n689:                 for row\n690:                 in rows_by_grammar[",
+          "line": 688
+        },
+        {
+          "context": "714:     ),\n715:     \"G3\": (\n716:         kernel_axis,\n717:     ),\n718: }",
+          "line": 716
+        },
+        {
+          "context": "756:             for row in character_rows\n757:         ),\n758:     \"every_certificate_has_native_kernel_axis\":\n759:         all(\n760:             row[\"kernel_axis\"]",
+          "line": 758
+        },
+        {
+          "context": "758:     \"every_certificate_has_native_kernel_axis\":\n759:         all(\n760:             row[\"kernel_axis\"]\n761:             in nonidentity_names\n762:             for row in character_rows",
+          "line": 760
+        },
+        {
+          "context": "786:         certificate_axis_sets\n787:         == expected_certificate_axis_sets,\n788:     \"ordered_stabilizer_product_is_kernel_axis\":\n789:         multiply(\n790:             left_stabilizer_generator,",
+          "line": 788
+        },
+        {
+          "context": "790:             left_stabilizer_generator,\n791:             right_stabilizer_generator,\n792:         ) == kernel_axis,\n793: }\n794: ",
+          "line": 792
+        },
+        {
+          "context": "804:     right_stabilizer_generator,\n805: )\n806: print(\"kernel_axis:\", kernel_axis)\n807: print(\n808:     \"stabilizer_generator_product:\",",
+          "line": 806
+        },
+        {
+          "context": "840:         \"character_id=\"\n841:         + row[\"character_id\"],\n842:         \"kernel_axis=\"\n843:         + str(row[\"kernel_axis\"]),\n844:         \"diagonal=\"",
+          "line": 842
+        },
+        {
+          "context": "841:         + row[\"character_id\"],\n842:         \"kernel_axis=\"\n843:         + str(row[\"kernel_axis\"]),\n844:         \"diagonal=\"\n845:         + str(row[\"diagonal\"]).lower(),",
+          "line": 843
+        },
+        {
+          "context": "869:     \"pentagon_stabilizer_axes_G1_uses_the_right_stabilizer_axis_\"\n870:     \"G2_uses_the_left_stabilizer_axis_and_G3_uses_their_product_\"\n871:     \"sign_kernel_axis\"\n872:     if audit_pass\n873:     else",
+          "line": 871
+        },
+        {
+          "context": "873:     else\n874:     \"the_candidate_native_character_axis_interpretation_has_\"\n875:     \"unresolved_basis_diagonal_kernel_shift_or_interface_checks\"\n876: )\n877: ",
+          "line": 875
+        },
+        {
+          "context": "932:         \"right_stabilizer_generator\":\n933:             right_stabilizer_generator,\n934:         \"kernel_axis\":\n935:             kernel_axis,\n936:         \"stabilizer_generator_product\":",
+          "line": 934
+        },
+        {
+          "context": "933:             right_stabilizer_generator,\n934:         \"kernel_axis\":\n935:             kernel_axis,\n936:         \"stabilizer_generator_product\":\n937:             multiply(",
+          "line": 935
+        },
+        {
+          "context": "969:                 \"diagonal\":\n970:                     row[\"diagonal\"],\n971:                 \"kernel_axis\":\n972:                     row[\"kernel_axis\"],\n973:                 \"left_factor_values\":",
+          "line": 971
+        },
+        {
+          "context": "970:                     row[\"diagonal\"],\n971:                 \"kernel_axis\":\n972:                     row[\"kernel_axis\"],\n973:                 \"left_factor_values\":\n974:                     row[\"left_factor_values\"],",
+          "line": 972
+        },
+        {
+          "context": "1011:         \"Every certificate has equal left and right masks, so it is a \"\n1012:         \"diagonal character chi_r(u,v)=phi_r(u) xor phi_r(v). The \"\n1013:         \"one-factor character phi_r has kernel {identity,r}, giving \"\n1014:         \"each certificate a native V4 axis. In the ordered local frame, \"\n1015:         \"G0 is certified by both pentagon-stabilizer axes, G1 by the \"",
+          "line": 1013
+        },
+        {
+          "context": "1015:         \"G0 is certified by both pentagon-stabilizer axes, G1 by the \"\n1016:         \"right stabilizer axis, G2 by the left stabilizer axis, and G3 \"\n1017:         \"by their product, which is the signed-face character kernel \"\n1018:         \"axis. Every certificate vanishes on common left-right gauge \"\n1019:         \"motion and on the grammar's own sheet-shift pair, but reads \"",
+          "line": 1017
+        },
+        {
+          "context": "1065:     f\"- Left pentagon stabilizer axis: `{left_stabilizer_generator}`\",\n1066:     f\"- Right pentagon stabilizer axis: `{right_stabilizer_generator}`\",\n1067:     f\"- Product / sign-kernel axis: `{kernel_axis}`\",\n1068:     \"\",\n1069:     \"## Character interpretation\",",
+          "line": 1067
+        }
+      ],
+      "path": "scripts/audit_native_character_axis_interpretation_027d.py",
+      "size": 29465,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "864: )\n865: \n866: kernel = tuple(\n867:     permutation\n868:     for permutation",
+          "line": 866
+        },
+        {
+          "context": "873: )\n874: \n875: kernel_shift_rows = []\n876: \n877: for permutation in kernel:",
+          "line": 875
+        },
+        {
+          "context": "875: kernel_shift_rows = []\n876: \n877: for permutation in kernel:\n878:     shifts = accepted_metadata[\n879:         permutation",
+          "line": 877
+        },
+        {
+          "context": "901:     )\n902: \n903:     kernel_shift_rows.append({\n904:         \"b\":\n905:             list(b),",
+          "line": 903
+        },
+        {
+          "context": "912:             for shift in expected_shifts\n913:         ],\n914:         \"exact_kernel_law\":\n915:             shifts\n916:             == expected_shifts,",
+          "line": 914
+        },
+        {
+          "context": "925:     })\n926: \n927: kernel_shift_rows = sorted(\n928:     kernel_shift_rows,\n929:     key=lambda row: row[\"_b_tuple\"],",
+          "line": 927
+        },
+        {
+          "context": "926: \n927: kernel_shift_rows = sorted(\n928:     kernel_shift_rows,\n929:     key=lambda row: row[\"_b_tuple\"],\n930: )",
+          "line": 928
+        },
+        {
+          "context": "950: )\n951: \n952: kernel_conjugation_rows = []\n953: \n954: for row in kernel_shift_rows:",
+          "line": 952
+        },
+        {
+          "context": "952: kernel_conjugation_rows = []\n953: \n954: for row in kernel_shift_rows:\n955:     permutation = next(\n956:         permutation",
+          "line": 954
+        },
+        {
+          "context": "956:         permutation\n957:         for permutation\n958:         in kernel\n959:         if accepted_metadata[\n960:             permutation",
+          "line": 958
+        },
+        {
+          "context": "980:     )\n981: \n982:     kernel_conjugation_rows.append({\n983:         \"b\":\n984:             list(",
+          "line": 982
+        },
+        {
+          "context": "995:     })\n996: \n997: fixed_kernel_elements = tuple(\n998:     row[\"_b_tuple\"]\n999:     for row",
+          "line": 997
+        },
+        {
+          "context": "998:     row[\"_b_tuple\"]\n999:     for row\n1000:     in kernel_conjugation_rows\n1001:     if row[\"_b_tuple\"]\n1002:     == row[\"_conjugate_b_tuple\"]",
+          "line": 1000
+        },
+        {
+          "context": "1003: )\n1004: \n1005: even_parity_kernel = tuple(\n1006:     row[\"_b_tuple\"]\n1007:     for row",
+          "line": 1005
+        },
+        {
+          "context": "1006:     row[\"_b_tuple\"]\n1007:     for row\n1008:     in kernel_shift_rows\n1009:     if row[\"parity\"] == 0\n1010: )",
+          "line": 1008
+        },
+        {
+          "context": "1013:     b\n1014:     for b\n1015:     in even_parity_kernel\n1016:     if b != (\n1017:         0,",
+          "line": 1015
+        },
+        {
+          "context": "1034:             row[\"_conjugate_b_tuple\"]\n1035:             for row\n1036:             in kernel_conjugation_rows\n1037:             if row[\"_b_tuple\"] == current\n1038:         )",
+          "line": 1036
+        },
+        {
+          "context": "1282:             \"2\": 8,\n1283:         },\n1284:     \"kernel_order8\":\n1285:         len(kernel) == 8,\n1286:     \"kernel_exact_C2_cubed_shift_law\":",
+          "line": 1284
+        },
+        {
+          "context": "1283:         },\n1284:     \"kernel_order8\":\n1285:         len(kernel) == 8,\n1286:     \"kernel_exact_C2_cubed_shift_law\":\n1287:         all(",
+          "line": 1285
+        },
+        {
+          "context": "1284:     \"kernel_order8\":\n1285:         len(kernel) == 8,\n1286:     \"kernel_exact_C2_cubed_shift_law\":\n1287:         all(\n1288:             row[",
+          "line": 1286
+        },
+        {
+          "context": "1287:         all(\n1288:             row[\n1289:                 \"exact_kernel_law\"\n1290:             ]\n1291:             for row",
+          "line": 1289
+        },
+        {
+          "context": "1290:             ]\n1291:             for row\n1292:             in kernel_shift_rows\n1293:         )\n1294:         and {",
+          "line": 1292
+        },
+        {
+          "context": "1295:             row[\"_b_tuple\"]\n1296:             for row\n1297:             in kernel_shift_rows\n1298:         }\n1299:         == set(",
+          "line": 1297
+        },
+        {
+          "context": "1306:             )\n1307:         ),\n1308:     \"rotation_action_fixed_kernel_size2\":\n1309:         len(\n1310:             fixed_kernel_elements",
+          "line": 1308
+        },
+        {
+          "context": "1308:     \"rotation_action_fixed_kernel_size2\":\n1309:         len(\n1310:             fixed_kernel_elements\n1311:         ) == 2,\n1312:     \"even_parity_plane_size4\":",
+          "line": 1310
+        },
+        {
+          "context": "1312:     \"even_parity_plane_size4\":\n1313:         len(\n1314:             even_parity_kernel\n1315:         ) == 4,\n1316:     \"rotation_cycles_three_nonzero_even_vectors\":",
+          "line": 1314
+        },
+        {
+          "context": "1420: print()\n1421: \n1422: print(\"== kernel and abstract group structure ==\")\n1423: print(\n1424:     \"kernel_order:\",",
+          "line": 1422
+        },
+        {
+          "context": "1422: print(\"== kernel and abstract group structure ==\")\n1423: print(\n1424:     \"kernel_order:\",\n1425:     len(kernel),\n1426: )",
+          "line": 1424
+        },
+        {
+          "context": "1423: print(\n1424:     \"kernel_order:\",\n1425:     len(kernel),\n1426: )\n1427: print(",
+          "line": 1425
+        },
+        {
+          "context": "1426: )\n1427: print(\n1428:     \"kernel_shift_rows:\",\n1429:     [\n1430:         {",
+          "line": 1428
+        },
+        {
+          "context": "1434:             if not key.startswith(\"_\")\n1435:         }\n1436:         for row in kernel_shift_rows\n1437:     ],\n1438: )",
+          "line": 1436
+        },
+        {
+          "context": "1447:         }\n1448:         for row\n1449:         in kernel_conjugation_rows\n1450:     ],\n1451: )",
+          "line": 1449
+        },
+        {
+          "context": "1451: )\n1452: print(\n1453:     \"fixed_kernel_elements:\",\n1454:     fixed_kernel_elements,\n1455: )",
+          "line": 1453
+        },
+        {
+          "context": "1452: print(\n1453:     \"fixed_kernel_elements:\",\n1454:     fixed_kernel_elements,\n1455: )\n1456: print(",
+          "line": 1454
+        },
+        {
+          "context": "1455: )\n1456: print(\n1457:     \"even_parity_kernel:\",\n1458:     even_parity_kernel,\n1459: )",
+          "line": 1457
+        },
+        {
+          "context": "1456: print(\n1457:     \"even_parity_kernel:\",\n1458:     even_parity_kernel,\n1459: )\n1460: print(",
+          "line": 1458
+        },
+        {
+          "context": "1481:     if (\n1482:         checks[\n1483:             \"kernel_exact_C2_cubed_shift_law\"\n1484:         ]\n1485:         and checks[",
+          "line": 1483
+        },
+        {
+          "context": "1677:         \"element_order_profile\":\n1678:             element_order_profile,\n1679:         \"kernel_order\":\n1680:             len(kernel),\n1681:         \"kernel_shift_rows\": [",
+          "line": 1679
+        },
+        {
+          "context": "1678:             element_order_profile,\n1679:         \"kernel_order\":\n1680:             len(kernel),\n1681:         \"kernel_shift_rows\": [\n1682:             {",
+          "line": 1680
+        },
+        {
+          "context": "1679:         \"kernel_order\":\n1680:             len(kernel),\n1681:         \"kernel_shift_rows\": [\n1682:             {\n1683:                 key: value",
+          "line": 1681
+        },
+        {
+          "context": "1687:             }\n1688:             for row\n1689:             in kernel_shift_rows\n1690:         ],\n1691:         \"rotation_conjugation_rows\": [",
+          "line": 1689
+        },
+        {
+          "context": "1697:             }\n1698:             for row\n1699:             in kernel_conjugation_rows\n1700:         ],\n1701:         \"fixed_kernel_elements\": [",
+          "line": 1699
+        },
+        {
+          "context": "1699:             in kernel_conjugation_rows\n1700:         ],\n1701:         \"fixed_kernel_elements\": [\n1702:             list(value)\n1703:             for value",
+          "line": 1701
+        },
+        {
+          "context": "1702:             list(value)\n1703:             for value\n1704:             in fixed_kernel_elements\n1705:         ],\n1706:         \"even_parity_kernel\": [",
+          "line": 1704
+        },
+        {
+          "context": "1704:             in fixed_kernel_elements\n1705:         ],\n1706:         \"even_parity_kernel\": [\n1707:             list(value)\n1708:             for value",
+          "line": 1706
+        },
+        {
+          "context": "1707:             list(value)\n1708:             for value\n1709:             in even_parity_kernel\n1710:         ],\n1711:         \"even_nonzero_rotation_orbit\": [",
+          "line": 1709
+        }
+      ],
+      "path": "scripts/audit_rank8_schurian_automorphism_group_028j.py",
+      "size": 41940,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "501: }\n502: \n503: sign_kernel = {\n504:     element\n505:     for element in sheet_monodromy_group",
+          "line": 503
+        },
+        {
+          "context": "945:     \"axis_action_is_sheet_sign_homomorphism\":\n946:         sign_homomorphism_failures == 0,\n947:     \"sign_kernel_is_a3\":\n948:         len(sign_kernel) == 3,\n949:     \"sign_image_is_c2\":",
+          "line": 947
+        },
+        {
+          "context": "946:         sign_homomorphism_failures == 0,\n947:     \"sign_kernel_is_a3\":\n948:         len(sign_kernel) == 3,\n949:     \"sign_image_is_c2\":\n950:         sign_image == {identity3, role_swap},",
+          "line": 948
+        },
+        {
+          "context": "1071: \n1072: print()\n1073: print(\"== fundamental triangle holonomy ==\")\n1074: \n1075: for row in loop_rows:",
+          "line": 1073
+        },
+        {
+          "context": "1083: print()\n1084: print(\"sheet_monodromy_group_order:\", len(sheet_monodromy_group))\n1085: print(\"sign_kernel_order:\", len(sign_kernel))\n1086: print(\"sign_image_order:\", len(sign_image))\n1087: print(",
+          "line": 1085
+        },
+        {
+          "context": "1187:     str(\n1188:         sign_image == {identity3, role_swap}\n1189:         and len(sign_kernel) == 3\n1190:     ).lower(),\n1191: )",
+          "line": 1189
+        },
+        {
+          "context": "1381:             )\n1382:         ],\n1383:         \"sign_kernel_order\":\n1384:             len(sign_kernel),\n1385:         \"sign_image_order\":",
+          "line": 1383
+        },
+        {
+          "context": "1382:         ],\n1383:         \"sign_kernel_order\":\n1384:             len(sign_kernel),\n1385:         \"sign_image_order\":\n1386:             len(sign_image),",
+          "line": 1384
+        },
+        {
+          "context": "1385:         \"sign_image_order\":\n1386:             len(sign_image),\n1387:         \"sign_kernel\": [\n1388:             list(element)\n1389:             for element in sorted(sign_kernel)",
+          "line": 1387
+        },
+        {
+          "context": "1387:         \"sign_kernel\": [\n1388:             list(element)\n1389:             for element in sorted(sign_kernel)\n1390:         ],\n1391:         \"sign_image\": [",
+          "line": 1389
+        },
+        {
+          "context": "1513:         \"ab axes are exchanged. The individual edge actions \"\n1514:         \"therefore generate the sign quotient C2 of S3, with \"\n1515:         \"kernel A3. Every K5 triangle has nontrivial C2 \"\n1516:         \"holonomy, so the b and ab axes cannot be globally \"\n1517:         \"separated, although the carrier axis is globally fixed. \"",
+          "line": 1515
+        },
+        {
+          "context": "1528:         \"v4_axis_holonomy_is_sign_quotient_c2\":\n1529:             (\n1530:                 len(sign_kernel) == 3\n1531:                 and\n1532:                 sign_image == {",
+          "line": 1530
+        },
+        {
+          "context": "1672:     len(sheet_monodromy_group),\n1673: )\n1674: print(\"sign_kernel_order:\", len(sign_kernel))\n1675: print(\"sign_image_order:\", len(sign_image))\n1676: print(",
+          "line": 1674
+        }
+      ],
+      "path": "scripts/audit_s3_sign_v4_d8_local_system_021.py",
+      "size": 46601,
+      "terms": [
+        "kernel",
+        "triangle holonomy"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "45:     \"native_deck\",\n46:     \"uniform_toggle\",\n47:     \"character_kernel\",\n48:     \"character_togglers\",\n49:     \"checks\",",
+          "line": 47
+        },
+        {
+          "context": "73: native_deck = ns[\"native_deck\"]\n74: uniform_toggle = ns[\"uniform_toggle\"]\n75: character_kernel = ns[\"character_kernel\"]\n76: character_togglers = ns[\"character_togglers\"]\n77: source_checks = ns[\"checks\"]",
+          "line": 75
+        },
+        {
+          "context": "377:             })\n378: \n379: # Kernel orbits in each sign section.\n380: kernel_orbits_by_sign = {}\n381: ",
+          "line": 379
+        },
+        {
+          "context": "378: \n379: # Kernel orbits in each sign section.\n380: kernel_orbits_by_sign = {}\n381: \n382: for sign_name, sign_pairs in (",
+          "line": 380
+        },
+        {
+          "context": "395:             ]\n396:             for deck_name\n397:             in character_kernel\n398:         }\n399: ",
+          "line": 397
+        },
+        {
+          "context": "406:         unseen -= orbit\n407: \n408:     kernel_orbits_by_sign[\n409:         sign_name\n410:     ] = tuple(sorted(",
+          "line": 408
+        },
+        {
+          "context": "413:     ))\n414: \n415: kernel_orbit_profiles = {\n416:     sign_name: dict(sorted(Counter(\n417:         len(orbit)",
+          "line": 415
+        },
+        {
+          "context": "419:     ).items()))\n420:     for sign_name, orbits\n421:     in kernel_orbits_by_sign.items()\n422: }\n423: ",
+          "line": 421
+        },
+        {
+          "context": "507:     \"sign_action_uses_geometric_character\":\n508:         (\n509:             set(character_kernel)\n510:             == {\"identity\", \"a\"}\n511:             and",
+          "line": 509
+        },
+        {
+          "context": "513:             == {\"b\", \"ab\"}\n514:         ),\n515:     \"positive_kernel_orbits_are_six_pairs\":\n516:         kernel_orbit_profiles[\n517:             \"positive\"",
+          "line": 515
+        },
+        {
+          "context": "514:         ),\n515:     \"positive_kernel_orbits_are_six_pairs\":\n516:         kernel_orbit_profiles[\n517:             \"positive\"\n518:         ] == {2: 6},",
+          "line": 516
+        },
+        {
+          "context": "517:             \"positive\"\n518:         ] == {2: 6},\n519:     \"negative_kernel_orbits_are_six_pairs\":\n520:         kernel_orbit_profiles[\n521:             \"negative\"",
+          "line": 519
+        },
+        {
+          "context": "518:         ] == {2: 6},\n519:     \"negative_kernel_orbits_are_six_pairs\":\n520:         kernel_orbit_profiles[\n521:             \"negative\"\n522:         ] == {2: 6},",
+          "line": 520
+        },
+        {
+          "context": "653:     dict(sorted(uniform_toggle.items())),\n654: )\n655: print(\"character_kernel:\", character_kernel)\n656: print(\"character_togglers:\", character_togglers)\n657: print(",
+          "line": 655
+        },
+        {
+          "context": "660: )\n661: print(\n662:     \"kernel_orbit_profiles:\",\n663:     kernel_orbit_profiles,\n664: )",
+          "line": 662
+        },
+        {
+          "context": "661: print(\n662:     \"kernel_orbit_profiles:\",\n663:     kernel_orbit_profiles,\n664: )\n665: print()",
+          "line": 663
+        },
+        {
+          "context": "679:         \"signed_face_system_with_twelve_positive_and_\"\n680:         \"twelve_negative_five_state_partitions_related_by_\"\n681:         \"the_character_kernel_identity_a_and_togglers_b_ab\"\n682:     )\n683: else:",
+          "line": 681
+        },
+        {
+          "context": "852: \n853: audit_verdict = (\n854:     \"the_twelve_positive_twisted_face_blocks_extend_uniquely_to_a_v4_equivariant_twentyfour_block_signed_face_system_with_twelve_positive_and_twelve_negative_five_state_partitions_related_by_the_character_kernel_identity_a_and_togglers_b_ab\"\n855:     if audit_pass\n856:     else",
+          "line": 854
+        },
+        {
+          "context": "962:     })\n963: \n964: kernel_orbit_rows = {}\n965: \n966: for sign_name, orbits in (",
+          "line": 964
+        },
+        {
+          "context": "965: \n966: for sign_name, orbits in (\n967:     kernel_orbits_by_sign.items()\n968: ):\n969:     kernel_orbit_rows[sign_name] = [",
+          "line": 967
+        },
+        {
+          "context": "967:     kernel_orbits_by_sign.items()\n968: ):\n969:     kernel_orbit_rows[sign_name] = [\n970:         [\n971:             _pair_payload(pair_id)",
+          "line": 969
+        },
+        {
+          "context": "1095:                 uniform_toggle.items()\n1096:             )),\n1097:         \"character_kernel\":\n1098:             list(character_kernel),\n1099:         \"character_togglers\":",
+          "line": 1097
+        },
+        {
+          "context": "1096:             )),\n1097:         \"character_kernel\":\n1098:             list(character_kernel),\n1099:         \"character_togglers\":\n1100:             list(character_togglers),",
+          "line": 1098
+        },
+        {
+          "context": "1101:         \"sign_action_failure_count\":\n1102:             len(sign_action_failures),\n1103:         \"kernel_orbit_profiles\":\n1104:             kernel_orbit_profiles,\n1105:         \"signed_blocks\":",
+          "line": 1103
+        },
+        {
+          "context": "1102:             len(sign_action_failures),\n1103:         \"kernel_orbit_profiles\":\n1104:             kernel_orbit_profiles,\n1105:         \"signed_blocks\":\n1106:             signed_block_rows,",
+          "line": 1104
+        },
+        {
+          "context": "1109:         \"v4_block_action\":\n1110:             action_rows,\n1111:         \"kernel_orbits_by_sign\":\n1112:             kernel_orbit_rows,\n1113:     },",
+          "line": 1111
+        },
+        {
+          "context": "1110:             action_rows,\n1111:         \"kernel_orbits_by_sign\":\n1112:             kernel_orbit_rows,\n1113:     },\n1114:     \"checks\":",
+          "line": 1112
+        },
+        {
+          "context": "1125:         \"size four, each containing two positive and two negative \"\n1126:         \"blocks. The sign is governed by the homomorphism \"\n1127:         \"V4->C2 with kernel {identity,a}; b and ab exchange the \"\n1128:         \"positive and negative sections. This is the exact \"\n1129:         \"signed face-level closure compatible with the previously \"",
+          "line": 1127
+        },
+        {
+          "context": "1156:                 ) == {1}\n1157:             ),\n1158:         \"face_sign_character_kernel\":\n1159:             list(character_kernel),\n1160:         \"face_sign_character_togglers\":",
+          "line": 1158
+        },
+        {
+          "context": "1157:             ),\n1158:         \"face_sign_character_kernel\":\n1159:             list(character_kernel),\n1160:         \"face_sign_character_togglers\":\n1161:             list(character_togglers),",
+          "line": 1159
+        },
+        {
+          "context": "1194:         \"V4-equivariant signed double closure: twelve positive \"\n1195:         \"and twelve negative five-state face blocks, related by \"\n1196:         \"the character with kernel {identity,a}.\"\n1197:     ),\n1198: }",
+          "line": 1196
+        },
+        {
+          "context": "1314:     dict(sorted(uniform_toggle.items())),\n1315: )\n1316: print(\"character_kernel:\", character_kernel)\n1317: print(\"character_togglers:\", character_togglers)\n1318: print(",
+          "line": 1316
+        }
+      ],
+      "path": "scripts/audit_signed_24_face_block_closure_025.py",
+      "size": 34186,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "432:     \"character_identity_zero\":\n433:         character.get(identity_name) == 0,\n434:     \"character_has_two_kernel_elements\":\n435:         Counter(character.values()) == {0: 2, 1: 2},\n436:     \"character_is_homomorphism\":",
+          "line": 434
+        },
+        {
+          "context": "456:     raise SystemExit(1)\n457: \n458: kernel_axis_candidates = tuple(\n459:     name\n460:     for name in nonidentity_names",
+          "line": 458
+        },
+        {
+          "context": "468: )\n469: \n470: if len(kernel_axis_candidates) != 1 or len(togglers) != 2:\n471:     raise SystemExit(\n472:         \"unexpected sign-character partition of nonidentity elements\"",
+          "line": 470
+        },
+        {
+          "context": "473:     )\n474: \n475: kernel_axis = kernel_axis_candidates[0]\n476: \n477: # ------------------------------------------------------------------",
+          "line": 475
+        },
+        {
+          "context": "617:     grammar_shift_pairs = {\n618:         \"G0\": (\n619:             kernel_axis,\n620:             kernel_axis,\n621:         ),",
+          "line": 619
+        },
+        {
+          "context": "618:         \"G0\": (\n619:             kernel_axis,\n620:             kernel_axis,\n621:         ),\n622:         \"G1\": (",
+          "line": 620
+        },
+        {
+          "context": "621:         ),\n622:         \"G1\": (\n623:             kernel_axis,\n624:             left_generator,\n625:         ),",
+          "line": 623
+        },
+        {
+          "context": "626:         \"G2\": (\n627:             right_generator,\n628:             kernel_axis,\n629:         ),\n630:         \"G3\": (",
+          "line": 628
+        },
+        {
+          "context": "666:         \"right_generator_is_toggler\":\n667:             character[right_generator] == 1,\n668:         \"side_generator_product_is_kernel_axis\":\n669:             multiply(\n670:                 left_generator,",
+          "line": 668
+        },
+        {
+          "context": "670:                 left_generator,\n671:                 right_generator,\n672:             ) == kernel_axis,\n673:         \"four_grammar_shift_pairs_are_distinct\":\n674:             len(",
+          "line": 672
+        },
+        {
+          "context": "1411:         \"sign_character\":\n1412:             character,\n1413:         \"kernel_axis\":\n1414:             kernel_axis,\n1415:         \"togglers\":",
+          "line": 1413
+        },
+        {
+          "context": "1412:             character,\n1413:         \"kernel_axis\":\n1414:             kernel_axis,\n1415:         \"togglers\":\n1416:             list(togglers),",
+          "line": 1414
+        }
+      ],
+      "path": "scripts/audit_six_orbit_pairwise_grammar_compatibility_026c.py",
+      "size": 47985,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "1541:         \"the natural automorphism group Aut(V4) acting on the \"\n1542:         \"three nonidentity native deck transformations a, b, \"\n1543:         \"and ab. Test whether triangle holonomy permutes these \"\n1544:         \"three V4 axes exactly as it permutes the carrier, b, \"\n1545:         \"and ab roles. A positive result would replace the \"",
+          "line": 1543
+        }
+      ],
+      "path": "scripts/audit_synthematic_total_534_transport_tower_020.py",
+      "size": 43075,
+      "terms": [
+        "triangle holonomy"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "41: uniform:\n42: - two all-zero gauges;\n43: - two all-one gauges.\n44: \n45: A canonical all-zero gauge is selected lexicographically:",
+          "line": 43
+        },
+        {
+          "context": "766:                     0,\n767:                 ),\n768:             \"all_one\":\n769:                 constant_values\n770:                 == (",
+          "line": 768
+        },
+        {
+          "context": "793:     row\n794:     for row in gauge_rows\n795:     if row[\"all_one\"]\n796: ]\n797: ",
+          "line": 795
+        },
+        {
+          "context": "1101:             zero_gauges\n1102:         ) == 2,\n1103:     \"all_one_gauge_count2\":\n1104:         len(\n1105:             one_gauges",
+          "line": 1103
+        },
+        {
+          "context": "1279: )\n1280: print(\n1281:     \"all_one_gauge_count:\",\n1282:     len(\n1283:         one_gauges",
+          "line": 1281
+        },
+        {
+          "context": "1305:             ]\n1306:         ).lower(),\n1307:         \"all_one=\"\n1308:         + str(\n1309:             row[",
+          "line": 1307
+        },
+        {
+          "context": "1308:         + str(\n1309:             row[\n1310:                 \"all_one\"\n1311:             ]\n1312:         ).lower(),",
+          "line": 1310
+        },
+        {
+          "context": "1517:                 zero_gauges\n1518:             ),\n1519:         \"all_one_gauge_count\":\n1520:             len(\n1521:                 one_gauges",
+          "line": 1519
+        },
+        {
+          "context": "1552:         \"uses the transposed character relation. The constants are cell-\"\n1553:         \"origin gauge data: two relative gauges produce the all-zero \"\n1554:         \"normal form and two produce the all-one normal form.\"\n1555:     ),\n1556:     \"boundary\": {",
+          "line": 1554
+        },
+        {
+          "context": "1605:     \"\",\n1606:     \"With cell 0 fixed, the 16 relative origin gauges contain four\",\n1607:     \"uniform-constant gauges: two all-zero and two all-one. The\",\n1608:     \"canonical all-zero gauge shifts the cells by\",\n1609:     \"\",",
+          "line": 1607
+        },
+        {
+          "context": "1721: )\n1722: print(\n1723:     \"all_one_gauge_count:\",\n1724:     len(\n1725:         one_gauges",
+          "line": 1723
+        }
+      ],
+      "path": "scripts/audit_v4_affine_character_cell_grammar_028h.py",
+      "size": 39543,
+      "terms": [
+        "all-one",
+        "all_one"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "165:         (\n166:             m16[\"five_point_action_image_size\"] == 60\n167:             and m16[\"five_point_action_kernel_size\"] == 1\n168:             and m16[\"homomorphism_failure_count\"] == 0\n169:         ),",
+          "line": 167
+        }
+      ],
+      "path": "scripts/record_a5_cayley_v4_petersen_theorem_checkpoint_017.py",
+      "size": 10291,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "216:         )\n217: \n218: character_kernel = tuple(sorted(\n219:     deck_name\n220:     for deck_name, bit",
+          "line": 218
+        },
+        {
+          "context": "336: \n337: # ---------------------------------------------------------------\n338: # Kernel action on the twelve exact geometric pairs.\n339: # ---------------------------------------------------------------\n340: ",
+          "line": 338
+        },
+        {
+          "context": "340: \n341: unseen_exact = set(exact_pair_ids)\n342: exact_kernel_orbits = []\n343: \n344: while unseen_exact:",
+          "line": 342
+        },
+        {
+          "context": "349:             (seed, deck_name)\n350:         ]\n351:         for deck_name in character_kernel\n352:     }\n353: ",
+          "line": 351
+        },
+        {
+          "context": "354:     orbit &= exact_pair_ids\n355: \n356:     exact_kernel_orbits.append(\n357:         tuple(sorted(orbit))\n358:     )",
+          "line": 356
+        },
+        {
+          "context": "360:     unseen_exact -= orbit\n361: \n362: exact_kernel_orbits = tuple(sorted(\n363:     exact_kernel_orbits,\n364:     key=lambda orbit: orbit[0],",
+          "line": 362
+        },
+        {
+          "context": "361: \n362: exact_kernel_orbits = tuple(sorted(\n363:     exact_kernel_orbits,\n364:     key=lambda orbit: orbit[0],\n365: ))",
+          "line": 363
+        },
+        {
+          "context": "365: ))\n366: \n367: exact_kernel_orbit_size_profile = dict(\n368:     sorted(Counter(\n369:         len(orbit)",
+          "line": 367
+        },
+        {
+          "context": "368:     sorted(Counter(\n369:         len(orbit)\n370:         for orbit in exact_kernel_orbits\n371:     ).items())\n372: )",
+          "line": 370
+        },
+        {
+          "context": "507:     \"toggle_character_is_homomorphism\":\n508:         not character_homomorphism_failures,\n509:     \"toggle_character_kernel_has_order2\":\n510:         len(character_kernel) == 2,\n511:     \"toggle_character_image_is_c2\":",
+          "line": 509
+        },
+        {
+          "context": "508:         not character_homomorphism_failures,\n509:     \"toggle_character_kernel_has_order2\":\n510:         len(character_kernel) == 2,\n511:     \"toggle_character_image_is_c2\":\n512:         set(uniform_toggle.values())",
+          "line": 510
+        },
+        {
+          "context": "512:         set(uniform_toggle.values())\n513:         == {0, 1},\n514:     \"kernel_is_identity_and_a\":\n515:         set(character_kernel)\n516:         == {\"identity\", \"a\"},",
+          "line": 514
+        },
+        {
+          "context": "513:         == {0, 1},\n514:     \"kernel_is_identity_and_a\":\n515:         set(character_kernel)\n516:         == {\"identity\", \"a\"},\n517:     \"togglers_are_b_and_ab\":",
+          "line": 515
+        },
+        {
+          "context": "526:         candidate_orbit_exactness_profile\n527:         == {(2, 2): 6},\n528:     \"exact_kernel_orbit_count6\":\n529:         len(exact_kernel_orbits) == 6,\n530:     \"exact_kernel_orbits_have_size2\":",
+          "line": 528
+        },
+        {
+          "context": "527:         == {(2, 2): 6},\n528:     \"exact_kernel_orbit_count6\":\n529:         len(exact_kernel_orbits) == 6,\n530:     \"exact_kernel_orbits_have_size2\":\n531:         exact_kernel_orbit_size_profile",
+          "line": 529
+        },
+        {
+          "context": "528:     \"exact_kernel_orbit_count6\":\n529:         len(exact_kernel_orbits) == 6,\n530:     \"exact_kernel_orbits_have_size2\":\n531:         exact_kernel_orbit_size_profile\n532:         == {2: 6},",
+          "line": 530
+        },
+        {
+          "context": "529:         len(exact_kernel_orbits) == 6,\n530:     \"exact_kernel_orbits_have_size2\":\n531:         exact_kernel_orbit_size_profile\n532:         == {2: 6},\n533:     \"state_block_action_failure_count_zero\":",
+          "line": 531
+        },
+        {
+          "context": "559:     dict(sorted(uniform_toggle.items())),\n560: )\n561: print(\"character_kernel:\", character_kernel)\n562: print(\"character_togglers:\", character_togglers)\n563: print(",
+          "line": 561
+        },
+        {
+          "context": "597: \n598: print()\n599: print(\"== kernel action on 12 exact geometric pairs ==\")\n600: print(\n601:     \"exact_kernel_orbit_count:\",",
+          "line": 599
+        },
+        {
+          "context": "599: print(\"== kernel action on 12 exact geometric pairs ==\")\n600: print(\n601:     \"exact_kernel_orbit_count:\",\n602:     len(exact_kernel_orbits),\n603: )",
+          "line": 601
+        },
+        {
+          "context": "600: print(\n601:     \"exact_kernel_orbit_count:\",\n602:     len(exact_kernel_orbits),\n603: )\n604: print(",
+          "line": 602
+        },
+        {
+          "context": "603: )\n604: print(\n605:     \"exact_kernel_orbit_size_profile:\",\n606:     exact_kernel_orbit_size_profile,\n607: )",
+          "line": 605
+        },
+        {
+          "context": "604: print(\n605:     \"exact_kernel_orbit_size_profile:\",\n606:     exact_kernel_orbit_size_profile,\n607: )\n608: ",
+          "line": 606
+        },
+        {
+          "context": "608: \n609: for orbit_index, orbit in enumerate(\n610:     exact_kernel_orbits\n611: ):\n612:     print(",
+          "line": 610
+        },
+        {
+          "context": "611: ):\n612:     print(\n613:         \"kernel_orbit_\"\n614:         + str(orbit_index)\n615:         + \":\",",
+          "line": 613
+        },
+        {
+          "context": "703:         \"the_twelve_exact_twisted_face_carriers_are_the_\"\n704:         \"positive_class_of_a_v4_equivariant_twentyfour_pair_\"\n705:         \"system_with_incidence_character_v4_to_c2_kernel_\"\n706:         \"identity_a_and_togglers_b_ab_while_the_twelve_\"\n707:         \"five_state_face_blocks_carry_the_full_native_v4_action\"",
+          "line": 705
+        },
+        {
+          "context": "719: )\n720: print(\n721:     \"face_incidence_character_kernel_identity_a:\",\n722:     str(\n723:         set(character_kernel)",
+          "line": 721
+        },
+        {
+          "context": "721:     \"face_incidence_character_kernel_identity_a:\",\n722:     str(\n723:         set(character_kernel)\n724:         == {\"identity\", \"a\"}\n725:     ).lower(),",
+          "line": 723
+        }
+      ],
+      "path": "scripts/support/project41_signed_face_character_support_025c.py",
+      "size": 17748,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "21: BUNDLE = (\n22:     ROOT\n23:     / \"18-g900-kernel-admission\"\n24:     / \"artifacts/json/g60_native_generator_input_bundle_001.v1.json\"\n25: )",
+          "line": 23
+        }
+      ],
+      "path": "sources/upstream/b32k-atomic-intermediate-cover-triad-009.py",
+      "size": 33672,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "contexts": [
+        {
+          "context": "19: BUNDLE = (\n20:     ROOT\n21:     / \"18-g900-kernel-admission\"\n22:     / \"artifacts/json/g60_native_generator_input_bundle_001.v1.json\"\n23: )",
+          "line": 21
+        }
+      ],
+      "path": "sources/upstream/b32k-atomic-line-graph-tower-008.py",
+      "size": 29165,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.bundle_metadata.checks[4].detail",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/old_g60_to_current_g60_vertex_map_001.json"
+        },
+        {
+          "json_path": "$.bundle_metadata.summary.map_source",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/old_g60_to_current_g60_vertex_map_001.json"
+        },
+        {
+          "json_path": "$.sources.bundle",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/g60_native_generator_input_bundle_001.v1.json"
+        }
+      ],
+      "path": "sources/upstream/b32k_atomic_deck_orbit_audit_005.json",
+      "size": 18881,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.bundle",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/g60_native_generator_input_bundle_001.v1.json"
+        }
+      ],
+      "path": "sources/upstream/b32k_atomic_intermediate_cover_triad_009.json",
+      "size": 7274,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.sources.bundle",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/mathematics/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/g60_native_generator_input_bundle_001.v1.json"
+        }
+      ],
+      "path": "sources/upstream/b32k_atomic_line_graph_tower_008.json",
+      "size": 3968,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.summary.map_source",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/old_g60_to_current_g60_vertex_map_001.json"
+        },
+        {
+          "json_path": "$.checks[4].detail",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/thalean-graph-theory/18-g900-kernel-admission/artifacts/json/old_g60_to_current_g60_vertex_map_001.json"
+        }
+      ],
+      "path": "sources/upstream/g60_native_generator_input_bundle_001.v1.json",
+      "size": 31101,
+      "terms": [
+        "kernel"
+      ]
+    },
+    {
+      "json_hits": [
+        {
+          "json_path": "$.input_g60_graph_csv",
+          "value": "/data/data/com.termux/files/home/dev/cori/research/thalean-graph-theory/18-g900-kernel-admission/source/kernel_payload/g60_local_edges.csv"
+        }
+      ],
+      "path": "sources/upstream/schlafli_534_shadow_test_018.v1.json",
+      "size": 5295,
+      "terms": [
+        "kernel"
+      ]
+    }
+  ],
+  "project": "/Users/scottcave/dev/cori/research/mathematics/thalean-graph-theory/41-order-4-dodecahedral-residue"
+}

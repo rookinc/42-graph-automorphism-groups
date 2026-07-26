@@ -29,7 +29,94 @@ For the bipartite class \(\mathcal C_{11}\), odd girth is undefined.
 The all-one voltage representative belongs to \(\mathcal C_{11}\) and
 produces \(X\).
 
-% STATUS: Review-draft insertion boundary
+\subsection{Canonical graph digests}
 
-The final certificate appendix should add canonical graph digests and the
-exact voltage representative for each row.
+For each class, the cover edges are sorted lexicographically and serialized
+as a compact JSON array before SHA-256 hashing. The resulting graph digests
+are
+
+\begin{verbatim}
+\mathcal C_{00}: 561ae449acaa3cf154017c7614d7e02931b4bb098d20d126a5b796b593138738
+\mathcal C_{01}: 9d4dcca7b6924baef75d6a262883c1bfb293953485a2917500f622e99097e521
+\mathcal C_{10}: f5c9f5ccb5fbe91b7d317acfa8fe5b17011fcd45bd247911f24a28ca4c5754b1
+\mathcal C_{11}: 6735178041fbd06080264b67239edd64d23d901a74d46efba39403bef0521461
+\end{verbatim}
+
+The digest for \mathcal C_{11} agrees with the selected connected
+quartic orbital digest in Appendix C.
+
+\subsection{Exact voltage representatives}
+
+All vectors below use the exact thirty-edge ordering recorded in
+Appendix D.
+
+\begin{verbatim}
+\mathcal C_{00}
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+\mathcal C_{01}
+  1 1 0 0 1 0 1 1 1 1 1 0 1 1 0
+  1 1 1 0 0 1 1 0 1 1 0 1 1 1 0
+
+\mathcal C_{10}
+  0 0 1 1 0 1 0 0 0 0 0 1 0 0 1
+  0 0 0 1 1 0 0 1 0 0 1 0 0 0 1
+
+\mathcal C_{11}
+  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+\end{verbatim}
+
+Their canonical sixteen-coordinate representatives in the deterministic
+spanning-tree gauge are
+
+\begin{verbatim}
+\mathcal C_{00}
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0
+
+\mathcal C_{01}
+  0 0 1 0 0 1 0 0 1 0 1 1 1 1 0
+  1
+
+\mathcal C_{10}
+  1 1 0 1 1 1 0 1 1 1 0 1 0 1 1
+  1
+
+\mathcal C_{11}
+  1 1 1 1 1 0 0 1 0 1 1 0 1 0 1
+  0
+\end{verbatim}
+
+The voltage representatives satisfy
+
+\[
+\mathcal C_{01}+\mathcal C_{10}
+=
+\mathcal C_{11},
+\]
+
+with addition over \Ftwo.
+
+\subsection{Certificate provenance and boundaries}
+
+The complete machine-readable packet is
+
+\begin{verbatim}
+artifacts/json/project42_cover_class_certificate_048.json
+\end{verbatim}
+
+with SHA-256 digest
+
+\begin{verbatim}
+9cf3dd06e131d7a80dd03387581d63299176972cbe9b7b11c28a98ee8691e59e
+\end{verbatim}
+
+It records exact cover graphs, fingerprints, voltage representatives, and
+automorphism orders for all four invariant classes.
+
+The packet does not identify the archived graph G30, determine the
+splitting type of the native or alternative order-240 extensions, or
+assign an external standard graph name to the all-one class. It uses no
+historical replay and makes no physical claim.
