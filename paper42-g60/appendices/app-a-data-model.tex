@@ -1,0 +1,211 @@
+\section{Exact data model}
+\label{app:data-model}
+
+This appendix records the finite data conventions used throughout the
+native graph, quotient, automorphism, and isomorphism certificates.
+
+\subsection{Vertex ordering}
+
+The native graph uses a fixed ordered vertex list
+\[
+V(G60)=\{v_0,v_1,\ldots,v_{59}\}.
+\]
+
+The symbols $v_i$ denote positions in the canonical exported ordering.
+Any alternative labeling gives an isomorphic graph, but all permutation
+arrays and certificate digests in this paper refer to this fixed order.
+
+A native permutation
+\[
+g\in\operatorname{Sym}(V(G60))
+\]
+is encoded by the length-$60$ tuple
+\[
+\bigl(g(0),g(1),\ldots,g(59)\bigr).
+\]
+
+The identity permutation is therefore
+\[
+(0,1,\ldots,59).
+\]
+
+\subsection{Permutation composition}
+
+Permutation multiplication is function composition. For permutations
+$g$ and $h$, the product
+\[
+gh
+\]
+means
+\[
+(gh)(v)=g(h(v)).
+\]
+
+In array form,
+\[
+(gh)[i]=g[h[i]].
+\]
+
+All group calculations, generator traversals, multiplication checks, and
+mapping certificates use this convention.
+
+\subsection{Native edge representation}
+
+Each undirected native edge is stored as an ordered integer pair
+\[
+(i,j)
+\]
+with
+\[
+i<j.
+\]
+
+The complete edge set is sorted lexicographically. This gives a
+deterministic serialization of the graph.
+
+A permutation $g$ is accepted as a graph automorphism precisely when
+\[
+\{\min(g(i),g(j)),\max(g(i),g(j))\}
+\]
+belongs to the native edge set for every native edge
+\[
+\{i,j\}\in E(G60).
+\]
+
+Because $g$ is a permutation and the edge count is fixed, edge
+preservation in one direction is sufficient to establish equality of
+the image edge set with the native edge set.
+
+\subsection{Deck involution and fibers}
+
+The canonical deck involution is stored as a length-$60$ permutation
+array
+\[
+a.
+\]
+
+It satisfies
+\[
+a^2=1
+\]
+and
+\[
+a(i)\neq i
+\]
+for every native vertex $i$.
+
+The thirty quotient fibers are the two-element sets
+\[
+\{i,a(i)\}.
+\]
+
+For deterministic storage, each fiber is represented by the ordered pair
+\[
+(\min(i,a(i)),\max(i,a(i))),
+\]
+and the complete fiber list is sorted lexicographically.
+
+\subsection{Quotient ordering}
+
+The quotient graph $G30$ uses the sorted fiber list as its canonical
+vertex ordering.
+
+Thus quotient vertex $q_k$ corresponds to the $k$th ordered native
+fiber.
+
+The projection map
+\[
+\pi\colon V(G60)\longrightarrow V(G30)
+\]
+is stored as a length-$60$ array assigning each native vertex its
+quotient index.
+
+A quotient permutation is encoded as a length-$30$ tuple in this fixed
+quotient ordering.
+
+\subsection{Lift encoding}
+
+For each quotient automorphism
+\[
+g\in\operatorname{Aut}(G30),
+\]
+one canonical native lift
+\[
+\widetilde g
+\]
+is selected by the deterministic lift construction.
+
+The second lift is
+\[
+a\widetilde g.
+\]
+
+The lift certificate records:
+
+\begin{itemize}
+\item the quotient permutation;
+\item the canonical native lift;
+\item the deck-composed lift;
+\item the native edge-preservation result for each lift;
+\item the projection compatibility check.
+\end{itemize}
+
+Projection compatibility is the equality
+\[
+\pi\circ\widetilde g=g\circ\pi
+\]
+tested on all sixty native vertices.
+
+\subsection{Model-group encoding}
+
+Elements of $S_5$ are stored as permutations of a fixed five-point
+ordering.
+
+Elements of $D_8$ are stored in normal form
+\[
+r^i s^j,
+\qquad
+0\leq i<4,
+\qquad
+j\in\{0,1\}.
+\]
+
+The multiplication law follows from
+\[
+srs=r^{-1}.
+\]
+
+A model element is a pair
+\[
+(\sigma,r^i s^j)
+\]
+satisfying
+\[
+\operatorname{sgn}(\sigma)
+=
+\chi_{\mathrm{V4}}(r^i s^j).
+\]
+
+The complete model group is sorted by the chosen $S_5$ permutation
+encoding followed by the dihedral normal-form coordinates.
+
+\subsection{Canonical serialization}
+
+Machine-readable certificates use deterministic key ordering and
+deterministic list ordering.
+
+The explicit-isomorphism digest is computed from a canonical
+serialization containing:
+
+\begin{itemize}
+\item each native permutation tuple;
+\item its corresponding $S_5$ coordinate;
+\item its corresponding $D_8$ coordinate;
+\item the complete mapping order.
+\end{itemize}
+
+No timestamps, filesystem paths, or nondeterministic iteration order are
+included in the hashed payload.
+
+This makes the digest stable under reproduction on a different machine,
+provided the same exact native labeling and mapping are used.
