@@ -1,0 +1,222 @@
+\section{Explicit generator correspondence}
+\label{app:generator-correspondence}
+
+This appendix records the deterministic four-generator correspondence
+used by the explicit isomorphism certificate
+\[
+\Phi\colon
+\operatorname{Aut}(G60)
+\longrightarrow
+S_5\times_{C_2}D_8.
+\]
+
+The native generators are permutations of the fixed sixty-vertex
+ordering. The model generators are pairs
+\[
+(\sigma,r^i s^j),
+\]
+where $\sigma\in S_5$ is written as an image array and the dihedral
+coordinate is written as the pair $(i,j)$.
+
+The fiber-product model uses the rotation-parity character
+\[
+\operatorname{sgn}(\sigma)=i\bmod 2.
+\]
+
+\subsection{Generator orders and subgroup growth}
+
+The deterministic native generator sequence
+\[
+g_0,g_1,g_2,g_3
+\]
+has orders
+\[
+2,2,4,2.
+\]
+
+The successive generated subgroup orders are
+\[
+2,\ 4,\ 8,\ 480.
+\]
+
+The first three generators therefore generate a subgroup of order $8$,
+with element-order profile
+\[
+1^1\,2^5\,4^2.
+\]
+
+The model generator sequence
+\[
+h_0,h_1,h_2,h_3
+\]
+has the same order pattern and satisfies the same tested relation
+signature.
+
+\subsection{Generator zero}
+
+The native generator $g_0$ has order $2$ and is the permutation
+
+\begin{small}
+\begin{verbatim}
+[0,4,3,2,1,6,5,9,8,7,20,24,23,22,21,15,19,18,17,16,
+ 10,14,13,12,11,55,59,58,57,56,50,54,53,52,51,45,49,
+ 48,47,46,40,44,43,42,41,35,39,38,37,36,30,34,33,32,
+ 31,25,29,28,27,26]
+\end{verbatim}
+\end{small}
+
+Its model image is
+\[
+\Phi(g_0)
+=
+\bigl(
+[0,2,1,4,3],
+(0,1)
+\bigr).
+\]
+
+\subsection{Generator one}
+
+The native generator $g_1$ has order $2$ and is the permutation
+
+\begin{small}
+\begin{verbatim}
+[0,26,23,12,59,47,38,31,8,54,42,39,3,56,53,15,55,45,
+ 35,25,43,32,29,2,46,19,1,36,33,22,44,7,21,28,37,18,
+ 27,34,6,11,40,50,10,20,30,17,24,5,51,58,41,48,57,14,
+ 9,16,13,52,49,4]
+\end{verbatim}
+\end{small}
+
+Its model image is
+\[
+\Phi(g_1)
+=
+\bigl(
+[0,3,4,1,2],
+(2,0)
+\bigr).
+\]
+
+\subsection{Generator two}
+
+The native generator $g_2$ has order $4$ and is the permutation
+
+\begin{small}
+\begin{verbatim}
+[0,30,49,27,41,56,22,54,15,7,34,52,36,5,45,8,25,14,
+ 32,16,48,18,38,58,28,55,44,12,46,6,26,9,35,24,42,21,
+ 3,10,29,57,40,59,37,51,1,53,33,13,43,23,4,20,39,17,
+ 31,19,47,11,2,50]
+\end{verbatim}
+\end{small}
+
+Its model image is
+\[
+\Phi(g_2)
+=
+\bigl(
+[0,2,3,4,1],
+(1,0)
+\bigr).
+\]
+
+\subsection{Generator three}
+
+The native generator $g_3$ has order $2$ and is the permutation
+
+\begin{small}
+\begin{verbatim}
+[1,0,4,3,2,7,6,5,9,8,30,34,33,32,31,25,29,28,27,26,
+ 20,24,23,22,21,15,19,18,17,16,10,14,13,12,11,55,59,
+ 58,57,56,50,54,53,52,51,45,49,48,47,46,40,44,43,42,
+ 41,35,39,38,37,36]
+\end{verbatim}
+\end{small}
+
+Its model image is
+\[
+\Phi(g_3)
+=
+\bigl(
+[1,0,4,3,2],
+(0,1)
+\bigr).
+\]
+
+\subsection{Relation signature}
+
+The first three generators satisfy
+\[
+g_0g_1=g_1g_0,
+\]
+\[
+g_1g_2=g_2g_1,
+\]
+\[
+g_0g_2\neq g_2g_0,
+\]
+and
+\[
+g_2^2=g_1.
+\]
+
+The mixed product orders involving the fourth generator are
+\[
+|g_3g_0|=5,
+\qquad
+|g_3g_1|=6,
+\qquad
+|g_3g_2|=6,
+\]
+together with
+\[
+|g_3g_0g_1|=10,
+\]
+\[
+|g_3g_0g_2|=4,
+\]
+\[
+|g_3g_1g_2|=6,
+\]
+and
+\[
+|g_3g_0g_1g_2|=12.
+\]
+
+The selected model generators satisfy the same complete relation
+signature and generate all $480$ elements of the fiber-product model.
+
+\subsection{Canonical coordinate choice}
+
+There are exactly
+\[
+480
+\]
+valid model generator tuples satisfying the tested relation signature.
+
+These tuples are equivalent coordinate choices for the same abstract
+isomorphism type. The certificate selects the lexicographically first
+valid tuple and extends the correspondence by simultaneous Cayley
+traversal.
+
+The resulting map has
+\[
+480
+\]
+native elements in its domain,
+\[
+480
+\]
+model elements in its image, and zero traversal conflicts.
+
+All
+\[
+230400
+\]
+ordered products preserve multiplication.
+
+The canonical mapping digest is
+\[
+\texttt{fdd62c4eb77eb3f553987ac415c1f6d00b434c56df4f2ae88fef90b3b6f6515d}.
+\]
