@@ -1,0 +1,346 @@
+{
+  "abstract_group_classification": "S5_fiber_product_D8_over_C2_with_V4_kernel_character",
+  "actual_group": {
+    "abelianization_type": "C2_x_C2",
+    "center_order": 2,
+    "derived_subgroup_order": 120,
+    "element_order_profile": {
+      "1": 1,
+      "10": 72,
+      "12": 40,
+      "2": 83,
+      "3": 20,
+      "4": 140,
+      "5": 24,
+      "6": 100
+    },
+    "index_two_profile_multiset": [
+      "{\"1\": 1, \"10\": 24, \"12\": 40, \"2\": 31, \"3\": 20, \"4\": 80, \"5\": 24, \"6\": 20}",
+      "{\"1\": 1, \"10\": 24, \"2\": 51, \"3\": 20, \"4\": 60, \"5\": 24, \"6\": 60}",
+      "{\"1\": 1, \"10\": 72, \"2\": 63, \"3\": 20, \"5\": 24, \"6\": 60}"
+    ],
+    "index_two_subgroups_over_derived": [
+      {
+        "abelianization_order": 4,
+        "center_order": 2,
+        "classification": "S5_sign_pullback_C4",
+        "derived_subgroup_order": 60,
+        "element_order_profile": {
+          "1": 1,
+          "10": 24,
+          "12": 40,
+          "2": 31,
+          "3": 20,
+          "4": 80,
+          "5": 24,
+          "6": 20
+        },
+        "order": 240
+      },
+      {
+        "abelianization_order": 4,
+        "center_order": 2,
+        "classification": "S5_x_C2",
+        "derived_subgroup_order": 60,
+        "element_order_profile": {
+          "1": 1,
+          "10": 24,
+          "2": 51,
+          "3": 20,
+          "4": 60,
+          "5": 24,
+          "6": 60
+        },
+        "order": 240
+      },
+      {
+        "abelianization_order": 4,
+        "center_order": 4,
+        "classification": "third_index_two_subgroup",
+        "derived_subgroup_order": 60,
+        "element_order_profile": {
+          "1": 1,
+          "10": 72,
+          "2": 63,
+          "3": 20,
+          "5": 24,
+          "6": 60
+        },
+        "order": 240
+      }
+    ],
+    "order": 480
+  },
+  "audit_pass": true,
+  "boundary": {
+    "c4_kernel_character_rejected": true,
+    "compact_named_fiber_product_type_identified": true,
+    "explicit_generator_level_isomorphism_not_yet_exported": true,
+    "full_aut_g60_equality_already_certified_by_042": true,
+    "physical_claim": false,
+    "v4_kernel_character_class_identified": true
+  },
+  "certificate_id": "native_g60_full_group_fiber_product_043",
+  "checks": {
+    "actual_center_order_is_2": true,
+    "actual_derived_order_is_120": true,
+    "actual_group_order_is_480": true,
+    "actual_has_three_index_two_subgroups_over_derived": true,
+    "actual_index_two_types_are_complete": true,
+    "both_v4_kernel_presentations_match": true,
+    "c4_kernel_candidate_is_rejected": true,
+    "extension_source_audit_pass": true,
+    "fiber_product_type_classified": true,
+    "full_source_audit_pass": true,
+    "group_source_audit_pass": true,
+    "lift_source_audit_pass": true,
+    "matching_presentations_have_only_v4_kernel": true
+  },
+  "classification_result": "The exact full element-order profile and the exact multiset of the three index-two subgroup profiles agree with the S5-D8 fiber product for a V4-kernel character and disagree with the C4-kernel character. Thus Aut(G60) has the compact abstract description S5 x_{C2} D8, with sign on S5 matched to a V4-kernel quotient character of D8.",
+  "extension_source": "artifacts/json/native_g60_lifted_group_extension_type_041.json",
+  "fiber_product_statement": "Aut(G60) is isomorphic to the fiber product {(s,d) in S5 x D8 : sgn(s) = chi(d)}, where chi is either of the two equivalent nonzero characters of D8 whose kernel is V4. The two choices are exchanged by an automorphism of D8. The character with cyclic kernel C4 is rejected by both the full element-order profile and the three index-two subgroup census.",
+  "full_source": "artifacts/json/native_g60_full_automorphism_group_042.json",
+  "group_source": "artifacts/json/native_g60_lifted_automorphism_group_040.json",
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "matching_character_kernel_types": [
+    "V4"
+  ],
+  "matching_character_names": [
+    "rotation_parity",
+    "rotation_plus_reflection"
+  ],
+  "reference_candidates": [
+    {
+      "character_kernel_type": "C4",
+      "character_name": "reflection_parity",
+      "complete_profile_match": false,
+      "element_order_profile": {
+        "1": 1,
+        "10": 24,
+        "12": 40,
+        "2": 71,
+        "20": 48,
+        "3": 20,
+        "4": 152,
+        "5": 24,
+        "6": 100
+      },
+      "full_profile_matches_actual": false,
+      "group_order": 480,
+      "index_two_census_matches_actual": false,
+      "index_two_profile_multiset": [
+        "{\"1\": 1, \"10\": 24, \"12\": 40, \"2\": 31, \"20\": 48, \"3\": 20, \"4\": 32, \"5\": 24, \"6\": 20}",
+        "{\"1\": 1, \"10\": 24, \"2\": 51, \"3\": 20, \"4\": 60, \"5\": 24, \"6\": 60}",
+        "{\"1\": 1, \"10\": 24, \"2\": 51, \"3\": 20, \"4\": 60, \"5\": 24, \"6\": 60}"
+      ],
+      "index_two_subgroups": [
+        {
+          "character_coefficients": [
+            1,
+            0,
+            0
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "12": 40,
+            "2": 31,
+            "20": 48,
+            "3": 20,
+            "4": 32,
+            "5": 24,
+            "6": 20
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "2": 51,
+            "3": 20,
+            "4": 60,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            1,
+            0
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "2": 51,
+            "3": 20,
+            "4": 60,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        }
+      ]
+    },
+    {
+      "character_kernel_type": "V4",
+      "character_name": "rotation_parity",
+      "complete_profile_match": true,
+      "element_order_profile": {
+        "1": 1,
+        "10": 72,
+        "12": 40,
+        "2": 83,
+        "3": 20,
+        "4": 140,
+        "5": 24,
+        "6": 100
+      },
+      "full_profile_matches_actual": true,
+      "group_order": 480,
+      "index_two_census_matches_actual": true,
+      "index_two_profile_multiset": [
+        "{\"1\": 1, \"10\": 24, \"12\": 40, \"2\": 31, \"3\": 20, \"4\": 80, \"5\": 24, \"6\": 20}",
+        "{\"1\": 1, \"10\": 24, \"2\": 51, \"3\": 20, \"4\": 60, \"5\": 24, \"6\": 60}",
+        "{\"1\": 1, \"10\": 72, \"2\": 63, \"3\": 20, \"5\": 24, \"6\": 60}"
+      ],
+      "index_two_subgroups": [
+        {
+          "character_coefficients": [
+            1,
+            1,
+            1
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "12": 40,
+            "2": 31,
+            "3": 20,
+            "4": 80,
+            "5": 24,
+            "6": 20
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            0,
+            1
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "2": 51,
+            "3": 20,
+            "4": 60,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            0,
+            0
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 72,
+            "2": 63,
+            "3": 20,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        }
+      ]
+    },
+    {
+      "character_kernel_type": "V4",
+      "character_name": "rotation_plus_reflection",
+      "complete_profile_match": true,
+      "element_order_profile": {
+        "1": 1,
+        "10": 72,
+        "12": 40,
+        "2": 83,
+        "3": 20,
+        "4": 140,
+        "5": 24,
+        "6": 100
+      },
+      "full_profile_matches_actual": true,
+      "group_order": 480,
+      "index_two_census_matches_actual": true,
+      "index_two_profile_multiset": [
+        "{\"1\": 1, \"10\": 24, \"12\": 40, \"2\": 31, \"3\": 20, \"4\": 80, \"5\": 24, \"6\": 20}",
+        "{\"1\": 1, \"10\": 24, \"2\": 51, \"3\": 20, \"4\": 60, \"5\": 24, \"6\": 60}",
+        "{\"1\": 1, \"10\": 72, \"2\": 63, \"3\": 20, \"5\": 24, \"6\": 60}"
+      ],
+      "index_two_subgroups": [
+        {
+          "character_coefficients": [
+            1,
+            1,
+            0
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "12": 40,
+            "2": 31,
+            "3": 20,
+            "4": 80,
+            "5": 24,
+            "6": 20
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            0,
+            1
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 24,
+            "2": 51,
+            "3": 20,
+            "4": 60,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        },
+        {
+          "character_coefficients": [
+            1,
+            0,
+            0
+          ],
+          "element_order_profile": {
+            "1": 1,
+            "10": 72,
+            "2": 63,
+            "3": 20,
+            "5": 24,
+            "6": 60
+          },
+          "order": 240
+        }
+      ]
+    }
+  ],
+  "runtime_seconds": 0.113064
+}
