@@ -1,0 +1,167 @@
+\section{Complete native enumeration}
+\label{sec:complete-enumeration}
+
+The lift construction of Section~\ref{sec:quotient-lift} produces a
+subgroup
+\[
+L\leq\operatorname{Aut}(G60)
+\]
+of order $480$. To prove that $L$ is the full automorphism group, we
+perform a second calculation that does not assume preservation of the
+$a$-fiber partition.
+
+\subsection{Independent graph-automorphism search}
+
+The native graph is reconstructed directly from its exact sixty-vertex
+edge list. The resulting graph has
+\[
+60\text{ vertices},
+\qquad
+120\text{ edges},
+\qquad
+\deg(v)=4
+\]
+for every vertex $v$, and is connected.
+
+A complete graph-isomorphism enumeration is then run from the native
+graph to itself. Each returned isomorphism is converted into a
+permutation of the fixed native vertex ordering. Duplicate permutations
+are removed by exact tuple comparison.
+
+The enumeration returns
+\[
+480
+\]
+distinct automorphisms.
+
+\begin{theorem}
+\label{thm:native-order}
+The native graph satisfies
+\[
+\left|\operatorname{Aut}(G60)\right|=480.
+\]
+\end{theorem}
+
+\begin{proof}
+The exhaustive native enumeration returns $480$ distinct permutations
+preserving the complete edge set. Hence
+\[
+\left|\operatorname{Aut}(G60)\right|\leq480.
+\]
+Section~\ref{sec:quotient-lift} constructs a subgroup
+\[
+L\leq\operatorname{Aut}(G60)
+\]
+with $|L|=480$. Therefore
+\[
+\left|\operatorname{Aut}(G60)\right|=480.
+\]
+\end{proof}
+
+\subsection{Equality with the lifted group}
+
+Both the native enumeration and the quotient-lift construction produce
+explicit permutations in the same sixty-vertex labeling. Their element
+sets can therefore be compared directly.
+
+\begin{theorem}
+\label{thm:lifted-equals-full}
+The lifted group is the full automorphism group:
+\[
+L=\operatorname{Aut}(G60).
+\]
+\end{theorem}
+
+\begin{proof}
+Every element of $L$ is a native automorphism, so
+\[
+L\subseteq\operatorname{Aut}(G60).
+\]
+Both groups have order $480$ by Theorems~\ref{thm:two-lifts} and
+\ref{thm:native-order}. Hence equality follows.
+
+Equivalently, direct comparison of the two explicit permutation sets
+gives exact equality, with no element occurring in only one set.
+\end{proof}
+
+Thus every native automorphism arises as a lift of a quotient
+automorphism.
+
+\subsection{Preservation of the canonical fibers}
+
+The native enumeration also permits a direct test of the quotient
+structure. For every
+\[
+g\in\operatorname{Aut}(G60)
+\]
+and every native vertex $v$, the pair
+\[
+\{g(v),g(a(v))\}
+\]
+is again an $a$-fiber.
+
+Consequently, every native automorphism induces a permutation of the
+thirty quotient fibers.
+
+\begin{proposition}
+\label{prop:fiber-preservation}
+Every automorphism of $G60$ preserves the $a$-fiber partition.
+\end{proposition}
+
+This proposition is stronger than the cardinality argument alone. It
+shows that the quotient used to construct the lifted subgroup is not
+merely convenient: it is respected by the full native automorphism
+group.
+
+\subsection{Centrality of the deck involution}
+
+Fiber preservation does not automatically imply that an automorphism
+commutes with the deck involution. This is checked directly on the
+native permutations.
+
+For every
+\[
+g\in\operatorname{Aut}(G60),
+\]
+one has
+\[
+ga=ag.
+\]
+
+\begin{proposition}
+\label{prop:deck-central}
+The canonical deck involution lies in the center:
+\[
+a\in Z(\operatorname{Aut}(G60)).
+\]
+\end{proposition}
+
+The quotient action therefore gives an exact sequence
+\[
+1
+\longrightarrow
+\langle a\rangle
+\longrightarrow
+\operatorname{Aut}(G60)
+\longrightarrow
+\operatorname{Aut}(G30)
+\longrightarrow
+1,
+\]
+with central kernel of order $2$.
+
+\subsection{What the enumeration proves}
+
+The independent calculation closes three logically distinct questions.
+
+First, there are no native automorphisms outside the $480$ lifted
+permutations.
+
+Second, the canonical $a$-fiber system is invariant under the full
+automorphism group.
+
+Third, the deck involution is central in the full group.
+
+The remaining problem is no longer to find additional automorphisms. It
+is to identify the abstract structure of the already complete
+$480$-element group. We turn to that problem in the next section.
