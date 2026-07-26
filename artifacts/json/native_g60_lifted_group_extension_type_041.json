@@ -1,0 +1,28 @@
+{
+  "abelianization_element_orders": [
+    1,
+    2,
+    2,
+    2
+  ],
+  "abelianization_order": 4,
+  "abelianization_type": "C2_x_C2",
+  "audit_pass": true,
+  "boundary": "This receipt classifies the derived series and abelianization of the constructed lifted group. It does not independently enumerate all native graph automorphisms.",
+  "certificate_id": "native_g60_lifted_group_extension_type_041",
+  "checks": {
+    "abelianization_is_C2_x_C2": true,
+    "abelianization_order_is_4": true,
+    "derived_order_is_120": true,
+    "group_order_is_480": true,
+    "group_source_audit_pass": true,
+    "lift_source_audit_pass": true,
+    "second_derived_order_is_60": true
+  },
+  "classification_result": "The lifted G60 automorphism group has derived subgroup of order 120, second derived subgroup of order 60, and abelianization C2 x C2.",
+  "derived_subgroup_order": 120,
+  "group_order": 480,
+  "group_source": "artifacts/json/native_g60_lifted_automorphism_group_040.json",
+  "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "second_derived_subgroup_order": 60
+}
