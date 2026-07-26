@@ -1,0 +1,206 @@
+\section{Verification manifest}
+\label{app:verification-manifest}
+
+This appendix identifies the machine-readable receipts supporting the
+classification.
+
+\subsection{Quotient lift certificate}
+
+\begin{verbatim}
+artifacts/json/native_g30_automorphism_lifts_to_g60_032.json
+\end{verbatim}
+
+This receipt records:
+
+\begin{itemize}
+\item the $240$ automorphisms of $G30$;
+\item the exact lift test for each quotient automorphism;
+\item two native lifts for every quotient automorphism;
+\item $480$ distinct lifted permutations of $G60$.
+\end{itemize}
+
+Its logical role is constructive. It builds a subgroup of
+\[
+\operatorname{Aut}(G60)
+\]
+of order $480$.
+
+\subsection{Lifted group classification}
+
+\begin{verbatim}
+artifacts/json/native_g60_lifted_automorphism_group_040.json
+\end{verbatim}
+
+This receipt constructs the lifted group and records:
+
+\begin{itemize}
+\item group order $480$;
+\item center order $2$;
+\item derived subgroup order $120$;
+\item abelianization order $4$;
+\item element-order profile;
+\item vertex-transitivity;
+\item vertex-stabilizer order $8$;
+\item the split and nonsplit order-$240$ preimages of the two
+$S_5$ complements in $\operatorname{Aut}(G30)$.
+\end{itemize}
+
+The full element-order profile is
+\[
+1^1\,2^{83}\,3^{20}\,4^{140}\,5^{24}\,6^{100}\,
+10^{72}\,12^{40}.
+\]
+
+\subsection{Extension-type certificate}
+
+\begin{verbatim}
+artifacts/json/native_g60_lifted_group_extension_type_041.json
+\end{verbatim}
+
+This receipt records:
+
+\[
+|A'|=120,
+\]
+\[
+|A''|=60,
+\]
+and
+\[
+A/A'\cong C_2\times C_2.
+\]
+
+The quotient element orders are
+\[
+1,2,2,2,
+\]
+which distinguish the abelianization from $C_4$.
+
+This receipt concerns the constructed lifted group. It does not by
+itself establish that no additional native graph automorphisms exist.
+
+\subsection{Independent native enumeration}
+
+\begin{verbatim}
+artifacts/json/native_g60_full_automorphism_group_042.json
+\end{verbatim}
+
+This receipt performs an independent NetworkX GraphMatcher enumeration
+on the exact native graph.
+
+It records:
+
+\begin{itemize}
+\item $60$ vertices;
+\item $120$ edges;
+\item connectedness;
+\item quartic degree profile;
+\item $480$ native automorphisms;
+\item $480$ lifted automorphisms;
+\item zero native-only automorphisms;
+\item zero lifted-only automorphisms;
+\item zero fiber-preservation failures;
+\item zero deck-centrality failures.
+\end{itemize}
+
+This receipt proves
+\[
+\operatorname{Aut}(G60)
+=
+\text{the lifted group}.
+\]
+
+\subsection{Fiber-product identification}
+
+\begin{verbatim}
+artifacts/json/native_g60_full_group_fiber_product_043.json
+\end{verbatim}
+
+This receipt compares the complete native group with the three
+nontrivial quotient characters
+\[
+D_8\longrightarrow C_2.
+\]
+
+The character with cyclic kernel $C_4$ fails both the full element-order
+profile and the index-two subgroup census.
+
+The two characters with Klein four kernel pass. They are exchanged by
+an automorphism of $D_8$ and define the same abstract fiber-product
+class.
+
+The resulting classification is
+\[
+\operatorname{Aut}(G60)
+\cong
+S_5\times_{C_2}D_8,
+\]
+where the sign character of $S_5$ is matched with a quotient character
+of $D_8$ having kernel $V_4$.
+
+\subsection{Explicit isomorphism}
+
+\begin{verbatim}
+artifacts/json/native_g60_fiber_product_isomorphism_044.json
+\end{verbatim}
+
+This receipt records:
+
+\begin{itemize}
+\item a deterministic four-generator set for the native group;
+\item a canonical corresponding generator tuple in the fiber-product
+model;
+\item $480$ valid equivalent model generator tuples;
+\item a complete $480$-element bijection;
+\item zero traversal conflicts;
+\item $230400$ ordered multiplication checks;
+\item zero multiplication failures.
+\end{itemize}
+
+The canonical mapping digest is
+\[
+\texttt{fdd62c4eb77eb3f553987ac415c1f6d00b434c56df4f2ae88fef90b3b6f6515d}.
+\]
+
+\subsection{Worker manifest}
+
+The corresponding reproducibility workers are:
+
+\begin{verbatim}
+workers/classify_native_g60_lifted_automorphism_group_040.py
+workers/classify_native_g60_lifted_group_extension_type_041.py
+workers/enumerate_native_g60_full_automorphism_group_042.py
+workers/identify_native_g60_full_group_fiber_product_043.py
+workers/export_native_g60_fiber_product_isomorphism_044.py
+\end{verbatim}
+
+Together with the previously established quotient-lift worker producing
+receipt `032`, these scripts reproduce the classification chain.
+
+\subsection{Claim boundaries}
+
+The receipts establish a theorem about one exact finite graph and its
+automorphism group.
+
+They establish:
+
+\begin{itemize}
+\item the exact graph automorphism count;
+\item the invariant quotient-fiber system;
+\item the internal group invariants;
+\item the abstract fiber-product type;
+\item an explicit group isomorphism.
+\end{itemize}
+
+They do not establish:
+
+\begin{itemize}
+\item a physical interpretation of the graph;
+\item uniqueness among all sixty-vertex quartic graphs from numerical
+invariants alone;
+\item a geometric interpretation of every $D_8$ coordinate;
+\item any claim about forces, spacetime, quantum mechanics, or
+cosmology.
+\end{itemize}
+
+Those questions lie outside the classification proved in this paper.
