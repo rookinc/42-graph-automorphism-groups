@@ -1,0 +1,36 @@
+{
+  "archive": {
+    "file_count": 22,
+    "path": "dist/project42_overleaf.zip",
+    "sha256": "d030064c48fa9218325c449c5e93e8b88104d61df86a032fb73c15cd474cb5ca",
+    "size_bytes": 41501
+  },
+  "archive_tree_check": {
+    "archive_file_count": 22,
+    "exact_file_set_match": true,
+    "extra_in_archive": [],
+    "missing_from_archive": [],
+    "paper_file_count": 22
+  },
+  "author": "Scott Allen Cave",
+  "boundary": {
+    "archive_digest_embedded_in_archive": false,
+    "external_to_archive": true,
+    "physical_claim": false
+  },
+  "embedded_manifest": {
+    "path": "artifacts/json/project42_release_manifest_049.json",
+    "sha256": "7734ab2f2084459ad3695bd821c67c51d65111cd5e3d964a787175000b3f0083"
+  },
+  "generated_at_utc": "2026-07-26T15:26:29.591692+00:00",
+  "manifest_id": "project42_external_release_manifest_001",
+  "manuscript": "The Automorphism Group of the Canonical Bipartite Double Cover of the Line Graph of the Petersen Graph",
+  "manuscript_commit": {
+    "sha": "936ccb3a7a0fbc94081984a0f27b3f38fcd40cc5",
+    "short_sha": "936ccb3",
+    "subject": "Complete Project 42 certificate appendices"
+  },
+  "preprint_doi": "10.5281/zenodo.21480350",
+  "project": "Project 42",
+  "repository_project": "42-graph-automorphism-groups"
+}
