@@ -1,0 +1,152 @@
+\section{The quotient and its lifted automorphisms}
+\label{sec:quotient-lift}
+
+Let
+\[
+\pi\colon G60\longrightarrow G30=G60/\langle a\rangle
+\]
+be the quotient by the canonical deck involution. This section determines
+the automorphism group of the quotient and constructs its full lift to
+the native graph.
+
+\subsection{The quotient graph}
+
+The quotient $G30$ has thirty vertices, one for each $a$-fiber of $G60$.
+The exact quotient certificate records the fiber partition, the quotient
+edge set, and the projection map $\pi$.
+
+The quotient automorphism group has order
+\[
+\left|\operatorname{Aut}(G30)\right|=240
+\]
+and abstract structure
+\[
+\operatorname{Aut}(G30)\cong S_5\times C_2.
+\]
+
+The first factor reflects the canonical $S_5$ symmetry visible through
+the Petersen and line-graph architecture. The second factor is an
+additional central involution in the quotient action.
+
+\subsection{The lifting problem}
+
+For
+\[
+g\in\operatorname{Aut}(G30),
+\]
+a lift of $g$ is an automorphism
+\[
+\widetilde g\in\operatorname{Aut}(G60)
+\]
+satisfying
+\[
+\pi\circ\widetilde g=g\circ\pi.
+\]
+
+Because $\pi$ is a two-fold cover with deck group
+\[
+\langle a\rangle\cong C_2,
+\]
+any two lifts of the same quotient automorphism differ by composition
+with $a$. Thus, whenever a lift exists, the complete lift fiber is
+\[
+\{\widetilde g,\ a\widetilde g\}.
+\]
+
+Existence is not automatic for an arbitrary automorphism of an arbitrary
+cover. It must be checked against the native edge law.
+
+\subsection{Exact lifting theorem}
+
+The quotient certificate and native edge set permit a direct lift test
+for every element of $\operatorname{Aut}(G30)$. All $240$ quotient
+automorphisms pass.
+
+\begin{theorem}
+\label{thm:two-lifts}
+Every automorphism of $G30$ has exactly two lifts to $G60$.
+Consequently, the complete lifted set has cardinality
+\[
+2\left|\operatorname{Aut}(G30)\right|
+=
+2\cdot240
+=
+480.
+\]
+\end{theorem}
+
+\begin{proof}
+Let $g\in\operatorname{Aut}(G30)$. The exact lift construction assigns
+to each native vertex an image lying over the quotient vertex
+$g(\pi(v))$. The resulting permutation is tested against the complete
+native edge set and is an automorphism of $G60$.
+
+Composition with the nontrivial deck transformation $a$ gives a second
+lift. These lifts are distinct because $a$ is fixed-point-free.
+
+Conversely, two lifts of the same quotient automorphism differ by a deck
+transformation. Since the deck group is $\langle a\rangle$ of order $2$,
+there are at most two lifts. Hence there are exactly two.
+\end{proof}
+
+Let
+\[
+L
+=
+\left\{
+\widetilde g:
+g\in\operatorname{Aut}(G30)
+\right\}
+\cup
+\left\{
+a\widetilde g:
+g\in\operatorname{Aut}(G30)
+\right\}.
+\]
+The lift construction is closed under permutation composition and
+inversion, so
+\[
+L\leq\operatorname{Aut}(G60)
+\]
+with
+\[
+|L|=480.
+\]
+
+\subsection{The extension over the quotient group}
+
+The lifted group fits into an exact sequence
+\[
+1
+\longrightarrow
+\langle a\rangle
+\longrightarrow
+L
+\longrightarrow
+\operatorname{Aut}(G30)
+\longrightarrow
+1.
+\]
+
+The kernel is central in $L$. Indeed, every lifted automorphism commutes
+with the deck involution:
+\[
+\widetilde g\,a=a\,\widetilde g.
+\]
+
+The extension is not described merely by adjoining an independent
+central $C_2$ to the quotient group. Its internal structure contains
+both split and nonsplit behavior over natural index-two subgroups of
+$\operatorname{Aut}(G30)$. This distinction will be used in
+Section~\ref{sec:group-structure} to identify the full group.
+
+At this stage we have proved only that
+\[
+L\leq\operatorname{Aut}(G60)
+\qquad\text{and}\qquad
+|L|=480.
+\]
+It remains possible, in principle, that the native graph has additional
+automorphisms not preserving the $a$-fiber system. The next section
+eliminates that possibility by an independent enumeration performed
+directly on $G60$.
