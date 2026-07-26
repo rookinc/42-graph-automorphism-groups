@@ -1,0 +1,91 @@
+\section{The native graph}
+\label{sec:native-graph}
+
+We write $G60$ for the exact labeled sixty-vertex graph used throughout
+this paper. The graph is identified with $\mathrm{AT4val}[60,6]$.
+
+\subsection{Basic parameters}
+
+The native graph has
+\[
+|V(G60)|=60,
+\qquad
+|E(G60)|=120,
+\]
+and every vertex has degree $4$. Thus $G60$ is quartic. The graph is
+connected.
+
+The automorphism calculations in later sections are performed on the
+exact native edge set rather than on a graph reconstructed only from
+numerical invariants. This distinction is important: matching order,
+degree, spectrum, or other fingerprints does not by itself identify a
+labeled graph or its permutation action.
+
+\subsection{The canonical deck involution}
+
+The native model carries a fixed-point-free involution
+\[
+a\colon V(G60)\longrightarrow V(G60).
+\]
+Its orbits are thirty disjoint pairs
+\[
+[v]_a=\{v,a(v)\}.
+\]
+We refer to these pairs as the \emph{$a$-fibers}. Since $a^2=1$ and
+$a$ has no fixed vertices, the orbit set
+\[
+V(G60)/\langle a\rangle
+\]
+has cardinality $30$.
+
+The involution $a$ is an automorphism of $G60$. Consequently, adjacency
+descends to the orbit set and defines a two-fold quotient graph
+\[
+G60\longrightarrow G60/\langle a\rangle.
+\]
+We denote this quotient by $G30$.
+
+The notation $a$ is retained because it is the native deck label in the
+project data and certificates. When discussing general covering theory,
+we may also describe $a$ as the canonical deck involution.
+
+\subsection{Exact labeled data}
+
+For a finite labeled graph, an automorphism is a permutation
+\[
+g\in\operatorname{Sym}(V(G60))
+\]
+such that
+\[
+\{u,v\}\in E(G60)
+\quad\Longleftrightarrow\quad
+\{g(u),g(v)\}\in E(G60).
+\]
+
+All permutation calculations in this paper use a fixed ordering of the
+sixty native vertices and the corresponding exact edge list. A
+permutation is therefore represented as a length-$60$ array, and group
+multiplication is permutation composition in that fixed labeling.
+
+The explicit labeling is not mathematically canonical, but it is
+essential for reproducibility. The abstract conclusions are independent
+of the chosen labels, while the exported certificates record the precise
+labeling under which the computations were performed.
+
+\subsection{Distinction from the thirty-vertex companion graph}
+
+The quotient $G30$ should not be confused merely by vertex count with the
+separately studied graph
+\[
+X=\operatorname{KC}(L(P)).
+\]
+The present manuscript concerns the native graph $G60$ and the specific
+quotient arising from its involution $a$. Any identification or comparison
+between thirty-vertex models must be established by an explicit
+isomorphism or certificate rather than inferred from notation.
+
+In the next section we study the quotient map
+\[
+G60\longrightarrow G30
+\]
+and determine how quotient automorphisms lift to the native graph.
