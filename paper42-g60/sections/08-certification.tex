@@ -1,0 +1,236 @@
+\section{Certification and reproducibility}
+\label{sec:certification}
+
+The classification established in the preceding sections uses several
+logically distinct computations. This section records their roles and
+the checks connecting them.
+
+The purpose of the certification layer is not to replace proof by
+software output. Rather, it makes every finite claim reproducible from
+the exact labeled graph and exposes the boundaries between construction,
+enumeration, identification, and verification.
+
+\subsection{Native graph certificate}
+
+The native graph certificate records:
+
+\begin{itemize}
+\item the ordered list of sixty vertices;
+\item the complete list of $120$ undirected edges;
+\item the quartic degree check;
+\item connectedness;
+\item the canonical deck involution $a$;
+\item the thirty $a$-fibers.
+\end{itemize}
+
+These data determine the exact labeled graph used throughout the paper.
+
+\subsection{Quotient certificate}
+
+The quotient certificate records the projection
+\[
+\pi\colon G60\longrightarrow G30,
+\]
+including:
+
+\begin{itemize}
+\item the thirty quotient vertices;
+\item the assignment of each native vertex to its $a$-fiber;
+\item the quotient edge set;
+\item the exact quotient automorphism permutations;
+\item the identification
+\[
+|\operatorname{Aut}(G30)|=240.
+\]
+\end{itemize}
+
+The lift audit checks every quotient automorphism against the complete
+native edge set.
+
+Its result is:
+
+\[
+240\text{ quotient automorphisms},
+\]
+\[
+2\text{ native lifts per quotient automorphism},
+\]
+and therefore
+\[
+480\text{ lifted native automorphisms}.
+\]
+
+\subsection{Independent native enumeration}
+
+The native automorphism enumeration is performed directly on the
+sixty-vertex graph.
+
+It does not assume:
+
+\begin{itemize}
+\item preservation of the $a$-fiber partition;
+\item centrality of the deck involution;
+\item completeness of the lifted subgroup;
+\item any proposed abstract group structure.
+\end{itemize}
+
+The independent enumeration returns exactly
+\[
+480
+\]
+native automorphisms.
+
+The enumerated permutation set is compared directly with the lifted
+permutation set. The comparison gives
+\[
+\text{native only}=0,
+\qquad
+\text{lifted only}=0.
+\]
+
+Thus the two sets agree exactly.
+
+\subsection{Fiber and deck checks}
+
+For every native automorphism $g$ and every native vertex $v$, the
+certificate checks that
+\[
+\{g(v),g(a(v))\}
+\]
+is an $a$-fiber.
+
+It also checks the permutation identity
+\[
+ga=ag
+\]
+for every
+\[
+g\in\operatorname{Aut}(G60).
+\]
+
+These tests establish that every native automorphism preserves the
+canonical quotient and that the deck involution generates the center.
+
+\subsection{Group-invariant certificate}
+
+The complete native group is used to compute:
+
+\begin{itemize}
+\item the center;
+\item the derived subgroup;
+\item the second derived subgroup;
+\item the abelianization;
+\item the element-order profile;
+\item the three index-two subgroups.
+\end{itemize}
+
+The certified values are
+\[
+|Z(A)|=2,
+\]
+\[
+|A'|=120,
+\qquad
+A'\cong A_5\times C_2,
+\]
+\[
+A''\cong A_5,
+\]
+and
+\[
+A/A'\cong C_2\times C_2.
+\]
+
+The element-order profile is
+\[
+\begin{array}{c|rrrrrrrr}
+\text{order}
+&1&2&3&4&5&6&10&12\\
+\hline
+\text{count}
+&1&83&20&140&24&100&72&40.
+\end{array}
+\]
+
+\subsection{Fiber-product comparison}
+
+Reference groups are generated for the possible dihedral quotient
+characters.
+
+The cyclic-kernel candidate is rejected.
+
+The Klein-four-kernel candidate agrees with the native group in:
+
+\begin{itemize}
+\item order;
+\item center;
+\item derived series;
+\item abelianization;
+\item element-order profile;
+\item index-two subgroup structure.
+\end{itemize}
+
+This determines the reference model
+\[
+S_5\times_{C_2}D_8
+\]
+used in the explicit isomorphism certificate.
+
+\subsection{Explicit isomorphism certificate}
+
+The explicit certificate records:
+
+\begin{itemize}
+\item the selected native generators;
+\item the corresponding fiber-product generators;
+\item the complete $480$-element bijection;
+\item the native and model encodings of every mapped element;
+\item the multiplication verification count;
+\item the canonical mapping digest.
+\end{itemize}
+
+The verified multiplication count is
+\[
+480^2=230400.
+\]
+
+The number of failed multiplication checks is
+\[
+0.
+\]
+
+The canonical mapping digest is
+\[
+\texttt{9a2b9bc2294a858cb7411fec33aa9c69786ad387184de839925f73453a3e169d}.
+\]
+
+\subsection{Logical dependency order}
+
+The classification follows the dependency chain
+\[
+\text{native graph}
+\longrightarrow
+\text{quotient and lifts}
+\longrightarrow
+\text{independent enumeration}
+\longrightarrow
+\text{group invariants}
+\longrightarrow
+\text{fiber-product model}
+\longrightarrow
+\text{explicit isomorphism}.
+\]
+
+No later identification is used to justify an earlier enumeration.
+
+In particular:
+
+\begin{itemize}
+\item the order $480$ is established before the abstract group is chosen;
+\item fiber preservation is tested on the independently enumerated group;
+\item the fiber-product model is compared only after native invariants are known;
+\item the explicit isomorphism is verified only after both groups have
+been independently constructed.
+\end{itemize}
+
+This separation is the principal reproducibility boundary of the paper.
