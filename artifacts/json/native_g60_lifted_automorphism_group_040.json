@@ -20,22 +20,23 @@
   "central_involution_count": 1,
   "certificate_id": "native_g60_lifted_automorphism_group_040",
   "checks": {
-    "all_s5_preimages_have_same_center_order": true,
-    "all_s5_preimages_have_same_derived_order": true,
     "automorphism_source_audit_pass": true,
     "bridge_source_audit_pass": true,
     "complement_source_audit_pass": true,
     "deck_a_is_central": true,
+    "derived_subgroup_is_normal": true,
     "each_s5_preimage_contains_deck_a": true,
     "each_s5_preimage_has_order_240": true,
     "lift_source_audit_pass": true,
     "lifted_action_is_vertex_transitive": true,
     "lifted_group_has_order_480": true,
-    "lifted_group_is_closed": true,
+    "s5_preimages_share_center_order": true,
+    "s5_preimages_share_derived_order": true,
+    "small_generators_reconstruct_group": true,
     "two_s5_preimages_constructed": true,
     "vertex_stabilizer_order_is_8": true
   },
-  "classification_result": "The audit constructs the full 480-element group of G60 automorphisms obtained by lifting all of Aut(G30). It exports its center, derived subgroup, abelianization, element-order profile, and action stabilizer. It also constructs the order-240 preimage of each of the two S5 complements in Aut(G30), records the lift-order signatures, and tests whether either central extension by the deck involution a splits.",
+  "classification_result": "The audit constructs the 480-element group obtained by lifting Aut(G30), classifies its center, derived subgroup, abelianization, element orders, and vertex stabilizer, and tests the central extension over each explicit S5 complement by lifting a generating pair.",
   "complement_source": "artifacts/json/native_g30_s5_complement_classification_004.json",
   "derived_element_order_profile": {
     "1": 1,
@@ -56,8 +57,16 @@
     "5": 24,
     "6": 100
   },
+  "generator_count": 4,
+  "generator_orders": [
+    10,
+    5,
+    10,
+    2
+  ],
   "group_order": 480,
   "lift_source": "artifacts/json/native_g30_automorphism_lifts_to_g60_032.json",
+  "runtime_seconds": 0.12829,
   "s5_preimage_center_order_profile": {
     "2": 2
   },
@@ -71,6 +80,10 @@
     {
       "contains_deck_a": true,
       "downstairs_complement_index": 0,
+      "downstairs_generating_pair_orders": [
+        4,
+        5
+      ],
       "downstairs_stabilizer_type": "V4",
       "extension_splits": true,
       "lift_order_signature_by_downstairs_order": {
@@ -96,8 +109,7 @@
           "6": 40
         }
       },
-      "order120_complement_count_found": 1,
-      "preimage_abelian": false,
+      "preimage_abelianization_order": 4,
       "preimage_center_order": 2,
       "preimage_derived_order": 60,
       "preimage_element_order_profile": {
@@ -109,11 +121,29 @@
         "5": 24,
         "6": 60
       },
-      "preimage_order": 240
+      "preimage_generator_count": 2,
+      "preimage_order": 240,
+      "splitting_lift_pair_count": 2,
+      "splitting_lift_pairs": [
+        {
+          "generated_order": 120,
+          "left_lift_order": 4,
+          "right_lift_order": 5
+        },
+        {
+          "generated_order": 120,
+          "left_lift_order": 4,
+          "right_lift_order": 5
+        }
+      ]
     },
     {
       "contains_deck_a": true,
       "downstairs_complement_index": 1,
+      "downstairs_generating_pair_orders": [
+        5,
+        2
+      ],
       "downstairs_stabilizer_type": "C4",
       "extension_splits": false,
       "lift_order_signature_by_downstairs_order": {
@@ -140,8 +170,7 @@
           "12": 40
         }
       },
-      "order120_complement_count_found": 0,
-      "preimage_abelian": false,
+      "preimage_abelianization_order": 4,
       "preimage_center_order": 2,
       "preimage_derived_order": 60,
       "preimage_element_order_profile": {
@@ -154,7 +183,10 @@
         "5": 24,
         "6": 20
       },
-      "preimage_order": 240
+      "preimage_generator_count": 2,
+      "preimage_order": 240,
+      "splitting_lift_pair_count": 0,
+      "splitting_lift_pairs": []
     }
   ],
   "s5_preimage_split_profile": {

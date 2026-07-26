@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""Classify the 480-element lifted automorphism group acting on G60."""
+"""Classify the 480-element lifted G60 automorphism group.
+
+This version uses small generating sets and prints timestamped progress.
+"""
 
 import json
+import sys
+import time
 from collections import Counter, defaultdict
 from itertools import combinations
 from pathlib import Path
@@ -35,6 +40,18 @@ OUTPUT = (
 )
 
 
+START_TIME = time.monotonic()
+
+
+def progress(message):
+    elapsed = time.monotonic() - START_TIME
+    print(
+        f"[{elapsed:8.2f}s] {message}",
+        file=sys.stderr,
+        flush=True,
+    )
+
+
 def identity(size):
     return tuple(range(size))
 
@@ -59,18 +76,37 @@ def permutation_order(permutation):
     unit = identity(len(permutation))
     current = unit
 
-    for order in range(1, 5000):
-        current = compose(permutation, current)
+    for order in range(1, 1000):
+        current = compose(
+            permutation,
+            current,
+        )
 
         if current == unit:
             return order
 
-    raise RuntimeError("permutation order search exceeded bound")
+    raise RuntimeError(
+        "permutation order exceeded search bound"
+    )
 
 
-def generated_subgroup(generators):
+def closure_from_generators(generators):
+    generators = tuple(generators)
+
     if not generators:
-        raise ValueError("generator list is empty")
+        raise ValueError(
+            "generator list must not be empty"
+        )
+
+    all_generators = tuple(
+        dict.fromkeys(
+            generators
+            + tuple(
+                inverse(generator)
+                for generator in generators
+            )
+        )
+    )
 
     unit = identity(len(generators[0]))
     subgroup = {unit}
@@ -79,30 +115,46 @@ def generated_subgroup(generators):
     while frontier:
         current = frontier.pop()
 
-        for generator in generators:
-            for product in (
-                compose(generator, current),
-                compose(current, generator),
-            ):
-                if product in subgroup:
-                    continue
+        for generator in all_generators:
+            product = compose(
+                generator,
+                current,
+            )
 
-                subgroup.add(product)
-                frontier.append(product)
+            if product in subgroup:
+                continue
+
+            subgroup.add(product)
+            frontier.append(product)
 
     return frozenset(subgroup)
 
 
-def center(group):
-    return frozenset(
-        element
-        for element in group
-        if all(
-            compose(element, other)
-            == compose(other, element)
-            for other in group
+def greedy_generators(group, label):
+    group = frozenset(group)
+    unit = identity(len(next(iter(group))))
+
+    generators = []
+    generated = frozenset({unit})
+
+    while generated != group:
+        candidate = next(
+            element
+            for element in group
+            if element not in generated
         )
-    )
+
+        generators.append(candidate)
+        generated = closure_from_generators(
+            tuple(generators)
+        )
+
+        progress(
+            f"{label}: generator {len(generators)} "
+            f"gives subgroup order {len(generated)}"
+        )
+
+    return tuple(generators)
 
 
 def commutator(left, right):
@@ -118,37 +170,169 @@ def commutator(left, right):
     )
 
 
-def derived_subgroup(group):
-    commutators = {
-        commutator(left, right)
-        for left in group
-        for right in group
-    }
+def normal_closure(seed_elements, ambient_generators):
+    seed_elements = tuple(seed_elements)
+    ambient_generators = tuple(ambient_generators)
 
-    return generated_subgroup(
-        tuple(commutators)
-    )
+    if not seed_elements:
+        unit = identity(
+            len(ambient_generators[0])
+        )
+        return frozenset({unit})
 
-
-def subgroup_is_abelian(group):
-    return all(
-        compose(left, right)
-        == compose(right, left)
-        for left, right in combinations(
-            group,
-            2,
+    ambient_with_inverses = tuple(
+        dict.fromkeys(
+            ambient_generators
+            + tuple(
+                inverse(generator)
+                for generator in ambient_generators
+            )
         )
     )
 
+    normal_generators = set(seed_elements)
+    last_order = 0
+    round_index = 0
 
-def orbit_of_point(group, point):
-    return {
-        element[point]
-        for element in group
+    while True:
+        round_index += 1
+
+        subgroup = closure_from_generators(
+            tuple(normal_generators)
+        )
+
+        progress(
+            "derived normal-closure round "
+            f"{round_index}: subgroup order "
+            f"{len(subgroup)}, seed count "
+            f"{len(normal_generators)}"
+        )
+
+        conjugates = set(normal_generators)
+
+        for element in subgroup:
+            for generator in ambient_with_inverses:
+                conjugates.add(
+                    compose(
+                        compose(
+                            generator,
+                            element,
+                        ),
+                        inverse(generator),
+                    )
+                )
+
+        if (
+            len(subgroup) == last_order
+            and conjugates
+            <= subgroup
+        ):
+            return subgroup
+
+        last_order = len(subgroup)
+        normal_generators = conjugates
+
+
+def center_from_generators(group, generators):
+    result = []
+
+    total = len(group)
+
+    for position, element in enumerate(
+        group,
+        start=1,
+    ):
+        if all(
+            compose(element, generator)
+            == compose(generator, element)
+            for generator in generators
+        ):
+            result.append(element)
+
+        if (
+            position == total
+            or position % 60 == 0
+        ):
+            progress(
+                "center scan: "
+                f"{position}/{total}"
+            )
+
+    return frozenset(result)
+
+
+def find_generating_pair(group, label):
+    group = frozenset(group)
+    elements = tuple(group)
+    orders = {
+        element: permutation_order(element)
+        for element in elements
     }
+
+    preferred_pairs = []
+
+    for left, right in combinations(
+        elements,
+        2,
+    ):
+        pair_orders = {
+            orders[left],
+            orders[right],
+        }
+
+        if (
+            5 in pair_orders
+            and (
+                2 in pair_orders
+                or 4 in pair_orders
+            )
+        ):
+            preferred_pairs.append(
+                (left, right)
+            )
+
+    fallback_pairs = combinations(
+        elements,
+        2,
+    )
+
+    tested = 0
+
+    for left, right in (
+        preferred_pairs
+        if preferred_pairs
+        else fallback_pairs
+    ):
+        tested += 1
+        subgroup = closure_from_generators(
+            (left, right)
+        )
+
+        if len(subgroup) == len(group):
+            progress(
+                f"{label}: generating pair found "
+                f"after {tested} tests with orders "
+                f"{orders[left]}, {orders[right]}"
+            )
+
+            return left, right
+
+        if tested % 100 == 0:
+            progress(
+                f"{label}: tested {tested} "
+                "candidate generating pairs"
+            )
+
+    progress(
+        f"{label}: no generating pair found"
+    )
+
+    return None
 
 
 def main():
+    progress("loading source artifacts")
+
     aut_source = json.loads(
         AUT_SOURCE.read_text()
     )
@@ -165,57 +349,159 @@ def main():
         BRIDGE_SOURCE.read_text()
     )
 
+    progress("source artifacts loaded")
+
     identity60 = identity(60)
 
     deck_a = tuple(
-        int(bridge["involution_a"][str(vertex)])
+        int(
+            bridge["involution_a"][
+                str(vertex)
+            ]
+        )
         for vertex in range(60)
     )
 
-    base_row_by_permutation = {
-        tuple(row["permutation"]): row
-        for row in aut_source["automorphisms"]
+    aut_rows = aut_source[
+        "automorphisms"
+    ]
+
+    base_row_by_index = {
+        int(row["index"]): row
+        for row in aut_rows
+    }
+
+    base_index_by_permutation = {
+        tuple(row["permutation"]): int(
+            row["index"]
+        )
+        for row in aut_rows
     }
 
     lift_row_by_base_index = {
-        int(row["g30_automorphism_index"]): row
-        for row in lift_source["lift_rows"]
+        int(
+            row["g30_automorphism_index"]
+        ): row
+        for row in lift_source[
+            "lift_rows"
+        ]
     }
+
+    lifts_by_base_index = {}
 
     all_lifts = set()
 
-    for row in lift_source["lift_rows"]:
-        for lift in row["lifts"]:
-            all_lifts.add(
-                tuple(lift["permutation"])
-            )
+    for base_index, row in (
+        lift_row_by_base_index.items()
+    ):
+        lifts = tuple(
+            tuple(lift["permutation"])
+            for lift in row["lifts"]
+        )
 
-    lifted_group = frozenset(all_lifts)
+        lifts_by_base_index[
+            base_index
+        ] = lifts
 
-    lifted_center = center(lifted_group)
-    lifted_derived = derived_subgroup(
-        lifted_group
+        all_lifts.update(lifts)
+
+    lifted_group = frozenset(
+        all_lifts
     )
 
+    progress(
+        "constructed lifted permutation set "
+        f"of size {len(lifted_group)}"
+    )
+
+    lifted_generators = greedy_generators(
+        lifted_group,
+        "full lifted group",
+    )
+
+    reconstructed_group = (
+        closure_from_generators(
+            lifted_generators
+        )
+    )
+
+    progress(
+        "computing center from "
+        f"{len(lifted_generators)} generators"
+    )
+
+    lifted_center = center_from_generators(
+        lifted_group,
+        lifted_generators,
+    )
+
+    progress(
+        f"center order is {len(lifted_center)}"
+    )
+
+    generator_commutators = {
+        commutator(left, right)
+        for left in lifted_generators
+        for right in lifted_generators
+    }
+
+    progress(
+        "building derived subgroup from "
+        f"{len(generator_commutators)} "
+        "generator commutators"
+    )
+
+    lifted_derived = normal_closure(
+        generator_commutators,
+        lifted_generators,
+    )
+
+    progress(
+        "derived subgroup order is "
+        f"{len(lifted_derived)}"
+    )
+
+    progress(
+        "computing full element-order profile"
+    )
+
+    lifted_orders = {}
+
+    for position, element in enumerate(
+        lifted_group,
+        start=1,
+    ):
+        lifted_orders[element] = (
+            permutation_order(element)
+        )
+
+        if (
+            position == len(lifted_group)
+            or position % 60 == 0
+        ):
+            progress(
+                "order scan: "
+                f"{position}/{len(lifted_group)}"
+            )
+
     lifted_order_profile = Counter(
-        permutation_order(element)
-        for element in lifted_group
+        lifted_orders.values()
     )
 
     lifted_center_order_profile = Counter(
-        permutation_order(element)
+        lifted_orders[element]
         for element in lifted_center
     )
 
     lifted_derived_order_profile = Counter(
-        permutation_order(element)
+        lifted_orders[element]
         for element in lifted_derived
     )
 
-    lifted_orbit_0 = orbit_of_point(
-        lifted_group,
-        0,
-    )
+    lifted_orbit_0 = {
+        element[0]
+        for element in lifted_group
+    }
 
     lifted_stabilizer_0 = {
         element
@@ -232,118 +518,179 @@ def main():
             complement["index"]
         )
 
-        downstairs_elements = {
+        label = (
+            f"S5 complement {complement_index}"
+        )
+
+        progress(
+            f"{label}: constructing downstairs group"
+        )
+
+        downstairs_group = frozenset(
             tuple(element)
-            for element in complement["elements"]
-        }
+            for element in complement[
+                "elements"
+            ]
+        )
+
+        downstairs_pair = (
+            find_generating_pair(
+                downstairs_group,
+                label,
+            )
+        )
+
+        if downstairs_pair is None:
+            raise RuntimeError(
+                f"{label} has no generating pair"
+            )
 
         downstairs_indices = {
-            int(
-                base_row_by_permutation[
-                    element
-                ]["index"]
-            )
-            for element in downstairs_elements
+            base_index_by_permutation[
+                element
+            ]
+            for element in downstairs_group
         }
 
-        preimage_elements = set()
+        preimage_group = frozenset(
+            lifted
+            for base_index
+            in downstairs_indices
+            for lifted
+            in lifts_by_base_index[
+                base_index
+            ]
+        )
+
+        progress(
+            f"{label}: preimage size "
+            f"{len(preimage_group)}"
+        )
+
+        preimage_generators = (
+            greedy_generators(
+                preimage_group,
+                f"{label} preimage",
+            )
+        )
+
+        preimage_center = (
+            center_from_generators(
+                preimage_group,
+                preimage_generators,
+            )
+        )
+
+        preimage_commutators = {
+            commutator(left, right)
+            for left in preimage_generators
+            for right in preimage_generators
+        }
+
+        preimage_derived = normal_closure(
+            preimage_commutators,
+            preimage_generators,
+        )
+
+        preimage_order_profile = Counter(
+            lifted_orders[element]
+            for element in preimage_group
+        )
 
         lift_signature = defaultdict(
             Counter
         )
 
-        for downstairs_index in downstairs_indices:
-            base_row = next(
-                row
-                for row in aut_source[
-                    "automorphisms"
-                ]
-                if int(row["index"])
-                == downstairs_index
-            )
-
+        for base_index in (
+            downstairs_indices
+        ):
             downstairs_order = int(
-                base_row["order"]
+                base_row_by_index[
+                    base_index
+                ]["order"]
             )
 
-            lift_row = lift_row_by_base_index[
-                downstairs_index
-            ]
-
-            for lift in lift_row["lifts"]:
-                lifted = tuple(
-                    lift["permutation"]
-                )
-
-                preimage_elements.add(
-                    lifted
-                )
-
+            for lifted in (
+                lifts_by_base_index[
+                    base_index
+                ]
+            ):
                 lift_signature[
                     downstairs_order
                 ][
-                    permutation_order(
-                        lifted
-                    )
+                    lifted_orders[lifted]
                 ] += 1
 
-        preimage_group = frozenset(
-            preimage_elements
+        left_base, right_base = (
+            downstairs_pair
         )
 
-        preimage_center = center(
-            preimage_group
+        left_index = (
+            base_index_by_permutation[
+                left_base
+            ]
         )
 
-        preimage_derived = derived_subgroup(
-            preimage_group
+        right_index = (
+            base_index_by_permutation[
+                right_base
+            ]
         )
 
-        preimage_order_profile = Counter(
-            permutation_order(element)
-            for element in preimage_group
-        )
+        splitting_lift_pairs = []
 
-        complement_candidates = []
-
-        involutions = [
-            element
-            for element in preimage_group
-            if permutation_order(element) == 2
-            and element != identity60
-            and element != deck_a
-        ]
-
-        for generator_count in range(2, 5):
-            found = False
-
-            for generators in combinations(
-                involutions,
-                generator_count,
+        for left_lift in (
+            lifts_by_base_index[
+                left_index
+            ]
+        ):
+            for right_lift in (
+                lifts_by_base_index[
+                    right_index
+                ]
             ):
-                subgroup = generated_subgroup(
-                    generators
+                candidate = (
+                    closure_from_generators(
+                        (
+                            left_lift,
+                            right_lift,
+                        )
+                    )
                 )
 
-                if len(subgroup) != 120:
-                    continue
-
-                if deck_a in subgroup:
-                    continue
-
-                complement_candidates.append(
-                    subgroup
+                progress(
+                    f"{label}: lift-choice subgroup "
+                    f"order {len(candidate)}"
                 )
-                found = True
-                break
 
-            if found:
-                break
+                if (
+                    len(candidate) == 120
+                    and deck_a not in candidate
+                ):
+                    splitting_lift_pairs.append({
+                        "left_lift_order": (
+                            lifted_orders[
+                                left_lift
+                            ]
+                        ),
+                        "right_lift_order": (
+                            lifted_orders[
+                                right_lift
+                            ]
+                        ),
+                        "generated_order": (
+                            len(candidate)
+                        ),
+                    })
 
-        unique_complements = {
-            tuple(sorted(subgroup))
-            for subgroup in complement_candidates
-        }
+        extension_splits = bool(
+            splitting_lift_pairs
+        )
+
+        progress(
+            f"{label}: extension splits = "
+            f"{extension_splits}"
+        )
 
         complement_rows.append({
             "downstairs_complement_index": (
@@ -354,8 +701,19 @@ def main():
                     "vertex_stabilizer_0_type"
                 ]
             ),
+            "downstairs_generating_pair_orders": [
+                permutation_order(
+                    left_base
+                ),
+                permutation_order(
+                    right_base
+                ),
+            ],
             "preimage_order": len(
                 preimage_group
+            ),
+            "preimage_generator_count": len(
+                preimage_generators
             ),
             "preimage_center_order": len(
                 preimage_center
@@ -363,14 +721,14 @@ def main():
             "preimage_derived_order": len(
                 preimage_derived
             ),
-            "preimage_abelian": (
-                subgroup_is_abelian(
-                    preimage_group
-                )
+            "preimage_abelianization_order": (
+                len(preimage_group)
+                // len(preimage_derived)
             ),
             "preimage_element_order_profile": {
                 str(order): count
-                for order, count in sorted(
+                for order, count
+                in sorted(
                     preimage_order_profile.items()
                 )
             },
@@ -378,21 +736,30 @@ def main():
                 str(downstairs_order): {
                     str(upstairs_order): count
                     for upstairs_order, count
-                    in sorted(profile.items())
+                    in sorted(
+                        profile.items()
+                    )
                 }
                 for downstairs_order, profile
-                in sorted(lift_signature.items())
+                in sorted(
+                    lift_signature.items()
+                )
             },
-            "order120_complement_count_found": len(
-                unique_complements
+            "splitting_lift_pair_count": len(
+                splitting_lift_pairs
+            ),
+            "splitting_lift_pairs": (
+                splitting_lift_pairs
             ),
             "extension_splits": (
-                len(unique_complements) > 0
+                extension_splits
             ),
             "contains_deck_a": (
                 deck_a in preimage_group
             ),
         })
+
+    progress("assembling classification receipt")
 
     preimage_order_profile = Counter(
         row["preimage_order"]
@@ -414,13 +781,6 @@ def main():
         for row in complement_rows
     )
 
-    central_involutions = [
-        element
-        for element in lifted_center
-        if permutation_order(element) == 2
-        and element != identity60
-    ]
-
     checks = {
         "automorphism_source_audit_pass": (
             aut_source["audit_pass"]
@@ -437,14 +797,24 @@ def main():
         "lifted_group_has_order_480": (
             len(lifted_group) == 480
         ),
-        "lifted_group_is_closed": (
-            generated_subgroup(
-                tuple(lifted_group)
-            )
+        "small_generators_reconstruct_group": (
+            reconstructed_group
             == lifted_group
         ),
         "deck_a_is_central": (
             deck_a in lifted_center
+        ),
+        "derived_subgroup_is_normal": all(
+            compose(
+                compose(
+                    generator,
+                    element,
+                ),
+                inverse(generator),
+            )
+            in lifted_derived
+            for generator in lifted_generators
+            for element in lifted_derived
         ),
         "lifted_action_is_vertex_transitive": (
             len(lifted_orbit_0) == 60
@@ -463,11 +833,13 @@ def main():
             row["contains_deck_a"]
             for row in complement_rows
         ),
-        "all_s5_preimages_have_same_center_order": (
-            len(preimage_center_profile) == 1
+        "s5_preimages_share_center_order": (
+            len(preimage_center_profile)
+            == 1
         ),
-        "all_s5_preimages_have_same_derived_order": (
-            len(preimage_derived_profile) == 1
+        "s5_preimages_share_derived_order": (
+            len(preimage_derived_profile)
+            == 1
         ),
     }
 
@@ -487,9 +859,21 @@ def main():
         "bridge_source": str(
             BRIDGE_SOURCE.relative_to(ROOT)
         ),
+        "runtime_seconds": round(
+            time.monotonic() - START_TIME,
+            6,
+        ),
         "group_order": len(
             lifted_group
         ),
+        "generator_count": len(
+            lifted_generators
+        ),
+        "generator_orders": [
+            lifted_orders[generator]
+            for generator
+            in lifted_generators
+        ],
         "center_order": len(
             lifted_center
         ),
@@ -502,24 +886,30 @@ def main():
         ),
         "element_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 lifted_order_profile.items()
             )
         },
         "center_element_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 lifted_center_order_profile.items()
             )
         },
         "derived_element_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 lifted_derived_order_profile.items()
             )
         },
-        "central_involution_count": len(
-            central_involutions
+        "central_involution_count": sum(
+            count
+            for order, count
+            in lifted_center_order_profile.items()
+            if order == 2
         ),
         "vertex_orbit_0_size": len(
             lifted_orbit_0
@@ -527,44 +917,49 @@ def main():
         "vertex_stabilizer_0_order": len(
             lifted_stabilizer_0
         ),
-        "s5_preimage_rows": complement_rows,
+        "s5_preimage_rows": (
+            complement_rows
+        ),
         "s5_preimage_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 preimage_order_profile.items()
             )
         },
         "s5_preimage_center_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 preimage_center_profile.items()
             )
         },
         "s5_preimage_derived_order_profile": {
             str(order): count
-            for order, count in sorted(
+            for order, count
+            in sorted(
                 preimage_derived_profile.items()
             )
         },
         "s5_preimage_split_profile": {
             str(status).lower(): count
-            for status, count in sorted(
+            for status, count
+            in sorted(
                 split_profile.items()
             )
         },
         "classification_result": (
-            "The audit constructs the full 480-element group "
-            "of G60 automorphisms obtained by lifting all of "
-            "Aut(G30). It exports its center, derived subgroup, "
-            "abelianization, element-order profile, and action "
-            "stabilizer. It also constructs the order-240 "
-            "preimage of each of the two S5 complements in "
-            "Aut(G30), records the lift-order signatures, and "
-            "tests whether either central extension by the "
-            "deck involution a splits."
+            "The audit constructs the 480-element group "
+            "obtained by lifting Aut(G30), classifies its "
+            "center, derived subgroup, abelianization, "
+            "element orders, and vertex stabilizer, and "
+            "tests the central extension over each explicit "
+            "S5 complement by lifting a generating pair."
         ),
         "checks": checks,
-        "audit_pass": all(checks.values()),
+        "audit_pass": all(
+            checks.values()
+        ),
         "boundary": {
             "lifted_480_group_constructed": True,
             "center_and_derived_subgroup_classified": True,
@@ -585,22 +980,51 @@ def main():
         + "\n"
     )
 
+    progress("receipt written")
+
     print("OUT ==")
     print("output:", OUTPUT)
-    print("audit_pass:", payload["audit_pass"])
-    print("group_order:", payload["group_order"])
-    print("center_order:", payload["center_order"])
+    print(
+        "runtime_seconds:",
+        payload["runtime_seconds"],
+    )
+    print(
+        "audit_pass:",
+        payload["audit_pass"],
+    )
+    print(
+        "group_order:",
+        payload["group_order"],
+    )
+    print(
+        "generator_count:",
+        payload["generator_count"],
+    )
+    print(
+        "generator_orders:",
+        payload["generator_orders"],
+    )
+    print(
+        "center_order:",
+        payload["center_order"],
+    )
     print(
         "derived_subgroup_order:",
-        payload["derived_subgroup_order"],
+        payload[
+            "derived_subgroup_order"
+        ],
     )
     print(
         "abelianization_order:",
-        payload["abelianization_order"],
+        payload[
+            "abelianization_order"
+        ],
     )
     print(
         "element_order_profile:",
-        payload["element_order_profile"],
+        payload[
+            "element_order_profile"
+        ],
     )
     print(
         "center_element_order_profile:",
@@ -610,38 +1034,68 @@ def main():
     )
     print(
         "vertex_orbit_0_size:",
-        payload["vertex_orbit_0_size"],
+        payload[
+            "vertex_orbit_0_size"
+        ],
     )
     print(
         "vertex_stabilizer_0_order:",
-        payload["vertex_stabilizer_0_order"],
+        payload[
+            "vertex_stabilizer_0_order"
+        ],
     )
 
     for row in complement_rows:
         print()
         print(
             "S5 complement",
-            row["downstairs_complement_index"],
+            row[
+                "downstairs_complement_index"
+            ],
         )
         print(
             " downstairs stabilizer:",
-            row["downstairs_stabilizer_type"],
+            row[
+                "downstairs_stabilizer_type"
+            ],
+        )
+        print(
+            " downstairs generator orders:",
+            row[
+                "downstairs_generating_pair_orders"
+            ],
         )
         print(
             " preimage order:",
             row["preimage_order"],
         )
         print(
-            " center:",
-            row["preimage_center_order"],
+            " center order:",
+            row[
+                "preimage_center_order"
+            ],
         )
         print(
-            " derived:",
-            row["preimage_derived_order"],
+            " derived order:",
+            row[
+                "preimage_derived_order"
+            ],
         )
         print(
-            " splits:",
+            " abelianization order:",
+            row[
+                "preimage_abelianization_order"
+            ],
+        )
+        print(
+            " extension splits:",
             row["extension_splits"],
+        )
+        print(
+            " splitting lift pairs:",
+            row[
+                "splitting_lift_pair_count"
+            ],
         )
         print(
             " order profile:",
@@ -656,9 +1110,12 @@ def main():
             ],
         )
 
+    print()
     print(
         "classification_result:",
-        payload["classification_result"],
+        payload[
+            "classification_result"
+        ],
     )
 
 

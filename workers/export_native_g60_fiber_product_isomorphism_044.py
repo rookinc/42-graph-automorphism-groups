@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
-"""Export an explicit isomorphism from Aut(G60) to the S5-D8 fiber product."""
+"""Export an explicit generator-level isomorphism for Aut(G60)."""
 
 import hashlib
 import itertools
 import json
-import math
 import sys
 import time
-from collections import deque
+from collections import Counter
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 
-FULL_SOURCE = (
+LIFT_SOURCE = (
     ROOT / "artifacts/json/"
-    "native_g60_full_automorphism_group_042.json"
+    "native_g30_automorphism_lifts_to_g60_032.json"
 )
 
 FIBER_PRODUCT_SOURCE = (
@@ -27,6 +26,7 @@ OUTPUT = (
     ROOT / "artifacts/json/"
     "native_g60_fiber_product_isomorphism_044.json"
 )
+
 
 START = time.monotonic()
 
@@ -40,18 +40,18 @@ def progress(message):
     )
 
 
-def identity(size):
+def permutation_identity(size):
     return tuple(range(size))
 
 
-def compose(left, right):
+def permutation_compose(left, right):
     return tuple(
         left[right[index]]
         for index in range(len(left))
     )
 
 
-def inverse(permutation):
+def permutation_inverse(permutation):
     result = [None] * len(permutation)
 
     for source, target in enumerate(permutation):
@@ -61,27 +61,56 @@ def inverse(permutation):
 
 
 def permutation_order(permutation):
-    unit = identity(len(permutation))
+    unit = permutation_identity(
+        len(permutation)
+    )
+
     current = unit
 
     for order in range(1, 1000):
-        current = compose(permutation, current)
+        current = permutation_compose(
+            permutation,
+            current,
+        )
 
         if current == unit:
             return order
 
-    raise RuntimeError("permutation order exceeded bound")
+    raise RuntimeError(
+        "permutation order exceeded bound"
+    )
 
 
-def closure(generators):
+def permutation_commutator(left, right):
+    return permutation_compose(
+        permutation_compose(
+            permutation_compose(
+                permutation_inverse(left),
+                permutation_inverse(right),
+            ),
+            left,
+        ),
+        right,
+    )
+
+
+def permutation_closure(generators):
     generators = tuple(generators)
 
-    expanded = tuple(dict.fromkeys(
-        generators
-        + tuple(inverse(generator) for generator in generators)
-    ))
+    expanded = tuple(
+        dict.fromkeys(
+            generators
+            + tuple(
+                permutation_inverse(generator)
+                for generator in generators
+            )
+        )
+    )
 
-    unit = identity(len(generators[0]))
+    unit = permutation_identity(
+        len(generators[0])
+    )
+
     subgroup = {unit}
     frontier = [unit]
 
@@ -89,41 +118,54 @@ def closure(generators):
         current = frontier.pop()
 
         for generator in expanded:
-            product = compose(generator, current)
+            product = permutation_compose(
+                generator,
+                current,
+            )
 
-            if product not in subgroup:
-                subgroup.add(product)
-                frontier.append(product)
+            if product in subgroup:
+                continue
+
+            subgroup.add(product)
+            frontier.append(product)
 
     return frozenset(subgroup)
 
 
-def greedy_generators(group):
+def greedy_permutation_generators(group):
     group = frozenset(group)
-    unit = identity(len(next(iter(group))))
+
+    unit = permutation_identity(
+        len(next(iter(group)))
+    )
+
     generators = []
     generated = frozenset({unit})
 
-    for candidate in sorted(group):
-        if candidate in generated:
-            continue
+    while generated != group:
+        candidate = min(
+            element
+            for element in group
+            if element not in generated
+        )
 
         generators.append(candidate)
-        generated = closure(generators)
 
-        if generated == group:
-            break
+        generated = permutation_closure(
+            generators
+        )
+
+        progress(
+            "actual generator "
+            f"{len(generators)} gives order "
+            f"{len(generated)}"
+        )
 
     return tuple(generators)
 
 
-def power(element, exponent, multiply, unit):
-    result = unit
-
-    for _ in range(exponent):
-        result = multiply(element, result)
-
-    return result
+def s5_identity():
+    return tuple(range(5))
 
 
 def s5_multiply(left, right):
@@ -143,519 +185,849 @@ def s5_inverse(permutation):
 
 
 def s5_sign(permutation):
-    inversions = sum(
-        permutation[left] > permutation[right]
+    inversion_count = sum(
+        permutation[left]
+        > permutation[right]
         for left in range(5)
         for right in range(left + 1, 5)
     )
 
-    return inversions % 2
-
-
-def s5_order(permutation):
-    unit = tuple(range(5))
-    current = unit
-
-    for order in range(1, 100):
-        current = s5_multiply(permutation, current)
-
-        if current == unit:
-            return order
-
-    raise RuntimeError("S5 order exceeded bound")
+    return inversion_count % 2
 
 
 def d8_multiply(left, right):
     left_rotation, left_flip = left
     right_rotation, right_flip = right
 
-    signed_rotation = (
+    signed_right_rotation = (
         right_rotation
         if left_flip == 0
         else -right_rotation
     )
 
     return (
-        (left_rotation + signed_rotation) % 4,
-        (left_flip + right_flip) % 2,
+        (
+            left_rotation
+            + signed_right_rotation
+        ) % 4,
+        (
+            left_flip
+            + right_flip
+        ) % 2,
     )
 
 
 def d8_inverse(element):
-    for candidate in (
-        (rotation, flip)
-        for rotation in range(4)
-        for flip in range(2)
-    ):
-        if (
-            d8_multiply(element, candidate) == (0, 0)
-            and d8_multiply(candidate, element) == (0, 0)
-        ):
-            return candidate
+    rotation, flip = element
 
-    raise RuntimeError("D8 inverse not found")
+    if flip == 0:
+        return ((-rotation) % 4, 0)
+
+    return (rotation, 1)
 
 
-def d8_order(element):
-    unit = (0, 0)
-    current = unit
-
-    for order in range(1, 20):
-        current = d8_multiply(element, current)
-
-        if current == unit:
-            return order
-
-    raise RuntimeError("D8 order exceeded bound")
-
-
-def model_multiply(left, right):
+def reference_identity():
     return (
-        s5_multiply(left[0], right[0]),
-        d8_multiply(left[1], right[1]),
+        s5_identity(),
+        (0, 0),
     )
 
 
-def model_inverse(element):
+def reference_multiply(left, right):
+    return (
+        s5_multiply(
+            left[0],
+            right[0],
+        ),
+        d8_multiply(
+            left[1],
+            right[1],
+        ),
+    )
+
+
+def reference_inverse(element):
     return (
         s5_inverse(element[0]),
         d8_inverse(element[1]),
     )
 
 
-def model_order(element):
-    return math.lcm(
-        s5_order(element[0]),
-        d8_order(element[1]),
+def reference_order(element):
+    unit = reference_identity()
+    current = unit
+
+    for order in range(1, 1000):
+        current = reference_multiply(
+            element,
+            current,
+        )
+
+        if current == unit:
+            return order
+
+    raise RuntimeError(
+        "reference order exceeded bound"
     )
 
 
-def model_closure(generators):
-    generators = tuple(generators)
-    unit = (tuple(range(5)), (0, 0))
-
-    expanded = tuple(dict.fromkeys(
-        generators
-        + tuple(model_inverse(generator) for generator in generators)
-    ))
-
-    subgroup = {unit}
-    frontier = [unit]
-
-    while frontier:
-        current = frontier.pop()
-
-        for generator in expanded:
-            product = model_multiply(generator, current)
-
-            if product not in subgroup:
-                subgroup.add(product)
-                frontier.append(product)
-
-    return frozenset(subgroup)
+def reference_commutator(left, right):
+    return reference_multiply(
+        reference_multiply(
+            reference_multiply(
+                reference_inverse(left),
+                reference_inverse(right),
+            ),
+            left,
+        ),
+        right,
+    )
 
 
-def build_model_group():
+def build_reference_group():
     return frozenset(
-        (permutation, (rotation, flip))
-        for permutation in itertools.permutations(range(5))
+        (
+            tuple(permutation),
+            (rotation, flip),
+        )
+        for permutation in itertools.permutations(
+            range(5)
+        )
         for rotation in range(4)
         for flip in range(2)
-        if s5_sign(permutation) == rotation % 2
+        if s5_sign(permutation)
+        == rotation % 2
     )
 
 
-def relation_signature_matches(h0, h1, h2, h3):
-    model_unit = (tuple(range(5)), (0, 0))
-
-    if [model_order(x) for x in (h0, h1, h2, h3)] != [2, 2, 4, 2]:
-        return False
-
-    if model_multiply(h0, h1) != model_multiply(h1, h0):
-        return False
-
-    if model_multiply(h1, h2) != model_multiply(h2, h1):
-        return False
-
-    if model_multiply(h0, h2) == model_multiply(h2, h0):
-        return False
-
-    if power(h2, 2, model_multiply, model_unit) != h1:
-        return False
-
-    required_orders = {
-        (3, 0): 5,
-        (3, 1): 6,
-        (3, 2): 6,
-    }
-
-    generators = (h0, h1, h2, h3)
-
-    for (left, right), required in required_orders.items():
-        if model_order(
-            model_multiply(generators[left], generators[right])
-        ) != required:
-            return False
-
-    if model_order(
-        model_multiply(
-            model_multiply(h3, h0),
-            h1,
-        )
-    ) != 10:
-        return False
-
-    if model_order(
-        model_multiply(
-            model_multiply(h3, h0),
-            h2,
-        )
-    ) != 4:
-        return False
-
-    if model_order(
-        model_multiply(
-            model_multiply(h3, h1),
-            h2,
-        )
-    ) != 6:
-        return False
-
-    if model_order(
-        model_multiply(
-            model_multiply(
-                model_multiply(h3, h0),
-                h1,
-            ),
-            h2,
-        )
-    ) != 12:
-        return False
-
-    return len(model_closure((h0, h1, h2, h3))) == 480
-
-
-def find_canonical_model_generators(model_group):
-    involutions = sorted(
-        element
-        for element in model_group
-        if model_order(element) == 2
+def pair_signature_actual(left, right):
+    return (
+        permutation_order(
+            permutation_compose(
+                left,
+                right,
+            )
+        ),
+        permutation_order(
+            permutation_compose(
+                permutation_inverse(left),
+                right,
+            )
+        ),
+        permutation_order(
+            permutation_commutator(
+                left,
+                right,
+            )
+        ),
     )
 
-    order_four = sorted(
-        element
-        for element in model_group
-        if model_order(element) == 4
+
+def pair_signature_reference(left, right):
+    return (
+        reference_order(
+            reference_multiply(
+                left,
+                right,
+            )
+        ),
+        reference_order(
+            reference_multiply(
+                reference_inverse(left),
+                right,
+            )
+        ),
+        reference_order(
+            reference_commutator(
+                left,
+                right,
+            )
+        ),
     )
 
-    candidates = []
 
-    for h0 in involutions:
-        for h1 in involutions:
-            if h1 == h0:
-                continue
+def extend_generator_assignment(
+    actual_generators,
+    reference_generators,
+    actual_group,
+    reference_group,
+):
+    actual_unit = permutation_identity(60)
+    reference_unit = reference_identity()
 
-            if model_multiply(h0, h1) != model_multiply(h1, h0):
-                continue
+    actual_steps = tuple(
+        actual_generators
+        + tuple(
+            permutation_inverse(generator)
+            for generator in actual_generators
+        )
+    )
 
-            if len(model_closure((h0, h1))) != 4:
-                continue
+    reference_steps = tuple(
+        reference_generators
+        + tuple(
+            reference_inverse(generator)
+            for generator in reference_generators
+        )
+    )
 
-            for h2 in order_four:
-                if model_multiply(h1, h2) != model_multiply(h2, h1):
-                    continue
-
-                if model_multiply(h0, h2) == model_multiply(h2, h0):
-                    continue
-
-                if power(
-                    h2,
-                    2,
-                    model_multiply,
-                    (tuple(range(5)), (0, 0)),
-                ) != h1:
-                    continue
-
-                if len(model_closure((h0, h1, h2))) != 8:
-                    continue
-
-                for h3 in involutions:
-                    if relation_signature_matches(h0, h1, h2, h3):
-                        candidates.append((h0, h1, h2, h3))
-
-    candidates.sort()
-
-    if not candidates:
-        raise RuntimeError("no model generator tuple found")
-
-    return candidates[0], len(candidates)
-
-
-def extend_mapping(actual_generators, model_generators):
-    actual_unit = identity(60)
-    model_unit = (tuple(range(5)), (0, 0))
-
-    paired = tuple(zip(actual_generators, model_generators))
-
-    mapping = {
-        actual_unit: model_unit,
+    forward = {
+        actual_unit: reference_unit
     }
 
-    reverse_mapping = {
-        model_unit: actual_unit,
+    reverse = {
+        reference_unit: actual_unit
     }
 
-    queue = deque([actual_unit])
-    conflict_count = 0
+    frontier = [actual_unit]
 
-    while queue:
-        actual_element = queue.popleft()
-        model_element = mapping[actual_element]
+    while frontier:
+        actual_current = frontier.pop()
+        reference_current = forward[
+            actual_current
+        ]
 
-        for actual_generator, model_generator in paired:
-            actual_product = compose(
-                actual_generator,
-                actual_element,
+        for actual_step, reference_step in zip(
+            actual_steps,
+            reference_steps,
+        ):
+            actual_next = permutation_compose(
+                actual_step,
+                actual_current,
             )
 
-            model_product = model_multiply(
-                model_generator,
-                model_element,
+            reference_next = reference_multiply(
+                reference_step,
+                reference_current,
             )
 
-            existing_model = mapping.get(actual_product)
+            known_reference = forward.get(
+                actual_next
+            )
 
-            if existing_model is not None:
-                if existing_model != model_product:
-                    conflict_count += 1
-                continue
+            if (
+                known_reference is not None
+                and known_reference
+                != reference_next
+            ):
+                return None
 
-            existing_actual = reverse_mapping.get(model_product)
+            known_actual = reverse.get(
+                reference_next
+            )
 
-            if existing_actual is not None and existing_actual != actual_product:
-                conflict_count += 1
-                continue
+            if (
+                known_actual is not None
+                and known_actual
+                != actual_next
+            ):
+                return None
 
-            mapping[actual_product] = model_product
-            reverse_mapping[model_product] = actual_product
-            queue.append(actual_product)
+            if known_reference is None:
+                forward[
+                    actual_next
+                ] = reference_next
 
-    return mapping, reverse_mapping, conflict_count
+                reverse[
+                    reference_next
+                ] = actual_next
+
+                frontier.append(
+                    actual_next
+                )
+
+    if len(forward) != len(actual_group):
+        return None
+
+    if len(reverse) != len(reference_group):
+        return None
+
+    return forward
 
 
-def serialize_model_element(element):
+def encode_reference(element):
+    permutation, d8_element = element
+
     return {
-        "s5": list(element[0]),
-        "d8": list(element[1]),
+        "s5_permutation": list(
+            permutation
+        ),
+        "d8_rotation": int(
+            d8_element[0]
+        ),
+        "d8_flip": int(
+            d8_element[1]
+        ),
     }
 
 
 def main():
-    progress("loading native and fiber-product receipts")
+    progress("loading source receipts")
 
-    full_source = json.loads(FULL_SOURCE.read_text())
-    fiber_source = json.loads(FIBER_PRODUCT_SOURCE.read_text())
+    lift_source = json.loads(
+        LIFT_SOURCE.read_text()
+    )
+
+    fiber_product_source = json.loads(
+        FIBER_PRODUCT_SOURCE.read_text()
+    )
 
     actual_group = frozenset(
-        tuple(row)
-        for row in full_source["native_automorphisms"]
+        tuple(lift["permutation"])
+        for row in lift_source["lift_rows"]
+        for lift in row["lifts"]
     )
 
-    actual_generators = greedy_generators(actual_group)
+    reference_group = build_reference_group()
 
     progress(
-        "selected deterministic native generators "
-        f"count={len(actual_generators)}"
+        "actual order "
+        f"{len(actual_group)}, reference order "
+        f"{len(reference_group)}"
     )
 
-    model_group = build_model_group()
-
-    model_generators, candidate_count = (
-        find_canonical_model_generators(model_group)
+    actual_generators = (
+        greedy_permutation_generators(
+            actual_group
+        )
     )
 
-    progress(
-        "selected canonical model tuple "
-        f"from {candidate_count} valid tuples"
-    )
-
-    mapping, reverse_mapping, conflict_count = extend_mapping(
-        actual_generators,
-        model_generators,
+    actual_generator_orders = tuple(
+        permutation_order(generator)
+        for generator in actual_generators
     )
 
     progress(
-        "extended generator map "
-        f"domain={len(mapping)} "
-        f"image={len(reverse_mapping)} "
-        f"conflicts={conflict_count}"
+        "actual generator orders "
+        f"{list(actual_generator_orders)}"
     )
 
-    multiplication_failure_count = 0
-    first_failure = None
-
-    sorted_actual_group = tuple(sorted(actual_group))
-
-    for left_index, left in enumerate(sorted_actual_group):
-        if left_index % 60 == 0:
-            progress(
-                "multiplication verification "
-                f"left={left_index}/480"
-            )
-
-        for right in sorted_actual_group:
-            actual_product = compose(left, right)
-
-            model_product = model_multiply(
-                mapping[left],
-                mapping[right],
-            )
-
-            if mapping[actual_product] != model_product:
-                multiplication_failure_count += 1
-
-                if first_failure is None:
-                    first_failure = {
-                        "left": list(left),
-                        "right": list(right),
-                        "actual_product": list(actual_product),
-                        "mapped_product": serialize_model_element(
-                            mapping[actual_product]
-                        ),
-                        "model_product": serialize_model_element(
-                            model_product
-                        ),
-                    }
-
-    mapping_rows = [
-        {
-            "native_permutation": list(actual_element),
-            "model_element": serialize_model_element(
-                mapping[actual_element]
-            ),
-        }
-        for actual_element in sorted_actual_group
-    ]
-
-    canonical_payload = {
-        "character_name": "rotation_parity",
-        "native_generators": [
-            list(generator)
-            for generator in actual_generators
-        ],
-        "model_generators": [
-            serialize_model_element(generator)
-            for generator in model_generators
-        ],
-        "mapping_rows": mapping_rows,
+    reference_order_cache = {
+        element: reference_order(element)
+        for element in reference_group
     }
 
-    canonical_bytes = json.dumps(
-        canonical_payload,
+    candidate_sets = [
+        tuple(
+            element
+            for element in reference_group
+            if reference_order_cache[element]
+            == target_order
+        )
+        for target_order in actual_generator_orders
+    ]
+
+    progress(
+        "reference candidate counts "
+        f"{[len(candidates) for candidates in candidate_sets]}"
+    )
+
+    actual_pair_signatures = {
+        (left_index, right_index):
+        pair_signature_actual(
+            actual_generators[left_index],
+            actual_generators[right_index],
+        )
+        for left_index in range(
+            len(actual_generators)
+        )
+        for right_index in range(left_index)
+    }
+
+    tested_complete_tuples = 0
+    partial_assignment_count = 0
+    found_mapping = None
+    found_reference_generators = None
+
+    def search(position, selected):
+        nonlocal tested_complete_tuples
+        nonlocal partial_assignment_count
+        nonlocal found_mapping
+        nonlocal found_reference_generators
+
+        if found_mapping is not None:
+            return
+
+        if position == len(
+            actual_generators
+        ):
+            tested_complete_tuples += 1
+
+            if (
+                tested_complete_tuples <= 10
+                or tested_complete_tuples
+                % 1000 == 0
+            ):
+                progress(
+                    "testing complete generator tuple "
+                    f"{tested_complete_tuples}"
+                )
+
+            mapping = extend_generator_assignment(
+                actual_generators,
+                tuple(selected),
+                actual_group,
+                reference_group,
+            )
+
+            if mapping is not None:
+                found_mapping = mapping
+                found_reference_generators = (
+                    tuple(selected)
+                )
+
+            return
+
+        for candidate in candidate_sets[
+            position
+        ]:
+            if candidate in selected:
+                continue
+
+            compatible = True
+
+            for earlier_index, earlier in enumerate(
+                selected
+            ):
+                actual_signature = (
+                    actual_pair_signatures[
+                        (
+                            position,
+                            earlier_index,
+                        )
+                    ]
+                )
+
+                reference_signature = (
+                    pair_signature_reference(
+                        candidate,
+                        earlier,
+                    )
+                )
+
+                if (
+                    actual_signature
+                    != reference_signature
+                ):
+                    compatible = False
+                    break
+
+            if not compatible:
+                continue
+
+            partial_assignment_count += 1
+
+            if (
+                partial_assignment_count
+                % 10000 == 0
+            ):
+                progress(
+                    "compatible partial assignments "
+                    f"{partial_assignment_count}"
+                )
+
+            search(
+                position + 1,
+                selected + [candidate],
+            )
+
+            if found_mapping is not None:
+                return
+
+    progress(
+        "searching for compatible reference generator images"
+    )
+
+    search(0, [])
+
+    if found_mapping is None:
+        raise RuntimeError(
+            "no generator-level isomorphism found"
+        )
+
+    progress(
+        "explicit 480-element bijection found"
+    )
+
+    mapping_rows = []
+
+    for index, actual_element in enumerate(
+        sorted(actual_group)
+    ):
+        reference_element = found_mapping[
+            actual_element
+        ]
+
+        mapping_rows.append({
+            "actual_index": index,
+            "actual_permutation": list(
+                actual_element
+            ),
+            "reference_element": (
+                encode_reference(
+                    reference_element
+                )
+            ),
+            "actual_order": (
+                permutation_order(
+                    actual_element
+                )
+            ),
+            "reference_order": (
+                reference_order_cache[
+                    reference_element
+                ]
+            ),
+        })
+
+    progress(
+        "verifying homomorphism on all "
+        f"{len(actual_group) ** 2} ordered products"
+    )
+
+    homomorphism_failure_count = 0
+    product_check_count = 0
+
+    actual_elements = tuple(
+        sorted(actual_group)
+    )
+
+    for left_position, left in enumerate(
+        actual_elements,
+        start=1,
+    ):
+        for right in actual_elements:
+            product_check_count += 1
+
+            actual_product = (
+                permutation_compose(
+                    left,
+                    right,
+                )
+            )
+
+            reference_product = (
+                reference_multiply(
+                    found_mapping[left],
+                    found_mapping[right],
+                )
+            )
+
+            if (
+                found_mapping[actual_product]
+                != reference_product
+            ):
+                homomorphism_failure_count += 1
+
+        if (
+            left_position % 60 == 0
+            or left_position
+            == len(actual_elements)
+        ):
+            progress(
+                "product verification "
+                f"{left_position}/"
+                f"{len(actual_elements)} rows"
+            )
+
+    mapping_digest_input = json.dumps(
+        mapping_rows,
         sort_keys=True,
         separators=(",", ":"),
     ).encode("utf-8")
 
     mapping_sha256 = hashlib.sha256(
-        canonical_bytes
+        mapping_digest_input
     ).hexdigest()
 
+    actual_generator_rows = []
+
+    for index, (
+        actual_generator,
+        reference_generator,
+    ) in enumerate(
+        zip(
+            actual_generators,
+            found_reference_generators,
+        )
+    ):
+        actual_generator_rows.append({
+            "generator_index": index,
+            "actual_permutation": list(
+                actual_generator
+            ),
+            "actual_order": (
+                permutation_order(
+                    actual_generator
+                )
+            ),
+            "reference_element": (
+                encode_reference(
+                    reference_generator
+                )
+            ),
+            "reference_order": (
+                reference_order_cache[
+                    reference_generator
+                ]
+            ),
+        })
+
     checks = {
-        "full_source_audit_pass": full_source["audit_pass"],
-        "fiber_product_source_audit_pass": fiber_source["audit_pass"],
-        "actual_group_order_is_480": len(actual_group) == 480,
-        "model_group_order_is_480": len(model_group) == 480,
-        "native_generator_count_is_4": len(actual_generators) == 4,
-        "valid_model_generator_tuple_count_is_480": candidate_count == 480,
-        "mapping_domain_count_is_480": len(mapping) == 480,
-        "mapping_image_count_is_480": len(reverse_mapping) == 480,
-        "mapping_conflict_count_is_zero": conflict_count == 0,
-        "multiplication_check_count_is_230400": (
-            len(actual_group) * len(actual_group) == 230400
+        "lift_source_audit_pass": (
+            lift_source["audit_pass"]
         ),
-        "multiplication_failure_count_is_zero": (
-            multiplication_failure_count == 0
+        "fiber_product_source_audit_pass": (
+            fiber_product_source[
+                "audit_pass"
+            ]
+        ),
+        "actual_group_order_is_480": (
+            len(actual_group) == 480
+        ),
+        "reference_group_order_is_480": (
+            len(reference_group) == 480
+        ),
+        "generator_assignment_found": (
+            found_mapping is not None
+        ),
+        "mapping_has_480_actual_elements": (
+            len(found_mapping) == 480
+        ),
+        "mapping_has_480_distinct_reference_elements": (
+            len(
+                set(
+                    found_mapping.values()
+                )
+            )
+            == 480
+        ),
+        "all_element_orders_preserved": all(
+            row["actual_order"]
+            == row["reference_order"]
+            for row in mapping_rows
+        ),
+        "all_ordered_products_checked": (
+            product_check_count
+            == 480 * 480
+        ),
+        "homomorphism_failure_count_is_zero": (
+            homomorphism_failure_count
+            == 0
+        ),
+        "actual_generators_generate_full_group": (
+            permutation_closure(
+                actual_generators
+            )
+            == actual_group
         ),
     }
 
-    output = {
-        "certificate_id": "native_g60_fiber_product_isomorphism_044",
-        "audit_pass": all(checks.values()),
-        "full_source": str(FULL_SOURCE.relative_to(ROOT)),
+    payload = {
+        "certificate_id": (
+            "native_g60_fiber_product_isomorphism_044"
+        ),
+        "lift_source": str(
+            LIFT_SOURCE.relative_to(ROOT)
+        ),
         "fiber_product_source": str(
-            FIBER_PRODUCT_SOURCE.relative_to(ROOT)
-        ),
-        "character_name": "rotation_parity",
-        "character_kernel_type": "V4",
-        "valid_model_generator_tuple_count": candidate_count,
-        "native_generator_count": len(actual_generators),
-        "native_generators": [
-            {
-                "index": index,
-                "order": permutation_order(generator),
-                "permutation": list(generator),
-            }
-            for index, generator in enumerate(actual_generators)
-        ],
-        "model_generators": [
-            {
-                "index": index,
-                "order": model_order(generator),
-                **serialize_model_element(generator),
-            }
-            for index, generator in enumerate(model_generators)
-        ],
-        "mapping_count": len(mapping_rows),
-        "mapping_rows": mapping_rows,
-        "mapping_sha256": mapping_sha256,
-        "multiplication_check_count": 230400,
-        "multiplication_failure_count": multiplication_failure_count,
-        "first_multiplication_failure": first_failure,
-        "checks": checks,
-        "classification_result": (
-            "A deterministic four-generator correspondence extends to "
-            "an explicit bijection from the 480 native automorphisms of "
-            "G60 to the rotation-parity S5-D8 fiber product. All 230400 "
-            "ordered products preserve multiplication."
-        ),
-        "boundary": (
-            "The exported isomorphism uses one canonical coordinate "
-            "choice among 480 equivalent valid model generator tuples. "
-            "The abstract isomorphism type is independent of that choice."
+            FIBER_PRODUCT_SOURCE.relative_to(
+                ROOT
+            )
         ),
         "runtime_seconds": round(
             time.monotonic() - START,
             6,
         ),
+        "actual_group_order": len(
+            actual_group
+        ),
+        "reference_group_order": len(
+            reference_group
+        ),
+        "reference_group_definition": {
+            "name": (
+                "S5_fiber_product_D8_over_C2"
+            ),
+            "set": (
+                "{(s,(r,f)) in S5 x D8 : "
+                "sgn(s) = r mod 2}"
+            ),
+            "d8_multiplication": (
+                "(r,f)(u,g) = "
+                "(r + (-1)^f u mod 4, "
+                "f + g mod 2)"
+            ),
+            "character": (
+                "chi(r,f) = r mod 2"
+            ),
+            "character_kernel_type": (
+                "V4"
+            ),
+        },
+        "actual_generator_count": len(
+            actual_generators
+        ),
+        "actual_generator_orders": list(
+            actual_generator_orders
+        ),
+        "reference_candidate_counts": [
+            len(candidates)
+            for candidates in candidate_sets
+        ],
+        "compatible_partial_assignment_count": (
+            partial_assignment_count
+        ),
+        "complete_generator_tuple_test_count": (
+            tested_complete_tuples
+        ),
+        "generator_correspondence": (
+            actual_generator_rows
+        ),
+        "mapping_row_count": len(
+            mapping_rows
+        ),
+        "mapping_sha256": (
+            mapping_sha256
+        ),
+        "mapping_rows": mapping_rows,
+        "ordered_product_check_count": (
+            product_check_count
+        ),
+        "homomorphism_failure_count": (
+            homomorphism_failure_count
+        ),
+        "isomorphism_statement": (
+            "The exported bijection sends the listed "
+            "generators of the native 60-vertex permutation "
+            "group Aut(G60) to the listed generators of "
+            "{(s,d) in S5 x D8 : sgn(s)=chi(d)}, with "
+            "chi(r,f)=r mod 2. Extension by group words "
+            "produces a bijection on all 480 elements, and "
+            "all 230400 ordered products are preserved."
+        ),
+        "classification_result": (
+            "Aut(G60) is explicitly isomorphic, at the "
+            "generator and multiplication-table level, to "
+            "the S5-D8 fiber product over C2 using a "
+            "V4-kernel character of D8."
+        ),
+        "checks": checks,
+        "audit_pass": all(
+            checks.values()
+        ),
+        "boundary": {
+            "explicit_generator_correspondence_exported": True,
+            "explicit_480_element_bijection_exported": True,
+            "all_ordered_products_verified": True,
+            "abstract_fiber_product_isomorphism_complete": True,
+            "permutation_action_interpretation_open": True,
+            "physical_claim": False,
+        },
     }
 
     OUTPUT.write_text(
         json.dumps(
-            output,
+            payload,
             indent=2,
             sort_keys=True,
         )
         + "\n"
     )
 
+    progress("receipt written")
+
     print("OUT ==")
-    print(f"output: {OUTPUT}")
-    print(f"audit_pass: {output['audit_pass']}")
+    print("output:", OUTPUT)
     print(
-        "valid_model_generator_tuple_count: "
-        f"{output['valid_model_generator_tuple_count']}"
-    )
-    print(f"mapping_count: {output['mapping_count']}")
-    print(
-        "multiplication_check_count: "
-        f"{output['multiplication_check_count']}"
+        "runtime_seconds:",
+        payload["runtime_seconds"],
     )
     print(
-        "multiplication_failure_count: "
-        f"{output['multiplication_failure_count']}"
+        "audit_pass:",
+        payload["audit_pass"],
     )
-    print(f"mapping_sha256: {output['mapping_sha256']}")
-    print(f"runtime_seconds: {output['runtime_seconds']}")
+    print(
+        "actual_group_order:",
+        payload["actual_group_order"],
+    )
+    print(
+        "reference_group_order:",
+        payload[
+            "reference_group_order"
+        ],
+    )
+    print(
+        "actual_generator_count:",
+        payload[
+            "actual_generator_count"
+        ],
+    )
+    print(
+        "actual_generator_orders:",
+        payload[
+            "actual_generator_orders"
+        ],
+    )
+    print(
+        "reference_candidate_counts:",
+        payload[
+            "reference_candidate_counts"
+        ],
+    )
+    print(
+        "compatible_partial_assignment_count:",
+        payload[
+            "compatible_partial_assignment_count"
+        ],
+    )
+    print(
+        "complete_generator_tuple_test_count:",
+        payload[
+            "complete_generator_tuple_test_count"
+        ],
+    )
+    print(
+        "mapping_row_count:",
+        payload["mapping_row_count"],
+    )
+    print(
+        "mapping_sha256:",
+        payload["mapping_sha256"],
+    )
+    print(
+        "ordered_product_check_count:",
+        payload[
+            "ordered_product_check_count"
+        ],
+    )
+    print(
+        "homomorphism_failure_count:",
+        payload[
+            "homomorphism_failure_count"
+        ],
+    )
+
+    print()
+    print("generator correspondence:")
+
+    for row in actual_generator_rows:
+        print(
+            " generator",
+            row["generator_index"],
+            "order",
+            row["actual_order"],
+            "->",
+            row["reference_element"],
+        )
+
+    print()
+    print(
+        "classification_result:",
+        payload[
+            "classification_result"
+        ],
+    )
 
 
 if __name__ == "__main__":
