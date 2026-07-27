@@ -1,0 +1,634 @@
+{
+  "certificate_id": "native_g60_foreign_v4_five_triangle_graph_audit_075",
+  "audit_pass": true,
+  "verdict": "foreign_v4_chamber_incidence_graph_is_five_disjoint_triangles",
+  "source": "artifacts/json/native_g60_foreign_v4_native_chamber_correspondence_audit_074.json",
+  "source_074_failed_hypothesis": "one foreign V4 per native quotient chamber",
+  "foreign_v4_count": 15,
+  "native_chamber_count": 15,
+  "pair_rows": [
+    {
+      "subgroup_index": 0,
+      "pair": [
+        0,
+        5
+      ],
+      "middle_quotient_profile": {
+        "0": 4,
+        "5": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 1,
+      "pair": [
+        5,
+        14
+      ],
+      "middle_quotient_profile": {
+        "5": 4,
+        "14": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 2,
+      "pair": [
+        0,
+        14
+      ],
+      "middle_quotient_profile": {
+        "0": 4,
+        "14": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 3,
+      "pair": [
+        3,
+        11
+      ],
+      "middle_quotient_profile": {
+        "3": 4,
+        "11": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 4,
+      "pair": [
+        1,
+        12
+      ],
+      "middle_quotient_profile": {
+        "1": 4,
+        "12": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 5,
+      "pair": [
+        4,
+        8
+      ],
+      "middle_quotient_profile": {
+        "4": 4,
+        "8": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 6,
+      "pair": [
+        2,
+        9
+      ],
+      "middle_quotient_profile": {
+        "2": 4,
+        "9": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 7,
+      "pair": [
+        6,
+        12
+      ],
+      "middle_quotient_profile": {
+        "6": 4,
+        "12": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 8,
+      "pair": [
+        9,
+        13
+      ],
+      "middle_quotient_profile": {
+        "9": 4,
+        "13": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 9,
+      "pair": [
+        8,
+        10
+      ],
+      "middle_quotient_profile": {
+        "8": 4,
+        "10": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 10,
+      "pair": [
+        7,
+        11
+      ],
+      "middle_quotient_profile": {
+        "7": 4,
+        "11": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 11,
+      "pair": [
+        3,
+        7
+      ],
+      "middle_quotient_profile": {
+        "3": 4,
+        "7": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 12,
+      "pair": [
+        1,
+        6
+      ],
+      "middle_quotient_profile": {
+        "1": 4,
+        "6": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 13,
+      "pair": [
+        2,
+        13
+      ],
+      "middle_quotient_profile": {
+        "2": 4,
+        "13": 4
+      },
+      "relation_profile": {
+        "b": 4,
+        "ab": 4
+      },
+      "cycle_count": 8
+    },
+    {
+      "subgroup_index": 14,
+      "pair": [
+        4,
+        10
+      ],
+      "middle_quotient_profile": {
+        "4": 4,
+        "10": 4
+      },
+      "relation_profile": {
+        "ab": 4,
+        "b": 4
+      },
+      "cycle_count": 8
+    }
+  ],
+  "incidence_graph": {
+    "vertex_count": 15,
+    "edge_count": 15,
+    "degree_profile": {
+      "2": 15
+    },
+    "component_count": 5,
+    "component_sizes": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "components": [
+      [
+        0,
+        5,
+        14
+      ],
+      [
+        1,
+        6,
+        12
+      ],
+      [
+        2,
+        9,
+        13
+      ],
+      [
+        3,
+        7,
+        11
+      ],
+      [
+        4,
+        8,
+        10
+      ]
+    ],
+    "component_rows": [
+      {
+        "component_index": 0,
+        "vertices": [
+          0,
+          5,
+          14
+        ],
+        "edges": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            5,
+            14
+          ]
+        ],
+        "subgroup_indices": [
+          0,
+          1,
+          2
+        ],
+        "complete_graph": true,
+        "is_triangle": true
+      },
+      {
+        "component_index": 1,
+        "vertices": [
+          1,
+          6,
+          12
+        ],
+        "edges": [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "subgroup_indices": [
+          4,
+          7,
+          12
+        ],
+        "complete_graph": true,
+        "is_triangle": true
+      },
+      {
+        "component_index": 2,
+        "vertices": [
+          2,
+          9,
+          13
+        ],
+        "edges": [
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        "subgroup_indices": [
+          6,
+          8,
+          13
+        ],
+        "complete_graph": true,
+        "is_triangle": true
+      },
+      {
+        "component_index": 3,
+        "vertices": [
+          3,
+          7,
+          11
+        ],
+        "edges": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        "subgroup_indices": [
+          3,
+          10,
+          11
+        ],
+        "complete_graph": true,
+        "is_triangle": true
+      },
+      {
+        "component_index": 4,
+        "vertices": [
+          4,
+          8,
+          10
+        ],
+        "edges": [
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "subgroup_indices": [
+          5,
+          9,
+          14
+        ],
+        "complete_graph": true,
+        "is_triangle": true
+      }
+    ],
+    "isomorphism_type": "5K3"
+  },
+  "chamber_rows": [
+    {
+      "chamber": 0,
+      "neighbors": [
+        5,
+        14
+      ],
+      "incident_subgroup_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "chamber": 1,
+      "neighbors": [
+        6,
+        12
+      ],
+      "incident_subgroup_indices": [
+        4,
+        12
+      ]
+    },
+    {
+      "chamber": 2,
+      "neighbors": [
+        9,
+        13
+      ],
+      "incident_subgroup_indices": [
+        6,
+        13
+      ]
+    },
+    {
+      "chamber": 3,
+      "neighbors": [
+        7,
+        11
+      ],
+      "incident_subgroup_indices": [
+        3,
+        11
+      ]
+    },
+    {
+      "chamber": 4,
+      "neighbors": [
+        8,
+        10
+      ],
+      "incident_subgroup_indices": [
+        5,
+        14
+      ]
+    },
+    {
+      "chamber": 5,
+      "neighbors": [
+        0,
+        14
+      ],
+      "incident_subgroup_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "chamber": 6,
+      "neighbors": [
+        1,
+        12
+      ],
+      "incident_subgroup_indices": [
+        7,
+        12
+      ]
+    },
+    {
+      "chamber": 7,
+      "neighbors": [
+        3,
+        11
+      ],
+      "incident_subgroup_indices": [
+        10,
+        11
+      ]
+    },
+    {
+      "chamber": 8,
+      "neighbors": [
+        4,
+        10
+      ],
+      "incident_subgroup_indices": [
+        5,
+        9
+      ]
+    },
+    {
+      "chamber": 9,
+      "neighbors": [
+        2,
+        13
+      ],
+      "incident_subgroup_indices": [
+        6,
+        8
+      ]
+    },
+    {
+      "chamber": 10,
+      "neighbors": [
+        4,
+        8
+      ],
+      "incident_subgroup_indices": [
+        9,
+        14
+      ]
+    },
+    {
+      "chamber": 11,
+      "neighbors": [
+        3,
+        7
+      ],
+      "incident_subgroup_indices": [
+        3,
+        10
+      ]
+    },
+    {
+      "chamber": 12,
+      "neighbors": [
+        1,
+        6
+      ],
+      "incident_subgroup_indices": [
+        4,
+        7
+      ]
+    },
+    {
+      "chamber": 13,
+      "neighbors": [
+        2,
+        9
+      ],
+      "incident_subgroup_indices": [
+        8,
+        13
+      ]
+    },
+    {
+      "chamber": 14,
+      "neighbors": [
+        0,
+        5
+      ],
+      "incident_subgroup_indices": [
+        1,
+        2
+      ]
+    }
+  ],
+  "upstream_partition_search": {
+    "candidate_five_triple_partition_count": 0,
+    "exact_partition_match_count": 0,
+    "exact_matches": []
+  },
+  "checks": {
+    "fifteen_distinct_foreign_v4_edges": true,
+    "every_chamber_has_degree_two": true,
+    "five_components_of_size_three": true,
+    "every_component_is_complete_triangle": true,
+    "every_chamber_meets_two_foreign_v4s": true,
+    "every_foreign_v4_supports_four_b_four_ab_cycles": true
+  },
+  "theorem_statement": "The fifteen foreign V4 stabilizers correspond exactly to the fifteen edges of a chamber-incidence graph isomorphic to five disjoint triangles. Every native quotient chamber belongs to one triangle and is incident with exactly two foreign V4 edges. Each edge supports eight frontier cycles, split four with relay relation b and four with relay relation ab.",
+  "interpretation": {
+    "earned": "The repeated count fifteen resolves as five groups of three chambers, with one foreign Klein symmetry on each triangle edge.",
+    "comparison_boundary": "The audit separately searches existing artifacts for an exact prior five-triple partition. An exact match is needed before identifying these triangles with any previously named five-groups-of-three structure."
+  },
+  "boundary": {
+    "finite_incidence_graph_theorem_only": true,
+    "five_triangles_not_called_dodecahedra_without_bridge": true,
+    "no_physical_energy_identification": true,
+    "no_mass_definition": true,
+    "no_physical_c_derivation": true,
+    "no_mass_energy_equivalence_claim": true
+  }
+}

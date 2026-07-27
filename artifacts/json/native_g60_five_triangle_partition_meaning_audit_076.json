@@ -1,0 +1,257 @@
+{
+  "certificate_id": "native_g60_five_triangle_partition_meaning_audit_076",
+  "audit_pass": true,
+  "verdict": "five_triple_partition_structurally_classified_inside_g15",
+  "sources": {
+    "quotient_operator": "artifacts/json/native_g60_v4_voltage_character_quotients_057.json",
+    "foreign_v4_partition": "artifacts/json/native_g60_foreign_v4_five_triangle_graph_audit_075.json",
+    "petersen_label_bridge": "artifacts/json/project42_kneser_label_bridge_045.json"
+  },
+  "five_triples": [
+    [
+      0,
+      5,
+      14
+    ],
+    [
+      1,
+      6,
+      12
+    ],
+    [
+      2,
+      9,
+      13
+    ],
+    [
+      3,
+      7,
+      11
+    ],
+    [
+      4,
+      8,
+      10
+    ]
+  ],
+  "triple_rows": [
+    {
+      "triple_index": 0,
+      "vertices": [
+        0,
+        5,
+        14
+      ],
+      "internal_edge_count": 0,
+      "internal_edges": [],
+      "induced_degree_profile": {
+        "0": 3
+      },
+      "common_outside_neighbor_count": 0,
+      "common_outside_neighbors": [],
+      "outside_neighbor_union_count": 12,
+      "outside_neighbor_sets": {
+        "0": [
+          1,
+          4,
+          9,
+          11
+        ],
+        "5": [
+          2,
+          3,
+          6,
+          10
+        ],
+        "14": [
+          7,
+          8,
+          12,
+          13
+        ]
+      },
+      "is_triangle_in_g15": false,
+      "is_independent_triple_in_g15": true
+    },
+    {
+      "triple_index": 1,
+      "vertices": [
+        1,
+        6,
+        12
+      ],
+      "internal_edge_count": 0,
+      "internal_edges": [],
+      "induced_degree_profile": {
+        "0": 3
+      },
+      "common_outside_neighbor_count": 0,
+      "common_outside_neighbors": [],
+      "outside_neighbor_union_count": 12,
+      "outside_neighbor_sets": {
+        "1": [
+          0,
+          2,
+          8,
+          11
+        ],
+        "6": [
+          5,
+          7,
+          9,
+          10
+        ],
+        "12": [
+          3,
+          4,
+          13,
+          14
+        ]
+      },
+      "is_triangle_in_g15": false,
+      "is_independent_triple_in_g15": true
+    },
+    {
+      "triple_index": 2,
+      "vertices": [
+        2,
+        9,
+        13
+      ],
+      "internal_edge_count": 0,
+      "internal_edges": [],
+      "induced_degree_profile": {
+        "0": 3
+      },
+      "common_outside_neighbor_count": 0,
+      "common_outside_neighbors": [],
+      "outside_neighbor_union_count": 12,
+      "outside_neighbor_sets": {
+        "2": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "9": [
+          0,
+          4,
+          6,
+          7
+        ],
+        "13": [
+          10,
+          11,
+          12,
+          14
+        ]
+      },
+      "is_triangle_in_g15": false,
+      "is_independent_triple_in_g15": true
+    },
+    {
+      "triple_index": 3,
+      "vertices": [
+        3,
+        7,
+        11
+      ],
+      "internal_edge_count": 0,
+      "internal_edges": [],
+      "induced_degree_profile": {
+        "0": 3
+      },
+      "common_outside_neighbor_count": 0,
+      "common_outside_neighbors": [],
+      "outside_neighbor_union_count": 12,
+      "outside_neighbor_sets": {
+        "3": [
+          2,
+          4,
+          5,
+          12
+        ],
+        "7": [
+          6,
+          8,
+          9,
+          14
+        ],
+        "11": [
+          0,
+          1,
+          10,
+          13
+        ]
+      },
+      "is_triangle_in_g15": false,
+      "is_independent_triple_in_g15": true
+    },
+    {
+      "triple_index": 4,
+      "vertices": [
+        4,
+        8,
+        10
+      ],
+      "internal_edge_count": 0,
+      "internal_edges": [],
+      "induced_degree_profile": {
+        "0": 3
+      },
+      "common_outside_neighbor_count": 0,
+      "common_outside_neighbors": [],
+      "outside_neighbor_union_count": 12,
+      "outside_neighbor_sets": {
+        "4": [
+          0,
+          3,
+          9,
+          12
+        ],
+        "8": [
+          1,
+          2,
+          7,
+          14
+        ],
+        "10": [
+          5,
+          6,
+          11,
+          13
+        ]
+      },
+      "is_triangle_in_g15": false,
+      "is_independent_triple_in_g15": true
+    }
+  ],
+  "internal_edge_count_profile": {
+    "0": 5
+  },
+  "all_five_are_g15_triangles": false,
+  "all_five_are_g15_independent_sets": true,
+  "petersen_edge_label_candidate_count": 0,
+  "petersen_candidate_rows": [],
+  "exact_petersen_interpretation_found": false,
+  "petersen_interpretation": "not_yet_identified",
+  "checks": {
+    "five_triples_processed": true,
+    "every_triple_has_three_vertices": true,
+    "g15_internal_structure_uniform": true,
+    "exact_petersen_label_interpretation_found": false
+  },
+  "interpretation": {
+    "earned": "The audit determines what each of the five quotient triples is as an induced subgraph of G15.",
+    "petersen_boundary": "A Petersen star or matching interpretation is promoted only if an explicit exported quotient-to-Petersen-edge label map verifies all five triples."
+  },
+  "boundary": {
+    "finite_g15_partition_theorem_only": true,
+    "no_unverified_petersen_identification": true,
+    "five_triangles_not_called_physical_geometry": true,
+    "physical_energy_not_identified": true,
+    "mass_not_defined": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}

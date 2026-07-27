@@ -1,0 +1,72 @@
+{
+  "certificate_id": "native_g60_frontier_relay_orbit_audit_071",
+  "audit_pass": true,
+  "verdict": "frontier_cycles_form_one_full_orbit_and_two_kernel_orbits_b_ab",
+  "sources": {
+    "full_automorphism_group": "artifacts/json/native_g60_fiber_product_isomorphism_044.json",
+    "registered_dynamical_signature": "artifacts/json/native_g60_registered_cycle_dynamical_signature_audit_064.json",
+    "frontier_relay_structure": "artifacts/json/native_g60_frontier_external_relay_structure_audit_069.json",
+    "frontier_relay_theorem": "artifacts/json/native_g60_frontier_external_relay_matching_theorem_070.json",
+    "character_exchange_c2": "artifacts/json/native_g60_character_exchange_c2_theorem_056.json"
+  },
+  "group_order": 480,
+  "frontier_cycle_count": 120,
+  "middle_relation_profile": {
+    "ab": 60,
+    "b": 60
+  },
+  "family_closed_under_full_group": true,
+  "full_group_orbit_sizes": [
+    120
+  ],
+  "kernel_order": 240,
+  "swap_coset_size": 240,
+  "kernel_orbit_rows": [
+    {
+      "orbit_index": 0,
+      "orbit_size": 60,
+      "middle_relation_profile": {
+        "ab": 60
+      }
+    },
+    {
+      "orbit_index": 1,
+      "orbit_size": 60,
+      "middle_relation_profile": {
+        "b": 60
+      }
+    }
+  ],
+  "kernel_orbits_match_b_ab_classes": true,
+  "swap_coset_exchanges_b_ab_classes": true,
+  "full_stabilizer_order_profile": {
+    "4": 120
+  },
+  "kernel_stabilizer_order_profile": {
+    "4": 120
+  },
+  "checks": {
+    "frontier_family_is_full_group_invariant": true,
+    "full_group_is_transitive_on_120_frontier_cycles": true,
+    "character_kernel_has_order_240": true,
+    "exchange_coset_has_size_240": true,
+    "kernel_has_two_orbits_of_size_60": true,
+    "kernel_orbits_are_exactly_b_and_ab_relay_classes": true,
+    "exchange_coset_swaps_the_two_relay_classes": true,
+    "every_full_group_cycle_stabilizer_has_order_four": true,
+    "every_kernel_cycle_stabilizer_has_order_four": true
+  },
+  "theorem_statement": "The 120 relay-bearing frontier cycles form one orbit under the full 480-element automorphism group. Under the index-two kernel that fixes b and ab individually, they split into two orbits of size 60, exactly the b-middle and ab-middle relay classes. Every automorphism in the complementary coset exchanges those two classes.",
+  "interpretation": {
+    "earned": "The b and ab relay types are not two unrelated frontier geometries. They are the two character presentations of one full-group orbit.",
+    "contrast_with_registered": "Registered closure is one 24-cycle orbit with no relay. The near-impostor frontier is one 120-cycle orbit whose relay character splits into the exchanged pair b and ab."
+  },
+  "boundary": {
+    "finite_orbit_classification_only": true,
+    "relay_character_not_called_physical_charge": true,
+    "registered_vs_frontier_not_called_massive_vs_massless": true,
+    "physical_energy_not_identified": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}

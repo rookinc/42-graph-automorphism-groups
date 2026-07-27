@@ -1,0 +1,227 @@
+{
+  "certificate_id": "native_g60_registered_stabilizer_structure_audit_063",
+  "audit_pass": true,
+  "verdict": "registered_cycle_stabilizer_is_d10_and_pair_stabilizer_is_d10_x_c2",
+  "sources": {
+    "full_automorphism_group": "artifacts/json/native_g60_fiber_product_isomorphism_044.json",
+    "registered_cycle_orbit": "artifacts/json/native_g60_registered_cycle_orbit_audit_062.json",
+    "registered_pentagon_lifts": "artifacts/json/native_g60_pentagon_holonomy_lift_audit_060.json"
+  },
+  "chosen_pair": {
+    "base_pentagon": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holonomy": "b",
+    "cycle_0": [
+      0,
+      25,
+      2,
+      45,
+      4,
+      15,
+      1,
+      35,
+      3,
+      55
+    ],
+    "cycle_1": [
+      5,
+      20,
+      7,
+      40,
+      9,
+      10,
+      6,
+      30,
+      8,
+      50
+    ]
+  },
+  "cycle_stabilizer": {
+    "order": 20,
+    "element_order_profile": {
+      "1": 1,
+      "2": 11,
+      "5": 4,
+      "10": 4
+    },
+    "center_order": 2,
+    "restriction_faithful": true,
+    "rotation_count": 10,
+    "reflection_count": 10,
+    "non_dihedral_count": 0,
+    "isomorphism_type": "D10_order_20"
+  },
+  "pair_stabilizer": {
+    "order": 40,
+    "preserve_each_order": 20,
+    "exchange_coset_size": 20,
+    "element_order_profile": {
+      "1": 1,
+      "2": 23,
+      "5": 4,
+      "10": 12
+    },
+    "exchange_element_order_profile": {
+      "2": 12,
+      "10": 8
+    },
+    "center_order": 4,
+    "exchange_involution_count": 12,
+    "centralizing_exchange_involution_count": 2,
+    "direct_product_witness_row_index": 326,
+    "isomorphism_type": "D10_x_C2_order_40"
+  },
+  "inner_action_rows": [
+    {
+      "exchange_group_row_index": 87,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        16,
+        283
+      ]
+    },
+    {
+      "exchange_group_row_index": 405,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        8,
+        203
+      ]
+    },
+    {
+      "exchange_group_row_index": 326,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        124,
+        0
+      ]
+    },
+    {
+      "exchange_group_row_index": 65,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        124,
+        0
+      ]
+    },
+    {
+      "exchange_group_row_index": 243,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        33,
+        445
+      ]
+    },
+    {
+      "exchange_group_row_index": 162,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        364,
+        24
+      ]
+    },
+    {
+      "exchange_group_row_index": 56,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        33,
+        445
+      ]
+    },
+    {
+      "exchange_group_row_index": 64,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        1,
+        127
+      ]
+    },
+    {
+      "exchange_group_row_index": 48,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        364,
+        24
+      ]
+    },
+    {
+      "exchange_group_row_index": 73,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        8,
+        203
+      ]
+    },
+    {
+      "exchange_group_row_index": 41,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        16,
+        283
+      ]
+    },
+    {
+      "exchange_group_row_index": 323,
+      "exchange_order": 2,
+      "action_preserves_cycle_stabilizer": true,
+      "matching_inner_element_count": 2,
+      "matching_inner_group_row_indices": [
+        1,
+        127
+      ]
+    }
+  ],
+  "checks": {
+    "cycle_stabilizer_equals_pair_preserving_kernel": true,
+    "cycle_stabilizer_acts_faithfully_on_ten_cycle": true,
+    "cycle_action_contains_ten_rotations_and_ten_reflections": true,
+    "cycle_stabilizer_is_full_d10": true,
+    "pair_stabilizer_has_exchange_involution": true,
+    "centralizing_exchange_involution_exists": true,
+    "centralizing_exchange_with_d10_generates_full_pair_stabilizer": true,
+    "pair_stabilizer_is_d10_direct_product_c2": true,
+    "cycle_center_has_order_two": true,
+    "pair_center_has_order_four": true
+  },
+  "theorem_statement": "The setwise stabilizer of a registered 10-cycle acts faithfully as the full dihedral automorphism group of that cycle and is isomorphic to D10 of order 20. The stabilizer of the intrinsic two-cycle block has order 40 and is the direct product D10 x C2, where the additional central involution exchanges the two registered cycles.",
+  "interpretation": {
+    "earned": "Each registered return carries the complete symmetry of a decagonal cycle. The two answers above one visible pentagon are exchanged by an independent central bit.",
+    "pair_grammar": "The pair stabilizer separates into internal cycle symmetry and answer exchange."
+  },
+  "boundary": {
+    "finite_group_isomorphism_theorem_only": true,
+    "dihedral_symmetry_not_called_physical_rotation": true,
+    "exchange_bit_not_called_particle_property": true,
+    "stabilizer_not_called_mass": true,
+    "physical_energy_not_identified": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}

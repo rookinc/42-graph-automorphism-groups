@@ -1,0 +1,1413 @@
+{
+  "certificate_id": "native_g60_pentagon_holonomy_lift_audit_060",
+  "audit_pass": true,
+  "verdict": "native_g60_nontrivial_pentagons_lift_to_paired_ten_cycles",
+  "sources": {
+    "native_v4": "artifacts/json/native_g60_v4_recovery_052.json",
+    "voltage_quotient": "artifacts/json/native_g60_v4_voltage_character_quotients_057.json",
+    "cycle_holonomy": "artifacts/json/native_g60_v4_cycle_holonomy_audit_059.json",
+    "character_exchange_theorem": "artifacts/json/native_g60_character_exchange_c2_theorem_056.json",
+    "character_exchange_witnesses": "artifacts/json/native_g60_character_exchange_symmetry_audit_055.json",
+    "full_automorphism_group": "artifacts/json/native_g60_fiber_product_isomorphism_044.json",
+    "native_graph": "sources/project42_g60_to_g30_a_quotient_certificate_035.json"
+  },
+  "base_pentagon_count": 12,
+  "base_pentagon_holonomy_profile": {
+    "b": 6,
+    "ab": 6
+  },
+  "pentagon_rows": [
+    {
+      "base_cycle": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            25,
+            2,
+            45,
+            4,
+            15,
+            1,
+            35,
+            3,
+            55
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            5,
+            20,
+            7,
+            40,
+            9,
+            10,
+            6,
+            30,
+            8,
+            50
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            25,
+            2,
+            45,
+            4,
+            15,
+            1,
+            35,
+            3,
+            55
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            5,
+            20,
+            7,
+            40,
+            9,
+            10,
+            6,
+            30,
+            8,
+            50
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          0,
+          25,
+          2,
+          45,
+          4,
+          15,
+          1,
+          35,
+          3,
+          55
+        ],
+        [
+          5,
+          20,
+          7,
+          40,
+          9,
+          10,
+          6,
+          30,
+          8,
+          50
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        0,
+        1,
+        8,
+        7,
+        9
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            16,
+            58,
+            14,
+            50,
+            8,
+            44,
+            32,
+            36,
+            25
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            15,
+            59,
+            13,
+            51,
+            9,
+            40,
+            31,
+            37,
+            29
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            15,
+            59,
+            13,
+            51,
+            9,
+            40,
+            31,
+            37,
+            29
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            16,
+            58,
+            14,
+            50,
+            8,
+            44,
+            32,
+            36,
+            25
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          0,
+          16,
+          58,
+          14,
+          50,
+          8,
+          44,
+          32,
+          36,
+          25
+        ],
+        [
+          1,
+          15,
+          59,
+          13,
+          51,
+          9,
+          40,
+          31,
+          37,
+          29
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        0,
+        4,
+        12,
+        13,
+        11
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            19,
+            27,
+            21,
+            30,
+            8,
+            41,
+            53,
+            49,
+            55
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            15,
+            26,
+            22,
+            34,
+            7,
+            40,
+            54,
+            48,
+            56
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            15,
+            26,
+            22,
+            34,
+            7,
+            40,
+            54,
+            48,
+            56
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            19,
+            27,
+            21,
+            30,
+            8,
+            41,
+            53,
+            49,
+            55
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          0,
+          19,
+          27,
+          21,
+          30,
+          8,
+          41,
+          53,
+          49,
+          55
+        ],
+        [
+          4,
+          15,
+          26,
+          22,
+          34,
+          7,
+          40,
+          54,
+          48,
+          56
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        0,
+        9,
+        6,
+        10,
+        11
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            16,
+            12,
+            18,
+            26,
+            15,
+            59,
+            17,
+            23,
+            19
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            8,
+            41,
+            47,
+            43,
+            31,
+            40,
+            54,
+            42,
+            38,
+            44
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            0,
+            16,
+            12,
+            18,
+            26,
+            15,
+            59,
+            17,
+            23,
+            19
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            8,
+            41,
+            47,
+            43,
+            31,
+            40,
+            54,
+            42,
+            38,
+            44
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          0,
+          16,
+          12,
+          18,
+          26,
+          15,
+          59,
+          17,
+          23,
+          19
+        ],
+        [
+          8,
+          41,
+          47,
+          43,
+          31,
+          40,
+          54,
+          42,
+          38,
+          44
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        1,
+        2,
+        5,
+        10,
+        11
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            26,
+            18,
+            24,
+            10,
+            9,
+            54,
+            42,
+            46,
+            35
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            25,
+            19,
+            23,
+            11,
+            5,
+            50,
+            41,
+            47,
+            39
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            25,
+            19,
+            23,
+            11,
+            5,
+            50,
+            41,
+            47,
+            39
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            26,
+            18,
+            24,
+            10,
+            9,
+            54,
+            42,
+            46,
+            35
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          1,
+          26,
+          18,
+          24,
+          10,
+          9,
+          54,
+          42,
+          46,
+          35
+        ],
+        [
+          2,
+          25,
+          19,
+          23,
+          11,
+          5,
+          50,
+          41,
+          47,
+          39
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        1,
+        8,
+        14,
+        13,
+        11
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            26,
+            22,
+            28,
+            36,
+            25,
+            19,
+            27,
+            33,
+            29
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            9,
+            51,
+            57,
+            53,
+            41,
+            50,
+            14,
+            52,
+            48,
+            54
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            1,
+            26,
+            22,
+            28,
+            36,
+            25,
+            19,
+            27,
+            33,
+            29
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            9,
+            51,
+            57,
+            53,
+            41,
+            50,
+            14,
+            52,
+            48,
+            54
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          1,
+          26,
+          22,
+          28,
+          36,
+          25,
+          19,
+          27,
+          33,
+          29
+        ],
+        [
+          9,
+          51,
+          57,
+          53,
+          41,
+          50,
+          14,
+          52,
+          48,
+          54
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        2,
+        3,
+        12,
+        14,
+        8
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            36,
+            28,
+            34,
+            20,
+            5,
+            14,
+            52,
+            56,
+            45
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            35,
+            29,
+            33,
+            21,
+            6,
+            10,
+            51,
+            57,
+            49
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            35,
+            29,
+            33,
+            21,
+            6,
+            10,
+            51,
+            57,
+            49
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            36,
+            28,
+            34,
+            20,
+            5,
+            14,
+            52,
+            56,
+            45
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          2,
+          36,
+          28,
+          34,
+          20,
+          5,
+          14,
+          52,
+          56,
+          45
+        ],
+        [
+          3,
+          35,
+          29,
+          33,
+          21,
+          6,
+          10,
+          51,
+          57,
+          49
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            36,
+            32,
+            38,
+            46,
+            35,
+            29,
+            37,
+            43,
+            39
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            5,
+            11,
+            17,
+            13,
+            51,
+            10,
+            24,
+            12,
+            58,
+            14
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            2,
+            36,
+            32,
+            38,
+            46,
+            35,
+            29,
+            37,
+            43,
+            39
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            5,
+            11,
+            17,
+            13,
+            51,
+            10,
+            24,
+            12,
+            58,
+            14
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          2,
+          36,
+          32,
+          38,
+          46,
+          35,
+          29,
+          37,
+          43,
+          39
+        ],
+        [
+          5,
+          11,
+          17,
+          13,
+          51,
+          10,
+          24,
+          12,
+          58,
+          14
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        3,
+        4,
+        9,
+        6,
+        5
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            46,
+            38,
+            44,
+            30,
+            6,
+            24,
+            12,
+            16,
+            55
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            45,
+            39,
+            43,
+            31,
+            7,
+            20,
+            11,
+            17,
+            59
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            45,
+            39,
+            43,
+            31,
+            7,
+            20,
+            11,
+            17,
+            59
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            46,
+            38,
+            44,
+            30,
+            6,
+            24,
+            12,
+            16,
+            55
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          3,
+          46,
+          38,
+          44,
+          30,
+          6,
+          24,
+          12,
+          16,
+          55
+        ],
+        [
+          4,
+          45,
+          39,
+          43,
+          31,
+          7,
+          20,
+          11,
+          17,
+          59
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        3,
+        5,
+        10,
+        13,
+        12
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            46,
+            42,
+            48,
+            56,
+            45,
+            39,
+            47,
+            53,
+            49
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            6,
+            21,
+            27,
+            23,
+            11,
+            20,
+            34,
+            22,
+            18,
+            24
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            3,
+            46,
+            42,
+            48,
+            56,
+            45,
+            39,
+            47,
+            53,
+            49
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            6,
+            21,
+            27,
+            23,
+            11,
+            20,
+            34,
+            22,
+            18,
+            24
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          3,
+          46,
+          42,
+          48,
+          56,
+          45,
+          39,
+          47,
+          53,
+          49
+        ],
+        [
+          6,
+          21,
+          27,
+          23,
+          11,
+          20,
+          34,
+          22,
+          18,
+          24
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        4,
+        9,
+        7,
+        14,
+        12
+      ],
+      "holonomy": "b",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            56,
+            52,
+            58,
+            16,
+            55,
+            49,
+            57,
+            13,
+            59
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            7,
+            31,
+            37,
+            33,
+            21,
+            30,
+            44,
+            32,
+            28,
+            34
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            4,
+            56,
+            52,
+            58,
+            16,
+            55,
+            49,
+            57,
+            13,
+            59
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            7,
+            31,
+            37,
+            33,
+            21,
+            30,
+            44,
+            32,
+            28,
+            34
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          4,
+          56,
+          52,
+          58,
+          16,
+          55,
+          49,
+          57,
+          13,
+          59
+        ],
+        [
+          7,
+          31,
+          37,
+          33,
+          21,
+          30,
+          44,
+          32,
+          28,
+          34
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    },
+    {
+      "base_cycle": [
+        6,
+        7,
+        14,
+        13,
+        10
+      ],
+      "holonomy": "ab",
+      "start_rows": [
+        {
+          "start_group": "1",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            12,
+            18,
+            22,
+            28,
+            32,
+            38,
+            42,
+            48,
+            52,
+            58
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "a",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            13,
+            17,
+            23,
+            27,
+            33,
+            37,
+            43,
+            47,
+            53,
+            57
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "b",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            13,
+            17,
+            23,
+            27,
+            33,
+            37,
+            43,
+            47,
+            53,
+            57
+          ],
+          "all_edges_native": true
+        },
+        {
+          "start_group": "ab",
+          "closure_rounds": 2,
+          "lifted_length": 10,
+          "lifted_cycle": [
+            12,
+            18,
+            22,
+            28,
+            32,
+            38,
+            42,
+            48,
+            52,
+            58
+          ],
+          "all_edges_native": true
+        }
+      ],
+      "distinct_lifted_cycle_count": 2,
+      "distinct_lifted_cycles": [
+        [
+          12,
+          18,
+          22,
+          28,
+          32,
+          38,
+          42,
+          48,
+          52,
+          58
+        ],
+        [
+          13,
+          17,
+          23,
+          27,
+          33,
+          37,
+          43,
+          47,
+          53,
+          57
+        ]
+      ],
+      "covered_vertex_count": 20,
+      "two_disjoint_ten_cycles": true
+    }
+  ],
+  "lifted_cycle_counts": {
+    "b": 12,
+    "ab": 12,
+    "total": 24
+  },
+  "exchange_witness_row_index": 3,
+  "exchange_results": {
+    "b_to_ab_match_count": 12,
+    "ab_to_b_match_count": 12,
+    "failure_count": 0,
+    "failures": []
+  },
+  "checks": {
+    "twelve_base_pentagons_found": true,
+    "pentagons_split_six_b_six_ab": true,
+    "every_lift_closes_after_two_traversals": true,
+    "every_lifted_cycle_has_length_ten": true,
+    "every_lifted_edge_is_native_g60_edge": true,
+    "every_pentagon_lifts_to_two_distinct_cycles": true,
+    "two_lifted_cycles_cover_all_twenty_fiber_vertices": true,
+    "native_exchange_maps_b_lifts_to_ab_lifts": true
+  },
+  "theorem_statement": "Each quotient pentagon with nonidentity holonomy b or ab lifts to exactly two disjoint 10-cycles in G60. One pentagon traversal changes the hidden chamber state by its holonomy; the second traversal closes because b and ab have order two. The native character-exchange symmetry maps the b-derived 10-cycles exactly onto the ab-derived 10-cycles.",
+  "interpretation": {
+    "earned": "The shortest nontrivial closed return has a concrete upstairs geometry: visible closure at length five and full registered closure at length ten.",
+    "closure_memory": "The quotient returns before the complete state does. The residual character determines the extra traversal required for full closure."
+  },
+  "boundary": {
+    "finite_cover_geometry_theorem_only": true,
+    "registered_closure_not_called_mass": true,
+    "cycle_length_not_called_time_or_distance": true,
+    "mathematical_energy_only": true,
+    "physical_energy_not_identified": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}

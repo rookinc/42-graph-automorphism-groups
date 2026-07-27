@@ -1,0 +1,61 @@
+{
+  "certificate_id": "native_g60_frontier_external_relay_matching_theorem_070",
+  "audit_pass": true,
+  "verdict": "frontier_external_relay_is_two_disjoint_p3_with_b_ab_middle_pair",
+  "source": "artifacts/json/native_g60_frontier_external_relay_structure_audit_069.json",
+  "source_069_audit_pass": false,
+  "source_069_failed_claim": "The relay was hypothesized to be K2,4 with one fixed middle-pair relation.",
+  "frontier_cycle_count": 120,
+  "relay_isomorphism_type": "P3_disjoint_union_P3",
+  "relay_vertex_count": 6,
+  "relay_edge_count": 4,
+  "relay_degree_profile": {
+    "1": 4,
+    "2": 2
+  },
+  "component_count": 2,
+  "component_type": "P3",
+  "middle_relation_profile": {
+    "ab": 60,
+    "b": 60
+  },
+  "distinguished_relation_absent": "a",
+  "answering_relations": [
+    "b",
+    "ab"
+  ],
+  "walk_generation": {
+    "middle_vertex_count": 2,
+    "walks_per_middle_vertex": 8,
+    "endpoint_pair_count": 2,
+    "walks_per_endpoint_pair": 8,
+    "total_long_bridge_walks": 16
+  },
+  "checks": {
+    "source_stronger_k2_4_audit_failed": true,
+    "frontier_cycle_count_is_120": true,
+    "every_relay_has_six_vertices": true,
+    "every_relay_has_four_edges": true,
+    "every_relay_degree_profile_is_four_leaves_two_centers": true,
+    "every_middle_has_two_endpoint_neighbors": true,
+    "every_endpoint_has_one_middle_neighbor": true,
+    "no_middle_middle_or_endpoint_endpoint_edges": true,
+    "middle_relation_is_exactly_b_or_ab": true,
+    "a_relation_never_occurs": true,
+    "each_middle_generates_eight_walks": true,
+    "two_endpoint_pairs_each_generate_eight_walks": true
+  },
+  "theorem_statement": "Every nonregistered cycle in the 120-cycle third-order frontier carries a six-vertex external relay isomorphic to the disjoint union P3 sqcup P3. Each of the two middle vertices is adjacent to exactly two external endpoints. The middle vertices occupy one quotient chamber and are related by b in sixty cases and ab in sixty cases; relation a never occurs. Registered cycles carry no such relay.",
+  "interpretation": {
+    "earned": "The sixteen long external walks arise from two separate two-arm relays, not one complete bipartite relay.",
+    "character_grammar": "The relay belongs to the symmetry-exchanged answering pair b or ab and never to the globally distinguished axis a."
+  },
+  "boundary": {
+    "finite_relay_graph_theorem_only": true,
+    "relay_not_called_physical_channel": true,
+    "relay_absence_not_called_mass_or_force": true,
+    "physical_energy_not_identified": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}

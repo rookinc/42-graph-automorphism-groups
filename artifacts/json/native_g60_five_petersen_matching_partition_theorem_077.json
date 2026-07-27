@@ -1,0 +1,159 @@
+{
+  "certificate_id": "native_g60_five_petersen_matching_partition_theorem_077",
+  "audit_pass": true,
+  "verdict": "five_chamber_triples_are_three_edge_petersen_matchings",
+  "sources": {
+    "foreign_v4_partition": "artifacts/json/native_g60_foreign_v4_five_triangle_graph_audit_075.json",
+    "g15_independent_triples": "artifacts/json/native_g60_five_triangle_partition_meaning_audit_076.json",
+    "petersen_label_bridge": "artifacts/json/project42_kneser_label_bridge_045.json"
+  },
+  "matching_count": 5,
+  "edges_per_matching": 3,
+  "matching_rows": [
+    {
+      "matching_index": 0,
+      "base_indices": [
+        0,
+        5,
+        14
+      ],
+      "petersen_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "endpoint_count": 6,
+      "pairwise_disjoint": true
+    },
+    {
+      "matching_index": 1,
+      "base_indices": [
+        1,
+        6,
+        12
+      ],
+      "petersen_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "endpoint_count": 6,
+      "pairwise_disjoint": true
+    },
+    {
+      "matching_index": 2,
+      "base_indices": [
+        2,
+        9,
+        13
+      ],
+      "petersen_edges": [
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "endpoint_count": 6,
+      "pairwise_disjoint": true
+    },
+    {
+      "matching_index": 3,
+      "base_indices": [
+        3,
+        7,
+        11
+      ],
+      "petersen_edges": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "endpoint_count": 6,
+      "pairwise_disjoint": true
+    },
+    {
+      "matching_index": 4,
+      "base_indices": [
+        4,
+        8,
+        10
+      ],
+      "petersen_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "endpoint_count": 6,
+      "pairwise_disjoint": true
+    }
+  ],
+  "petersen_edge_count": 15,
+  "checks": {
+    "five_components_present": true,
+    "each_component_has_three_base_indices": true,
+    "each_component_maps_to_three_petersen_edges": true,
+    "each_petersen_edge_triple_is_pairwise_disjoint": true,
+    "all_fifteen_petersen_edges_are_distinct": true,
+    "five_matchings_partition_exported_petersen_edges": true,
+    "five_blocks_are_independent_in_line_graph": true,
+    "foreign_incidence_completes_each_block_to_triangle": true
+  },
+  "theorem_statement": "Under the explicit Project 42 quotient-to-Petersen-edge coordinate bridge, the five chamber triples are five pairwise-disjoint three-edge matchings that partition all fifteen Petersen edges. Each matching is an independent three-set in L(Petersen), while the foreign-V4 incidence graph completes its three vertices to K3.",
+  "interpretation": {
+    "carrier": "The line-graph carrier keeps the three matching edges apart because they share no Petersen endpoint.",
+    "foreign_symmetry": "The foreign Klein layer supplies one relation for every pair inside each matching, completing five triangles."
+  },
+  "boundary": {
+    "project42_editorial_coordinate_choice_preserved": true,
+    "matching_partition_not_claimed_canonical_without_equivariance": true,
+    "finite_graph_theorem_only": true,
+    "physical_energy_not_identified": true,
+    "mass_not_defined": true,
+    "physical_c_not_derived": true,
+    "mass_energy_equivalence_not_claimed": true
+  }
+}
