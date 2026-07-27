@@ -1,9 +1,235 @@
 \section{Cycle Holonomy}
 
-\subsection{Gauge-invariant return character}
+The voltage labels on individual quotient edges depend on the chosen
+chamber representatives. Their products around closed quotient cycles
+do not. This section identifies the resulting gauge-invariant return
+character and determines its first nontrivial occurrence.
 
-\subsection{The quotient-cycle census}
+\subsection{Holonomy of a quotient cycle}
+
+Let
+\[
+Q=G_{60}/V_4\cong L(P),
+\]
+and let
+\[
+C=(v_0,v_1,\ldots,v_{\ell-1},v_0)
+\]
+be an oriented cycle in \(Q\).
+
+For a chosen voltage assignment
+\[
+\omega:E(Q)\longrightarrow V_4,
+\]
+define the holonomy of \(C\) by
+\[
+\operatorname{hol}(C)
+=
+\omega_{v_0v_1}
+\omega_{v_1v_2}
+\cdots
+\omega_{v_{\ell-1}v_0}.
+\]
+
+Because \(V_4\) is abelian and every element is its own inverse,
+reversing the orientation does not change the holonomy.
+
+Under a gauge change
+\[
+\omega_{ij}'=h_i\omega_{ij}h_j,
+\]
+the factors \(h_i\) cancel around the closed cycle. Hence
+\[
+\operatorname{hol}'(C)
+=
+\operatorname{hol}(C).
+\]
+
+\begin{proposition}
+Cycle holonomy is independent of the selected chamber
+representatives. It is an intrinsic \(V_4\)-valued invariant of a
+closed quotient cycle.
+\end{proposition}
+
+Holonomy records the hidden state accumulated after one visible return
+to the starting quotient chamber.
+
+\subsection{Lift behavior}
+
+Choose a native vertex \(x\) above \(v_0\). Lifting one traversal of
+\(C\) beginning at \(x\) ends at
+\[
+\operatorname{hol}(C)\,x.
+\]
+
+If
+\[
+\operatorname{hol}(C)=1,
+\]
+one quotient traversal closes in the native graph.
+
+If
+\[
+\operatorname{hol}(C)\neq1,
+\]
+one traversal returns to the same quotient chamber but to a different
+native state. Since every nonidentity element of \(V_4\) has order
+two, a second traversal closes.
+
+Thus the visible and native return lengths are
+\[
+\ell
+\quad\text{and}\quad
+2\ell,
+\]
+respectively, for nontrivial holonomy.
+
+\begin{proposition}
+A quotient cycle of trivial holonomy lifts to cycles of the same
+length. A quotient cycle of nontrivial holonomy lifts to cycles of
+twice its quotient length.
+\end{proposition}
+
+We call the second case \emph{registered closure}: the quotient
+position closes after one traversal, while the native state closes
+only after two.
+
+\subsection{Bounded quotient-cycle census}
+
+Simple quotient cycles were enumerated through length eight. The audit
+contains
+\[
+557
+\]
+cycles in total, with holonomy profile
+\[
+1:25,
+\qquad
+a:220,
+\qquad
+b:156,
+\qquad
+ab:156.
+\]
+
+The profile by length is:
+
+\[
+\begin{array}{c|rrrr}
+\text{length} & 1 & a & b & ab\\
+\hline
+3 & 10 & 0 & 0 & 0\\
+5 & 0 & 0 & 6 & 6\\
+6 & 0 & 10 & 30 & 30\\
+7 & 0 & 60 & 60 & 60\\
+8 & 15 & 150 & 60 & 60
+\end{array}
+\]
+
+The ten quotient triangles all have trivial holonomy. Therefore the
+shortest nontrivial return character occurs at length five.
+
+\begin{theorem}
+The shortest simple quotient cycles with nontrivial native holonomy
+are pentagons.
+\end{theorem}
+
+The bounded census is sufficient for this minimality statement because
+all shorter simple cycles in the quartic quotient are included.
 
 \subsection{Pentagon holonomy}
 
-\subsection{The b and ab families}
+The quotient contains exactly twelve pentagons in the audited
+coordinate system. Their holonomy profile is
+\[
+b:6,
+\qquad
+ab:6.
+\]
+
+No quotient pentagon has holonomy \(1\) or \(a\).
+
+\begin{theorem}
+The twelve quotient pentagons divide into two equal holonomy families:
+six \(b\)-pentagons and six \(ab\)-pentagons.
+\end{theorem}
+
+This division reproduces the native character grammar
+\[
+a\mid\{b,ab\}.
+\]
+The fixed element \(a\) does not occur as pentagon holonomy, while the
+exchanged pair \(b,ab\) occurs with equal multiplicity.
+
+\subsection{Lifted pentagons}
+
+Each nontrivial quotient pentagon lifts to exactly two disjoint native
+ten-cycles.
+
+Indeed, a pentagon contains five quotient chambers, each with four
+native vertices. The full preimage therefore contains twenty vertices.
+The two lifted ten-cycles are disjoint and together cover all twenty
+vertices above the pentagon.
+
+\begin{theorem}
+Every quotient pentagon lifts to two disjoint native ten-cycles.
+Together the two cycles cover exactly the twenty native vertices above
+the five quotient chambers.
+\end{theorem}
+
+For each lifted cycle,
+\[
+5
+\]
+steps complete the visible quotient circuit, while
+\[
+10
+\]
+steps complete the native return.
+
+This gives the exact relation
+\[
+\boxed{\text{visible closure }5
+\quad\longrightarrow\quad
+\text{registered closure }10.}
+\]
+
+\subsection{Exchange symmetry}
+
+The full automorphism group contains elements exchanging
+\[
+b\longleftrightarrow ab.
+\]
+These automorphisms exchange the two pentagon-holonomy families.
+
+Consequently, the equality
+\[
+6_b=6_{ab}
+\]
+is symmetry-protected. Neither family is intrinsically preferred by
+the unmarked graph.
+
+\begin{proposition}
+The \(b\)- and \(ab\)-pentagon families form one exchanged pair under
+the full automorphism group.
+\end{proposition}
+
+\subsection{Interpretive boundary}
+
+Holonomy is a finite covering invariant. It records the native
+group element accumulated around a closed quotient path.
+
+The following statements are established:
+
+\begin{enumerate}
+    \item local voltage labels are gauge dependent;
+    \item closed-cycle holonomy is gauge invariant;
+    \item the shortest nontrivial holonomy occurs on quotient
+    pentagons;
+    \item those pentagons have holonomy \(b\) or \(ab\);
+    \item each lifts to two native ten-cycles.
+\end{enumerate}
+
+No physical transport, energy, time, or force interpretation is
+required by these results. The word ``return'' refers only to closure
+of a finite graph path in quotient and native coordinates.

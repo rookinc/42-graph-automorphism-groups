@@ -1,11 +1,453 @@
 \section{The Split Extension}
 
-\subsection{The exact sequence}
+The canonical five-point register gives an exact sequence
+\[
+1
+\longrightarrow
+V_4^{\mathrm{nat}}
+\longrightarrow
+\operatorname{Aut}(G_{60})
+\overset{\rho}{\longrightarrow}
+S_5
+\longrightarrow
+1.
+\]
+This section determines the extension type. We prove that it splits,
+classify the recovered complements, and identify the conjugation action
+of \(S_5\) on the native Klein group.
 
-\subsection{Search for S5 complements}
+\subsection{Lifts of the five-point action}
 
-\subsection{The two conjugate sections}
+Every element of the quotient group \(S_5\) has exactly four lifts to
+the full automorphism group.
 
-\subsection{The sign action on V4}
+Indeed,
+\[
+\ker\rho=V_4^{\mathrm{nat}}
+\]
+has order four, so every fiber of \(\rho\) is a coset of the native
+Klein group.
+
+The complete lift profile is therefore
+\[
+4:120:
+\]
+each of the \(120\) permutations of the five matching blocks has four
+native realizations.
+
+\begin{proposition}
+For every
+\[
+\sigma\in S_5,
+\]
+the fiber
+\[
+\rho^{-1}(\sigma)
+\]
+contains exactly four automorphisms of \(G_{60}\).
+\end{proposition}
+
+A splitting requires one coherent selection of a lift for every
+\(\sigma\), closed under multiplication.
+
+\subsection{Generator-lift search}
+
+Choose the standard generators
+\[
+t=(0\,1)
+\]
+and
+\[
+r=(0\,1\,2\,3\,4)
+\]
+of \(S_5\).
+
+There are four native lifts of \(t\) and four native lifts of \(r\).
+Thus there are
+\[
+4\cdot4=16
+\]
+candidate lift pairs.
+
+The orders of the transposition lifts are
+\[
+4,2,2,4,
+\]
+while the orders of the five-cycle lifts are
+\[
+5,10,10,10.
+\]
+
+For each of the sixteen pairs, we generate the subgroup of
+\(\operatorname{Aut}(G_{60})\) determined by the two selected lifts.
+
+The generated subgroup orders have profile
+\[
+120:2,
+\qquad
+240:6,
+\qquad
+480:8.
+\]
+
+Exactly two lift pairs generate subgroups of order \(120\).
+
+\begin{proposition}
+Among the sixteen lift pairs of the selected transposition and
+five-cycle generators, exactly two generate subgroups of order
+\(120\) that map surjectively onto \(S_5\).
+\end{proposition}
+
+The other lift choices retain nontrivial portions of the native kernel
+and generate larger subgroups.
+
+\subsection{Existence of a complement}
+
+Let \(H\) be either of the two generated subgroups of order \(120\).
+
+Direct comparison gives
+\[
+H\cap V_4^{\mathrm{nat}}=\{1\}.
+\]
+
+Because
+\[
+|\rho(H)|=120,
+\]
+the restriction
+\[
+\rho|_H:H\longrightarrow S_5
+\]
+is an isomorphism.
+
+Furthermore,
+\[
+|H|\cdot|V_4^{\mathrm{nat}}|
+=
+120\cdot4
+=
+480
+=
+|\operatorname{Aut}(G_{60})|.
+\]
+
+Thus
+\[
+\operatorname{Aut}(G_{60})
+=
+V_4^{\mathrm{nat}}H.
+\]
+
+\begin{theorem}
+The exact sequence
+\[
+1
+\longrightarrow
+V_4^{\mathrm{nat}}
+\longrightarrow
+\operatorname{Aut}(G_{60})
+\longrightarrow
+S_5
+\longrightarrow
+1
+\]
+splits.
+\end{theorem}
+
+Equivalently, the full automorphism group contains a subgroup
+\[
+H\cong S_5
+\]
+that intersects the native Klein kernel trivially and projects
+isomorphically onto the canonical five-point action.
+
+\subsection{The two complements}
+
+The search finds two distinct complements:
+\[
+H_0\cong S_5,
+\qquad
+H_1\cong S_5.
+\]
+
+They form one conjugacy orbit of size two under the full automorphism
+group.
+
+For each complement,
+\[
+|N_{\operatorname{Aut}(G_{60})}(H_i)|=240.
+\]
+
+Hence the number of conjugates is
+\[
+\frac{480}{240}=2.
+\]
+
+\begin{theorem}
+The native extension contains exactly two complements in the
+conjugacy class recovered by the lift search. They are exchanged by
+the full automorphism group.
+\end{theorem}
+
+The visible \(S_5\)-action therefore has two equivalent native
+sections.
+
+The audit proves the two-element conjugacy orbit generated from the
+recovered complements. The stronger statement that no other
+nonconjugate complement class exists is not required for the splitting
+theorem and is not promoted here without a complete subgroup census.
+
+\subsection{Conjugation on the native Klein group}
+
+Because the native Klein group is normal, every complement acts on it
+by conjugation.
+
+The full automorphism census gives exactly two conjugation signatures.
+
+For \(240\) automorphisms,
+\[
+a\mapsto a,
+\qquad
+b\mapsto b,
+\qquad
+ab\mapsto ab.
+\]
+
+For the other \(240\),
+\[
+a\mapsto a,
+\qquad
+b\mapsto ab,
+\qquad
+ab\mapsto b.
+\]
+
+The distinction agrees exactly with the parity of the induced
+five-point permutation.
+
+If
+\[
+\rho(g)\in A_5,
+\]
+then
+\[
+gag^{-1}=a,
+\qquad
+gbg^{-1}=b,
+\qquad
+g(ab)g^{-1}=ab.
+\]
+
+If
+\[
+\rho(g)\notin A_5,
+\]
+then
+\[
+gag^{-1}=a,
+\qquad
+gbg^{-1}=ab,
+\qquad
+g(ab)g^{-1}=b.
+\]
+
+No failures occur in the complete \(480\)-element test.
+
+\begin{theorem}[Sign action]
+The conjugation action of the canonical quotient \(S_5\) on the native
+Klein group factors through the sign homomorphism
+\[
+\operatorname{sgn}:S_5\longrightarrow C_2.
+\]
+Every element fixes \(a\). Even permutations fix \(b\) and \(ab\)
+separately, while odd permutations exchange them.
+\end{theorem}
+
+Thus the action homomorphism
+\[
+S_5
+\longrightarrow
+\operatorname{Aut}(V_4)
+\cong S_3
+\]
+has image of order two.
+
+\subsection{Semidirect-product description}
+
+The splitting and sign action give the internal group description
+\[
+\operatorname{Aut}(G_{60})
+\cong
+V_4^{\mathrm{nat}}\rtimes_{\operatorname{sgn}}S_5.
+\]
+
+Here the notation means that \(S_5\) acts on
+\[
+V_4^{\mathrm{nat}}=\{1,a,b,ab\}
+\]
+through the quotient
+\[
+S_5/A_5\cong C_2,
+\]
+whose nontrivial element fixes \(a\) and exchanges \(b\) with \(ab\).
+
+\begin{theorem}
+The full native automorphism group is
+\[
+\boxed{
+\operatorname{Aut}(G_{60})
+\cong
+V_4\rtimes_{\operatorname{sgn}}S_5.
+}
+\]
+\end{theorem}
+
+This product is not direct. The odd half of \(S_5\) acts nontrivially
+on the native Klein kernel.
+
+The element \(a\) remains central, while \(b\) and \(ab\) do not.
+
+\subsection{Centralizer of the native Klein group}
+
+The kernel of the conjugation action consists of all automorphisms
+whose five-point permutation is even.
+
+It has order
+\[
+240.
+\]
+
+Under the semidirect-product model, it is
+\[
+V_4^{\mathrm{nat}}\times A_5,
+\]
+because \(A_5\) acts trivially on the native Klein group.
+
+\begin{corollary}
+The centralizer of the native Klein group is
+\[
+C_{\operatorname{Aut}(G_{60})}(V_4^{\mathrm{nat}})
+\cong
+V_4\times A_5
+\]
+and has order \(240\).
+\end{corollary}
+
+This recovers the index-two centralizer found directly from the native
+conjugation census.
 
 \subsection{Equivalence with the fiber-product model}
+
+The earlier automorphism paper proves
+\[
+\operatorname{Aut}(G_{60})
+\cong
+S_5\times_{C_2}D_8,
+\]
+where
+\[
+\chi_{V_4}:D_8\longrightarrow C_2
+\]
+has Klein-four kernel.
+
+The present semidirect-product model is equivalent to that
+fiber-product description.
+
+To see the relation, let
+\[
+V_4=\ker\chi_{V_4}\leq D_8.
+\]
+Choose an element
+\[
+r\in D_8
+\]
+with
+\[
+\chi_{V_4}(r)=1.
+\]
+
+Conjugation by \(r\) fixes one nontrivial element of \(V_4\) and
+exchanges the other two. This is the same order-two action used in
+\[
+V_4\rtimes_{\operatorname{sgn}}S_5.
+\]
+
+The fiber-product condition
+\[
+\operatorname{sgn}(\sigma)=\chi_{V_4}(d)
+\]
+ensures that the nontrivial action on \(V_4\) occurs exactly when
+\(\sigma\) is odd.
+
+\begin{proposition}
+There is an abstract isomorphism
+\[
+S_5\times_{C_2}D_8
+\cong
+V_4\rtimes_{\operatorname{sgn}}S_5.
+\]
+\end{proposition}
+
+The two descriptions emphasize different structures.
+
+The fiber-product model emphasizes compatible quotient characters:
+\[
+\operatorname{sgn}(\sigma)=\chi_{V_4}(d).
+\]
+
+The semidirect-product model emphasizes the native kernel and its
+visible action:
+\[
+a\mapsto a,
+\qquad
+b\leftrightarrow ab
+\]
+under odd permutations.
+
+\subsection{What the splitting earns}
+
+The splitting converts the quotient \(S_5\) from an abstract factor
+group into an actual subgroup acting on the native graph.
+
+It proves that every automorphism may be expressed as
+\[
+hg,
+\qquad
+h\in V_4^{\mathrm{nat}},
+\quad
+g\in H\cong S_5.
+\]
+
+The expression is unique after one complement \(H\) is selected,
+because
+\[
+H\cap V_4^{\mathrm{nat}}=\{1\}.
+\]
+
+The visible and hidden coordinates are therefore separable as a set,
+but their multiplication remains coupled by parity.
+
+This is the exact algebraic realization of the native register:
+
+\[
+\boxed{
+\text{hidden }V_4
+\quad\rtimes_{\operatorname{sgn}}\quad
+\text{visible }S_5.
+}
+\]
+
+\subsection{Boundary}
+
+The sign action is a theorem about finite graph automorphisms and
+permutation parity.
+
+It is not identified here with a physical parity operation, charge,
+spin, time reversal, or any other physical observable.
+
+The established statement is:
+\[
+\operatorname{sgn}(\rho(g))
+\]
+determines whether the native automorphism fixes or exchanges the
+\(b\)- and \(ab\)-directions.

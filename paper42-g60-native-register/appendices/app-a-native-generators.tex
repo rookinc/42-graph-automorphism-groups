@@ -1,1 +1,191 @@
 \section{Native Klein Generators and Permutations}
+
+This appendix records the exact native permutations underlying the
+Klein register. All permutations act on the fixed sixty-vertex
+ordering used by the Project 42 certificates.
+
+\subsection{Permutation convention}
+
+A permutation
+\[
+g\in\operatorname{Sym}(60)
+\]
+is stored in image-list notation:
+\[
+[g(0),g(1),\ldots,g(59)].
+\]
+
+Permutation multiplication is function composition:
+\[
+(gh)(v)=g(h(v)).
+\]
+
+The identity permutation is
+\[
+[0,1,\ldots,59].
+\]
+
+All subgroup, orbit, conjugation, and stabilizer calculations in this
+paper use this convention.
+
+\subsection{The native involution \(a\)}
+
+The involution \(a\) is reconstructed from the thirty canonical
+two-vertex fibers of the quotient
+\[
+G_{60}\longrightarrow G_{30}.
+\]
+
+For every canonical fiber
+\[
+\{u,v\},
+\]
+the permutation exchanges the two vertices:
+\[
+a(u)=v,
+\qquad
+a(v)=u.
+\]
+
+The certificate verifies
+\[
+a^2=1,
+\]
+\[
+a(v)\neq v
+\]
+for every native vertex \(v\), and
+\[
+a(E(G_{60}))=E(G_{60}).
+\]
+
+The exact image list is stored in
+\[
+\texttt{native\_g60\_v4\_recovery\_052.json}.
+\]
+
+\subsection{The native involution \(b\)}
+
+The second native involution \(b\) is imported from the hash-locked
+native generator bundle and verified independently against the exact
+edge set.
+
+It satisfies
+\[
+b^2=1,
+\]
+has no fixed points, and preserves every native edge.
+
+Its exact image list is stored in
+\[
+\texttt{native\_g60\_v4\_recovery\_052.json}.
+\]
+
+\subsection{The product \(ab\)}
+
+The third nonidentity native Klein element is
+\[
+ab=a\circ b=b\circ a.
+\]
+
+The certificate verifies
+\[
+(ab)^2=1,
+\]
+that \(ab\) is fixed-point-free, and that it preserves the exact native
+edge set.
+
+Thus
+\[
+V_4^{\mathrm{nat}}
+=
+\{1,a,b,ab\}.
+\]
+
+\subsection{Group table}
+
+The native Klein multiplication table is
+
+\[
+\begin{array}{c|cccc}
+ & 1 & a & b & ab\\
+\hline
+1  & 1  & a  & b  & ab\\
+a  & a  & 1  & ab & b\\
+b  & b  & ab & 1  & a\\
+ab & ab & b  & a  & 1
+\end{array}
+\]
+
+Every nonidentity element has order two, and the group is abelian.
+
+\subsection{Free action}
+
+For every native vertex \(v\), the orbit
+\[
+\{v,a(v),b(v),ab(v)\}
+\]
+contains four distinct vertices.
+
+The fifteen orbits form a partition
+\[
+V(G_{60})
+=
+\bigsqcup_{i=0}^{14}C_i.
+\]
+
+No nonidentity native Klein element fixes a vertex.
+
+\subsection{Conjugation signatures}
+
+For each
+\[
+g\in\operatorname{Aut}(G_{60}),
+\]
+the certificate computes
+\[
+gag^{-1},
+\qquad
+gbg^{-1},
+\qquad
+g(ab)g^{-1}.
+\]
+
+Exactly two signatures occur:
+
+\[
+(a,b,ab)
+\]
+for \(240\) automorphisms, and
+\[
+(a,ab,b)
+\]
+for \(240\) automorphisms.
+
+The second signature occurs exactly when the induced five-point
+permutation is odd.
+
+\subsection{Machine-readable sources}
+
+The authoritative native Klein sources are:
+
+\begin{enumerate}
+    \item
+    \texttt{artifacts/json/native\_g60\_reconstructed\_deck\_involution\_a\_050.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_candidate\_recovery\_051.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_recovery\_052.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_character\_exchange\_c2\_theorem\_056.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_s5\_extension\_splitting\_audit\_079.json}.
+\end{enumerate}
+
+The full image lists are retained in the machine-readable certificates
+rather than duplicated in the printed manuscript. This keeps the
+appendix readable while preserving exact reproducibility.

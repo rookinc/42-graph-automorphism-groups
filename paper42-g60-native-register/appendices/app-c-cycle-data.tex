@@ -1,1 +1,352 @@
 \section{Registered and Frontier Cycle Data}
+
+This appendix records the finite cycle counts, holonomy classes,
+stabilizers, and relay structures used in the main text.
+
+\subsection{Quotient-cycle census}
+
+Simple cycles in the quotient
+\[
+G_{60}/V_4^{\mathrm{nat}}\cong L(P)
+\]
+were enumerated through length eight.
+
+The total count is
+\[
+557.
+\]
+
+Their holonomy profile is
+\[
+1:25,
+\qquad
+a:220,
+\qquad
+b:156,
+\qquad
+ab:156.
+\]
+
+The length-resolved profile is:
+
+\[
+\begin{array}{c|rrrr}
+\text{length} & 1 & a & b & ab\\
+\hline
+3 & 10 & 0 & 0 & 0\\
+5 & 0 & 0 & 6 & 6\\
+6 & 0 & 10 & 30 & 30\\
+7 & 0 & 60 & 60 & 60\\
+8 & 15 & 150 & 60 & 60
+\end{array}
+\]
+
+Thus the shortest nontrivial holonomy occurs on quotient pentagons.
+
+\subsection{Quotient pentagons}
+
+There are exactly twelve quotient pentagons.
+
+Their holonomy profile is
+\[
+b:6,
+\qquad
+ab:6.
+\]
+
+No quotient pentagon has holonomy \(1\) or \(a\).
+
+Each pentagon lifts to two disjoint native ten-cycles, giving
+\[
+12\cdot2=24
+\]
+registered ten-cycles.
+
+\subsection{Complete native ten-cycle census}
+
+The exact graph contains
+\[
+1824
+\]
+simple ten-cycles.
+
+Their quotient-projection profiles are:
+
+\[
+\begin{array}{c|r}
+\text{projection type} & \text{count}\\
+\hline
+\text{five chambers, period five} & 24\\
+\text{nine distinct chambers} & 240\\
+\text{ten distinct chambers} & 1560
+\end{array}
+\]
+
+The first row is exactly the registered class.
+
+\subsection{Registered-cycle orbit data}
+
+The twenty-four registered ten-cycles form one full automorphism orbit.
+
+For one registered cycle \(C\),
+\[
+|\operatorname{Stab}(C)|=20
+\]
+and
+\[
+\operatorname{Stab}(C)\cong D_{10}.
+\]
+
+The pointwise stabilizer of \(C\) is trivial.
+
+The twenty-four cycles form twelve answering pairs. For one pair
+\[
+\mathcal P=\{C_0,C_1\},
+\]
+\[
+|\operatorname{Stab}(\mathcal P)|=40
+\]
+and
+\[
+\operatorname{Stab}(\mathcal P)
+\cong
+D_{10}\times C_2.
+\]
+
+Exactly twenty pair-stabilizer elements preserve the two cycles
+separately, and twenty exchange them.
+
+\subsection{Registered moment profile}
+
+For every registered cycle,
+\[
+\bigl(x_C^{\mathsf T}A^k x_C\bigr)_{k=0}^{8}
+=
+(10,20,80,240,880,3040,11200,40960,153600).
+\]
+
+The Laplacian profile is
+\[
+\bigl(x_C^{\mathsf T}L^k x_C\bigr)_{k=0}^{8}
+=
+(10,20,80,400,2160,12000,67520,382720,2181120).
+\]
+
+The fourth-order values
+\[
+x_C^{\mathsf T}A^4x_C=880
+\]
+and
+\[
+x_C^{\mathsf T}L^4x_C=2160
+\]
+select exactly the twenty-four registered cycles.
+
+\subsection{Fourth-order endpoint profile}
+
+For a registered cycle, the four-step endpoint-distance counts are
+
+\[
+\begin{array}{c|rrrrrr}
+\text{distance} & 0 & 1 & 2 & 3 & 4 & 5\\
+\hline
+\text{count} & 280 & 300 & 220 & 60 & 20 & 0
+\end{array}
+\]
+
+The boundary-crossing profile is
+
+\[
+\begin{array}{c|rrr}
+\text{boundary crossings} & 0 & 2 & 4\\
+\hline
+\text{count} & 160 & 560 & 160
+\end{array}
+\]
+
+For every third-moment frontier cycle,
+\[
+(d_4,d_5)=(28,8).
+\]
+
+For every registered cycle,
+\[
+(d_4,d_5)=(20,0).
+\]
+
+\subsection{The third-moment frontier}
+
+The third-moment frontier contains
+\[
+120
+\]
+nonregistered ten-cycles.
+
+Together with the twenty-four registered cycles, the lower-order
+comparison class has size
+\[
+144.
+\]
+
+The frontier cycles have total fourth adjacency moment
+\[
+896,
+\]
+while registered cycles have
+\[
+880.
+\]
+
+The difference consists of exactly sixteen external four-step returns:
+
+\[
+8
+\]
+with endpoint distance four and
+\[
+8
+\]
+with endpoint distance five.
+
+No other fourth-order walk class differs.
+
+\subsection{External relay structure}
+
+Every frontier cycle carries a six-vertex external relay support.
+
+It contains:
+
+\begin{enumerate}
+    \item four cycle endpoints;
+    \item two external middle vertices;
+    \item four endpoint--middle edges;
+    \item no middle--middle edge.
+\end{enumerate}
+
+The induced relay graph is
+\[
+P_3\sqcup P_3.
+\]
+
+Each middle vertex supports eight oriented four-step returns, giving
+\[
+8+8=16.
+\]
+
+The two middle vertices lie in one native chamber. Their native
+relation is always \(b\) or \(ab\), with profile
+\[
+b:60,
+\qquad
+ab:60.
+\]
+
+\subsection{Frontier-cycle stabilizers}
+
+The \(120\) frontier cycles form one full automorphism orbit.
+
+Each frontier-cycle stabilizer has order four and is isomorphic to
+\(V_4\).
+
+There are exactly fifteen distinct foreign Klein stabilizers.
+
+Each stabilizes eight frontier cycles:
+\[
+120=15\cdot8.
+\]
+
+Distinct foreign Klein groups intersect only in the identity.
+
+Their combined nonidentity element set contains
+\[
+15\cdot3=45
+\]
+distinct involutions.
+
+For each foreign subgroup \(H\),
+\[
+|N_{\operatorname{Aut}(G_{60})}(H)|=32
+\]
+and
+\[
+|C_{\operatorname{Aut}(G_{60})}(H)|=16.
+\]
+
+\subsection{Foreign chamber incidence}
+
+Each foreign Klein group determines two relay-middle chambers, with
+four stabilized cycles assigned to each chamber.
+
+The fifteen chamber pairs form the graph
+\[
+5K_3.
+\]
+
+Its components are
+\[
+\{0,5,14\},
+\]
+\[
+\{1,6,12\},
+\]
+\[
+\{2,9,13\},
+\]
+\[
+\{3,7,11\},
+\]
+and
+\[
+\{4,8,10\}.
+\]
+
+\subsection{Machine-readable sources}
+
+The authoritative cycle sources are:
+
+\begin{enumerate}
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_cycle\_holonomy\_audit\_059.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_pentagon\_holonomy\_lift\_audit\_060.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_ten\_cycle\_uniqueness\_audit\_061.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_cycle\_orbit\_audit\_062.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_stabilizer\_structure\_audit\_063.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_cycle\_dynamical\_signature\_audit\_064.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_fourth\_moment\_anatomy\_audit\_065.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_antipodal\_exclusion\_audit\_066.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_fourth\_order\_redistribution\_audit\_067.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_missing\_external\_bridge\_audit\_068.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_frontier\_external\_relay\_structure\_audit\_069.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_frontier\_external\_relay\_matching\_theorem\_070.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_frontier\_relay\_orbit\_audit\_071.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_frontier\_stabilizer\_structure\_audit\_072.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_frontier\_foreign\_v4\_incidence\_audit\_073.json}.
+\end{enumerate}

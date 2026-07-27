@@ -1,17 +1,517 @@
 \section{Certification and Reproducibility}
 
-\subsection{Source graph and automorphism data}
+The structural results of this paper are finite claims about one exact
+labeled graph. Their supporting computations are preserved as
+machine-readable artifacts. This section records the role of each
+certificate family, the logical dependency order, and the boundaries
+between direct computation, mathematical deduction, and interpretation.
+
+\subsection{Exact native sources}
+
+All calculations use the exact labeled graph
+\[
+G_{60}\cong\operatorname{AT4val}[60,6]
+\]
+with sixty vertices and \(120\) undirected edges.
+
+The full automorphism group is imported from the earlier Project 42
+classification and represented as \(480\) explicit permutations of the
+same fixed vertex ordering. The principal source is
+\[
+\texttt{native\_g60\_fiber\_product\_isomorphism\_044.json}.
+\]
+
+That certificate supplies:
+
+\begin{enumerate}
+    \item the complete native automorphism permutation set;
+    \item the explicit correspondence with the fiber-product model;
+    \item deterministic row indices for all group elements;
+    \item the verified \(230400\)-product multiplication table.
+\end{enumerate}
+
+The present paper does not re-enumerate the full automorphism group
+from scratch. It uses that already certified permutation group as the
+finite ambient group in which the native register is reconstructed.
 
 \subsection{Native Klein recovery}
 
-\subsection{Character and holonomy certificates}
+The native Klein recovery chain is:
 
-\subsection{Cycle and stabilizer certificates}
+\[
+050
+\longrightarrow
+051
+\longrightarrow
+052
+\longrightarrow
+053
+\longrightarrow
+054
+\longrightarrow
+055
+\longrightarrow
+056.
+\]
 
-\subsection{Matching and equivariance certificates}
+Certificate
+\[
+\texttt{native\_g60\_reconstructed\_deck\_involution\_a\_050.json}
+\]
+reconstructs \(a\) from the thirty two-vertex fibers and verifies that
+it is a fixed-point-free involutory graph automorphism.
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_candidate\_recovery\_051.json}
+\]
+records a failed bounded candidate search. It is retained because it
+shows that the eventual native \(V_4\) recovery was not obtained from
+the first tested local candidate family.
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_recovery\_052.json}
+\]
+imports the hash-locked native generator bundle, recovers \(b\), forms
+\(ab\), and verifies
+\[
+V_4^{\mathrm{nat}}=\{1,a,b,ab\}.
+\]
+All three nonidentity elements are fixed-point-free involutory graph
+automorphisms, and the group has fifteen regular orbits of size four.
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_character\_energy\_audit\_053.json}
+\]
+verifies the four orthogonal character sectors, their dimensions, and
+the invariance of the tested quadratic graph forms under the native
+Klein action. Its shuffled controls separate the generic regular
+representation decomposition from compatibility with the exact native
+edge set.
+
+Certificate
+\[
+\texttt{native\_g60\_character\_laplacian\_closure\_audit\_054.json}
+\]
+records the exact character Laplacian spectra and their commutation
+with the native Klein action.
+
+Certificate
+\[
+\texttt{native\_g60\_character\_exchange\_symmetry\_audit\_055.json}
+\]
+tests and rejects the stronger hypothesis that the full automorphism
+group acts as all of \(S_3\) on the three nontrivial native Klein
+elements.
+
+Certificate
+\[
+\texttt{native\_g60\_character\_exchange\_c2\_theorem\_056.json}
+\]
+records the corrected result: the conjugation image has order two,
+fixes \(a\), and exchanges \(b\) with \(ab\).
+
+\subsection{Quotient, voltage, and character certificates}
+
+The quotient-character chain is:
+
+\[
+057
+\longrightarrow
+058
+\longrightarrow
+059.
+\]
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_voltage\_character\_quotients\_057.json}
+\]
+constructs the fifteen-chamber quotient, the \(V_4\)-valued voltage
+description, and the four signed character operators.
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_gauge\_switching\_audit\_058.json}
+\]
+tests sixty-four local representative changes and verifies
+\[
+A_\chi'
+=
+D_\chi A_\chi D_\chi
+\]
+for every character. It also records fifty-five distinct raw voltage
+profiles, establishing that local voltage counts are gauge dependent
+while character spectra are invariant.
+
+Certificate
+\[
+\texttt{native\_g60\_v4\_cycle\_holonomy\_audit\_059.json}
+\]
+enumerates simple quotient cycles through length eight and records the
+gauge-invariant holonomy profile. It proves that pentagons are the
+shortest simple quotient cycles with nontrivial holonomy.
+
+\subsection{Registered-cycle certificates}
+
+The registered-cycle chain is:
+
+\[
+060
+\longrightarrow
+061
+\longrightarrow
+062
+\longrightarrow
+063.
+\]
+
+Certificate
+\[
+\texttt{native\_g60\_pentagon\_holonomy\_lift\_audit\_060.json}
+\]
+records the twelve quotient pentagons, their \(6+6\) split into \(b\)
+and \(ab\) holonomy, and their lifts to twenty-four native ten-cycles.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_ten\_cycle\_uniqueness\_audit\_061.json}
+\]
+enumerates all \(1824\) simple native ten-cycles and proves that exactly
+twenty-four project to a quotient pentagon traversed twice.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_cycle\_orbit\_audit\_062.json}
+\]
+proves that the twenty-four registered cycles form one automorphism
+orbit and that the twelve answering pairs form one orbit.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_stabilizer\_structure\_audit\_063.json}
+\]
+identifies the individual and pair stabilizers as
+\[
+D_{10}
+\quad\text{and}\quad
+D_{10}\times C_2.
+\]
+
+\subsection{Fourth-moment frontier certificates}
+
+The fourth-order chain is:
+
+\[
+064
+\longrightarrow
+065
+\longrightarrow
+066
+\longrightarrow
+067
+\longrightarrow
+068
+\longrightarrow
+069
+\longrightarrow
+070.
+\]
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_cycle\_dynamical\_signature\_audit\_064.json}
+\]
+establishes the exact fourth adjacency and Laplacian moment selectors.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_fourth\_moment\_anatomy\_audit\_065.json}
+\]
+decomposes the fourth-order walk count by endpoint distance, boundary
+crossings, outside visits, and quotient support.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_antipodal\_exclusion\_audit\_066.json}
+\]
+identifies the exact distinction
+\[
+(d_4,d_5)=(20,0)
+\]
+for registered cycles and
+\[
+(d_4,d_5)=(28,8)
+\]
+for the \(120\) third-moment frontier cycles.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_fourth\_order\_redistribution\_audit\_067.json}
+\]
+was initially framed as a redistribution test. Its output instead
+shows that the registered class has no compensating surplus. The
+correct conclusion is suppression of sixteen external returns.
+
+Certificate
+\[
+\texttt{native\_g60\_registered\_missing\_external\_bridge\_audit\_068.json}
+\]
+localizes those sixteen returns to one external six-vertex support.
+
+Certificate
+\[
+\texttt{native\_g60\_frontier\_external\_relay\_structure\_audit\_069.json}
+\]
+tests and rejects the stronger \(K_{2,4}\) relay hypothesis.
+
+Certificate
+\[
+\texttt{native\_g60\_frontier\_external\_relay\_matching\_theorem\_070.json}
+\]
+records the corrected relay theorem:
+\[
+P_3\sqcup P_3.
+\]
+
+\subsection{Foreign stabilizer certificates}
+
+The foreign-stabilizer chain is:
+
+\[
+071
+\longrightarrow
+072
+\longrightarrow
+073
+\longrightarrow
+074
+\longrightarrow
+075.
+\]
+
+Certificate
+\[
+\texttt{native\_g60\_frontier\_relay\_orbit\_audit\_071.json}
+\]
+proves that the \(120\) frontier cycles form one full automorphism
+orbit and split into two \(60\)-cycle classes under the index-two
+kernel fixing \(b\) and \(ab\) separately.
+
+Certificate
+\[
+\texttt{native\_g60\_frontier\_stabilizer\_structure\_audit\_072.json}
+\]
+identifies each frontier stabilizer as a foreign \(V_4\), proves
+trivial intersection with the native \(V_4\), and verifies that the
+two Klein classes are not conjugate.
+
+Certificate
+\[
+\texttt{native\_g60\_frontier\_foreign\_v4\_incidence\_audit\_073.json}
+\]
+reduces the \(120\) cycle stabilizers to fifteen distinct foreign Klein
+groups, each stabilizing eight cycles.
+
+Certificate
+\[
+\texttt{native\_g60\_foreign\_v4\_native\_chamber\_correspondence\_audit\_074.json}
+\]
+tests and rejects the stronger hypothesis that each foreign Klein
+group belongs to one native chamber. Instead, every subgroup uses two
+relay-middle chambers in a \(4+4\) split.
+
+Certificate
+\[
+\texttt{native\_g60\_foreign\_v4\_five\_triangle\_graph\_audit\_075.json}
+\]
+constructs the corrected chamber-pair incidence graph and proves
+\[
+\Gamma_{\mathrm{for}}\cong5K_3.
+\]
+
+\subsection{Matching and five-point certificates}
+
+The matching chain is:
+
+\[
+076
+\longrightarrow
+077
+\longrightarrow
+078.
+\]
+
+Certificate
+\[
+\texttt{native\_g60\_five\_triangle\_partition\_meaning\_audit\_076.json}
+\]
+proves that the five foreign triangles are independent triples in the
+carrier quotient \(L(P)\). Its first generic label scanner does not
+recover the Petersen meaning because the available bridge is encoded
+as structured label rows rather than a simple map.
+
+Certificate
+\[
+\texttt{native\_g60\_five\_petersen\_matching\_partition\_theorem\_077.json}
+\]
+uses the explicit Project 42 coordinate bridge and proves that the five
+triples are three-edge Petersen matchings partitioning all fifteen
+Petersen edges.
+
+Certificate
+\[
+\texttt{native\_g60\_five\_petersen\_matching\_equivariance\_audit\_078.json}
+\]
+tests all \(480\) native automorphisms, proves invariance of the
+five-block system, identifies the full \(S_5\)-image, and proves that
+the kernel is exactly the native \(V_4\).
 
 \subsection{Extension-splitting certificate}
 
+Certificate
+\[
+\texttt{native\_g60\_s5\_extension\_splitting\_audit\_079.json}
+\]
+tests the sixteen lift pairs of a selected transposition and
+five-cycle generator.
+
+It records:
+
+\begin{enumerate}
+    \item two lift pairs generating complements of order \(120\);
+    \item six lift pairs generating subgroups of order \(240\);
+    \item eight lift pairs generating the full group of order \(480\);
+    \item two recovered complements in one conjugacy orbit of size two;
+    \item the exact sign action on the native Klein kernel;
+    \item zero failures across all \(480\) conjugation tests.
+\end{enumerate}
+
+This certificate proves existence of a split complement and the
+semidirect-product law. It does not claim a complete classification of
+all possible nonconjugate complement classes beyond the recovered
+orbit.
+
 \subsection{Logical dependency order}
 
+The proof chain used in this paper is:
+
+\[
+\text{exact native graph and full group}
+\]
+\[
+\longrightarrow
+\text{native }V_4\text{ recovery}
+\]
+\[
+\longrightarrow
+\text{fifteen chambers and quotient}
+\]
+\[
+\longrightarrow
+\text{character operators and holonomy}
+\]
+\[
+\longrightarrow
+\text{registered cycles}
+\]
+\[
+\longrightarrow
+\text{fourth-moment frontier}
+\]
+\[
+\longrightarrow
+\text{foreign Klein incidence}
+\]
+\[
+\longrightarrow
+\text{five Petersen matchings}
+\]
+\[
+\longrightarrow
+\text{canonical }S_5\text{ action}
+\]
+\[
+\longrightarrow
+\text{split extension and sign law}.
+\]
+
+No downstream matching or extension theorem is used to justify the
+upstream recovery of the native Klein group.
+
+No Petersen coordinate label is used to construct the foreign
+incidence graph. The Petersen bridge is introduced only after the five
+independent chamber triples have already been recovered intrinsically.
+
+\subsection{Failed stronger hypotheses}
+
+Three failed stronger hypotheses are preserved explicitly:
+
+\begin{enumerate}
+    \item the full conjugation image on the native Klein group is not
+    \(S_3\); it is \(C_2\);
+
+    \item the frontier external relay is not \(K_{2,4}\); it is
+    \(P_3\sqcup P_3\);
+
+    \item one foreign Klein subgroup does not correspond to one native
+    chamber; it corresponds to one pair inside a recovered
+    three-chamber block.
+\end{enumerate}
+
+Preserving these failures is part of the proof boundary. Each corrected
+theorem is stronger epistemically because the larger candidate was
+tested and rejected rather than silently omitted.
+
+\subsection{Reproduction contract}
+
+A complete reproduction packet for this paper should contain:
+
+\begin{enumerate}
+    \item the exact sixty-vertex edge set;
+    \item the complete \(480\)-element native automorphism group;
+    \item the source bundle used to recover \(a\), \(b\), and \(ab\);
+    \item artifacts \(050\) through \(079\);
+    \item the Project 42 Petersen-coordinate bridge;
+    \item the scripts used to regenerate every artifact;
+    \item deterministic software and package versions;
+    \item SHA-256 digests for all authoritative inputs and outputs;
+    \item the final repository commit and Overleaf archive digest.
+\end{enumerate}
+
+The long-form path-and-digest ledger belongs in the verification
+appendix rather than in the main mathematical argument.
+
 \subsection{Claim boundaries}
+
+The certificates establish:
+
+\begin{enumerate}
+    \item a free normal native Klein action;
+    \item a fifteen-chamber quotient isomorphic to \(L(P)\);
+    \item four gauge-covariant character operators;
+    \item exact cycle holonomy and registered-cycle classes;
+    \item fourth-order walk recognition;
+    \item foreign Klein stabilizer incidence;
+    \item five invariant Petersen matching blocks;
+    \item the canonical \(S_5\)-quotient action;
+    \item a split extension with sign coupling.
+\end{enumerate}
+
+They do not establish:
+
+\begin{enumerate}
+    \item a physical interpretation of the character sectors;
+    \item that graph-walk moments are physical energies;
+    \item that registered closure defines physical mass;
+    \item that permutation parity is physical parity;
+    \item any claim about forces, spacetime, quantum fields, or
+    cosmology;
+    \item uniqueness of \(G_{60}\) among graphs sharing only numerical
+    fingerprints.
+\end{enumerate}
+
+The present paper is a finite structural classification with explicit
+receipts.

@@ -1,11 +1,351 @@
 \section{The Canonical Five-Point Register}
 
-\subsection{Invariance of the matching partition}
+The previous section identifies five three-chamber blocks and interprets
+them as Petersen matchings under one explicit quotient coordinate
+bridge. We now prove that the five-block system itself is preserved by
+the full automorphism group and therefore belongs intrinsically to the
+native graph.
 
-\subsection{The induced action on five blocks}
+\subsection{The five-block system}
 
-\subsection{Recovery of the full S5 action}
+Let
+\[
+\mathcal M
+=
+\{T_0,T_1,T_2,T_3,T_4\}
+\]
+be the partition of the fifteen native chambers into the five triples
+\[
+T_0=\{0,5,14\},
+\]
+\[
+T_1=\{1,6,12\},
+\]
+\[
+T_2=\{2,9,13\},
+\]
+\[
+T_3=\{3,7,11\},
+\]
+and
+\[
+T_4=\{4,8,10\}.
+\]
 
-\subsection{The native V4 as exact kernel}
+Each \(T_i\) is independent in the quotient carrier and complete in
+the foreign-Klein incidence graph.
 
-\subsection{The equivariant factorization 60 = 5 x 3 x 4}
+The complete native automorphism group acts on the fifteen chambers
+because the native Klein group is normal.
+
+For
+\[
+g\in\operatorname{Aut}(G_{60}),
+\]
+write
+\[
+\overline g
+\]
+for the induced permutation of the fifteen chambers.
+
+Direct evaluation of all \(480\) native automorphisms shows that
+\[
+\overline g(T_i)\in\mathcal M
+\]
+for every \(i\).
+
+\begin{theorem}
+The five-block partition
+\[
+\mathcal M=\{T_0,T_1,T_2,T_3,T_4\}
+\]
+is invariant under the full automorphism group of \(G_{60}\).
+\end{theorem}
+
+This promotes the matching partition from a pattern observed in one
+coordinate system to an intrinsic block system of the native graph.
+
+\subsection{The induced five-point action}
+
+The invariant block system defines a homomorphism
+\[
+\rho:
+\operatorname{Aut}(G_{60})
+\longrightarrow
+\operatorname{Sym}(\mathcal M)
+\cong S_5.
+\]
+
+The complete census produces
+\[
+120
+\]
+distinct block permutations.
+
+Since
+\[
+|S_5|=120,
+\]
+the image is the full symmetric group.
+
+\begin{theorem}
+The induced action of
+\(\operatorname{Aut}(G_{60})\) on the five matching blocks is
+surjective:
+\[
+\rho(\operatorname{Aut}(G_{60}))=S_5.
+\]
+\end{theorem}
+
+The element-order distribution in the five-point image is
+\[
+\begin{array}{c|rrrrrr}
+\text{order} & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline
+\text{count} & 1 & 25 & 20 & 30 & 24 & 20
+\end{array}
+\]
+which is the complete element-order profile of \(S_5\).
+
+The image contains
+\[
+60
+\]
+even permutations and
+\[
+60
+\]
+odd permutations.
+
+\subsection{Kernel of the five-point action}
+
+An automorphism lies in
+\[
+\ker\rho
+\]
+precisely when it fixes every matching block setwise.
+
+The exact kernel has order
+\[
+4.
+\]
+
+Direct comparison with the recovered native Klein group gives
+\[
+\ker\rho
+=
+V_4^{\mathrm{nat}}.
+\]
+
+\begin{theorem}
+The native Klein group is exactly the kernel of the canonical
+five-point action:
+\[
+\ker\rho=V_4^{\mathrm{nat}}.
+\]
+\end{theorem}
+
+Consequently,
+\[
+\operatorname{Aut}(G_{60})/V_4^{\mathrm{nat}}
+\cong S_5.
+\]
+
+This quotient is not merely inferred from the abstract order
+calculation
+\[
+480/4=120.
+\]
+It is realized by an explicit faithful action on the five matching
+blocks.
+
+\subsection{The exact sequence}
+
+The five-point action yields the exact sequence
+\[
+1
+\longrightarrow
+V_4^{\mathrm{nat}}
+\longrightarrow
+\operatorname{Aut}(G_{60})
+\overset{\rho}{\longrightarrow}
+S_5
+\longrightarrow
+1.
+\]
+
+This sequence gives a native geometric interpretation of the
+\(S_5\)-coordinate appearing in the earlier fiber-product
+classification.
+
+The quotient \(S_5\) permutes the five Petersen matching blocks. The
+kernel \(V_4^{\mathrm{nat}}\) acts within the four native states of
+each chamber and is invisible at the five-block level.
+
+\subsection{Transitivity properties}
+
+The induced \(S_5\)-action is two-transitive on the five blocks.
+
+For any two ordered pairs of distinct blocks
+\[
+(T_i,T_j)
+\quad\text{and}\quad
+(T_k,T_\ell),
+\]
+there exists a native automorphism mapping the first pair to the
+second.
+
+Equivalently, the orbit of one ordered distinct block pair has size
+\[
+5\cdot4=20.
+\]
+
+The action is also transitive on the ten unordered pairs of distinct
+blocks:
+\[
+\binom52=10.
+\]
+
+\begin{proposition}
+The canonical five-point action is two-transitive and
+two-homogeneous.
+\end{proposition}
+
+The induced action on the ten inter-block pairs is faithful. This
+ten-pair geometry is separate from the fifteen foreign Klein groups,
+which index pairs inside the five three-element blocks.
+
+\subsection{Block stabilizers}
+
+For each matching block \(T_i\), its setwise stabilizer in the full
+automorphism group has order
+\[
+\frac{480}{5}=96.
+\]
+
+This agrees with the quotient calculation
+\[
+96
+=
+|V_4|\cdot|S_4|
+=
+4\cdot24,
+\]
+because the stabilizer of one point in the five-point \(S_5\)-action
+is isomorphic to \(S_4\).
+
+\begin{proposition}
+For every matching block \(T_i\),
+\[
+|\operatorname{Stab}(T_i)|=96.
+\]
+Its image under \(\rho\) is the point stabilizer
+\[
+S_4\leq S_5,
+\]
+and its kernel is the native \(V_4\).
+\end{proposition}
+
+The subgroup fixing all three chambers of one matching block
+individually has order
+\[
+16.
+\]
+
+Thus the quotient-level stabilizer of the three chambers contributes
+a factor of four above the native kernel.
+
+\subsection{The equivariant factorization}
+
+The native vertex set now has three invariant levels.
+
+First, there are
+\[
+5
+\]
+matching blocks.
+
+Second, each matching block contains
+\[
+3
+\]
+native chambers.
+
+Third, each chamber contains
+\[
+4
+\]
+vertices forming one regular orbit of the native Klein group.
+
+Hence
+\[
+60
+=
+5\cdot3\cdot4.
+\]
+
+\begin{theorem}
+The factorization
+\[
+60=5\cdot3\cdot4
+\]
+is realized equivariantly by the native graph as:
+\[
+5
+\text{ invariant matching blocks},
+\]
+\[
+3
+\text{ quotient chambers per block},
+\]
+and
+\[
+4
+\text{ native Klein states per chamber}.
+\]
+\end{theorem}
+
+This is stronger than a numerical decomposition. Each factor is
+identified by an invariant group action.
+
+\subsection{Visible and hidden coordinates}
+
+The five-point quotient records the visible block coordinate:
+\[
+\rho(g)\in S_5.
+\]
+
+The native Klein kernel records the hidden four-state coordinate:
+\[
+v\mapsto hv,
+\qquad
+h\in V_4^{\mathrm{nat}}.
+\]
+
+These coordinates are not yet proved to form an internal direct
+product. The quotient action may act nontrivially on the kernel.
+
+The next section determines the extension type and proves that the
+coupling is exactly the sign action:
+\[
+a\mapsto a,
+\qquad
+b\leftrightarrow ab
+\]
+under odd permutations.
+
+\subsection{Intrinsic content}
+
+The Petersen edge labels used to display the five matchings remain
+coordinate choices. The following structure is intrinsic:
+
+\begin{enumerate}
+    \item the free normal native Klein group;
+    \item the fifteen chambers;
+    \item the five invariant chamber blocks;
+    \item the full \(S_5\)-action on those blocks;
+    \item the identification of the native Klein group as its kernel.
+\end{enumerate}
+
+Thus the native graph itself carries a canonical five-point register,
+even before any Petersen labels are assigned.

@@ -1,1 +1,432 @@
 \section{Character Spectra and Moment Profiles}
+
+This appendix collects the exact character-operator spectra and the
+walk-moment data used in the main text.
+
+\subsection{Character conventions}
+
+The native Klein group is
+\[
+V_4^{\mathrm{nat}}
+=
+\{1,a,b,ab\}.
+\]
+
+Its real character group is
+\[
+\widehat{V_4}
+=
+\{\chi_1,\chi_a,\chi_b,\chi_{ab}\}.
+\]
+
+The nontrivial characters are indexed by their kernels:
+\[
+\ker\chi_a=\langle a\rangle,
+\]
+\[
+\ker\chi_b=\langle b\rangle,
+\]
+and
+\[
+\ker\chi_{ab}=\langle ab\rangle.
+\]
+
+Each character sector has dimension fifteen.
+
+\subsection{Signed quotient operators}
+
+For a selected chamber representative system and quotient voltage
+assignment
+\[
+\omega:E(L(P))\longrightarrow V_4,
+\]
+the signed quotient adjacency operator is
+\[
+(A_\chi)_{ij}
+=
+\begin{cases}
+\chi(\omega_{ij}), & ij\in E(L(P)),\\
+0, & \text{otherwise}.
+\end{cases}
+\]
+
+The corresponding character Laplacian is
+\[
+L_\chi=4I-A_\chi.
+\]
+
+For the trivial character,
+\[
+A_{\chi_1}=A_{L(P)}.
+\]
+
+\subsection{Gauge covariance}
+
+Under the chamber-representative change
+\[
+s_i'=h_is_i,
+\qquad
+h_i\in V_4,
+\]
+define
+\[
+D_\chi
+=
+\operatorname{diag}
+\bigl(
+\chi(h_0),\ldots,\chi(h_{14})
+\bigr).
+\]
+
+The switched operators satisfy
+\[
+A_\chi'
+=
+D_\chi A_\chi D_\chi
+\]
+and
+\[
+L_\chi'
+=
+D_\chi L_\chi D_\chi.
+\]
+
+Thus every character spectrum is independent of the selected quotient
+gauge.
+
+The tested controls produce fifty-five distinct raw voltage profiles,
+but no character-spectrum changes.
+
+\subsection{Trivial-character spectrum}
+
+The trivial-sector Laplacian spectrum is
+\[
+\operatorname{Spec}(L_{\chi_1})
+=
+\{0^1,2^5,5^4,6^5\}.
+\]
+
+Equivalently, the quotient adjacency spectrum is
+\[
+\operatorname{Spec}(A_{\chi_1})
+=
+\{4^1,2^5,(-1)^4,(-2)^5\}.
+\]
+
+This is the spectrum of
+\[
+L(P).
+\]
+
+\subsection{The \(a\)-sector}
+
+The distinguished nontrivial sector has Laplacian spectrum
+\[
+\operatorname{Spec}(L_{\chi_a})
+=
+\{1^4,4^5,6^6\}.
+\]
+
+The corresponding adjacency spectrum is
+\[
+\operatorname{Spec}(A_{\chi_a})
+=
+\{3^4,0^5,(-2)^6\}.
+\]
+
+This sector is fixed under the full automorphism group because every
+automorphism fixes the native involution \(a\).
+
+\subsection{The \(b\)- and \(ab\)-sectors}
+
+The exchanged sectors have equal Laplacian spectra:
+\[
+\operatorname{Spec}(L_{\chi_b})
+=
+\operatorname{Spec}(L_{\chi_{ab}}).
+\]
+
+Their common spectrum is
+\[
+\left\{
+\left(\frac{3-\sqrt5}{2}\right)^3,
+3^4,
+\left(\frac{3+\sqrt5}{2}\right)^3,
+6^5
+\right\}.
+\]
+
+The corresponding adjacency spectrum is
+\[
+\left\{
+\left(\frac{5+\sqrt5}{2}\right)^3,
+1^4,
+\left(\frac{5-\sqrt5}{2}\right)^3,
+(-2)^5
+\right\}.
+\]
+
+The selected signed matrices
+\[
+A_{\chi_b}
+\quad\text{and}\quad
+A_{\chi_{ab}}
+\]
+need not be equal. Their isospectrality is enforced by native
+automorphisms exchanging
+\[
+b\longleftrightarrow ab.
+\]
+
+\subsection{Full sector summary}
+
+The Laplacian spectra are summarized by
+
+\[
+\begin{array}{c|l}
+\text{sector} & \text{Laplacian spectrum}\\
+\hline
+\chi_1 &
+\{0^1,2^5,5^4,6^5\}\\
+\chi_a &
+\{1^4,4^5,6^6\}\\
+\chi_b &
+\left\{
+\left(\frac{3-\sqrt5}{2}\right)^3,
+3^4,
+\left(\frac{3+\sqrt5}{2}\right)^3,
+6^5
+\right\}\\
+\chi_{ab} &
+\left\{
+\left(\frac{3-\sqrt5}{2}\right)^3,
+3^4,
+\left(\frac{3+\sqrt5}{2}\right)^3,
+6^5
+\right\}
+\end{array}
+\]
+
+Each row has total multiplicity fifteen.
+
+The four rows together have total multiplicity
+\[
+4\cdot15=60.
+\]
+
+\subsection{Registered adjacency moments}
+
+For every registered ten-cycle \(C\),
+\[
+m_k^A(C)
+=
+x_C^{\mathsf T}A^kx_C.
+\]
+
+The exact profile through order eight is
+
+\[
+\begin{array}{c|rrrrrrrrr}
+k & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+\hline
+m_k^A
+&
+10
+&
+20
+&
+80
+&
+240
+&
+880
+&
+3040
+&
+11200
+&
+40960
+&
+153600
+\end{array}
+\]
+
+The fourth-order value
+\[
+m_4^A=880
+\]
+selects exactly the twenty-four registered cycles among all \(1824\)
+simple ten-cycles.
+
+\subsection{Registered Laplacian moments}
+
+For every registered ten-cycle,
+\[
+m_k^L(C)
+=
+x_C^{\mathsf T}L^kx_C.
+\]
+
+The exact profile through order eight is
+
+\[
+\begin{array}{c|rrrrrrrrr}
+k & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\
+\hline
+m_k^L
+&
+10
+&
+20
+&
+80
+&
+400
+&
+2160
+&
+12000
+&
+67520
+&
+382720
+&
+2181120
+\end{array}
+\]
+
+The fourth-order value
+\[
+m_4^L=2160
+\]
+is equivalent to the adjacency selector because
+\[
+L=4I-A.
+\]
+
+\subsection{Registered and frontier comparison}
+
+The registered and frontier cycles agree in the tested adjacency
+moments through order three.
+
+At order four,
+\[
+m_4^A(\text{registered})=880,
+\]
+while
+\[
+m_4^A(\text{frontier})=896.
+\]
+
+The difference is
+\[
+16.
+\]
+
+The endpoint-distance comparison is
+
+\[
+\begin{array}{c|rr}
+ & \text{registered} & \text{frontier}\\
+\hline
+d_4 & 20 & 28\\
+d_5 & 0 & 8
+\end{array}
+\]
+
+Thus the frontier surplus consists exactly of
+\[
+8
+\]
+distance-four external returns and
+\[
+8
+\]
+distance-five antipodal returns.
+
+\subsection{Boundary-crossing profile}
+
+For a registered cycle, the four-step boundary-crossing counts are
+
+\[
+\begin{array}{c|rrr}
+\text{crossings} & 0 & 2 & 4\\
+\hline
+\text{count} & 160 & 560 & 160
+\end{array}
+\]
+
+The total is
+\[
+160+560+160=880.
+\]
+
+The value
+\[
+560
+\]
+for exactly two boundary crossings is itself an exact registered-cycle
+selector in the full ten-cycle census.
+
+\subsection{Exact scalar selectors}
+
+The fourth-order anatomy audit records several exact scalar selectors
+for the registered class:
+
+\[
+\text{boundary-crossing count at }2=560,
+\]
+\[
+\text{endpoint distance }4=20,
+\]
+\[
+\text{endpoint distance }5=0,
+\]
+\[
+\text{three-outside-vertex count}=80,
+\]
+and
+\[
+\text{five-distinct-quotient count}=100.
+\]
+
+These selectors are equivalent only within the complete audited
+ten-cycle census. No claim is made that the same scalar values select
+an analogous class in arbitrary graphs.
+
+\subsection{Machine-readable sources}
+
+The authoritative spectral sources are:
+
+\begin{enumerate}
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_character\_energy\_audit\_053.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_character\_laplacian\_closure\_audit\_054.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_character\_exchange\_symmetry\_audit\_055.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_character\_exchange\_c2\_theorem\_056.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_voltage\_character\_quotients\_057.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_v4\_gauge\_switching\_audit\_058.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_cycle\_dynamical\_signature\_audit\_064.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_fourth\_moment\_anatomy\_audit\_065.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_registered\_antipodal\_exclusion\_audit\_066.json}.
+\end{enumerate}
+
+The irrational spectral values are exact algebraic numbers arising
+from finite matrices. No physical meaning is assigned to them in this
+paper.

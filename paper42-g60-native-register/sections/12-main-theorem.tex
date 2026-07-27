@@ -1,7 +1,299 @@
 \section{Main Structural Theorem}
 
+We now collect the native register, quotient, matching, cycle, and
+extension results into one statement.
+
+\begin{theorem}[Native Klein register theorem]
+Let
+\[
+G_{60}\cong \operatorname{AT4val}[60,6]
+\]
+be the exact connected quartic graph considered throughout this paper.
+Then the following statements hold.
+
+\begin{enumerate}
+    \item The graph contains a free normal Klein four-subgroup
+    \[
+    V_4^{\mathrm{nat}}
+    =
+    \{1,a,b,ab\}
+    \trianglelefteq
+    \operatorname{Aut}(G_{60}).
+    \]
+
+    \item The native Klein action has fifteen orbits of size four:
+    \[
+    V(G_{60})
+    =
+    \bigsqcup_{i=0}^{14} C_i,
+    \qquad
+    |C_i|=4.
+    \]
+
+    \item The quotient by the native Klein group is the Petersen line
+    graph:
+    \[
+    G_{60}/V_4^{\mathrm{nat}}
+    \cong
+    L(P).
+    \]
+
+    \item The native state space decomposes into four orthogonal
+    fifteen-dimensional character sectors:
+    \[
+    \mathbb R^{60}
+    =
+    \mathcal H_{\chi_1}
+    \oplus
+    \mathcal H_{\chi_a}
+    \oplus
+    \mathcal H_{\chi_b}
+    \oplus
+    \mathcal H_{\chi_{ab}}.
+    \]
+
+    \item The full automorphism group fixes \(a\) and exchanges \(b\)
+    with \(ab\) under exactly the odd half of the canonical
+    five-point action. Consequently,
+    \[
+    \chi_a
+    \mid
+    \{\chi_b,\chi_{ab}\},
+    \]
+    and the \(\chi_b\)- and \(\chi_{ab}\)-operators are
+    symmetry-protected isospectral sectors.
+
+    \item The fifteen chambers admit an invariant partition
+    \[
+    \mathcal M
+    =
+    \{T_0,T_1,T_2,T_3,T_4\}
+    \]
+    into five blocks of size three.
+
+    \item Under the quotient identification with \(L(P)\), each
+    block \(T_i\) is an independent three-set and corresponds to a
+    three-edge matching \(M_i\) in the Petersen graph. The five
+    matchings partition the Petersen edge set:
+    \[
+    E(P)
+    =
+    M_0\sqcup M_1\sqcup M_2\sqcup M_3\sqcup M_4.
+    \]
+
+    \item The induced action on the five matching blocks is the full
+    symmetric group:
+    \[
+    \rho:
+    \operatorname{Aut}(G_{60})
+    \twoheadrightarrow
+    S_5,
+    \]
+    with
+    \[
+    \ker\rho
+    =
+    V_4^{\mathrm{nat}}.
+    \]
+
+    \item The resulting exact sequence splits:
+    \[
+    1
+    \longrightarrow
+    V_4^{\mathrm{nat}}
+    \longrightarrow
+    \operatorname{Aut}(G_{60})
+    \longrightarrow
+    S_5
+    \longrightarrow
+    1.
+    \]
+
+    \item The conjugation action factors through the sign character:
+    \[
+    \operatorname{Aut}(G_{60})
+    \cong
+    V_4\rtimes_{\operatorname{sgn}}S_5,
+    \]
+    where every element of \(S_5\) fixes \(a\), every even element
+    fixes \(b\) and \(ab\) separately, and every odd element
+    exchanges them.
+
+    \item The semidirect-product description is equivalent to the
+    previously established fiber-product classification:
+    \[
+    V_4\rtimes_{\operatorname{sgn}}S_5
+    \cong
+    S_5\times_{C_2}D_8.
+    \]
+
+    \item The shortest quotient cycles with nontrivial native
+    holonomy are the twelve quotient pentagons. Six have holonomy
+    \(b\), and six have holonomy \(ab\).
+
+    \item Each quotient pentagon lifts to two disjoint native
+    ten-cycles. These twenty-four registered ten-cycles are exactly
+    the simple ten-cycles whose quotient projection has minimal
+    period five.
+
+    \item The twenty-four registered cycles form one automorphism
+    orbit. Their individual stabilizers and answering-pair
+    stabilizers are
+    \[
+    D_{10}
+    \quad\text{and}\quad
+    D_{10}\times C_2,
+    \]
+    respectively.
+
+    \item Registered ten-cycles admit the exact fourth-order
+    recognition laws
+    \[
+    x_C^{\mathsf T}A^4x_C=880
+    \]
+    and
+    \[
+    x_C^{\mathsf T}L^4x_C=2160.
+    \]
+
+    \item The adjacent third-moment frontier contains \(120\)
+    nonregistered cycles. Each carries two external relay paths
+    forming
+    \[
+    P_3\sqcup P_3
+    \]
+    and exactly sixteen additional external four-step returns.
+
+    \item The \(120\) frontier cycles are stabilized by fifteen
+    distinct foreign Klein four-groups. Each foreign subgroup
+    stabilizes eight cycles, intersects the native Klein group only
+    in the identity, and is not conjugate to it.
+
+    \item The chamber-incidence graph of the fifteen foreign Klein
+    groups is
+    \[
+    5K_3.
+    \]
+    Its five components are exactly the five matching blocks
+    \(T_0,\ldots,T_4\).
+\end{enumerate}
+\end{theorem}
+
 \subsection{Proof from the native register}
+
+The native involutions \(a\), \(b\), and \(ab\) are reconstructed as
+fixed-point-free graph automorphisms and generate a free Klein
+four-group. Direct conjugation by all \(480\) native automorphisms
+proves normality and yields the intrinsic conjugation grammar
+\[
+a\mid\{b,ab\}.
+\]
+
+The free action gives fifteen four-vertex chambers. The exact orbit
+quotient is quartic on fifteen vertices and is identified with
+\(L(P)\). The regular representation of \(V_4\) on each chamber
+produces the four equal character sectors. Gauge switching changes
+the signed quotient matrices by diagonal conjugation, so their spectra
+are intrinsic.
+
+The foreign-Klein stabilizer census then supplies a second relation
+on the same fifteen chambers. Its connected components are five
+three-sets. These sets are independent in the quotient carrier and
+therefore become three-edge matchings under the Petersen-edge bridge.
 
 \subsection{Proof from the five-block action}
 
+Every one of the \(480\) automorphisms preserves the five matching
+blocks. The induced action contains \(120\) distinct block
+permutations and is therefore the full group \(S_5\).
+
+The kernel has order four and agrees exactly with
+\(V_4^{\mathrm{nat}}\). This proves
+\[
+\operatorname{Aut}(G_{60})/V_4^{\mathrm{nat}}
+\cong
+S_5.
+\]
+
+A bounded lift search for a transposition and a five-cycle finds
+subgroups of order \(120\) intersecting the native kernel trivially.
+Hence the extension splits. The complete conjugation census then
+shows that the quotient action on the kernel is exactly the sign
+action.
+
 \subsection{Compatibility with the earlier fiber-product theorem}
+
+The earlier companion paper proves
+\[
+\operatorname{Aut}(G_{60})
+\cong
+S_5\times_{C_2}D_8
+\]
+through internal group invariants and a complete explicit
+multiplication certificate.
+
+The present theorem does not replace that classification. It gives a
+native realization of it.
+
+The kernel of the projection
+\[
+S_5\times_{C_2}D_8
+\longrightarrow
+S_5
+\]
+is the Klein four-group
+\[
+\ker\chi_{V_4}\leq D_8.
+\]
+
+An element of \(D_8\) outside this kernel acts on it by fixing one
+nonidentity involution and exchanging the other two. The fiber-product
+condition couples this action to the sign of the \(S_5\)-coordinate.
+
+Thus
+\[
+S_5\times_{C_2}D_8
+\]
+and
+\[
+V_4\rtimes_{\operatorname{sgn}}S_5
+\]
+are two descriptions of the same group architecture.
+
+The former is adapted to abstract classification. The latter is
+adapted to the native graph:
+
+\[
+\boxed{
+5\text{ matching blocks}
+\times
+3\text{ chambers per block}
+\times
+4\text{ native Klein states per chamber}.
+}
+\]
+
+\subsection{Scope of the theorem}
+
+The theorem establishes a finite graph-theoretic structure. It
+identifies:
+
+\begin{enumerate}
+    \item the native hidden kernel;
+    \item the visible five-point quotient;
+    \item the parity coupling between them;
+    \item the quotient character operators;
+    \item the registered-cycle class;
+    \item the foreign stabilizer geometry.
+\end{enumerate}
+
+It does not identify these quantities with physical energy, mass,
+charge, spin, time, spacetime dimensions, or any physical interaction.
+
+The earned conclusion is structural:
+
+\begin{quote}
+The native sixty-vertex graph is an equivariant
+\(5\times3\times4\) register whose visible \(S_5\)-motion is coupled
+to a hidden Klein state through permutation parity.
+\end{quote}

@@ -1,1 +1,269 @@
 \section{The Fifteen Chambers and Five Petersen Matchings}
+
+This appendix records the quotient-chamber indexing, the five recovered
+three-chamber blocks, and their interpretation as Petersen matchings
+under the explicit Project 42 coordinate bridge.
+
+\subsection{The fifteen native chambers}
+
+The free native Klein action partitions the sixty vertices into
+fifteen four-vertex orbits:
+\[
+V(G_{60})
+=
+\bigsqcup_{i=0}^{14} C_i.
+\]
+
+Each chamber has the form
+\[
+C_i
+=
+\{v_i,a(v_i),b(v_i),ab(v_i)\}
+\]
+for one selected representative \(v_i\).
+
+The exact four-vertex lists are stored in
+\[
+\texttt{native\_g60\_v4\_recovery\_052.json}.
+\]
+
+The chamber indices
+\[
+0,\ldots,14
+\]
+are deterministic certificate coordinates. They are not claimed to be
+canonical labels in isolation.
+
+\subsection{The quotient carrier}
+
+The orbit quotient is
+\[
+G_{60}/V_4^{\mathrm{nat}}
+\cong
+L(P).
+\]
+
+Accordingly, each chamber index corresponds to one edge of the
+Petersen graph under the selected coordinate bridge.
+
+The quotient is quartic on fifteen vertices. Chamber adjacency means
+that the corresponding Petersen edges share an endpoint.
+
+\subsection{The five recovered chamber blocks}
+
+The foreign-Klein incidence graph has five connected components:
+\[
+T_0=\{0,5,14\},
+\]
+\[
+T_1=\{1,6,12\},
+\]
+\[
+T_2=\{2,9,13\},
+\]
+\[
+T_3=\{3,7,11\},
+\]
+and
+\[
+T_4=\{4,8,10\}.
+\]
+
+These form a partition:
+\[
+\{0,\ldots,14\}
+=
+T_0\sqcup T_1\sqcup T_2\sqcup T_3\sqcup T_4.
+\]
+
+Every \(T_i\) is independent in the quotient carrier:
+\[
+L(P)[T_i]\cong\overline{K_3}.
+\]
+
+Every \(T_i\) is complete in the foreign-Klein incidence graph:
+\[
+\Gamma_{\mathrm{for}}[T_i]\cong K_3.
+\]
+
+\subsection{The Petersen-edge bridge}
+
+The selected quotient-to-Petersen map is:
+
+\[
+\begin{array}{c|c}
+\text{chamber} & \text{Petersen edge}\\
+\hline
+0 & \{0,1\}\\
+1 & \{0,4\}\\
+2 & \{3,4\}\\
+3 & \{2,3\}\\
+4 & \{1,2\}\\
+5 & \{3,8\}\\
+6 & \{6,8\}\\
+7 & \{6,9\}\\
+8 & \{4,9\}\\
+9 & \{1,6\}\\
+10 & \{5,8\}\\
+11 & \{0,5\}\\
+12 & \{2,7\}\\
+13 & \{5,7\}\\
+14 & \{7,9\}
+\end{array}
+\]
+
+This coordinate bridge is recorded in
+\[
+\texttt{project42\_kneser\_label\_bridge\_045.json}.
+\]
+
+The bridge is an editorial choice among valid graph isomorphisms. The
+matching theorem is independent of the displayed numeric Petersen
+labels.
+
+\subsection{The five Petersen matchings}
+
+Under the bridge, the five chamber blocks become:
+
+\[
+M_0
+=
+\bigl\{
+\{0,1\},
+\{3,8\},
+\{7,9\}
+\bigr\},
+\]
+
+\[
+M_1
+=
+\bigl\{
+\{0,4\},
+\{6,8\},
+\{2,7\}
+\bigr\},
+\]
+
+\[
+M_2
+=
+\bigl\{
+\{3,4\},
+\{1,6\},
+\{5,7\}
+\bigr\},
+\]
+
+\[
+M_3
+=
+\bigl\{
+\{2,3\},
+\{6,9\},
+\{0,5\}
+\bigr\},
+\]
+
+and
+
+\[
+M_4
+=
+\bigl\{
+\{1,2\},
+\{4,9\},
+\{5,8\}
+\bigr\}.
+\]
+
+Each \(M_i\) consists of three pairwise vertex-disjoint Petersen edges.
+
+The fifteen edges are all distinct and satisfy
+\[
+E(P)
+=
+M_0\sqcup M_1\sqcup M_2\sqcup M_3\sqcup M_4.
+\]
+
+\subsection{Foreign Klein indexing}
+
+Within each chamber block
+\[
+T_i=\{u,v,w\},
+\]
+the three foreign Klein subgroups correspond to the three internal
+pairs
+\[
+\{u,v\},
+\qquad
+\{u,w\},
+\qquad
+\{v,w\}.
+\]
+
+Hence the complete foreign Klein family is indexed by
+\[
+\coprod_{i=0}^{4}\binom{T_i}{2}.
+\]
+
+The count is
+\[
+5\binom32=15.
+\]
+
+Each foreign subgroup stabilizes eight frontier cycles and has a
+\(4+4\) relay-middle split across its two endpoint chambers.
+
+\subsection{Five-point action}
+
+The full automorphism group preserves the set
+\[
+\mathcal M
+=
+\{T_0,T_1,T_2,T_3,T_4\}
+\]
+and induces all \(120\) permutations of these five blocks.
+
+The action homomorphism is
+\[
+\rho:
+\operatorname{Aut}(G_{60})
+\longrightarrow
+S_5,
+\]
+with
+\[
+\ker\rho=V_4^{\mathrm{nat}}.
+\]
+
+Each block stabilizer has order
+\[
+96,
+\]
+and the subgroup fixing all three chambers in one block individually
+has order
+\[
+16.
+\]
+
+\subsection{Machine-readable sources}
+
+The authoritative matching sources are:
+
+\begin{enumerate}
+    \item
+    \texttt{artifacts/json/native\_g60\_foreign\_v4\_five\_triangle\_graph\_audit\_075.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_five\_triangle\_partition\_meaning\_audit\_076.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_five\_petersen\_matching\_partition\_theorem\_077.json};
+
+    \item
+    \texttt{artifacts/json/native\_g60\_five\_petersen\_matching\_equivariance\_audit\_078.json};
+
+    \item
+    \texttt{artifacts/json/project42\_kneser\_label\_bridge\_045.json}.
+\end{enumerate}

@@ -1,11 +1,377 @@
 \section{The Fourth-Moment Frontier}
 
-\subsection{Exact dynamical recognition}
+Registered ten-cycles can be recognized without first projecting them
+to quotient pentagons. Their indicator vectors carry an exact
+fourth-order walk signature. This section identifies that signature,
+determines the smallest nearby comparison class, and localizes the
+difference to a concrete family of external relay paths.
 
-\subsection{Four-step walk anatomy}
+\subsection{Cycle indicators and walk moments}
+
+Let \(C\) be a simple ten-cycle in \(G_{60}\), and let
+\[
+x_C\in\mathbb R^{60}
+\]
+be its vertex-indicator vector:
+\[
+(x_C)_v
+=
+\begin{cases}
+1, & v\in V(C),\\
+0, & v\notin V(C).
+\end{cases}
+\]
+
+Let \(A\) be the native adjacency matrix and
+\[
+L=4I-A
+\]
+the native graph Laplacian.
+
+For \(k\geq0\), define the adjacency and Laplacian moments
+\[
+m_k^A(C)=x_C^{\mathsf T}A^k x_C,
+\qquad
+m_k^L(C)=x_C^{\mathsf T}L^k x_C.
+\]
+
+The adjacency moment counts length-\(k\) walks whose initial and final
+vertices both lie on the cycle. The Laplacian moment is an equivalent
+polynomial statistic because the graph is regular.
+
+\subsection{Exact fourth-order recognition}
+
+The complete census of \(1824\) simple ten-cycles was evaluated against
+these moment sequences.
+
+For every registered cycle,
+\[
+m_4^A(C)=880
+\]
+and
+\[
+m_4^L(C)=2160.
+\]
+
+No nonregistered ten-cycle has either value.
+
+\begin{theorem}
+For a simple ten-cycle \(C\subseteq G_{60}\), the following are
+equivalent:
+\[
+C\text{ is registered},
+\]
+\[
+x_C^{\mathsf T}A^4x_C=880,
+\]
+and
+\[
+x_C^{\mathsf T}L^4x_C=2160.
+\]
+\end{theorem}
+
+Thus registered closure admits an exact blind recognition law at
+fourth order. The test uses only the native graph, the cycle vertex
+set, and the adjacency or Laplacian operator.
+
+The full registered moment profiles through order eight are
+\[
+\bigl(m_k^L\bigr)_{k=0}^8
+=
+(10,20,80,400,2160,12000,67520,382720,2181120)
+\]
+and
+\[
+\bigl(m_k^A\bigr)_{k=0}^8
+=
+(10,20,80,240,880,3040,11200,40960,153600).
+\]
+
+\subsection{The third-moment frontier}
+
+The moments through order three do not distinguish the registered
+cycles uniquely.
+
+Besides the twenty-four registered cycles, there are
+\[
+120
+\]
+nonregistered ten-cycles sharing the same lower-order adjacency
+profile through \(k=3\).
+
+We call these cycles the \emph{third-moment frontier}.
+
+Thus the smallest comparison class relevant to fourth-order
+recognition consists of
+\[
+24+120=144
+\]
+cycles.
+
+\begin{proposition}
+Registered cycles are not recognized by adjacency moments through
+order three. At order four, all \(120\) frontier impostors separate
+from all twenty-four registered cycles.
+\end{proposition}
+
+\subsection{Fourth-order walk anatomy}
+
+For a registered cycle, the total fourth adjacency moment is
+\[
+m_4^A=880.
+\]
+
+The endpoint-distance decomposition is
+\[
+d_0:280,
+\qquad
+d_1:300,
+\qquad
+d_2:220,
+\qquad
+d_3:60,
+\qquad
+d_4:20,
+\qquad
+d_5:0,
+\]
+where \(d_j\) counts four-step walks beginning and ending on the cycle
+whose native endpoints are at graph distance \(j\).
+
+The boundary-crossing decomposition is
+\[
+0:160,
+\qquad
+2:560,
+\qquad
+4:160.
+\]
+
+Several individual fourth-order statistics are exact selectors for the
+registered cycles, including
+\[
+\text{boundary-crossing count at }2=560,
+\]
+\[
+\text{distance-4 endpoint count}=20,
+\]
+\[
+\text{distance-5 endpoint count}=0,
+\]
+\[
+\text{three-outside-vertex count}=80,
+\]
+and
+\[
+\text{five-distinct-quotient count}=100.
+\]
+
+These equalities are alternative descriptions of the same exact
+fourth-order class.
 
 \subsection{Antipodal exclusion}
 
-\subsection{The sixteen suppressed external returns}
+The sharpest comparison with the third-moment frontier occurs in the
+long-distance endpoint classes.
 
-\subsection{The two-relay theorem}
+For every registered cycle,
+\[
+(d_4,d_5)=(20,0).
+\]
+
+For every frontier cycle,
+\[
+(d_4,d_5)=(28,8).
+\]
+
+Thus the registered cycles contain no four-step walk whose endpoints
+are both on the cycle and lie at native graph distance five.
+
+\begin{theorem}
+Within the \(144\)-cycle third-moment frontier, a cycle is registered
+if and only if it excludes four-step antipodal return:
+\[
+d_5=0.
+\]
+Every nonregistered frontier cycle has exactly eight such walks.
+\end{theorem}
+
+All frontier antipodal walks have the same coarse form:
+
+\begin{enumerate}
+    \item the initial vertex lies on the cycle;
+    \item all three intermediate vertices lie outside the cycle;
+    \item the final vertex lies on the cycle;
+    \item the walk crosses the cycle boundary exactly twice;
+    \item its quotient projection visits five chambers.
+\end{enumerate}
+
+The distinction is therefore not distributed arbitrarily across the
+fourth-order walk census. It is concentrated in one external long
+return family.
+
+\subsection{Suppression of sixteen external returns}
+
+The total adjacency moments are
+\[
+880
+\]
+for a registered cycle and
+\[
+896
+\]
+for a frontier cycle.
+
+The difference is
+\[
+896-880=16.
+\]
+
+A finer comparison shows that the sixteen missing walks divide as
+\[
+8
+\]
+external distance-four returns and
+\[
+8
+\]
+external distance-five antipodal returns.
+
+There is no compensating surplus in another fourth-order class.
+
+\begin{theorem}
+Relative to every third-moment frontier cycle, a registered cycle
+suppresses exactly sixteen external four-step returns:
+\[
+8
+\text{ at endpoint distance }4
+\]
+and
+\[
+8
+\text{ at endpoint distance }5.
+\]
+All other fourth-order walk classes agree.
+\end{theorem}
+
+The word ``suppresses'' is important. The audit does not support a
+redistribution claim. The registered count is obtained by deletion of
+the sixteen external long returns, not by moving them into other
+endpoint classes.
+
+\subsection{The external bridge family}
+
+For each frontier cycle, the sixteen additional walks are supported on
+a six-vertex external configuration.
+
+The configuration contains:
+
+\begin{enumerate}
+    \item four endpoint vertices lying on the cycle;
+    \item two middle vertices outside the cycle;
+    \item four endpoint--middle edges;
+    \item no edge joining the two middle vertices;
+    \item no edge joining two endpoints inside the relay structure.
+\end{enumerate}
+
+The induced relay graph is therefore not \(K_{2,4}\). It is
+\[
+P_3\sqcup P_3,
+\]
+the disjoint union of two paths of length two.
+
+Each middle vertex joins exactly two cycle endpoints and contributes
+eight oriented four-step returns. The two middle vertices together
+contribute
+\[
+8+8=16.
+\]
+
+\begin{theorem}[Two-relay theorem]
+Every nonregistered cycle in the third-moment frontier carries an
+external relay graph isomorphic to
+\[
+P_3\sqcup P_3.
+\]
+The two relay components generate exactly the sixteen fourth-order
+walks absent from a registered cycle.
+\end{theorem}
+
+The two middle vertices lie in one quotient chamber. Their native
+relation is always \(b\) or \(ab\), never \(a\).
+
+Across the \(120\) frontier cycles, the middle-relation profile is
+\[
+b:60,
+\qquad
+ab:60.
+\]
+
+This again reproduces the exchanged native pair
+\[
+b\longleftrightarrow ab.
+\]
+
+\subsection{Registered and frontier structures}
+
+The fourth-order distinction can now be stated geometrically.
+
+A frontier impostor carries two independent answering relays:
+\[
+P_3\sqcup P_3.
+\]
+
+A registered cycle carries neither relay.
+
+Equivalently,
+\[
+\text{frontier cycle}
+=
+\text{registered lower-order profile}
++
+\text{two external relays}.
+\]
+
+The registered class is characterized by the absence of those relay
+paths.
+
+\subsection{Recognition hierarchy}
+
+The sequence of recognition results is:
+
+\[
+\text{quotient projection}
+\quad\Longrightarrow\quad
+\text{pentagon traversed twice},
+\]
+\[
+\text{fourth moment}
+\quad\Longrightarrow\quad
+m_4^A=880,
+\]
+\[
+\text{long-distance anatomy}
+\quad\Longrightarrow\quad
+(d_4,d_5)=(20,0),
+\]
+\[
+\text{external geometry}
+\quad\Longrightarrow\quad
+\text{no }P_3\sqcup P_3\text{ relay}.
+\]
+
+These are equivalent recognitions of the same twenty-four-cycle class
+within the relevant finite census.
+
+\subsection{Boundary}
+
+The moment calculation is a finite graph-dynamical signature. It does
+not identify a physical energy, mass, force, or time variable.
+
+The established statement is narrower and exact:
+
+\begin{quote}
+Registered closure is the unique ten-cycle class that excludes the
+two external answering relays and their sixteen associated four-step
+returns.
+\end{quote}

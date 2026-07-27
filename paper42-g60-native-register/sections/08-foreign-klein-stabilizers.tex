@@ -1,11 +1,374 @@
 \section{Foreign Klein Stabilizers}
 
-\subsection{The 120-cycle frontier orbit}
+The \(120\) nonregistered cycles in the third-moment frontier form one
+automorphism orbit. Their stabilizers are Klein four-groups, but they
+are not the native Klein group. This section classifies those
+stabilizers and determines their incidence geometry on the fifteen
+native chambers.
 
-\subsection{Foreign V4 stabilizers}
+\subsection{The frontier orbit}
 
-\subsection{Distinction from the native V4}
+Let \(\mathcal F\) denote the set of \(120\) nonregistered ten-cycles
+sharing the registered adjacency moments through order three.
 
-\subsection{The fifteen-subgroup incidence geometry}
+The full automorphism group acts transitively on \(\mathcal F\).
 
-\subsection{Normalizers and centralizers}
+\begin{theorem}
+The \(120\) frontier cycles form one
+\(\operatorname{Aut}(G_{60})\)-orbit.
+\end{theorem}
+
+By orbit--stabilizer, every frontier cycle \(C\in\mathcal F\) has
+setwise stabilizer of order
+\[
+|\operatorname{Stab}(C)|
+=
+\frac{480}{120}
+=
+4.
+\]
+
+\subsection{The stabilizer of one frontier cycle}
+
+For every \(C\in\mathcal F\), the stabilizer contains the identity and
+three involutions. Its element-order profile is
+\[
+1^1\,2^3.
+\]
+
+\begin{theorem}
+Every frontier-cycle stabilizer is isomorphic to the Klein four-group:
+\[
+\operatorname{Stab}(C)\cong V_4.
+\]
+\end{theorem}
+
+The induced action on the ten cycle vertices is faithful. For a
+representative frontier cycle, the restriction profile consists of:
+
+\begin{enumerate}
+    \item the identity, fixing all ten cycle vertices;
+    \item two fixed-point-free involutions on the cycle;
+    \item one involution fixing exactly two cycle vertices.
+\end{enumerate}
+
+This local action differs sharply from the dihedral stabilizer
+\[
+D_{10}
+\]
+of a registered cycle.
+
+\subsection{Foreign versus native Klein groups}
+
+Write
+\[
+V_4^{\mathrm{nat}}
+=
+\{1,a,b,ab\}
+\]
+for the native free Klein group, and write
+\[
+V_4(C)=\operatorname{Stab}(C)
+\]
+for the stabilizer of a frontier cycle.
+
+Direct comparison gives
+\[
+V_4(C)\cap V_4^{\mathrm{nat}}
+=
+\{1\}
+\]
+for every \(C\in\mathcal F\).
+
+Moreover, no \(V_4(C)\) is conjugate to the native Klein group inside
+\(\operatorname{Aut}(G_{60})\).
+
+\begin{theorem}
+Every frontier stabilizer is a foreign Klein group:
+\[
+V_4(C)\cap V_4^{\mathrm{nat}}=\{1\},
+\]
+and
+\[
+V_4(C)
+\]
+is not conjugate to
+\[
+V_4^{\mathrm{nat}}
+\]
+in the full automorphism group.
+\end{theorem}
+
+The two kinds of Klein subgroup therefore have different structural
+roles:
+
+\[
+V_4^{\mathrm{nat}}
+\quad\text{organizes the global chamber quotient,}
+\]
+while
+\[
+V_4(C)
+\quad\text{stabilizes one relay-bearing frontier cycle.}
+\]
+
+\subsection{Distinct subgroup census}
+
+Although there are \(120\) frontier cycles, their stabilizers are not
+all distinct.
+
+The complete stabilizer census contains exactly
+\[
+15
+\]
+distinct foreign Klein groups.
+
+Each foreign subgroup stabilizes exactly
+\[
+8
+\]
+frontier cycles. Hence
+\[
+120=15\cdot8.
+\]
+
+\begin{theorem}
+The frontier stabilizers consist of fifteen distinct foreign Klein
+four-groups, each stabilizing exactly eight frontier cycles.
+\end{theorem}
+
+The fifteen foreign groups form one conjugacy orbit under
+\(\operatorname{Aut}(G_{60})\).
+
+For each foreign subgroup \(H\),
+\[
+|N_{\operatorname{Aut}(G_{60})}(H)|=32
+\]
+and
+\[
+|C_{\operatorname{Aut}(G_{60})}(H)|=16.
+\]
+
+The quotient
+\[
+N(H)/C(H)
+\]
+therefore has order two and acts nontrivially on the three
+nonidentity elements of \(H\).
+
+\subsection{Pairwise intersections}
+
+Distinct foreign Klein groups intersect only in the identity.
+
+There are
+\[
+\binom{15}{2}=105
+\]
+unordered subgroup pairs, and every pair satisfies
+\[
+H_i\cap H_j=\{1\}.
+\]
+
+Consequently, the fifteen groups contain
+\[
+15\cdot3=45
+\]
+distinct nonidentity involutions.
+
+Each of those forty-five involutions belongs to exactly one foreign
+Klein group.
+
+\begin{proposition}
+The fifteen foreign Klein groups are pairwise disjoint away from the
+identity. Their nonidentity elements form a set of forty-five distinct
+involutions partitioned into fifteen triples.
+\end{proposition}
+
+Thus the foreign Klein geometry is not produced by repeatedly reusing
+a small collection of involutions. Each subgroup contributes its own
+three nonidentity elements.
+
+\subsection{Relay-middle chambers}
+
+Every frontier cycle carries two external relay paths. Their two
+middle vertices lie in one native quotient chamber.
+
+For one foreign Klein group \(H\), its eight stabilized cycles do not
+all use a single relay-middle chamber. Instead they divide equally
+between two chambers:
+\[
+4+4.
+\]
+
+The initial hypothesis
+\[
+\text{one foreign }V_4
+\longleftrightarrow
+\text{one native chamber}
+\]
+is therefore false.
+
+This failed correspondence is retained as a separate audit result. It
+is replaced by the following two-chamber relation.
+
+\begin{proposition}
+Each foreign Klein group determines an unordered pair of native
+chambers. Four of its stabilized cycles have relay middle in the first
+chamber, and four have relay middle in the second.
+\end{proposition}
+
+Every foreign subgroup also has the balanced middle-relation profile
+\[
+4_b+4_{ab}.
+\]
+
+\subsection{The chamber-pair graph}
+
+Construct a graph \(\Gamma_{\mathrm{for}}\) on the fifteen native
+chambers. Join two chambers whenever they form the relay-middle pair
+associated with one foreign Klein subgroup.
+
+The fifteen subgroup edges are
+\[
+\{0,5\},\{0,14\},\{5,14\},
+\]
+\[
+\{1,6\},\{1,12\},\{6,12\},
+\]
+\[
+\{2,9\},\{2,13\},\{9,13\},
+\]
+\[
+\{3,7\},\{3,11\},\{7,11\},
+\]
+and
+\[
+\{4,8\},\{4,10\},\{8,10\}.
+\]
+
+Every chamber has degree two. The graph has five connected
+components, each containing three vertices and three edges.
+
+\begin{theorem}
+The foreign-Klein chamber-incidence graph is
+\[
+\Gamma_{\mathrm{for}}
+\cong
+5K_3.
+\]
+\end{theorem}
+
+Its five components are
+\[
+\{0,5,14\},
+\qquad
+\{1,6,12\},
+\qquad
+\{2,9,13\},
+\qquad
+\{3,7,11\},
+\qquad
+\{4,8,10\}.
+\]
+
+Thus each three-chamber block supports exactly three foreign Klein
+groups, one on each internal chamber pair.
+
+\subsection{Cycle incidence within one triangle}
+
+Fix one component
+\[
+T=\{u,v,w\}.
+\]
+
+The three foreign Klein groups correspond to
+\[
+\{u,v\},
+\qquad
+\{u,w\},
+\qquad
+\{v,w\}.
+\]
+
+Each subgroup stabilizes eight frontier cycles, split four and four
+between its two endpoint chambers.
+
+Accordingly, every chamber is incident with two foreign Klein groups,
+and every foreign group is incident with two chambers.
+
+The complete incidence count is
+\[
+15\text{ subgroups}\times8\text{ cycles}
+=
+120\text{ cycles}.
+\]
+
+\subsection{Carrier and foreign incidence}
+
+The graph
+\[
+\Gamma_{\mathrm{for}}\cong5K_3
+\]
+is not the quotient carrier graph
+\[
+G_{60}/V_4\cong L(P).
+\]
+
+The same fifteen chamber labels support two different relations:
+
+\begin{enumerate}
+    \item carrier adjacency, inherited from native graph edges;
+    \item foreign-Klein incidence, inherited from frontier stabilizers.
+\end{enumerate}
+
+In the next section we show that the three vertices of each foreign
+triangle are pairwise nonadjacent in the carrier graph. Thus the
+foreign layer completes precisely those chamber triples that the
+carrier keeps separate.
+
+\subsection{Structural summary}
+
+The frontier geometry has the exact hierarchy
+\[
+120
+\text{ frontier cycles}
+\]
+\[
+=
+15
+\text{ foreign Klein groups}
+\times
+8
+\text{ cycles per group},
+\]
+with
+\[
+15
+\text{ groups}
+=
+5
+\text{ chamber triangles}
+\times
+3
+\text{ edges per triangle}.
+\]
+
+The native Klein group and the foreign Klein family should not be
+conflated:
+
+\[
+\boxed{
+\text{native }V_4:
+\text{ global free chamber register}
+}
+\]
+
+\[
+\boxed{
+\text{foreign }V_4:
+\text{ local frontier stabilizer}
+}
+\]
+
+Their intersection is always trivial, and their geometric functions
+are different.
