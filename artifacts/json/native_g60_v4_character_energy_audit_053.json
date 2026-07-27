@@ -1,0 +1,777 @@
+{
+  "certificate_id": "native_g60_v4_character_energy_audit_053",
+  "audit_pass": true,
+  "verdict": "native_g60_free_v4_character_decomposition_verified_with_genericity_boundary",
+  "sources": {
+    "native_v4": "artifacts/json/native_g60_v4_recovery_052.json",
+    "native_graph": "sources/project42_g60_to_g30_a_quotient_certificate_035.json"
+  },
+  "native_v4_orbit_structure": {
+    "vertex_count": 60,
+    "orbit_count": 15,
+    "orbit_size_profile": [
+      4
+    ],
+    "free_action": true,
+    "orbits": [
+      [
+        0,
+        8,
+        15,
+        40
+      ],
+      [
+        1,
+        9,
+        25,
+        50
+      ],
+      [
+        2,
+        5,
+        10,
+        35
+      ],
+      [
+        3,
+        6,
+        20,
+        45
+      ],
+      [
+        4,
+        7,
+        30,
+        55
+      ],
+      [
+        11,
+        24,
+        39,
+        46
+      ],
+      [
+        12,
+        17,
+        38,
+        43
+      ],
+      [
+        13,
+        32,
+        37,
+        58
+      ],
+      [
+        14,
+        29,
+        36,
+        51
+      ],
+      [
+        16,
+        31,
+        44,
+        59
+      ],
+      [
+        18,
+        23,
+        42,
+        47
+      ],
+      [
+        19,
+        26,
+        41,
+        54
+      ],
+      [
+        21,
+        34,
+        49,
+        56
+      ],
+      [
+        22,
+        27,
+        48,
+        53
+      ],
+      [
+        28,
+        33,
+        52,
+        57
+      ]
+    ]
+  },
+  "character_table": {
+    "chi_1": {
+      "1": 1,
+      "a": 1,
+      "b": 1,
+      "ab": 1
+    },
+    "chi_a": {
+      "1": 1,
+      "a": 1,
+      "b": -1,
+      "ab": -1
+    },
+    "chi_b": {
+      "1": 1,
+      "a": -1,
+      "b": 1,
+      "ab": -1
+    },
+    "chi_ab": {
+      "1": 1,
+      "a": -1,
+      "b": -1,
+      "ab": 1
+    }
+  },
+  "character_dimensions": {
+    "chi_1": 15,
+    "chi_a": 15,
+    "chi_b": 15,
+    "chi_ab": 15
+  },
+  "decomposition_rows": [
+    {
+      "probe_index": 0,
+      "total_quadratic_energy": 1387.078125,
+      "sector_energies": {
+        "chi_1": 290.38671875,
+        "chi_a": 444.69921875,
+        "chi_b": 300.79296875,
+        "chi_ab": 351.19921875
+      },
+      "sector_energy_sum": 1387.078125,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 5216.1875,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 1,
+      "total_quadratic_energy": 1454.484375,
+      "sector_energies": {
+        "chi_1": 549.10546875,
+        "chi_a": 212.26171875,
+        "chi_b": 396.60546875,
+        "chi_ab": 296.51171875
+      },
+      "sector_energy_sum": 1454.484375,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 5783.1875,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 2,
+      "total_quadratic_energy": 1402.265625,
+      "sector_energies": {
+        "chi_1": 336.69921875,
+        "chi_a": 335.69921875,
+        "chi_b": 351.04296875,
+        "chi_ab": 378.82421875
+      },
+      "sector_energy_sum": 1402.265625,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 5440.4375,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 3,
+      "total_quadratic_energy": 1429.40625,
+      "sector_energies": {
+        "chi_1": 339.3203125,
+        "chi_a": 283.5703125,
+        "chi_b": 301.5078125,
+        "chi_ab": 505.0078125
+      },
+      "sector_energy_sum": 1429.40625,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 5486.84375,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 4,
+      "total_quadratic_energy": 1447.21875,
+      "sector_energies": {
+        "chi_1": 555.8828125,
+        "chi_a": 278.0703125,
+        "chi_b": 398.8828125,
+        "chi_ab": 214.3828125
+      },
+      "sector_energy_sum": 1447.21875,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 6458.84375,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 5,
+      "total_quadratic_energy": 1446.640625,
+      "sector_energies": {
+        "chi_1": 439.54296875,
+        "chi_a": 409.76171875,
+        "chi_b": 214.26171875,
+        "chi_ab": 383.07421875
+      },
+      "sector_energy_sum": 1446.640625,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 5782.625,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 6,
+      "total_quadratic_energy": 1398.71875,
+      "sector_energies": {
+        "chi_1": 363.125,
+        "chi_a": 584.046875,
+        "chi_b": 263.796875,
+        "chi_ab": 187.75
+      },
+      "sector_energy_sum": 1398.71875,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 6248.28125,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    },
+    {
+      "probe_index": 7,
+      "total_quadratic_energy": 1409.828125,
+      "sector_energies": {
+        "chi_1": 708.51171875,
+        "chi_a": 197.57421875,
+        "chi_b": 294.41796875,
+        "chi_ab": 209.32421875
+      },
+      "sector_energy_sum": 1409.828125,
+      "reconstruction_error": 0.0,
+      "energy_decomposition_error": 0.0,
+      "orthogonality_error": 0.0,
+      "character_eigen_error": 0.0,
+      "sector_energy_invariance_error": 0.0,
+      "dirichlet_energy": 7339.6875,
+      "dirichlet_invariance_error": 0.0,
+      "checks": {
+        "reconstruction_pass": true,
+        "energy_decomposition_pass": true,
+        "orthogonality_pass": true,
+        "character_eigen_pass": true,
+        "sector_energy_invariance_pass": true,
+        "dirichlet_invariance_pass": true
+      }
+    }
+  ],
+  "native_graph_compatibility": {
+    "nonidentity_edge_automorphism_count": 3,
+    "all_native_nonidentity_elements_preserve_edges": true
+  },
+  "hostile_conjugated_controls": {
+    "control_count": 64,
+    "abstract_character_pass_count": 64,
+    "nonidentity_edge_automorphism_count_profile": {
+      "0": 64
+    },
+    "full_graph_compatible_control_count": 0,
+    "rows": [
+      {
+        "control_index": 0,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 1,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 2,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 3,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 4,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 5,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 6,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 7,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 8,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 9,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 10,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 11,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 12,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 13,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 14,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 15,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 16,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 17,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 18,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 19,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 20,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 21,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 22,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 23,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 24,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 25,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 26,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 27,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 28,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 29,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 30,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 31,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 32,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 33,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 34,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 35,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 36,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 37,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 38,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 39,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 40,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 41,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 42,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 43,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 44,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 45,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 46,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 47,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 48,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 49,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 50,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 51,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 52,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 53,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 54,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 55,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 56,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 57,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 58,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 59,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 60,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 61,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 62,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      },
+      {
+        "control_index": 63,
+        "nonidentity_edge_automorphism_count": 0,
+        "abstract_character_reconstruction_error": 0.0,
+        "abstract_energy_decomposition_error": 0.0
+      }
+    ]
+  },
+  "checks": {
+    "native_v4_source_passed": true,
+    "native_v4_action_is_free": true,
+    "native_v4_has_fifteen_regular_orbits": true,
+    "four_character_dimensions_are_fifteen": true,
+    "character_projectors_reconstruct_all_probes": true,
+    "character_sectors_are_orthogonal": true,
+    "quadratic_energy_splits_exactly_across_characters": true,
+    "character_eigenvalue_laws_hold": true,
+    "sector_energies_are_v4_invariant": true,
+    "graph_dirichlet_energy_is_v4_invariant": true,
+    "native_v4_is_graph_compatible": true,
+    "abstract_energy_decomposition_survives_all_controls": true
+  },
+  "interpretation": {
+    "earned": "G60 decomposes into fifteen regular V4 chambers. Its 60-dimensional state space splits into four orthogonal 15-dimensional character sectors. Quadratic norm and graph Dirichlet energy are exactly conserved under the native V4 action.",
+    "genericity_boundary": "The abstract four-character quadratic-energy decomposition is generic to any conjugate V4 permutation action. What is native here is the exact compatibility of the hash-locked V4 action with the 120-edge G60 structure."
+  },
+  "boundary": {
+    "mathematical_quadratic_energy_only": true,
+    "physical_energy_identification": false,
+    "conservation_of_physical_energy_claim": false,
+    "persistent_closure_mass_definition": false,
+    "inertial_mass_claim": false,
+    "invariant_transport_speed_derived": false,
+    "physical_c_identified": false,
+    "mass_energy_equivalence_claim": false
+  }
+}

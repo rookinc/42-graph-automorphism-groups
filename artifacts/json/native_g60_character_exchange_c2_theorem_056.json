@@ -1,0 +1,52 @@
+{
+  "certificate_id": "native_g60_character_exchange_c2_theorem_056",
+  "audit_pass": true,
+  "verdict": "native_g60_character_exchange_image_is_exactly_c2",
+  "source": "artifacts/json/native_g60_character_exchange_symmetry_audit_055.json",
+  "source_055_audit_pass": false,
+  "source_055_failed_reason": "Audit 055 required the induced action on the three nonidentity V4 elements to realize all of S3. The observed image has order 2 instead.",
+  "group_order": 480,
+  "v4_normalizer_order": 480,
+  "v4_centralizer_order": 240,
+  "normalizer_centralizer_index": 2,
+  "induced_action_group": "C2",
+  "induced_action_count": 2,
+  "induced_action_profile": {
+    "a->a,b->ab,ab->b": 240,
+    "a->a,b->b,ab->ab": 240
+  },
+  "distinguished_nonidentity_element": "a",
+  "exchanged_pair": [
+    "b",
+    "ab"
+  ],
+  "exact_fix_a_swap_b_ab_witness_count": 240,
+  "checks": {
+    "source_group_order_is_480": true,
+    "full_group_normalizes_native_v4": true,
+    "centralizer_order_is_240": true,
+    "normalizer_to_centralizer_index_is_2": true,
+    "induced_action_has_order_2": true,
+    "induced_action_profile_is_identity_or_b_ab_swap": true,
+    "a_is_fixed_by_every_induced_action": true,
+    "exactly_half_the_group_swaps_b_and_ab": true,
+    "b_ab_exchange_witness_exists": true,
+    "stronger_s3_image_hypothesis_failed": true
+  },
+  "theorem_statement": "The full 480-element automorphism group of native G60 normalizes the native V4. Its conjugation image in Aut(V4) is exactly C2: every automorphism fixes a, while 240 centralize b and ab and 240 exchange b with ab.",
+  "spectral_consequence": "The chi_b and chi_ab Laplacian sectors are exactly isospectral because a native graph automorphism exchanges the two characters while preserving the G60 Laplacian.",
+  "exact_sequence": "1 -> C_Aut(G60)(V4) -> Aut(G60) -> C2 -> 1",
+  "interpretation": {
+    "earned": "The a direction is globally characteristic inside the native V4, whereas b and ab are indistinguishable under the full graph symmetry.",
+    "failed_stronger_claim": "The full S3 of permutations of {a,b,ab} is not realized."
+  },
+  "boundary": {
+    "character_exchange_theorem_only": true,
+    "chi_b_chi_ab_isospectrality_symmetry_protected": true,
+    "a_called_energy": false,
+    "physical_energy_identified": false,
+    "mass_defined": false,
+    "physical_c_derived": false,
+    "mass_energy_equivalence_claimed": false
+  }
+}
